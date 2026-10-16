@@ -62,6 +62,16 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 - Placement: the pipeline enumerates every valid placement and, for each, counts the lexicon words that fit the pattern. It keeps only placements that rule out the plausible-but-unaccepted synonyms, then picks by informativeness for the level: first letters and rare letters for B2, the least telling letters that still disambiguate for C2.
 - `packages/core` provides the enumeration and pattern matching; scoring lives in the pipeline because it needs the lexicon.
 
+### Engine
+
+- `packages/core/src/engine.ts`: `apply(state, event)` is the whole game; `replay(log)` rebuilds the state on resume. Events are zod-validated so a saved log can be read back safely.
+- Randomness never happens inside the reducer. The caller draws the items (`pickItems`) and the turn order (`drawOrder`) with an injected RNG and records them in the `configure`, `start` and `rematch` events.
+- Undo is one level deep: a scoring decision (`correct` or `reveal`) remembers whether the item was shown or open, and `undo` puts it back there. `next` forgets it.
+- Dropouts are `leave` and `return` events. When an item comes up, it goes to its owner if present, else to the next present player in turn order. The transport decides when a lost connection counts as a `leave` (a grace period keeps a briefly locked phone from losing its turn).
+- An item counts as played for the history once it has come up, solved or not. The ranking covers decided items only.
+- `viewFor(state, items, viewer)` builds what each phone is sent. Player and spectator views carry no answer, lemma, alternates or gloss; letters reach them only in the cells, once revealed.
+- Item count options run from p to 30 in steps of p.
+
 ## Bank generation
 
 Budget target: tens of dollars of API spend, not hundreds. The expensive checks move into code and human review; cheap models do the bulk.
@@ -111,8 +121,8 @@ Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost
 
 ## Roadmap
 
-1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(started)*
-2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker.
+1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(done)*
+2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker. *(done)*
 3. Dev host and client UI (GM, player, spectator views), Playwright game tests.
 4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review.
 5. Capacitor shell and Swift plugin, TestFlight build.

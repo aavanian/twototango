@@ -12,7 +12,7 @@ npm run typecheck # tsc -b
 
 | Folder | What |
 | --- | --- |
-| `packages/core` | Item schema, answer boxes, given letters, bank checks |
+| `packages/core` | Item schema, answer boxes, given letters, bank checks, game engine, item picker, per-role views |
 | `content` | Item banks |
 | `docs` | Spec and implementation plan |
 | `tools/bank` | Bank generation pipeline |
