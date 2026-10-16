@@ -39,7 +39,7 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 
 | Layer | Choice |
 | --- | --- |
-| Language | TypeScript everywhere: app, engine, bank pipeline. Swift only for the native plugin. |
+| Language | TypeScript everywhere: app, engine, bank pipeline. Swift only for the native plugin; Python only for the `wordfreq` export in the pipeline. |
 | Packages | npm workspaces. `packages/core` (schema, boxes, engine), later `apps/client` (UI), `apps/ios` (Capacitor shell), `tools/bank` (pipeline). |
 | UI | Svelte 5 + Vite. The GM phone serves the bundle, so small matters. |
 | Engine | Pure state machine with an event log. Undo, resume-from-disk and replay come from the log. |
@@ -68,7 +68,7 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 
 ### Stages
 
-1. **Word selection (code).** Candidate answers per language and level from `wordfreq` frequency bands, restricted to nouns, verbs and adjectives, then screened by a model for a common synonym, teen suitability, no jargon, and level fit. Duplicate lemmas and shared roots removed. About 800 candidates per language and level, to end with 600. Part-of-speech mix set up front (starting point 40% nouns, 35% verbs, 25% adjectives); 1 in 5 marked for definition items.
+1. **Word selection (code).** Candidate answers per language and level from `wordfreq` frequency bands (see [Python step](#python-step)), restricted to nouns, verbs and adjectives, then screened by a model for a common synonym, teen suitability, no jargon, and level fit. Duplicate lemmas and shared roots removed. About 800 candidates per language and level, to end with 600. Part-of-speech mix set up front (starting point 40% nouns, 35% verbs, 25% adjectives); 1 in 5 marked for definition items.
 2. **Pilot (Claude Code, subscription).** Write the prompts, generate about 50 C1 items per language in-session, GM rates them. Those ratings become the fixed test set for everything after.
 3. **Bake-off (OpenRouter).** Three or four cheap models generate the same 50 words. Score each by the code checks plus the GM accept rate; keep the cheapest acceptable one.
 4. **Bulk drafting.** About 10 words per call, short structured JSON output, little or no reasoning. French prompts written in French. Sample sheets serve only as format examples; none of their text ships.
@@ -78,6 +78,10 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
 9. **Freeze.** Write the bank JSON and a provenance file (prompt version, models used, check results).
 
+### Python step
+
+`wordfreq` is a Python library. A small script in `tools/bank` exports the frequency bands per language to JSON, and the TypeScript pipeline reads that file. This is the only Python in the repo. Its dependencies are pinned in `tools/bank/requirements.txt`, and the SessionStart hook will `pip install` them once that file exists.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
@@ -86,9 +90,27 @@ C1 for both languages first (the sample sheets' level), then B2 and C2, so play 
 
 - **Cloud sessions** (claude.ai/code): engine, UI, dev host, Playwright tests, bank pipeline. The environment needs:
   - Network: "Allow package managers" plus `openrouter.ai` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: `lexique.org`, documentation sites.
-  - Secret: `OPENROUTER_API_KEY`.
-  - Dependencies install through the repo's SessionStart hook (`.claude/settings.json`).
+  - OpenRouter connected as a proxy credential, not as an environment variable (see [API key](#api-key)).
+  - Dependencies install through the repo's SessionStart hook (`.claude/settings.json`, script in `.claude/hooks/`). It runs on session startup and resume, prints nothing on success, and on failure prints the tail of its log into the session.
 - **The GM's Mac**: the Swift plugin, Xcode, signing, TestFlight and device tests, via Claude Desktop or `claude remote-control`.
+
+### API key
+
+The OpenRouter key never sits in an environment variable or a file the session can read, because anything there can end up in a transcript.
+
+- **Cloud session:** the agent proxy adds the key to requests for `openrouter.ai`. The session sees no key.
+- **GM's laptop:** the key lives in the macOS keychain. A wrapper script reads it and passes it to the pipeline process only, so a Claude Code session started from the same shell never inherits it.
+- **Pipeline client:** sends `Authorization: Bearer $OPENROUTER_API_KEY` when that variable is set (the laptop wrapper) and no header otherwise (the proxy fills it in). A missing key is not an error at startup; a 401 from OpenRouter is.
+
+### Spend cap
+
+The key's credit limit on OpenRouter is the hard budget; the pipeline never relies on its own accounting alone.
+
+1. Bake-off starts with one model under a small cap (currently $10). Its run gives the cost per item.
+2. The GM raises the cap once to finish the bake-off.
+3. The GM raises it once more for the bulk run, sized from the winning model's cost per item.
+
+Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost from the measured cost per item, and stops if the estimate exceeds `limit_remaining`. Actual spend per stage goes into the provenance file.
 
 ## Roadmap
 
