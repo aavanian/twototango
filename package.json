@@ -5,14 +5,16 @@
   "type": "module",
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "apps/*",
+    "tools/bank"
   ],
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc -b && npm run check -w @twototango/client",
     "build": "npm run build -w @twototango/client",
     "dev": "VITE_DEV_BANK=1 npm run build && node apps/devhost/src/main.ts",
-    "e2e": "VITE_DEV_BANK=1 npm run build && playwright test"
+    "e2e": "VITE_DEV_BANK=1 npm run build && playwright test",
+    "bank": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node tools/bank/src/cli.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",

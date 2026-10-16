@@ -2,6 +2,7 @@ node_modules/
 dist/
 *.tsbuildinfo
 .venv/
-data/
+/data/
 test-results/
 playwright-report/
+tools/bank/work/

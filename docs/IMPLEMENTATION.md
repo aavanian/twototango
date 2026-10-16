@@ -98,6 +98,16 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
 9. **Freeze.** Write the bank JSON and a provenance file (prompt version, models used, check results).
 
+### What exists (before the pilot)
+
+Built 16 Oct 2026; nothing here has spent API credit.
+
+- **Lexicon import** (`tools/bank/lexicon/import_lexicon.py`, run by `scripts/setup.sh`): writes `data/lex/<lang>-forms.tsv` (form, lemma, part of speech, zipf, lemma zipf, gender, number, root) and `<lang>-synonyms.tsv`. English forms come from wordfreq's list lemmatized by lemminflect; French forms from Lexique 3.83, which writes œ as "oe" (the import restores œ where wordfreq shows it is the usual spelling). Roots are Snowball stems, or Lexique's derivational base when it has one (peureux → peur). Synonyms: WordNet 3.0 for English; for French, WOLF through Open Multilingual Wordnet 1.4, which is noisy and only used to flag.
+- **Word selection** (`npm run bank -- select --lang en`): lemmas in a zipf band per level, 4 to 14 letters, with at least one same-part-of-speech synonym at least 0.3 zipf more frequent (the easier clue) that doesn't share its root. One lemma per root across all levels. 800 per level in the 40/35/25 mix, one in five marked for a definition. Output in `tools/bank/work/` (not committed; regenerated in seconds). The bands (B2 3.3–4.1, C1 2.7–3.3, C2 2.0–2.7) are a first guess to tune on the pilot ratings. French C2 runs short (225 of 280 verbs, 174 of 200 adjectives): the band widens or the level gets fewer items. The model screen is not built yet, and the lists still contain words it must drop (cadmium, knickers, keuf).
+- **Deterministic checks** (`npm run bank -- check <items.json>`): core's item checks; the answer is a lexicon form of its lemma and part of speech; shared roots through the stems, against the span or definition and the fixed words; unaccepted synonyms that fit the boxes; profanity (vendored LDNOOBW lists plus `extra-<lang>`); near-duplicate prompts. It rebuilds the sentence with the answer in place, adapting only the article and the elision before the span, and lists the plausible words that also fit the boxes for the blind solve.
+- **Given-letter placement**: for items without given letters, the check places them. Usable placements rule out every unaccepted synonym form of the answer's shape; among them B2 takes the most telling letters (fewest plausible words fit), C2 the least telling, C1 the middle.
+- **OpenRouter client** (`tools/bank/src/openrouter.ts`): bearer header only when `OPENROUTER_API_KEY` is set, a 401 explained, structured JSON output, cost per call, a spend ledger per stage and model, and a budget guard that reads `/api/v1/key` before each batch. Node's built-in fetch ignores `HTTPS_PROXY`, so `npm run bank` sets `NODE_USE_ENV_PROXY=1`. `npm run bank -- key` reads the limit for free.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
@@ -107,7 +117,7 @@ C1 for both languages first (the sample sheets' level), then B2 and C2, so play 
 - **Cloud sessions** (claude.ai/code): engine, UI, dev host, Playwright tests, bank pipeline. The environment needs:
   - Network: "Allow package managers" plus `openrouter.ai`, `lexique.org` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: documentation sites. `www.lexique.org` stays blocked; the download link on the bare domain is enough.
   - OpenRouter: the proxy injects the key on requests to `openrouter.ai`, so no `OPENROUTER_API_KEY` is set in the session (see [API key](#api-key) and [Spend cap](#spend-cap)).
-  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0), each pinned by checksum. It skips anything already installed. The hook runs on startup and resume, not after compaction or `/clear`; its log is `/tmp/twototango-setup.log`, and on failure the hook prints the log's last lines into the session.
+  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0, Open Multilingual Wordnet 1.4), each pinned by checksum, then builds the plain lexicon files in `data/lex/`. It skips anything already installed. The hook runs on startup and resume, not after compaction or `/clear`; its log is `/tmp/twototango-setup.log`, and on failure the hook prints the log's last lines into the session.
 - **Bank pipeline languages.** TypeScript, except the lexicon import, which is Python: `wordfreq`, `lemminflect` and the NLTK WordNet reader exist only as Python packages. The import writes plain lexicon files that the TypeScript stages read.
 - **The GM's Mac**: the Swift plugin, Xcode, signing, TestFlight and device tests, via Claude Desktop or `claude remote-control`.
 
@@ -134,6 +144,6 @@ Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost
 1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(done)*
 2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker. *(done)*
 3. Dev host and client UI (GM, player, spectator views), Playwright game tests. *(done)*
-4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review.
+4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review. *(started: everything up to the pilot)*
 5. Capacitor shell and Swift plugin, TestFlight build.
 6. B2 and C2 banks.

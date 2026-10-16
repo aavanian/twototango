@@ -1,4 +1,17 @@
 {
   "files": [],
-  "references": [{ "path": "packages/core" }, { "path": "apps/devhost" }, { "path": "e2e" }]
+  "references": [
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "apps/devhost"
+    },
+    {
+      "path": "e2e"
+    },
+    {
+      "path": "tools/bank"
+    }
+  ]
 }

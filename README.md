@@ -10,6 +10,7 @@ npm test          # vitest
 npm run typecheck # tsc -b and svelte-check
 npm run dev       # build with the dev bank, start the dev host on :5170
 npm run e2e       # Playwright: whole games, one browser context per phone
+npm run bank      # bank pipeline commands (lexicon, select, check, key)
 ```
 
 With `npm run dev`, open `http://localhost:5170/gm` as the game master and the join address the lobby shows on other devices or browser windows. In a cloud session, run Playwright with `PLAYWRIGHT_CHROMIUM=/opt/pw-browsers/chromium`.
@@ -22,7 +23,7 @@ With `npm run dev`, open `http://localhost:5170/gm` as the game master and the j
 | `e2e` | Playwright game tests against the dev host |
 | `content` | Item banks |
 | `docs` | Spec and implementation plan |
-| `tools/bank` | Bank generation pipeline |
+| `tools/bank` | Bank generation pipeline: lexicon import, word selection, checks, given-letter placement, OpenRouter client |
 | `scripts` | Environment setup |
 
 ## Licenses
