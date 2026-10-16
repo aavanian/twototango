@@ -39,7 +39,7 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 
 | Layer | Choice |
 | --- | --- |
-| Language | TypeScript everywhere: app, engine, bank pipeline. Swift only for the native plugin; Python only for the `wordfreq` export in the pipeline. |
+| Language | TypeScript everywhere: app, engine, bank pipeline. Swift only for the native plugin; Python only for the lexicon import (see Environments). |
 | Packages | npm workspaces. `packages/core` (schema, boxes, engine), later `apps/client` (UI), `apps/ios` (Capacitor shell), `tools/bank` (pipeline). |
 | UI | Svelte 5 + Vite. The GM phone serves the bundle, so small matters. |
 | Engine | Pure state machine with an event log. Undo, resume-from-disk and replay come from the log. |
@@ -68,7 +68,7 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 
 ### Stages
 
-1. **Word selection (code).** Candidate answers per language and level from `wordfreq` frequency bands (see [Python step](#python-step)), restricted to nouns, verbs and adjectives, then screened by a model for a common synonym, teen suitability, no jargon, and level fit. Duplicate lemmas and shared roots removed. About 800 candidates per language and level, to end with 600. Part-of-speech mix set up front (starting point 40% nouns, 35% verbs, 25% adjectives); 1 in 5 marked for definition items.
+1. **Word selection (code).** Candidate answers per language and level from `wordfreq` frequency bands, restricted to nouns, verbs and adjectives, then screened by a model for a common synonym, teen suitability, no jargon, and level fit. Duplicate lemmas and shared roots removed. About 800 candidates per language and level, to end with 600. Part-of-speech mix set up front (starting point 40% nouns, 35% verbs, 25% adjectives); 1 in 5 marked for definition items.
 2. **Pilot (Claude Code, subscription).** Write the prompts, generate about 50 C1 items per language in-session, GM rates them. Those ratings become the fixed test set for everything after.
 3. **Bake-off (OpenRouter).** Three or four cheap models generate the same 50 words. Score each by the code checks plus the GM accept rate; keep the cheapest acceptable one.
 4. **Bulk drafting.** About 10 words per call, short structured JSON output, little or no reasoning. French prompts written in French. Sample sheets serve only as format examples; none of their text ships.
@@ -78,10 +78,6 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
 9. **Freeze.** Write the bank JSON and a provenance file (prompt version, models used, check results).
 
-### Python step
-
-`wordfreq` is a Python library. A small script in `tools/bank` exports the frequency bands per language to JSON, and the TypeScript pipeline reads that file. This is the only Python in the repo. Its dependencies are pinned in `tools/bank/requirements.txt`, and the SessionStart hook will `pip install` them once that file exists.
-
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
@@ -89,9 +85,10 @@ C1 for both languages first (the sample sheets' level), then B2 and C2, so play 
 ## Environments
 
 - **Cloud sessions** (claude.ai/code): engine, UI, dev host, Playwright tests, bank pipeline. The environment needs:
-  - Network: "Allow package managers" plus `openrouter.ai` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: `lexique.org`, documentation sites.
-  - OpenRouter connected as a proxy credential, not as an environment variable (see [API key](#api-key)).
-  - Dependencies install through the repo's SessionStart hook (`.claude/settings.json`, script in `.claude/hooks/`). It runs on session startup and resume, prints nothing on success, and on failure prints the tail of its log into the session.
+  - Network: "Allow package managers" plus `openrouter.ai`, `lexique.org` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: documentation sites. `www.lexique.org` stays blocked; the download link on the bare domain is enough.
+  - OpenRouter: the proxy injects the key on requests to `openrouter.ai`, so no `OPENROUTER_API_KEY` is set in the session (see [API key](#api-key) and [Spend cap](#spend-cap)).
+  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0), each pinned by checksum. It skips anything already installed. The hook runs on startup and resume, not after compaction or `/clear`; its log is `/tmp/twototango-setup.log`, and on failure the hook prints the log's last lines into the session.
+- **Bank pipeline languages.** TypeScript, except the lexicon import, which is Python: `wordfreq`, `lemminflect` and the NLTK WordNet reader exist only as Python packages. The import writes plain lexicon files that the TypeScript stages read.
 - **The GM's Mac**: the Swift plugin, Xcode, signing, TestFlight and device tests, via Claude Desktop or `claude remote-control`.
 
 ### API key

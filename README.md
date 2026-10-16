@@ -5,7 +5,7 @@ A same-room vocabulary game for teenagers, run by a parent as game master. See [
 ## Development
 
 ```sh
-npm install
+scripts/setup.sh  # npm packages, Python venv, lexicons in data/
 npm test          # vitest
 npm run typecheck # tsc -b
 ```
@@ -15,6 +15,8 @@ npm run typecheck # tsc -b
 | `packages/core` | Item schema, answer boxes, given letters, bank checks |
 | `content` | Item banks |
 | `docs` | Spec and implementation plan |
+| `tools/bank` | Bank generation pipeline |
+| `scripts` | Environment setup |
 
 ## Licenses
 
