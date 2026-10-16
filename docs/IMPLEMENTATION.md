@@ -72,6 +72,16 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 - `viewFor(state, items, viewer)` builds what each phone is sent. Player and spectator views carry no answer, lemma, alternates or gloss; letters reach them only in the cells, once revealed.
 - Item count options run from p to 30 in steps of p.
 
+### Session and dev host
+
+- The GM page runs the game: `Session` (`packages/core/src/session.ts`) holds the event log, maps each phone's token to a player or spectator, and sends every connection its view after each change. The host underneath only moves messages: the Swift plugin on the iPhone, `apps/devhost` on a desktop. Neither holds game state.
+- Phones keep a random token in local storage and send it on every connection, so a reload or a locked phone comes back in the same seat without asking for the name. A player on a new phone takes their seat back by typing the same name, but only while the old seat is marked away.
+- The join code in the QR link is checked on join and watch. A wrong code, a taken name and a new name after start each get their own error.
+- A player whose phone is gone for 20 seconds is marked away (`leave`). An item that comes up meanwhile goes to the next player in turn.
+- The dev host takes one GM page at a time. When it goes away, every phone is disconnected and retries each second until the GM page is back, as when the GM app is killed on the iPhone.
+- The GM page saves the session snapshot (log, code, tokens) and the play history to local storage in dev; the iOS shell will use the plugin's file store. A snapshot that no longer replays (for example, items removed from the build) is discarded with a notice.
+- A hand-written dev bank (30 English and 15 French C1 items, `packages/core/fixtures/dev-bank.ts`) stands in until the real banks exist. It is bundled only in builds made with `VITE_DEV_BANK=1` (`npm run dev`, `npm run e2e`), and only for languages and levels with no real bank.
+
 ## Bank generation
 
 Budget target: tens of dollars of API spend, not hundreds. The expensive checks move into code and human review; cheap models do the bulk.
@@ -123,7 +133,7 @@ Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost
 
 1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(done)*
 2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker. *(done)*
-3. Dev host and client UI (GM, player, spectator views), Playwright game tests.
+3. Dev host and client UI (GM, player, spectator views), Playwright game tests. *(done)*
 4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review.
 5. Capacitor shell and Swift plugin, TestFlight build.
 6. B2 and C2 banks.

@@ -8,3 +8,5 @@ export * from "./random.ts";
 export * from "./picker.ts";
 export * from "./engine.ts";
 export * from "./view.ts";
+export * from "./protocol.ts";
+export * from "./session.ts";

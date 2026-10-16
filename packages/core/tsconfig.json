@@ -5,5 +5,9 @@
     "rootDir": ".",
     "types": []
   },
-  "include": ["src", "test"]
+  "include": [
+    "src",
+    "test",
+    "fixtures"
+  ]
 }

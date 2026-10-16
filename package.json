@@ -4,13 +4,18 @@
   "license": "AGPL-3.0-only",
   "type": "module",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "test": "vitest run",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b && npm run check -w @twototango/client",
+    "build": "npm run build -w @twototango/client",
+    "dev": "VITE_DEV_BANK=1 npm run build && node apps/devhost/src/main.ts",
+    "e2e": "VITE_DEV_BANK=1 npm run build && playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "1.56.1",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   }
