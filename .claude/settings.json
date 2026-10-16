@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ \"$CLAUDE_CODE_REMOTE\" = \"true\" ] && cd \"$CLAUDE_PROJECT_DIR\" && npm ci --no-audit --no-fund >/dev/null 2>&1 || true"
+            "command": "[ \"$CLAUDE_CODE_REMOTE\" = \"true\" ] || exit 0; cd \"$CLAUDE_PROJECT_DIR\" && scripts/setup.sh > /tmp/twototango-setup.log 2>&1 || echo \"scripts/setup.sh failed, see /tmp/twototango-setup.log\""
           }
         ]
       }

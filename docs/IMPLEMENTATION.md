@@ -85,9 +85,10 @@ C1 for both languages first (the sample sheets' level), then B2 and C2, so play 
 ## Environments
 
 - **Cloud sessions** (claude.ai/code): engine, UI, dev host, Playwright tests, bank pipeline. The environment needs:
-  - Network: "Allow package managers" plus `openrouter.ai` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: `lexique.org`, documentation sites.
-  - Secret: `OPENROUTER_API_KEY`.
-  - Dependencies install through the repo's SessionStart hook (`.claude/settings.json`).
+  - Network: "Allow package managers" plus `openrouter.ai`, `lexique.org` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: documentation sites. `www.lexique.org` stays blocked; the download link on the bare domain is enough.
+  - OpenRouter: the proxy injects the key on requests to `openrouter.ai`, so no `OPENROUTER_API_KEY` is set in the session. The key's spending cap is set on OpenRouter.
+  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0), each pinned by checksum. It skips anything already installed; its log is `/tmp/twototango-setup.log`.
+- **Bank pipeline languages.** TypeScript, except the lexicon import, which is Python: `wordfreq`, `lemminflect` and the NLTK WordNet reader exist only as Python packages. The import writes plain lexicon files that the TypeScript stages read.
 - **The GM's Mac**: the Swift plugin, Xcode, signing, TestFlight and device tests, via Claude Desktop or `claude remote-control`.
 
 ## Roadmap
