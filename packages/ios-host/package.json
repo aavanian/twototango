@@ -1,0 +1,15 @@
+{
+  "name": "@twototango/ios-host",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "Swift plugin for the GM app: phone listeners, speech, keep-awake, file store. The TypeScript side is apps/client/src/host/native.ts.",
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    }
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^8.5.0"
+  }
+}

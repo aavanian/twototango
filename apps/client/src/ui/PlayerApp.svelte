@@ -2,6 +2,7 @@
 <script lang="ts">
   import type { ErrorCode, HostMessage, Role, View } from "@twototango/core";
   import { onMount } from "svelte";
+  import { phoneSocketUrl } from "../host/socket-url.ts";
   import { t } from "../i18n.ts";
   import Banner from "./Banner.svelte";
   import ItemCard from "./ItemCard.svelte";
@@ -51,7 +52,7 @@
   }
 
   function connect() {
-    const socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws`);
+    const socket = new WebSocket(phoneSocketUrl());
     ws = socket;
     socket.onopen = () => send({ t: "hello", token });
     socket.onmessage = (e) => {

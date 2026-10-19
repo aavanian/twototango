@@ -27,8 +27,9 @@ Settled on 16 Oct 2026.
 
 ### Connection: the GM phone hosts, players join in a browser
 
-- The GM app runs an HTTP and WebSocket server on the local network and advertises itself over Bonjour (`<name>.local`).
-- The lobby shows a QR code for `http://<name>.local:<port>/?code=XXXX` and the same short address in text for anyone who prefers to type it.
+- The GM app runs an HTTP server (port 5170, the web page) and a WebSocket server (port 5171, the game messages) on the local network. Network.framework handles the WebSocket protocol on a listener of its own, hence two ports; the page learns the second one from a meta tag the app adds to `index.html`.
+- The lobby shows a QR code for `http://<ip>:5170/?code=XXXX` and the same address in text for anyone who prefers to type it. Revised 19 Oct 2026: an IP address rather than `<name>.local`, since iOS no longer exposes a stable device name to apps and an IP needs no mDNS. Wi-Fi first, else the personal hotspot (172.20.10.x); the QR updates when the network changes. No Bonjour advertising, which nothing used.
+- Fixed ports, so a phone that lost the GM retries the same address and finds it again.
 - Scanning opens the link in the phone's default browser. Any iOS browser works: Safari, Orion, Chrome. Players and spectators install nothing.
 - To test on the players' phones: some browsers ask once for local-network permission, and an "HTTPS only" setting may refuse the page. If that bites, players install the same app (TestFlight) and join through it; the player screen is the same web page either way.
 - If the home Wi-Fi isolates clients (common on guest networks), the GM turns on their personal hotspot.
@@ -44,7 +45,7 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 | Packages | npm workspaces. `packages/core` (schema, boxes, engine), later `apps/client` (UI), `apps/ios` (Capacitor shell), `tools/bank` (pipeline). |
 | UI | Svelte 5 + Vite. The GM phone serves the bundle, so small matters. |
 | Engine | Pure state machine with an event log. Undo, resume-from-disk and replay come from the log. |
-| GM shell | Capacitor, with a small Swift plugin: Network.framework listener (HTTP + WebSocket), Bonjour, `AVSpeechSynthesizer` warmed at game start, keep-awake, file store for history and game snapshots. |
+| GM shell | Capacitor 8 (Swift Package Manager), `apps/ios`, with a small Swift plugin, `packages/ios-host`: Network.framework listeners (HTTP + WebSocket), `AVSpeechSynthesizer` warmed at game start, keep-awake, file store for history and game snapshots. Build steps: [IOS.md](IOS.md). |
 | Dev host | A Node implementation of the same transport interface, so whole games run in desktop browsers without an iPhone. |
 | Tests | Vitest for the engine and box logic. Playwright with one browser context per phone, playing full games against the dev host. |
 | Content | `content/<lang>/<level>.json`, validated by the zod schema in `packages/core`. Stable item ids (play history depends on them). |
@@ -80,7 +81,7 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 - The join code in the QR link is checked on join and watch. A wrong code, a taken name and a new name after start each get their own error.
 - A player whose phone is gone for 20 seconds is marked away (`leave`). An item that comes up meanwhile goes to the next player in turn.
 - The dev host takes one GM page at a time. When it goes away, every phone is disconnected and retries each second until the GM page is back, as when the GM app is killed on the iPhone.
-- The GM page saves the session snapshot (log, code, tokens) and the play history to local storage in dev; the iOS shell will use the plugin's file store. A snapshot that no longer replays (for example, items removed from the build) is discarded with a notice.
+- The GM page saves the session snapshot (log, code, tokens) and the play history to local storage in dev, and to JSON files in Application Support in the iOS app (read once at launch, written atomically after every change). A snapshot that no longer replays (for example, items removed from the build) is discarded with a notice.
 - A hand-written dev bank (30 English and 15 French C1 items, `packages/core/fixtures/dev-bank.ts`) stands in until the real banks exist. It is bundled only in builds made with `VITE_DEV_BANK=1` (`npm run dev`, `npm run e2e`), and only for languages and levels with no real bank.
 
 ## Bank generation
@@ -198,6 +199,7 @@ Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost
 1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(done)*
 2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker. *(done)*
 3. Dev host and client UI (GM, player, spectator views), Playwright game tests. *(done)*
-4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review. *(started: everything up to the pilot)*
-5. Capacitor shell and Swift plugin, TestFlight build.
-6. B2 and C2 banks.
+4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review. *(done)*
+5. Capacitor shell and Swift plugin, TestFlight build. *(code written; building and testing on the iPhone needs the GM's Mac: [IOS.md](IOS.md))*
+6. English B2 and C2 banks. *(done; French waits on the UX test)*
+7. UX test with real players, then the French decision.

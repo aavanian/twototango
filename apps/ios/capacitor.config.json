@@ -1,0 +1,8 @@
+{
+  "appId": "app.twototango.gm",
+  "appName": "Two to Tango",
+  "webDir": "../client/dist",
+  "ios": {
+    "contentInset": "always"
+  }
+}

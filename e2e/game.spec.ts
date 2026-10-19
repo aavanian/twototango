@@ -206,3 +206,18 @@ test("a dropped player's item goes to the next player; they take back the rest o
   await gm.page.getByRole("button", { name: "Next" }).click();
   await expect(back.page.getByTestId("banner")).toContainText("Your turn");
 });
+
+test("players' phones load only the player page, never the GM code or the banks", async ({ browser }) => {
+  const { joinUrl } = await openLobby(browser, 2, 2);
+  const context = await browser.newContext();
+  open.push(context);
+  const page = await context.newPage();
+  const scripts: string[] = [];
+  page.on("request", (r) => {
+    if (r.resourceType() === "script") scripts.push(new URL(r.url()).pathname);
+  });
+  await page.goto(joinUrl);
+  await expect(page.locator("#name")).toBeVisible();
+  expect(scripts.length).toBeGreaterThan(0);
+  expect(scripts.filter((s) => /GmApp|native|dev-bank/.test(s))).toEqual([]);
+});

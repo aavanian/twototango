@@ -9,6 +9,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings"
   },
   "dependencies": {
+    "@capacitor/core": "^8.5.3",
     "@twototango/core": "*",
     "qrcode": "^1.5.4"
   },

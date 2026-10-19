@@ -60,7 +60,8 @@ export const localStore: GameStore = {
   },
 };
 
-const VOICE_LANG: Record<Lang, string> = { en: "en-US", fr: "fr-FR" };
+/** Voices for spoken answers: the banks use British English. */
+export const VOICE_LANG: Record<Lang, string> = { en: "en-GB", fr: "fr-FR" };
 
 export const webSpeaker: Speaker = {
   warm(lang) {

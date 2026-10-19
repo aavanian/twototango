@@ -15,17 +15,16 @@
   import QRCode from "qrcode";
   import { onMount } from "svelte";
   import { loadItems } from "../banks.ts";
-  import { localStore, webKeepAwake, webSpeaker } from "../host/services.ts";
-  import { RelayTransport } from "../host/transport.ts";
+  import type { Platform } from "../host/platform.ts";
   import { t } from "../i18n.ts";
   import Banner from "./Banner.svelte";
   import ItemCard from "./ItemCard.svelte";
   import Ranking from "./Ranking.svelte";
 
-  const store = localStore;
-  const speaker = webSpeaker;
-  const keepAwake = webKeepAwake();
-  const transport = new RelayTransport();
+  const { platform }: { platform: Platform } = $props();
+  // The platform is chosen once at launch and never changes.
+  // svelte-ignore state_referenced_locally
+  const { store, speaker, keepAwake, transport } = platform;
 
   let session = $state<Session | null>(null);
   let view = $state<View | null>(null);
