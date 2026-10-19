@@ -7,6 +7,8 @@
  *   npm run bank -- lexicon                 rebuild data/lex from the lexicons (Python)
  *   npm run bank -- select --lang en        candidate answers → tools/bank/work/en/candidates.json
  *   npm run bank -- check <items.json>      deterministic checks; places given letters where missing
+ *   npm run bank -- finalize <drafts.json> --lang en --level C1 --out <bank.json> [--start 1]
+ *                                           drafts → items (ids, given letters), then the checks
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
 
@@ -14,9 +16,10 @@ import { spawnSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { Bank, Item, LANGS, type Lang } from "@twototango/core";
+import { Bank, Item, LANGS, LEVELS, type Lang } from "@twototango/core";
 import { z } from "zod";
 import { checkDrafts } from "./checks.ts";
+import { finalize, parseDraftBatch } from "./draft.ts";
 import { Lexicon, profanity, REPO } from "./lexicon.ts";
 import { OpenRouter } from "./openrouter.ts";
 import { choosePlacement } from "./placement.ts";
@@ -93,6 +96,38 @@ function check(args: string[]): void {
   if (failed.length > 0 || unplaced.length > 0) process.exitCode = 1;
 }
 
+function finalizeDrafts(args: string[]): void {
+  const { values, positionals } = parseArgs({
+    args,
+    allowPositionals: true,
+    options: { lang: { type: "string" }, level: { type: "string" }, out: { type: "string" }, start: { type: "string" } },
+  });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const out = resolve(values.out ?? "");
+  const raw = JSON.parse(readFileSync(resolve(positionals[0] ?? ""), "utf8")) as { items: unknown };
+  const drafts = parseDraftBatch({ items: raw.items });
+  const lex = Lexicon.load(lang);
+  const start = Number(values.start ?? 1);
+  const results = drafts.map((d, i) => finalize(d, `${lang}-${level.toLowerCase()}-${String(start + i).padStart(4, "0")}`, lang, level, lex));
+  const items = results.flatMap((r) => (r.item ? [r.item] : []));
+  mkdirSync(dirname(out), { recursive: true });
+  writeFileSync(out, JSON.stringify(Bank.parse({ lang, level, items }), null, 2) + "\n");
+  const reports = checkDrafts(items, lex, { profanity: profanity(lang) });
+  const notes = Object.fromEntries(results.map((r, i) => [r.item?.id ?? `draft-${i + 1}:${r.draft.lemma}`, r.notes]));
+  const reportPath = out.replace(/\.json$/u, "") + ".report.json";
+  writeFileSync(reportPath, JSON.stringify({ notes, reports }, null, 2) + "\n");
+
+  const failed = reports.filter((r) => r.issues.some((i) => i.severity === "fail"));
+  const flagged = reports.filter((r) => !failed.includes(r) && r.issues.length > 0);
+  const dropped = results.filter((r) => r.item === null);
+  console.log(`${drafts.length} drafts: ${items.length} items (${dropped.length} dropped), ${failed.length} fail, ${flagged.length} flagged → ${out}`);
+  for (const r of dropped) console.log(`  dropped ${r.draft.lemma}: ${r.notes.join("; ")}`);
+  for (const r of results) if (r.item && r.notes.length > 0) console.log(`  ${r.item.id} ${r.item.lemma}: ${r.notes.join("; ")}`);
+  for (const r of [...failed, ...flagged]) for (const i of r.issues) console.log(`  ${i.itemId} ${i.severity} ${i.code}: ${i.message}`);
+  if (failed.length > 0 || dropped.length > 0) process.exitCode = 1;
+}
+
 async function key(): Promise<void> {
   const info = await new OpenRouter().keyInfo();
   console.log(`limit $${info.limit ?? "none"}, used $${info.usage.toFixed(4)}, remaining $${info.limitRemaining ?? "n/a"}`);
@@ -109,10 +144,13 @@ switch (command) {
   case "check":
     check(rest);
     break;
+  case "finalize":
+    finalizeDrafts(rest);
+    break;
   case "key":
     await key();
     break;
   default:
-    console.log("usage: npm run bank -- <lexicon | select --lang en|fr [--target n] [--seed n] | check <items.json> [--write] | key>");
+    console.log("usage: npm run bank -- <lexicon | select --lang en|fr [--target n] [--seed n] | check <items.json> [--write] | finalize <drafts.json> --lang --level --out [--start] | key>");
     process.exitCode = command === undefined ? 0 : 1;
 }

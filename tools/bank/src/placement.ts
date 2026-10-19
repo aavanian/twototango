@@ -10,12 +10,15 @@ import { key, shapeOf, type Lexicon } from "./lexicon.ts";
  * C2 the least telling that still disambiguate, C1 the middle.
  */
 
-/** Words below this zipf don't count as plausible answers when measuring informativeness. */
+/**
+ * Informativeness counts the words players might weigh: same part of speech as the
+ * answer, and not rarer than this zipf.
+ */
 export const PLAUSIBLE_ZIPF = 1.5;
 
 export interface PlacementChoice {
   readonly given: number[];
-  /** Plausible lexicon words, other than the answer, that fit the chosen pattern. */
+  /** Plausible lexicon words of the answer's part of speech, other than the answer, that fit the chosen pattern. */
   readonly fits: string[];
 }
 
@@ -57,7 +60,12 @@ function plausibleFits(item: Item, cells: readonly Cell[], given: readonly numbe
   const answer = key(item.answer);
   return lex
     .formsWithShape(shapeOf(cells))
-    .filter((f) => f !== answer && lex.zipf(f) >= PLAUSIBLE_ZIPF && fitsPattern(f, cells, given, item.lang))
+    .filter(
+      (f) =>
+        f !== answer &&
+        lex.entries(f).some((e) => e.pos === item.pos && e.zipf >= PLAUSIBLE_ZIPF) &&
+        fitsPattern(f, cells, given, item.lang),
+    )
     .sort((a, b) => lex.zipf(b) - lex.zipf(a));
 }
 

@@ -108,6 +108,17 @@ Built 16 Oct 2026; nothing here has spent API credit.
 - **Given-letter placement**: for items without given letters, the check places them. Usable placements rule out every unaccepted synonym form of the answer's shape; among them B2 takes the most telling letters (fewest plausible words fit), C2 the least telling, C1 the middle.
 - **OpenRouter client** (`tools/bank/src/openrouter.ts`): bearer header only when `OPENROUTER_API_KEY` is set, a 401 explained, structured JSON output, cost per call, a spend ledger per stage and model, and a budget guard that reads `/api/v1/key` before each batch. Node's built-in fetch ignores `HTTPS_PROXY`, so `npm run bank` sets `NODE_USE_ENV_PROXY=1`. `npm run bank -- key` reads the limit for free.
 
+### Pilot (English C1)
+
+Started 19 Oct 2026, in a Claude Code session; no API spend.
+
+- **Words**: 50 from the C1 candidates, screened by hand in the session (20 nouns, 18 verbs, 12 adjectives; 10 definitions). Dropped from the pool: junk the screen must catch (cadmium, knickers), words with a UK/US spelling split (fervour, odour) until the convention is set, and words already in the dev bank.
+- **Prompt**: `tools/bank/prompts/en/draft.md` (en-draft v1). The same text goes to the bake-off models. The model writes the sentence or definition, the answer form, acceptable synonyms and near misses; it never chooses ids or given letters.
+- **Drafts to items**: `npm run bank -- finalize` assigns ids and places the given letters. Placement first tries to rule out every synonym, acceptable ones included (the bank rule); only when no placement can, the acceptable words that still fit become alternates. All 50 placed without alternates.
+- **Files**: `content/pilot/en-c1.drafts.json` (drafts), `en-c1.json` (items), `en-c1.report.json` (check results). The app only loads `content/<lang>/<level>.json`, so pilot files never ship by accident.
+- **Ratings**: Grist doc "Two to Tango – pilot ratings (EN C1)", table Pilot: verdict (good / fix / reject), difficulty (too easy / right / too hard), problem tags and a comment per item. The ratings become the fixed test set for the bake-off.
+- **Found while writing**: one draft had a span that doesn't take the answer's preposition ("hinted to" for "alluded to"). The deterministic checks can't see this; the blind solve or a grammar pass has to.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
