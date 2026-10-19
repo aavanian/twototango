@@ -12,6 +12,11 @@
  *   npm run bank -- bakeoff --models a,b --solver s --words <drafts.json> --lang en --level C1
  *                                           draft the same words with each model, blind-solve with one solver
  *   npm run bank -- solve <bank.json> --solver s   blind-solve existing items (e.g. to calibrate the solver)
+ *   npm run bank -- run --lang en --level C1 [--target 600] [--keep <bank.json>]
+ *                                           screen, draft, check, solve, repair; writes content/staging
+ *   npm run bank -- review-rows --lang en --level C1   Grist rows for the review list (stdout, JSON)
+ *   npm run bank -- freeze --lang en --level C1 --verdicts <verdicts.json> [--keep <bank.json>]
+ *                                           apply the GM's review and write content/<lang>/<level>.json
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
 
@@ -26,6 +31,8 @@ import { finalize, parseDraftBatch } from "./draft.ts";
 import { Lexicon, profanity, REPO } from "./lexicon.ts";
 import { BudgetGuard, OpenRouter, SpendLedger } from "./openrouter.ts";
 import { blindSolve, runBakeoff, type Context, type Word } from "./bakeoff.ts";
+import { freeze, runLevel } from "./run.ts";
+import type { Selection } from "./select.ts";
 import { choosePlacement } from "./placement.ts";
 import { selectCandidates } from "./select.ts";
 
@@ -175,6 +182,65 @@ async function solve(args: string[]): Promise<void> {
   console.log(`spend $${ctx.ledger.total().toFixed(4)}`);
 }
 
+/** The bulk run's models, chosen in the bake-off (19 Oct 2026). */
+const MODELS = { drafter: "z-ai/glm-5.3-flash", solver: "deepseek/deepseek-v4.1-flash", repairer: "deepseek/deepseek-v4-pro" };
+
+async function run(args: string[]): Promise<void> {
+  const { values } = parseArgs({ args, options: { lang: { type: "string" }, level: { type: "string" }, target: { type: "string" }, keep: { type: "string" } } });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const selection = JSON.parse(readFileSync(resolve(WORK, lang, "candidates.json"), "utf8")) as Selection;
+  const keep = values.keep ? Bank.parse(JSON.parse(readFileSync(resolve(values.keep), "utf8"))).items : [];
+  const ctx = context(lang, level);
+  const summary = await runLevel(
+    ctx,
+    new BudgetGuard(ctx.client),
+    selection.candidates,
+    { target: Number(values.target ?? 600), ...MODELS, keep, reviewShare: 0.1, seed: 1 },
+    (l) => console.log(l),
+  );
+  console.log(JSON.stringify(summary, null, 2));
+  for (const r of ctx.ledger.rows()) console.log(`spend ${r.stage} ${r.model}: $${r.cost} (${r.calls} calls, ${r.items} items)`);
+}
+
+/** Rows for the Grist review table: what players see, plus why the item is up for review. */
+function reviewRows(args: string[]): void {
+  const { values } = parseArgs({ args, options: { lang: { type: "string" }, level: { type: "string" } } });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const t = `${lang}-${level.toLowerCase()}`;
+  const bank = Bank.parse(JSON.parse(readFileSync(resolve(REPO, "content/staging", `${t}.json`), "utf8")));
+  const review = JSON.parse(readFileSync(resolve(REPO, "content/staging", `${t}.review.json`), "utf8")) as { itemId: string; why: string }[];
+  const byId = new Map(bank.items.map((i) => [i.id, i]));
+  const rows = review.map(({ itemId, why }) => {
+    const item = byId.get(itemId)!;
+    const p = item.prompt;
+    const shown = p.kind === "sentence" ? `${p.before}${p.determiner ? `${p.determiner} ` : ""}**${p.span.join("/")}**${p.after}` : `*${p.definition}*`;
+    const letters = [...item.answer].map((c, i) => (item.given.includes(i) ? c : "_")).join(" ");
+    return {
+      Item: itemId,
+      POS: item.pos,
+      Shown: shown,
+      Boxes: item.fixedWords.length > 0 ? `${letters}  + ${item.fixedWords.join(" ")}` : letters,
+      Answer: item.answer,
+      Alternates: item.alternates.join(", "),
+      Why: why === "random sample" ? "Random sample" : `Flagged: ${why}`,
+    };
+  });
+  console.log(JSON.stringify(rows));
+}
+
+function freezeCommand(args: string[]): void {
+  const { values } = parseArgs({ args, options: { lang: { type: "string" }, level: { type: "string" }, verdicts: { type: "string" }, keep: { type: "string" } } });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const verdicts = z.record(z.string(), z.enum(["good", "fix", "reject"])).parse(JSON.parse(readFileSync(resolve(values.verdicts ?? ""), "utf8")));
+  const pilot = values.keep ? new Set(Bank.parse(JSON.parse(readFileSync(resolve(values.keep), "utf8"))).items.map((i) => i.id)) : new Set<string>();
+  const { bank, removed, sampleRejectRate } = freeze(lang, level, new Map(Object.entries(verdicts)), pilot);
+  console.log(`${bank.items.length} items frozen to content/${lang}/${level.toLowerCase()}.json; removed ${removed.length}; random-sample reject rate ${(sampleRejectRate * 100).toFixed(1)}%`);
+  if (sampleRejectRate > 0.05) console.log("Above 5%: fix the prompts and rerun rather than patching items.");
+}
+
 async function key(): Promise<void> {
   const info = await new OpenRouter().keyInfo();
   console.log(`limit $${info.limit ?? "none"}, used $${info.usage.toFixed(4)}, remaining $${info.limitRemaining ?? "n/a"}`);
@@ -199,6 +265,15 @@ switch (command) {
     break;
   case "solve":
     await solve(rest);
+    break;
+  case "run":
+    await run(rest);
+    break;
+  case "review-rows":
+    reviewRows(rest);
+    break;
+  case "freeze":
+    freezeCommand(rest);
     break;
   case "key":
     await key();

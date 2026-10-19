@@ -20,7 +20,7 @@ export interface Word {
   readonly kind: "sentence" | "definition";
 }
 
-export function loadPrompt(lang: Lang, name: "draft" | "solve"): string {
+export function loadPrompt(lang: Lang, name: "draft" | "solve" | "screen" | "repair"): string {
   const text = readFileSync(resolve(REPO, `tools/bank/prompts/${lang}/${name}.md`), "utf8");
   return text.slice(text.indexOf("\n---\n") + 5).trim();
 }
@@ -28,7 +28,7 @@ export function loadPrompt(lang: Lang, name: "draft" | "solve"): string {
 export const slug = (model: string) => model.replace(/[^a-z0-9.-]+/giu, "_");
 
 /** Little or no reasoning; models that can't turn it off get the lowest effort. */
-async function chatLowReasoning(client: OpenRouter, req: Omit<ChatRequest, "reasoning">): Promise<ChatResult> {
+export async function chatLowReasoning(client: OpenRouter, req: Omit<ChatRequest, "reasoning">): Promise<ChatResult> {
   try {
     return await client.chat({ ...req, reasoning: { enabled: false } });
   } catch (e) {
@@ -37,7 +37,7 @@ async function chatLowReasoning(client: OpenRouter, req: Omit<ChatRequest, "reas
   }
 }
 
-async function withRetry<T>(fn: () => Promise<T>, tries = 6): Promise<T> {
+export async function withRetry<T>(fn: () => Promise<T>, tries = 6): Promise<T> {
   for (let i = 1; ; i++) {
     try {
       return await fn();
@@ -50,7 +50,22 @@ async function withRetry<T>(fn: () => Promise<T>, tries = 6): Promise<T> {
   }
 }
 
-const chunk = <T>(xs: readonly T[], n: number): T[][] => Array.from({ length: Math.ceil(xs.length / n) }, (_, i) => xs.slice(i * n, i * n + n));
+/** Runs tasks with at most `limit` in flight, keeping order. Providers rate-limit bursts. */
+export async function pool<T>(tasks: readonly (() => Promise<T>)[], limit = 6): Promise<T[]> {
+  const out: T[] = new Array(tasks.length);
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(limit, tasks.length) }, async () => {
+      while (next < tasks.length) {
+        const i = next++;
+        out[i] = await tasks[i]!();
+      }
+    }),
+  );
+  return out;
+}
+
+export const chunk = <T>(xs: readonly T[], n: number): T[][] => Array.from({ length: Math.ceil(xs.length / n) }, (_, i) => xs.slice(i * n, i * n + n));
 
 export interface Context {
   readonly client: OpenRouter;
@@ -75,8 +90,8 @@ export async function draftWords(ctx: Context, model: string, words: readonly Wo
   const errors: string[] = [];
   const usage = { cost: 0, completionTokens: 0, reasoningTokens: 0 };
   const batches = chunk(words, ctx.batchSize);
-  const results = await Promise.all(
-    batches.map(async (batch) => {
+  const results = await pool(
+    batches.map((batch) => async () => {
       const user =
         `Level: answers are ${ctx.level}; spans should be easier (B1–B2).\nTarget words (lemma — part of speech — kind):\n` +
         batch.map((w, i) => `${i + 1}. ${w.lemma} — ${w.pos} — ${w.kind}`).join("\n");
@@ -116,8 +131,8 @@ export async function draftWords(ctx: Context, model: string, words: readonly Wo
 export async function blindSolve(ctx: Context, solver: string, items: readonly Item[]): Promise<{ verdicts: SolveVerdict[]; errors: string[] }> {
   const system = loadPrompt(ctx.lang, "solve");
   const errors: string[] = [];
-  const results = await Promise.all(
-    chunk(items, ctx.batchSize).map(async (batch) => {
+  const results = await pool(
+    chunk(items, ctx.batchSize).map((batch) => async () => {
       try {
         const res = await withRetry(() =>
           chatLowReasoning(ctx.client, {
