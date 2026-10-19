@@ -141,7 +141,7 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 
 ### Staging
 
-C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
+Revised 19 Oct 2026: English first, all the way. English C1, then B2 and C2; then the full app and a UX test with real players; only then decide whether French is worth building. The French groundwork already showed more friction (noisy WOLF synonyms, a short C2 pool, Lexique gaps such as *porte-parole*), so it waits on the UX verdict.
 
 ## Environments
 
