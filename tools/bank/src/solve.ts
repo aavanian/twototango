@@ -4,6 +4,7 @@ import { fitsPattern, layoutBoxes, type Item } from "@twototango/core";
 import { z } from "zod";
 import { key, type Lexicon } from "./lexicon.ts";
 import type { PipelineIssue } from "./checks.ts";
+import { britishVariant } from "./spelling.ts";
 
 /**
  * Stage 6, blind solve: a model sees each item without the answer and lists the words
@@ -85,8 +86,10 @@ export function judgeSolve(item: Item, result: SolveResult | undefined, lex: Lex
   const cells = layoutBoxes(item.answer, item.lang);
   const accepted = new Set([item.answer, ...item.alternates].map(key));
   const listed = [...new Set(result.candidates.map(key))];
-  const foundAnswer = listed.includes(key(item.answer));
-  const rivals = listed.filter((w) => !accepted.has(w) && lex.has(w) && fitsPattern(w, cells, item.given, item.lang));
+  const foundAnswer = listed.includes(key(item.answer)) || listed.some((w) => item.lang === "en" && britishVariant(w, lex) === key(item.answer));
+  // The American spelling of the answer is the same word, not a rival (itemize for itemise).
+  const sameWord = (w: string) => item.lang === "en" && britishVariant(w, lex) === key(item.answer);
+  const rivals = listed.filter((w) => !accepted.has(w) && !sameWord(w) && lex.has(w) && fitsPattern(w, cells, item.given, item.lang));
   if (!foundAnswer) add("solve-missed", "flag", `solver didn't find "${item.answer}" (said: ${listed.join(", ") || "nothing"})`);
   if (rivals.length > 0) add("solve-rival", "fail", `solver found other words that fit: ${rivals.join(", ")}`);
   if (result.clueIssue) add("clue-issue", "fail", result.clueIssue);

@@ -50,3 +50,18 @@ describe("judgeSolve", () => {
     expect(v.issues.map((i) => i.code)).toEqual(["clue-issue"]);
   });
 });
+
+describe("British -ise answers", () => {
+  const lexIze = new Lexicon("en", [{ form: "itemize", lemma: "itemize", pos: "verb", zipf: 2.5, lemmaZipf: 2.5, gender: "", number: "", root: "item" }], []);
+  const itemise = Item.parse({ ...item, answer: "itemise", lemma: "itemise", given: [0, 4], fixedWords: [], prompt: { kind: "definition", definition: "to list one by one" } });
+
+  it("knows an -ise form through its -ize spelling", () => {
+    expect(lexIze.has("itemise")).toBe(true);
+    expect(lexIze.entries("itemise")[0]).toMatchObject({ form: "itemise", lemma: "itemise", pos: "verb" });
+  });
+
+  it("does not count the American spelling of the answer as a rival", () => {
+    const v = judgeSolve(itemise, { id: itemise.id, candidates: ["itemize"], clueIssue: null }, lexIze);
+    expect(v).toMatchObject({ foundAnswer: true, rivals: [], issues: [] });
+  });
+});

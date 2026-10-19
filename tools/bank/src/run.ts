@@ -309,8 +309,14 @@ function draftOf(item: Item): Draft {
  * Re-checks a bank that hasn't shipped yet against the current rules and repairs what
  * now fails, in place: same word, same id. Items that still fail are dropped.
  */
-export async function repairBank(ctx: Context, guard: BudgetGuard, bank: Bank, solver: string, repairer: string, log: (l: string) => void): Promise<{ bank: Bank; fixed: string[]; dropped: string[] }> {
+export async function repairBank(ctx: Context, guard: BudgetGuard, bank: Bank, solver: string, repairer: string, log: (l: string) => void, withSolver = false): Promise<{ bank: Bank; fixed: string[]; dropped: string[] }> {
   const reports = checkDrafts(bank.items, ctx.lex, { profanity: ctx.profanity });
+  if (withSolver) {
+    // Re-read every item with the current solver prompt too.
+    await guard.ensure(bank.items.length * 0.0001);
+    const { verdicts } = await blindSolve(ctx, solver, bank.items);
+    for (const v of verdicts) reports.find((r) => r.itemId === v.itemId)?.issues.push(...v.issues);
+  }
   const failing = bank.items.filter((i) => reports.find((r) => r.itemId === i.id)?.issues.some((x) => x.severity === "fail"));
   log(`${failing.length} items fail the current checks`);
   if (failing.length === 0) return { bank, fixed: [], dropped: [] };

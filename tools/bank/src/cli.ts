@@ -17,7 +17,7 @@
  *   npm run bank -- review-rows --lang en --level C1   Grist rows for the review list (stdout, JSON)
  *   npm run bank -- freeze --lang en --level C1 --verdicts <verdicts.json> [--keep <bank.json>]
  *                                           apply the GM's review and write content/<lang>/<level>.json
- *   npm run bank -- fix <bank.json>         repair, in place, unshipped items that fail the current checks
+ *   npm run bank -- fix <bank.json> [--solve]   repair, in place, unshipped items failing the checks (and solver)
  *   npm run bank -- topup --lang en --level C2   repair, re-screen and refill an unshipped staging bank
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
@@ -245,11 +245,11 @@ function freezeCommand(args: string[]): void {
 }
 
 async function fix(args: string[]): Promise<void> {
-  const { positionals } = parseArgs({ args, allowPositionals: true, options: {} });
+  const { values, positionals } = parseArgs({ args, allowPositionals: true, options: { solve: { type: "boolean" } } });
   const path = resolve(positionals[0] ?? "");
   const bank = Bank.parse(JSON.parse(readFileSync(path, "utf8")));
   const ctx = context(bank.lang, bank.level);
-  const result = await repairBank(ctx, new BudgetGuard(ctx.client), bank, MODELS.solver, MODELS.repairer, (l) => console.log(l));
+  const result = await repairBank(ctx, new BudgetGuard(ctx.client), bank, MODELS.solver, MODELS.repairer, (l) => console.log(l), values.solve ?? false);
   writeFileSync(path, JSON.stringify(result.bank, null, 2) + "\n");
   console.log(`fixed ${result.fixed.length}, dropped ${result.dropped.length}; ${result.bank.items.length} items; spend $${ctx.ledger.total().toFixed(4)}`);
 }
