@@ -123,7 +123,7 @@ describe("given-letter placement", () => {
   it("gives the most telling letters at B2 and the least at C2", () => {
     const b2 = choosePlacement({ ...adorned, level: "B2" }, en).choice!;
     const c2 = choosePlacement({ ...adorned, level: "C2" }, en).choice!;
-    expect(b2.fits.length).toBeLessThanOrEqual(c2.fits.length);
+    expect(b2.patternMatches.length).toBeLessThanOrEqual(c2.patternMatches.length);
   });
 });
 
@@ -186,5 +186,73 @@ describe("checkDraft", () => {
     expect(similarity("They decorated the hall with garlands.", "They decorated the big hall with garlands.")).toBeGreaterThan(0.6);
     const twin = { ...adorned, id: "en-c1-0002", prompt: { ...adorned.prompt, after: " the big hall with garlands." } } as Item;
     expect(nearDuplicates([adorned, twin]).map((i) => i.itemId)).toEqual(["en-c1-0002"]);
+  });
+});
+
+describe("British spelling", () => {
+  const sp = lexicon("en", [
+    ["colour", "colour", "noun", 4.5],
+    ["color", "color", "noun", 4.6],
+    ["organise", "organise", "verb", 4.0],
+    ["organize", "organize", "verb", 4.2],
+    ["motor", "motor", "noun", 4.0],
+    ["colored", "color", "verb", 3.5],
+    ["coloured", "colour", "verb", 3.5],
+    ["scoring", "score", "verb", 4.0],
+    ["scouring", "scour", "verb", 2.5],
+  ]);
+
+  it("maps American forms to British ones the lexicon knows", async () => {
+    const { britishVariant } = await import("../src/spelling.ts");
+    expect(britishVariant("color", sp)).toBe("colour");
+    expect(britishVariant("organize", sp)).toBe("organise");
+    expect(britishVariant("motor", sp)).toBeNull();
+    expect(britishVariant("colour", sp)).toBeNull();
+    expect(britishVariant("colored", sp)).toBe("coloured");
+    expect(britishVariant("scoring", sp)).toBeNull();
+    for (const w of ["timber", "filed", "carer", "prized", "capsize"]) expect(britishVariant(w, sp)).toBeNull();
+    expect(britishVariant("itemize", sp)).toBe("itemise");
+    expect(britishVariant("draftsman", sp)).toBe("draughtsman");
+  });
+
+  it("fails an English item with an American answer", () => {
+    const item = Item.parse({ ...adorned, id: "en-c1-0003", pos: "verb", answer: "organize", lemma: "organize", given: [0, 4], alternates: [], fixedWords: [], prompt: { kind: "definition", definition: "to arrange things" } });
+    const issues = checkDraft(item, sp, opts).issues;
+    expect(issues.find((i) => i.code === "us-spelling")).toMatchObject({ severity: "fail" });
+  });
+});
+
+describe("fixed words", () => {
+  it("fails a fixed word that the sentence doesn't contain", () => {
+    const item = { ...adorned, prompt: { ...adorned.prompt, after: " the hall for the party." } } as Item;
+    expect(checkDraft(item, en, opts).issues.map((i) => i.code)).toContain("fixed-word-missing");
+  });
+});
+
+describe("C1 review lessons", () => {
+  const lex2 = lexicon("en", [
+    ["hunt", "hunt", "verb", 4.0],
+    ["hunter", "hunter", "noun", 3.8],
+    ["huntsman", "huntsman", "noun", 2.8],
+  ]);
+
+  it("relates words built on a shared common word", () => {
+    expect(relatedWords(lex2, "hunter", "huntsman")).toBe(true);
+  });
+
+  it("fails long spans and phrase alternatives", () => {
+    const long = { ...adorned, prompt: { ...adorned.prompt, span: ["made pretty and nice"] } } as Item;
+    expect(checkDraft({ ...long, prompt: { ...adorned.prompt, span: ["made it look pretty and nice"] } } as Item, en, opts).issues.map((i) => i.code)).toContain("span-too-long");
+    const alt = { ...adorned, prompt: { ...adorned.prompt, span: ["decorated", "made pretty"] } } as Item;
+    expect(checkDraft(alt, en, opts).issues.map((i) => i.code)).toContain("span-alternative-long");
+  });
+});
+
+describe("C2 defects", () => {
+  it("fails missing spaces around the span and a(n) placeholders", () => {
+    const glued = { ...adorned, prompt: { ...adorned.prompt, before: "They" } } as Item;
+    expect(checkDraft(glued, en, opts).issues.map((i) => i.code)).toContain("spacing");
+    const placeholder = { ...adorned, prompt: { ...adorned.prompt, before: "They gave it a(n) " } } as Item;
+    expect(checkDraft(placeholder, en, opts).issues.map((i) => i.code)).toContain("placeholder");
   });
 });

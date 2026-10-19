@@ -1,0 +1,629 @@
+[
+  {
+    "itemId": "en-c1-0001",
+    "issues": [],
+    "substituted": "The critic's harsh review of the young artist's work was a direct affront to her talent.",
+    "patternMatches": [
+      "affairs",
+      "affects",
+      "alfalfa",
+      "affixes"
+    ]
+  },
+  {
+    "itemId": "en-c1-0002",
+    "issues": [],
+    "substituted": "The suspect had a solid alibi because he was at the cinema during the crime.",
+    "patternMatches": [
+      "plexi"
+    ]
+  },
+  {
+    "itemId": "en-c1-0003",
+    "issues": [],
+    "substituted": "The new sports stadium is a concrete behemoth that towers over the surrounding houses.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0004",
+    "issues": [],
+    "substituted": "The local library was built thanks to a generous bequest from a wealthy former resident.",
+    "patternMatches": [
+      "baptism",
+      "bassist",
+      "ballast",
+      "blemish",
+      "badness",
+      "bombast",
+      "bigness",
+      "bulrush"
+    ]
+  },
+  {
+    "itemId": "en-c1-0005",
+    "issues": [],
+    "substituted": "The prisoner's lawyers appealed for clemency due to his good behaviour in jail.",
+    "patternMatches": [
+      "credence"
+    ]
+  },
+  {
+    "itemId": "en-c1-0006",
+    "issues": [],
+    "substituted": "To the consternation of the crowd, the favourite player missed the final shot.",
+    "patternMatches": [
+      "constellation"
+    ]
+  },
+  {
+    "itemId": "en-c1-0007",
+    "issues": [],
+    "substituted": "After the sudden power cut, the office was left in a state of total disarray and chaos.",
+    "patternMatches": [
+      "disunity"
+    ]
+  },
+  {
+    "itemId": "en-c1-0008",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "event",
+      "elect",
+      "egret"
+    ]
+  },
+  {
+    "itemId": "en-c1-0009",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "eczema",
+      "errata"
+    ]
+  },
+  {
+    "itemId": "en-c1-0010",
+    "issues": [],
+    "substituted": "There has been a long history of enmity between the two rival families for generations.",
+    "patternMatches": [
+      "energy",
+      "equity",
+      "entity",
+      "eighty",
+      "eulogy",
+      "expiry",
+      "effigy",
+      "eatery"
+    ]
+  },
+  {
+    "itemId": "en-c1-0011",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "marriages",
+      "carriages"
+    ]
+  },
+  {
+    "itemId": "en-c1-0012",
+    "issues": [],
+    "substituted": "The heavy rain proved to be a significant hindrance to the team's progress during the match.",
+    "patternMatches": [
+      "windfalls"
+    ]
+  },
+  {
+    "itemId": "en-c1-0013",
+    "issues": [],
+    "substituted": "I didn't have any proof, but I had a hunch that the surprise party was actually for me.",
+    "patternMatches": [
+      "lunch",
+      "bunch",
+      "punch",
+      "butch",
+      "hutch",
+      "mulch",
+      "lurch"
+    ]
+  },
+  {
+    "itemId": "en-c1-0014",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "hyperbola"
+    ]
+  },
+  {
+    "itemId": "en-c1-0015",
+    "issues": [],
+    "substituted": "Maya has a natural knack for remembering people's names after meeting them once.",
+    "patternMatches": [
+      "knock",
+      "kayak",
+      "kiosk"
+    ]
+  },
+  {
+    "itemId": "en-c1-0016",
+    "issues": [],
+    "substituted": "After winning the national debate, Leo found himself in the limelight for several weeks.",
+    "patternMatches": [
+      "limericks"
+    ]
+  },
+  {
+    "itemId": "en-c1-0017",
+    "issues": [],
+    "substituted": "To truly master the language, you must understand every nuance of meaning in the poetry.",
+    "patternMatches": [
+      "tunnel",
+      "turner",
+      "runner",
+      "guinea",
+      "burner",
+      "funnel",
+      "gunner",
+      "gurney",
+      "quince",
+      "turnip",
+      "quanta"
+    ]
+  },
+  {
+    "itemId": "en-c1-0018",
+    "issues": [],
+    "substituted": "The onus is on the claimant to provide evidence for the case.",
+    "patternMatches": [
+      "once",
+      "ones",
+      "okay",
+      "odds",
+      "oral",
+      "ours",
+      "oven",
+      "olds",
+      "oval",
+      "oath",
+      "outs",
+      "oaks",
+      "ouch",
+      "odor",
+      "owls",
+      "oats",
+      "orgy",
+      "opal",
+      "opus",
+      "omen"
+    ]
+  },
+  {
+    "itemId": "en-c1-0019",
+    "issues": [
+      {
+        "itemId": "en-c1-0019",
+        "code": "solve-missed",
+        "severity": "flag",
+        "message": "solver didn't find \"plethora\" (said: profusion)"
+      }
+    ],
+    "substituted": "The library offers a plethora of resources for students researching the Industrial Revolution.",
+    "patternMatches": [
+      "protozoa"
+    ]
+  },
+  {
+    "itemId": "en-c1-0020",
+    "issues": [],
+    "substituted": "The speaker struggled to be heard over the tumult of the cheering crowd.",
+    "patternMatches": [
+      "temple",
+      "timing",
+      "timber",
+      "tomato",
+      "temper",
+      "tumors",
+      "tumble",
+      "tumour",
+      "timers",
+      "tampon",
+      "tomboy",
+      "timbre",
+      "tomcat",
+      "tamale",
+      "tempos"
+    ]
+  },
+  {
+    "itemId": "en-c1-0021",
+    "issues": [
+      {
+        "itemId": "en-c1-0021",
+        "code": "fixed-word-missing",
+        "severity": "fail",
+        "message": "fixed word \"from\" is not in the sentence after the span"
+      },
+      {
+        "itemId": "en-c1-0021",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'stop eating/give up' is followed by 'from', but 'stop eating' does not take 'from' (one stops eating something, not from it). 'Give up' can take 'from' only in the sense of giving something up to someone, not in the sense of quitting. The intended meaning is 'abstain from', so the clue is misleading."
+      }
+    ],
+    "substituted": "The doctor advised Leo to abstain sugary snacks for a month.",
+    "patternMatches": [
+      "sustain",
+      "despair",
+      "disdain",
+      "mislaid"
+    ]
+  },
+  {
+    "itemId": "en-c1-0022",
+    "issues": [
+      {
+        "itemId": "en-c1-0022",
+        "code": "fixed-word-missing",
+        "severity": "fail",
+        "message": "fixed word \"to\" is not in the sentence after the span"
+      }
+    ],
+    "substituted": "During the debate, Sarah seemed to allude a secret plan without naming it.",
+    "patternMatches": [
+      "clouds",
+      "blouse",
+      "allure",
+      "plough",
+      "slough",
+      "flaunt",
+      "slouch",
+      "sleuth",
+      "flours",
+      "flouts"
+    ]
+  },
+  {
+    "itemId": "en-c1-0023",
+    "issues": [],
+    "substituted": "Over the summer, Maya managed to amass a huge amount of data for her project.",
+    "patternMatches": [
+      "abuse",
+      "arise",
+      "arose",
+      "amuse"
+    ]
+  },
+  {
+    "itemId": "en-c1-0024",
+    "issues": [],
+    "substituted": "The king decided to banish the traitor from the realm forever.",
+    "patternMatches": [
+      "lavish",
+      "vanish",
+      "harass",
+      "caress",
+      "damask",
+      "ravish"
+    ]
+  },
+  {
+    "itemId": "en-c1-0025",
+    "issues": [],
+    "substituted": "It is unkind to belittle someone's achievements just because you are jealous.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0026",
+    "issues": [
+      {
+        "itemId": "en-c1-0026",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined word 'give' is followed by 'upon', but 'give' does not take 'upon' in this sense; one gives something to someone, or bestows something upon someone. The sentence is not natural English as written."
+      }
+    ],
+    "substituted": "The university decided to bestow an honorary degree upon the visiting scientist.",
+    "patternMatches": [
+      "review",
+      "yellow",
+      "mellow",
+      "bellow",
+      "redraw",
+      "seesaw",
+      "redrew"
+    ]
+  },
+  {
+    "itemId": "en-c1-0027",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "breach",
+      "sketch",
+      "pierce",
+      "trench",
+      "preach",
+      "bleach",
+      "wrench",
+      "fleece",
+      "fresco",
+      "quench",
+      "clench",
+      "drench"
+    ]
+  },
+  {
+    "itemId": "en-c1-0028",
+    "issues": [],
+    "substituted": "The school had to curtail the sports budget due to lack of funding.",
+    "patternMatches": [
+      "control",
+      "channel",
+      "counsel",
+      "conceal",
+      "catcall",
+      "congeal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0029",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "advance",
+      "reverse",
+      "divorce",
+      "involve",
+      "revenge",
+      "inverse",
+      "invoice",
+      "revolve",
+      "deviate",
+      "diverge",
+      "devolve",
+      "devalue",
+      "bivalve",
+      "obviate",
+      "revalue"
+    ]
+  },
+  {
+    "itemId": "en-c1-0030",
+    "issues": [],
+    "substituted": "He likes to flaunt his expensive new watch whenever he is with friends.",
+    "patternMatches": [
+      "forget",
+      "forest",
+      "forgot",
+      "fought",
+      "format",
+      "faggot",
+      "ferret",
+      "fillet",
+      "fidget",
+      "foment"
+    ]
+  },
+  {
+    "itemId": "en-c1-0031",
+    "issues": [],
+    "substituted": "The sudden rain began to hasten our departure from the campsite.",
+    "patternMatches": [
+      "listen",
+      "button",
+      "gotten",
+      "beaten",
+      "kitten",
+      "bitten",
+      "piston",
+      "soften",
+      "fasten",
+      "batten",
+      "fatten",
+      "whiten"
+    ]
+  },
+  {
+    "itemId": "en-c1-0032",
+    "issues": [],
+    "substituted": "Despite the difficulty of the climb, Maya decided to persevere until she reached the summit.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0033",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0034",
+    "issues": [],
+    "substituted": "The captain was forced to relinquish control of the ship during the storm.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0035",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "cauterize"
+    ]
+  },
+  {
+    "itemId": "en-c1-0036",
+    "issues": [],
+    "substituted": "The teacher had to scold the students for chatting during the exam.",
+    "patternMatches": [
+      "blood",
+      "avoid",
+      "crowd",
+      "stood",
+      "cloud",
+      "flood",
+      "brood",
+      "booed",
+      "wooed",
+      "cooed"
+    ]
+  },
+  {
+    "itemId": "en-c1-0037",
+    "issues": [],
+    "substituted": "Leo tried to stifle a laugh when his friend tripped over the rug.",
+    "patternMatches": [
+      "strike",
+      "stable",
+      "stroke",
+      "strive",
+      "staple",
+      "starve",
+      "attire",
+      "stride",
+      "strode",
+      "strobe",
+      "strove",
+      "stymie",
+      "strafe",
+      "attune"
+    ]
+  },
+  {
+    "itemId": "en-c1-0038",
+    "issues": [],
+    "substituted": "Without enough water, the delicate flowers began to wither in the scorching summer heat.",
+    "patternMatches": [
+      "rights",
+      "lights",
+      "wishes",
+      "fights",
+      "dishes",
+      "wished",
+      "sights",
+      "fishes",
+      "sighed",
+      "cipher",
+      "fished",
+      "niches",
+      "siphon",
+      "tithes",
+      "dished",
+      "dither"
+    ]
+  },
+  {
+    "itemId": "en-c1-0039",
+    "issues": [],
+    "substituted": "She has been an ardent supporter of the local football team since childhood.",
+    "patternMatches": [
+      "oldest",
+      "modest",
+      "eldest",
+      "widest",
+      "oddest",
+      "rudest"
+    ]
+  },
+  {
+    "itemId": "en-c1-0040",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "broad",
+      "bleak",
+      "basal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0041",
+    "issues": [],
+    "substituted": "The teacher gave the essay a cursory before returning it to the student.",
+    "patternMatches": [
+      "summary",
+      "runaway",
+      "buttery",
+      "rubbery",
+      "turnkey"
+    ]
+  },
+  {
+    "itemId": "en-c1-0042",
+    "issues": [],
+    "substituted": "The old shed was so decrepit that it collapsed during the storm.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0043",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "faulty",
+      "fluffy",
+      "fluent",
+      "feudal",
+      "fruity",
+      "frumpy"
+    ]
+  },
+  {
+    "itemId": "en-c1-0044",
+    "issues": [],
+    "substituted": "After weeks of hiking without enough food, he looked gaunt and exhausted.",
+    "patternMatches": [
+      "going",
+      "grand",
+      "giant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0045",
+    "issues": [],
+    "substituted": "The intrepid explorers climbed the peak despite the freezing wind.",
+    "patternMatches": [
+      "intended"
+    ]
+  },
+  {
+    "itemId": "en-c1-0046",
+    "issues": [],
+    "substituted": "The goalkeeper was nimble enough to stop the ball from entering the net.",
+    "patternMatches": [
+      "viable",
+      "liable",
+      "limber"
+    ]
+  },
+  {
+    "itemId": "en-c1-0047",
+    "issues": [],
+    "substituted": "They stayed in an opulent hotel with gold taps and velvet curtains.",
+    "patternMatches": [
+      "routine",
+      "amusing",
+      "prudent"
+    ]
+  },
+  {
+    "itemId": "en-c1-0048",
+    "issues": [],
+    "substituted": "The film's ending was a poignant reminder of how quickly time passes.",
+    "patternMatches": [
+      "pregnant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0049",
+    "issues": [],
+    "substituted": "She made a shrewd decision to invest her savings in the new company.",
+    "patternMatches": [
+      "unread"
+    ]
+  },
+  {
+    "itemId": "en-c1-0050",
+    "issues": [],
+    "substituted": "The lakeside village was incredibly tranquil during the winter months.",
+    "patternMatches": []
+  }
+]

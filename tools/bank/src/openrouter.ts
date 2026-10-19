@@ -56,6 +56,8 @@ export interface ChatResult {
   readonly content: string;
   readonly promptTokens: number;
   readonly completionTokens: number;
+  /** Part of completionTokens spent on reasoning, when the model reports it. */
+  readonly reasoningTokens: number;
   /** Dollars, as OpenRouter reports it for this call. */
   readonly cost: number;
 }
@@ -124,7 +126,7 @@ export class OpenRouter {
       id: string;
       model: string;
       choices: { message: { content: string | null } }[];
-      usage?: { prompt_tokens?: number; completion_tokens?: number; cost?: number };
+      usage?: { prompt_tokens?: number; completion_tokens?: number; cost?: number; completion_tokens_details?: { reasoning_tokens?: number } };
     };
     return {
       id: res.id,
@@ -132,6 +134,7 @@ export class OpenRouter {
       content: res.choices[0]?.message.content ?? "",
       promptTokens: res.usage?.prompt_tokens ?? 0,
       completionTokens: res.usage?.completion_tokens ?? 0,
+      reasoningTokens: res.usage?.completion_tokens_details?.reasoning_tokens ?? 0,
       cost: res.usage?.cost ?? 0,
     };
   }
@@ -139,16 +142,17 @@ export class OpenRouter {
 
 /** Spend per stage and model, for the provenance file. */
 export class SpendLedger {
-  readonly #rows = new Map<string, { stage: string; model: string; calls: number; items: number; cost: number; promptTokens: number; completionTokens: number }>();
+  readonly #rows = new Map<string, { stage: string; model: string; calls: number; items: number; cost: number; promptTokens: number; completionTokens: number; reasoningTokens: number }>();
 
   record(stage: string, result: ChatResult, items: number): void {
     const k = `${stage}|${result.model}`;
-    const row = this.#rows.get(k) ?? { stage, model: result.model, calls: 0, items: 0, cost: 0, promptTokens: 0, completionTokens: 0 };
+    const row = this.#rows.get(k) ?? { stage, model: result.model, calls: 0, items: 0, cost: 0, promptTokens: 0, completionTokens: 0, reasoningTokens: 0 };
     row.calls++;
     row.items += items;
     row.cost += result.cost;
     row.promptTokens += result.promptTokens;
     row.completionTokens += result.completionTokens;
+    row.reasoningTokens += result.reasoningTokens;
     this.#rows.set(k, row);
   }
 

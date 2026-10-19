@@ -1,0 +1,1097 @@
+{
+  "lang": "en",
+  "level": "C1",
+  "items": [
+    {
+      "id": "en-c1-0001",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "His sarcastic remark during the meeting was an obvious ",
+        "span": [
+          "insult"
+        ],
+        "after": " to the team leader who had worked late."
+      },
+      "fixedWords": [],
+      "answer": "affront",
+      "lemma": "affront",
+      "given": [
+        0,
+        2
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0002",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The teenager claimed he was at the cinema, giving him a solid ",
+        "span": [
+          "excuse"
+        ],
+        "after": " for why he missed the curfew."
+      },
+      "fixedWords": [],
+      "answer": "alibi",
+      "lemma": "alibi",
+      "given": [
+        1,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0003",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The new shopping centre is a concrete ",
+        "span": [
+          "giant"
+        ],
+        "after": " that dominates the entire high street."
+      },
+      "fixedWords": [],
+      "answer": "behemoth",
+      "lemma": "behemoth",
+      "given": [
+        2,
+        5,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0004",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Her grandmother’s will included a generous ",
+        "span": [
+          "inheritance"
+        ],
+        "after": " of vintage books and jewellery."
+      },
+      "fixedWords": [],
+      "answer": "bequest",
+      "lemma": "bequest",
+      "given": [
+        0,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0005",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "After pleading guilty, the prisoner appealed to the judge for ",
+        "span": [
+          "mercy"
+        ],
+        "after": " rather than a harsh sentence."
+      },
+      "fixedWords": [],
+      "answer": "clemency",
+      "lemma": "clemency",
+      "given": [
+        0,
+        2,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0006",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "There was widespread ",
+        "span": [
+          "alarm"
+        ],
+        "after": " when the power cut lasted through the evening."
+      },
+      "fixedWords": [],
+      "answer": "consternation",
+      "lemma": "consternation",
+      "given": [
+        0,
+        2,
+        5,
+        12
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0007",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "After the celebration, the classroom was in total ",
+        "span": [
+          "mess"
+        ],
+        "after": " with chairs overturned and paper everywhere."
+      },
+      "fixedWords": [],
+      "answer": "disarray",
+      "lemma": "disarray",
+      "given": [
+        0,
+        2,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0008",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "definition",
+        "definition": "A formal order issued by someone in authority"
+      },
+      "fixedWords": [],
+      "answer": "edict",
+      "lemma": "edict",
+      "given": [
+        0,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0009",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "definition",
+        "definition": "Something mysterious and difficult to understand or explain"
+      },
+      "fixedWords": [],
+      "answer": "enigma",
+      "lemma": "enigma",
+      "given": [
+        0,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0010",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Years of rivalry had turned their friendship into open ",
+        "span": [
+          "hatred"
+        ],
+        "after": " whenever they met on the football pitch."
+      },
+      "fixedWords": [],
+      "answer": "enmity",
+      "lemma": "enmity",
+      "given": [
+        0,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0011",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "definition",
+        "definition": "A person or thing that signals the approach of something"
+      },
+      "fixedWords": [],
+      "answer": "harbinger",
+      "lemma": "harbinger",
+      "given": [
+        1,
+        4,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0012",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Her fear of speaking in public was a real ",
+        "span": [
+          "obstacle"
+        ],
+        "after": " during the school debate competition."
+      },
+      "fixedWords": [],
+      "answer": "hindrance",
+      "lemma": "hindrance",
+      "given": [
+        1,
+        3,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0013",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "I had ",
+        "determiner": "a",
+        "span": [
+          "feeling"
+        ],
+        "after": " that we would win the match despite the rain."
+      },
+      "fixedWords": [],
+      "answer": "hunch",
+      "lemma": "hunch",
+      "given": [
+        1,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0014",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "definition",
+        "definition": "Exaggerated statements or claims not meant to be taken literally"
+      },
+      "fixedWords": [],
+      "answer": "hyperbole",
+      "lemma": "hyperbole",
+      "given": [
+        1,
+        4,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0015",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "She has ",
+        "determiner": "a",
+        "span": [
+          "talent"
+        ],
+        "after": " for remembering everyone's birthday without writing them down."
+      },
+      "fixedWords": [],
+      "answer": "knack",
+      "lemma": "knack",
+      "given": [
+        0,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0016",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "After scoring the winning goal, he found himself in ",
+        "determiner": "the",
+        "span": [
+          "spotlight"
+        ],
+        "after": " for the rest of the day."
+      },
+      "fixedWords": [],
+      "answer": "limelight",
+      "lemma": "limelight",
+      "given": [
+        0,
+        2,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0017",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The teacher praised her essay for its subtle ",
+        "span": [
+          "difference"
+        ],
+        "after": " in interpreting the poem's meaning."
+      },
+      "fixedWords": [],
+      "answer": "nuance",
+      "lemma": "nuance",
+      "given": [
+        1,
+        3
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0018",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "",
+        "determiner": "The",
+        "span": [
+          "responsibility"
+        ],
+        "after": " for cleaning up after the picnic fell to the youngest members of the group."
+      },
+      "fixedWords": [],
+      "answer": "onus",
+      "lemma": "onus",
+      "given": [
+        0
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0019",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "There was ",
+        "determiner": "a",
+        "span": [
+          "lot"
+        ],
+        "after": " of food left over after the party, so we sent some home with everyone."
+      },
+      "fixedWords": [],
+      "answer": "plethora",
+      "lemma": "plethora",
+      "given": [
+        0,
+        3,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0020",
+      "lang": "en",
+      "level": "C1",
+      "pos": "noun",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The crowd reacted with ",
+        "determiner": "a",
+        "span": [
+          "uproar"
+        ],
+        "after": " when the final whistle blew and the underdogs had won."
+      },
+      "fixedWords": [],
+      "answer": "tumult",
+      "lemma": "tumult",
+      "given": [
+        0,
+        2
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0021",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "During Ramadan, many Muslims ",
+        "span": [
+          "avoid eating"
+        ],
+        "after": " from dawn until sunset."
+      },
+      "fixedWords": [],
+      "answer": "abstain",
+      "lemma": "abstain",
+      "given": [
+        2,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0022",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "In her speech, the principal ",
+        "span": [
+          "referred to"
+        ],
+        "after": " the upcoming changes without giving details."
+      },
+      "fixedWords": [],
+      "answer": "alluded",
+      "lemma": "allude",
+      "given": [
+        0,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0023",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Over the summer, she ",
+        "span": [
+          "gathered"
+        ],
+        "after": " a impressive collection of vintage comics."
+      },
+      "fixedWords": [],
+      "answer": "amassed",
+      "lemma": "amass",
+      "given": [
+        1,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0024",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The teacher decided to ",
+        "span": [
+          "send away"
+        ],
+        "after": " the disruptive student for the rest of the lesson."
+      },
+      "fixedWords": [],
+      "answer": "banish",
+      "lemma": "banish",
+      "given": [
+        1,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0025",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "It’s unkind to ",
+        "span": [
+          "make fun of"
+        ],
+        "after": " someone’s efforts, no matter how small."
+      },
+      "fixedWords": [],
+      "answer": "belittle",
+      "lemma": "belittle",
+      "given": [
+        3,
+        5,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0026",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The queen will ",
+        "span": [
+          "give"
+        ],
+        "after": " honours to several citizens at the ceremony tomorrow."
+      },
+      "fixedWords": [],
+      "answer": "bestow",
+      "lemma": "bestow",
+      "given": [
+        1,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0027",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "definition",
+        "definition": "To force someone to do something using threats or pressure"
+      },
+      "fixedWords": [],
+      "answer": "coerce",
+      "lemma": "coerce",
+      "given": [
+        2,
+        4
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0028",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Due to budget cuts, the school had to ",
+        "span": [
+          "reduce"
+        ],
+        "after": " extracurricular activities this term."
+      },
+      "fixedWords": [],
+      "answer": "curtail",
+      "lemma": "curtail",
+      "given": [
+        0,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0029",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "definition",
+        "definition": "To make private or secret information known to others"
+      },
+      "fixedWords": [],
+      "answer": "divulge",
+      "lemma": "divulge",
+      "given": [
+        2,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0030",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "He likes to ",
+        "span": [
+          "show off"
+        ],
+        "after": " his new smartphone whenever he meets friends."
+      },
+      "fixedWords": [],
+      "answer": "flaunt",
+      "lemma": "flaunt",
+      "given": [
+        0,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0031",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "She grabbed her coat and ",
+        "span": [
+          "hurried"
+        ],
+        "after": " to catch the bus before it left."
+      },
+      "fixedWords": [],
+      "answer": "hastened",
+      "lemma": "hasten",
+      "given": [
+        0,
+        4,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0032",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Even though the maths problem was tough, he kept trying and ",
+        "span": [
+          "continued"
+        ],
+        "after": " until he solved it."
+      },
+      "fixedWords": [],
+      "answer": "persevered",
+      "lemma": "persevere",
+      "given": [
+        4,
+        7,
+        9
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0033",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "definition",
+        "definition": "Delay doing something that should be done, often until later"
+      },
+      "fixedWords": [],
+      "answer": "procrastinate",
+      "lemma": "procrastinate",
+      "given": [
+        1,
+        4,
+        6,
+        10
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0034",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "When the bell rang, the student had to ",
+        "span": [
+          "give up"
+        ],
+        "after": " his seat to the next class."
+      },
+      "fixedWords": [],
+      "answer": "relinquish",
+      "lemma": "relinquish",
+      "given": [
+        1,
+        6,
+        9
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0035",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "definition",
+        "definition": "Say something again or repeatedly for emphasis or clarity"
+      },
+      "fixedWords": [],
+      "answer": "reiterate",
+      "lemma": "reiterate",
+      "given": [
+        3,
+        5,
+        8
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0036",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The teacher had to ",
+        "span": [
+          "tell off"
+        ],
+        "after": " the pupil for talking during the test."
+      },
+      "fixedWords": [],
+      "answer": "scolded",
+      "lemma": "scold",
+      "given": [
+        3,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0037",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "She tried not to laugh, but couldn't ",
+        "span": [
+          "hold back"
+        ],
+        "after": " a giggle during the serious assembly."
+      },
+      "fixedWords": [],
+      "answer": "stifle",
+      "lemma": "stifle",
+      "given": [
+        1,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0038",
+      "lang": "en",
+      "level": "C1",
+      "pos": "verb",
+      "prompt": {
+        "kind": "sentence",
+        "before": "Without water for days, the flowers began to ",
+        "span": [
+          "fade"
+        ],
+        "after": " and lose their bright colours."
+      },
+      "fixedWords": [],
+      "answer": "wither",
+      "lemma": "wither",
+      "given": [
+        1,
+        3
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0039",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "She is ",
+        "determiner": "an",
+        "span": [
+          "enthusiastic"
+        ],
+        "after": " supporter of the school's environmental club."
+      },
+      "fixedWords": [],
+      "answer": "ardent",
+      "lemma": "ardent",
+      "given": [
+        2,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0040",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "definition",
+        "definition": "So lacking in originality as to be obvious and boring"
+      },
+      "fixedWords": [],
+      "answer": "banal",
+      "lemma": "banal",
+      "given": [
+        0,
+        3
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0041",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The teacher gave the essays only ",
+        "determiner": "a",
+        "span": [
+          "quick"
+        ],
+        "after": " glance before handing them back."
+      },
+      "fixedWords": [],
+      "answer": "cursory",
+      "lemma": "cursory",
+      "given": [
+        1,
+        6
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0042",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The old bridge looked ",
+        "span": [
+          "run-down"
+        ],
+        "after": " and unsafe to cross."
+      },
+      "fixedWords": [],
+      "answer": "decrepit",
+      "lemma": "decrepit",
+      "given": [
+        1,
+        5,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0043",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "definition",
+        "definition": "Sparing or economical with regard to money or food"
+      },
+      "fixedWords": [],
+      "answer": "frugal",
+      "lemma": "frugal",
+      "given": [
+        0,
+        2
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0044",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "After weeks of illness, she looked ",
+        "span": [
+          "thin"
+        ],
+        "after": " and pale."
+      },
+      "fixedWords": [],
+      "answer": "gaunt",
+      "lemma": "gaunt",
+      "given": [
+        0,
+        3
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0045",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "",
+        "determiner": "The",
+        "span": [
+          "brave"
+        ],
+        "after": " explorer ventured into the unknown jungle alone."
+      },
+      "fixedWords": [],
+      "answer": "intrepid",
+      "lemma": "intrepid",
+      "given": [
+        0,
+        2,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0046",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "",
+        "determiner": "The",
+        "span": [
+          "quick"
+        ],
+        "after": " gymnast landed the difficult routine perfectly."
+      },
+      "fixedWords": [],
+      "answer": "nimble",
+      "lemma": "nimble",
+      "given": [
+        1,
+        3
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0047",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The hotel suite was ",
+        "span": [
+          "luxurious"
+        ],
+        "after": " with marble floors and crystal chandeliers."
+      },
+      "fixedWords": [],
+      "answer": "opulent",
+      "lemma": "opulent",
+      "given": [
+        2,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0048",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The farewell scene in the film was deeply ",
+        "span": [
+          "moving"
+        ],
+        "after": ", bringing tears to many eyes."
+      },
+      "fixedWords": [],
+      "answer": "poignant",
+      "lemma": "poignant",
+      "given": [
+        0,
+        3,
+        7
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0049",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "She made ",
+        "determiner": "a",
+        "span": [
+          "clever"
+        ],
+        "after": " investment that doubled her money in a year."
+      },
+      "fixedWords": [],
+      "answer": "shrewd",
+      "lemma": "shrewd",
+      "given": [
+        3,
+        5
+      ],
+      "alternates": []
+    },
+    {
+      "id": "en-c1-0050",
+      "lang": "en",
+      "level": "C1",
+      "pos": "adjective",
+      "prompt": {
+        "kind": "sentence",
+        "before": "The lake was ",
+        "span": [
+          "calm"
+        ],
+        "after": " at dawn, with not a ripple in sight."
+      },
+      "fixedWords": [],
+      "answer": "tranquil",
+      "lemma": "tranquil",
+      "given": [
+        1,
+        4,
+        6
+      ],
+      "alternates": []
+    }
+  ]
+}

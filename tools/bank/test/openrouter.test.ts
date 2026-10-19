@@ -80,7 +80,7 @@ describe("BudgetGuard", () => {
 describe("SpendLedger", () => {
   it("measures cost per item by stage and model", () => {
     const ledger = new SpendLedger();
-    const call = { id: "x", model: "m/a", content: "", promptTokens: 10, completionTokens: 5, cost: 0.02 };
+    const call = { id: "x", model: "m/a", content: "", promptTokens: 10, completionTokens: 5, reasoningTokens: 0, cost: 0.02 };
     ledger.record("draft", call, 10);
     ledger.record("draft", call, 10);
     expect(ledger.costPerItem("draft", "m/a")).toBeCloseTo(0.002);

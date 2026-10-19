@@ -10,13 +10,19 @@ import { key, shapeOf, type Lexicon } from "./lexicon.ts";
  * C2 the least telling that still disambiguate, C1 the middle.
  */
 
-/** Words below this zipf don't count as plausible answers when measuring informativeness. */
+/**
+ * Informativeness counts the words players might weigh: same part of speech as the
+ * answer, and not rarer than this zipf.
+ */
 export const PLAUSIBLE_ZIPF = 1.5;
 
 export interface PlacementChoice {
   readonly given: number[];
-  /** Plausible lexicon words, other than the answer, that fit the chosen pattern. */
-  readonly fits: string[];
+  /**
+   * Words of the answer's part of speech that match the letter pattern, meaning not
+   * considered. Only a measure of how telling the letters are; never shown to reviewers.
+   */
+  readonly patternMatches: string[];
 }
 
 export interface PlacementReport {
@@ -57,7 +63,12 @@ function plausibleFits(item: Item, cells: readonly Cell[], given: readonly numbe
   const answer = key(item.answer);
   return lex
     .formsWithShape(shapeOf(cells))
-    .filter((f) => f !== answer && lex.zipf(f) >= PLAUSIBLE_ZIPF && fitsPattern(f, cells, given, item.lang))
+    .filter(
+      (f) =>
+        f !== answer &&
+        lex.entries(f).some((e) => e.pos === item.pos && e.zipf >= PLAUSIBLE_ZIPF) &&
+        fitsPattern(f, cells, given, item.lang),
+    )
     .sort((a, b) => lex.zipf(b) - lex.zipf(a));
 }
 
@@ -68,12 +79,12 @@ export function choosePlacement(item: Item, lex: Lexicon, extraRivals: readonly 
   const all = [...placements(letterCount)];
   const usable = all
     .filter((given) => !rivals.some((r) => fitsPattern(r, cells, given, item.lang)))
-    .map((given) => ({ given, fits: plausibleFits(item, cells, given, lex) }));
+    .map((given) => ({ given, patternMatches: plausibleFits(item, cells, given, lex) }));
   if (usable.length === 0) return { choice: null, rivals, usable: 0, total: all.length };
 
   // Fewer fitting words means more telling letters.
   const byTelling = [...usable].sort(
-    (a, b) => a.fits.length - b.fits.length || Number(b.given.includes(0)) - Number(a.given.includes(0)) || compare(a.given, b.given),
+    (a, b) => a.patternMatches.length - b.patternMatches.length || Number(b.given.includes(0)) - Number(a.given.includes(0)) || compare(a.given, b.given),
   );
   const pick = (level: Item["level"]) => {
     if (level === "B2") return byTelling[0]!;
@@ -89,7 +100,7 @@ export function rivalsFitting(item: Item, lex: Lexicon, extraRivals: readonly st
   return rivalsFor(item, lex, extraRivals).filter((r) => fitsPattern(r, cells, item.given, item.lang));
 }
 
-export function fitsFor(item: Item, lex: Lexicon): string[] {
+export function patternMatchesFor(item: Item, lex: Lexicon): string[] {
   return plausibleFits(item, layoutBoxes(item.answer, item.lang), item.given, lex);
 }
 

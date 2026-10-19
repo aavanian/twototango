@@ -1,0 +1,363 @@
+{
+  "solver": "deepseek/deepseek-v4.1-flash",
+  "verdicts": [
+    {
+      "itemId": "en-c1-0001",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0002",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0003",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0004",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0005",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0006",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0007",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0008",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0009",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0010",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0011",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0012",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0013",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0014",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0015",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0016",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0017",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0018",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0019",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0021",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0022",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0023",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0024",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0025",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0026",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0027",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0028",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0029",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0030",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0031",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0032",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0036",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0037",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0038",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0039",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0040",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0041",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0042",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0044",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0045",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0046",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0047",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0048",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0049",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0050",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    }
+  ],
+  "errors": []
+}

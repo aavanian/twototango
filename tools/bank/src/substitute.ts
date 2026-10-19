@@ -29,7 +29,7 @@ function frStartsWithVowelSound(word: string): boolean {
 // English: a vowel letter, except "you"-sounding and "w"-sounding starts; silent h words.
 const EN_SILENT_H = /^(hour|honest|honou?r|heir)/u;
 const EN_CONSONANT_SOUND = /^(uni|use|usu|ure|uro|eu|ewe|one|once|ubiq)/u;
-function enStartsWithVowelSound(word: string): boolean {
+export function enStartsWithVowelSound(word: string): boolean {
   const w = key(word);
   if (EN_SILENT_H.test(w)) return true;
   return /^[aeiou]/u.test(w) && !EN_CONSONANT_SOUND.test(w);

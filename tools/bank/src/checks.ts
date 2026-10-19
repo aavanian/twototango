@@ -2,8 +2,9 @@
 
 import { checkItem, type Item } from "@twototango/core";
 import { key, type Lexicon } from "./lexicon.ts";
-import { fitsFor, rivalsFitting } from "./placement.ts";
+import { patternMatchesFor, rivalsFitting } from "./placement.ts";
 import { relatedWords } from "./roots.ts";
+import { britishVariant } from "./spelling.ts";
 import { substitute } from "./substitute.ts";
 
 /**
@@ -25,9 +26,14 @@ export interface ItemReport {
   readonly issues: PipelineIssue[];
   /** The sentence with the answer in place, for the blind solve and reviewers. */
   readonly substituted: string | null;
-  /** Plausible lexicon words that also fit the boxes; the blind solve decides which matter. */
-  readonly fits: string[];
+  /**
+   * Words of the same part of speech matching the letter pattern, meaning not considered
+   * (affront: affairs, affects). Diagnostics only; the blind solve finds words that really fit.
+   */
+  readonly patternMatches: string[];
 }
+
+export const MAX_SPAN_WORDS = 4;
 
 export interface CheckOptions {
   readonly profanity: ReadonlySet<string>;
@@ -60,7 +66,7 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
   // Schema-level rules from core: layout, given placement, alternates, roots against the span.
   for (const issue of checkItem(item)) add(issue.code, "fail", issue.message);
   if (issues.some((i) => i.code === "answer-layout" || i.code === "answer-too-short")) {
-    return { itemId: item.id, issues, substituted: null, fits: [] };
+    return { itemId: item.id, issues, substituted: null, patternMatches: [] };
   }
 
   // The answer is a real form of the stated lemma and part of speech.
@@ -83,6 +89,28 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
     }
   }
 
+  // Short clues: the main span at most 4 words, slash alternatives single words (GM review, C1).
+  if (item.prompt.kind === "sentence") {
+    const [main, ...alts] = item.prompt.span;
+    if (main && words(main).length > MAX_SPAN_WORDS) add("span-too-long", "fail", `span "${main}" has more than ${MAX_SPAN_WORDS} words`);
+    for (const alt of alts) if (words(alt).length > 1) add("span-alternative-long", "fail", `alternative span "${alt}" should be a single word`);
+  }
+
+  // Spacing around the span and leftover placeholders ("The earthquake**destroyed**", "a(n)").
+  if (item.prompt.kind === "sentence") {
+    const { before, after, determiner } = item.prompt;
+    const lead = determiner ? `${before}${determiner} ` : before;
+    if (lead !== "" && !/[\s(«"“‘'’-]$/u.test(lead)) add("spacing", "fail", `no space before the span: "…${lead.slice(-12)}"`);
+    if (after !== "" && !/^[\s.,;:!?)»"”’'—–-]/u.test(after)) add("spacing", "fail", `no space after the span: "${after.slice(0, 12)}…"`);
+  }
+  if (/\ba\(n\)|\(s\)|\[|\]|\{|\}/u.test(textOf(item))) add("placeholder", "fail", "the text contains a placeholder such as a(n) or brackets");
+
+  // Fixed words are printed after the boxes and must be in the sentence too.
+  if (item.prompt.kind === "sentence") {
+    const after = new Set(words(item.prompt.after));
+    for (const w of item.fixedWords) if (!after.has(w.toLowerCase())) add("fixed-word-missing", "fail", `fixed word "${w}" is not in the sentence after the span`);
+  }
+
   // Unaccepted synonyms that the given letters don't rule out.
   const fitting = rivalsFitting(item, lex, options.rivals?.get(item.id) ?? []);
   if (fitting.length > 0) add("rival-fits", "fail", `also fits the boxes: ${fitting.join(", ")}`);
@@ -91,10 +119,18 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
   const bad = [...new Set([...words(textOf(item)), ...words(item.answer), ...item.alternates.flatMap(words)])].filter((w) => options.profanity.has(key(w)));
   if (bad.length > 0) add("profanity", "fail", `contains: ${bad.join(", ")}`);
 
+  // British spelling in English items, answer and text alike.
+  if (item.lang === "en") {
+    const american = [...new Set([...words(textOf(item)), item.answer, ...item.alternates])]
+      .map((w) => [w, britishVariant(w, lex)] as const)
+      .filter(([, b]) => b !== null);
+    for (const [w, b] of american) add("us-spelling", w === item.answer ? "fail" : "flag", `"${w}" → British "${b}"`);
+  }
+
   const sub = substitute(item, lex);
   for (const note of sub?.notes ?? []) if (note.includes("unknown")) add("substitution", "flag", note);
 
-  return { itemId: item.id, issues, substituted: sub?.sentence ?? null, fits: fitsFor(item, lex).slice(0, 20) };
+  return { itemId: item.id, issues, substituted: sub?.sentence ?? null, patternMatches: patternMatchesFor(item, lex).slice(0, 20) };
 }
 
 /** Token-set similarity of two prompts, 0 to 1. */

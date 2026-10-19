@@ -20,6 +20,7 @@ Settled on 16 Oct 2026.
 | Default item count | The multiple of p closest to 15. On a tie (p = 2: 14/16; p = 6: 12/18) take the lower one. |
 | Exactly p to start | The GM can change p from the lobby. |
 | Japanese UI | Interface strings in English, French and Japanese ship in v1. |
+| English spelling | British (colour, organise, centre, catalogue, defence, travelled), and British vocabulary where it differs (lift, flat). Settled 19 Oct 2026. The prompt asks for it, word selection drops American forms whose British spelling the lexicon knows, and the checks fail an American answer. |
 | GM interruptions | The GM phone keeps the screen awake during a game and saves the game state to disk after every action, so the game resumes after a call, a kill or a crash. |
 
 ## Architecture
@@ -92,7 +93,7 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 2. **Pilot (Claude Code, subscription).** Write the prompts, generate about 50 C1 items per language in-session, GM rates them. Those ratings become the fixed test set for everything after.
 3. **Bake-off (OpenRouter).** Three or four cheap models generate the same 50 words. Score each by the code checks plus the GM accept rate; keep the cheapest acceptable one.
 4. **Bulk drafting.** About 10 words per call, short structured JSON output, little or no reasoning. French prompts written in French. Sample sheets serve only as format examples; none of their text ships.
-5. **Deterministic checks (code).** Schema; fits the boxes; answer exists as a word form in the lexicon; substitution rebuilt mechanically with elision; shared roots (stemming plus common-substring threshold); given-letter placement and the list of other words fitting the pattern; profanity list; near-duplicate sentences.
+5. **Deterministic checks (code).** Schema; fits the boxes; answer exists as a word form in the lexicon; substitution rebuilt mechanically with elision; shared roots (stemming plus common-substring threshold); given-letter placement (the words matching the letter pattern, meaning not considered, only measure how telling the letters are and are never shown to reviewers); profanity list; near-duplicate sentences.
 6. **Blind solve (cheap model).** The model sees the item without the answer and lists every word that fits. A valid unlisted word becomes an alternate or fails the item.
 7. **Escalation.** Flagged items (expected around 15%) go to a Claude Code review session or a stronger model on OpenRouter, with one repair round. A second failure is discarded.
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
@@ -108,9 +109,62 @@ Built 16 Oct 2026; nothing here has spent API credit.
 - **Given-letter placement**: for items without given letters, the check places them. Usable placements rule out every unaccepted synonym form of the answer's shape; among them B2 takes the most telling letters (fewest plausible words fit), C2 the least telling, C1 the middle.
 - **OpenRouter client** (`tools/bank/src/openrouter.ts`): bearer header only when `OPENROUTER_API_KEY` is set, a 401 explained, structured JSON output, cost per call, a spend ledger per stage and model, and a budget guard that reads `/api/v1/key` before each batch. Node's built-in fetch ignores `HTTPS_PROXY`, so `npm run bank` sets `NODE_USE_ENV_PROXY=1`. `npm run bank -- key` reads the limit for free.
 
+### Pilot (English C1)
+
+Started 19 Oct 2026, in a Claude Code session; no API spend.
+
+- **Words**: 50 from the C1 candidates, screened by hand in the session (20 nouns, 18 verbs, 12 adjectives; 10 definitions). Dropped from the pool: junk the screen must catch (cadmium, knickers), words with a UK/US spelling split (fervour, odour) while the convention was open, and words already in the dev bank.
+- **Prompt**: `tools/bank/prompts/en/draft.md` (en-draft v1). The same text goes to the bake-off models. The model writes the sentence or definition, the answer form, acceptable synonyms and near misses; it never chooses ids or given letters.
+- **Drafts to items**: `npm run bank -- finalize` assigns ids and places the given letters. Placement first tries to rule out every synonym, acceptable ones included (the bank rule); only when no placement can, the acceptable words that still fit become alternates. All 50 placed without alternates.
+- **Files**: `content/pilot/en-c1.drafts.json` (drafts), `en-c1.json` (items), `en-c1.report.json` (check results). The app only loads `content/<lang>/<level>.json`, so pilot files never ship by accident.
+- **Ratings**: Grist doc "Two to Tango – pilot ratings (EN C1)", table Pilot: verdict (good / fix / reject), difficulty (too easy / right / too hard), problem tags and a comment per item. The ratings become the fixed test set for the bake-off.
+- **Spelling**: British, decided during the pilot; the prompt is now en-draft v2. The pilot items already used British spelling.
+- **Ratings (19 Oct 2026)**: all 50 good; difficulty right for 45, too easy for 3 (hunch, nuance, abstain), too hard for 2 (bequest, curtail). Frequency doesn't explain the five (the too easy ones sit at zipf 3.07–3.09, ardent at 3.28 rated right), so the C1 band stays at 2.7–3.3. Saved as `content/pilot/en-c1.ratings.json`, the bake-off's test set.
+- **"Also fits" was a mistake to show**: the review sheet listed words matching the letter pattern regardless of meaning (affront: affairs, alfalfa), and the GM rightly found them nonsense. They now carry the name `patternMatches` and stay internal. Words that really fit an item come from the blind solve.
+- **Found while writing**: one draft had a span that doesn't take the answer's preposition ("hinted to" for "alluded to"). The deterministic checks can't see this; the blind solve or a grammar pass has to.
+
+### Bake-off (English C1)
+
+Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
+
+- **Runner**: `npm run bank -- bakeoff` drafts the words with each model (batches of 10, reasoning off, or lowest effort where it can't be turned off), finalizes, runs the checks, then blind-solves every model's items with one fixed solver so drafters are judged alike. Outputs in `content/pilot/bakeoff-en-c1/`.
+- **Solver**: DeepSeek V4.1 Flash with `prompts/en/solve.md` v2. On the GM-rated pilot it found 49 of 50 answers and raised no false issues; it caught planted preposition errors. DeepSeek V4 Pro as solver did worse (19 of 30 answers on a hard subset). Solver v2 spells out the preposition check after v1 missed "give … on" for *bestow*; its example is that very case, so watch for other error kinds.
+- **What the first run taught**: models duplicated the article when asked for a separate determiner field ("The The [calm] lake"); prompt v3 drops the field and code splits a trailing article off `before`. Strict JSON mode sends "" for fields that don't apply; the parser drops them by item kind. A fixed word missing from the sentence is now a deterministic failure.
+- **Measured** (drafting $/item, clean items of 50 after checks and solver v2): GLM-5.3 Flash $0.00006, 47; DeepSeek V4.1 Flash $0.00007, 43; Gemma 4 31B $0.00008, 47; Mistral Small 2603 $0.00006, 45; Nemotron 3 Super $0.00010, 49; DeepSeek V4 Pro $0.00045, 45; Qwen3.5 397B $0.00048, 47; DeepSeek V4.1 Flash 1017 $0.00008, 34 of 42 (dropped spans in one batch). No model spent reasoning tokens to speak of. Blind solving costs about $0.00004 per item.
+- **Full-run cost from these numbers** (about 4,800 drafts, blind solve, 15% repaired by a big model): under $5 even with the dearest drafter, so cost no longer decides; the GM's blind rating does.
+- **Blind rating**: Grist table Bakeoff, 12 words × 5 finalists (GLM-5.3 Flash, DeepSeek V4.1 Flash, Nemotron 3 Super, Qwen3.5 397B, DeepSeek V4 Pro), shuffled. Key: `content/pilot/en-c1.bakeoff-key.json`.
+
+- **Blind rating result (19 Oct 2026)**: all 60 rated good, difficulty right for 59. Problem tags follow the word, not the model: every model's *tranquil* item was "span gives it away", every *stifle* and *curtail* item "span too hard". The rating does not separate the finalists. Saved as `content/pilot/en-c1.bakeoff-ratings.json`.
+- **Choice**: with quality indistinguishable to the GM, the plan's rule applies (the cheapest acceptable model). Drafting: GLM-5.3 Flash (the cheapest with the best automatic clean rate among the cheap models, 47 of 50). Blind solve: DeepSeek V4.1 Flash. Repair of flagged items: DeepSeek V4 Pro. Check the GLM-5.3 Flash licence on its model card before the bulk run.
+- **Solver strictness**: the GM rated good some items the solver fails ("will [give] the award on the runner" for *bestow on*, a fixed "from" missing from the sentence). The GM confirmed these slipped past in rating: the solver stays strict.
+- **Span difficulty**: "span gives it away" (tranquil) and "span too hard" (stifle, curtail) mean relative to other items, all within the acceptable range. Clue difficulty is a property of the word more than of the model or prompt; no prompt change.
+
+### English C1 bank (frozen 19 Oct 2026)
+
+- **Run**: 782 candidates → screen kept 606 → 605 drafted (GLM-5.3 Flash) → 537 passed checks and blind solve → 51 of 69 repaired (DeepSeek V4 Pro) → capped at 600 with the 50 pilot items. Spend $0.09.
+- **Review**: 19 flagged plus 54 random. All flagged good. Random sample: 3 "fix" (5.6%): *concealment* in an awkward construction, *dribbles* with a wrong clue ("lets fall"), *curate* (definition correct, word felt obscure). Comments on long or doubled clues and on *huntsman* sharing a root with *hunter*.
+- **Lessons applied before B2/C2**: prompt en-draft v4 (spans at most 4 words, alternatives single words, the answer must be the natural word), screen v2 (no culture-specific titles), checks for span length and for roots built on a shared common word (hunt-er/hunts-man), English a/an set from the clue (models wrote the article for the answer: "an [curse]" for *obscenity*).
+- **Bank**: `content/en/c1.json`, 594 items after removing the 3 "fix" items and repairing, in place, the 20 that failed the new checks (17 fixed, 3 dropped). Ids en-c1-0001 to en-c1-0597 with gaps where items were dropped; ids are permanent from first play.
+- **Solver v3 re-read**: 590 items after the B2 lessons below were run over C1 too (`fix --solve`).
+
+### English B2 bank (frozen 19 Oct 2026)
+
+- **Run**: 800 candidates → screen kept 616 → 551 passed first time → 52 of 65 repaired → capped at 600. Spend $0.08.
+- **Review**: 32 flagged plus 57 random. Fix rate about 7%, mostly a span that takes the wrong preposition or verb pattern for the answer ("hinted to"). The blind solver had read those sentences without complaint.
+- **Lessons applied**: solver prompt v3 checks that the answer can replace the span word for word (preposition, part of speech, verb pattern) and reports a `clueIssue`; it no longer counts the American spelling of the answer as a rival. Re-read over B2 and C1 with `fix --solve`, which repairs in place and keeps ids.
+- **Bank**: `content/en/b2.json`, 595 items after review, 589 after the v3 re-read.
+
+### English C2 bank (frozen 19 Oct 2026)
+
+- **Runs**: first run 800 → 552 screened in → 527 kept, too many odd derivatives. Screen v3 (drops easy derivatives and compounds) and a top-up run filled it to 600.
+- **Bug found and fixed**: the top-up numbered its provisional ids from 5000 again, colliding with 146 kept items; the id-keyed repair then overwrote 10 of them. Rebuilt from the pre-top-up staging, top-up items renumbered from en-c2-7000, review list remapped. `runLevel` now numbers past the highest kept id, and `assertUnique` (no duplicate id or lemma) runs before staging is saved, around every repair, and at freeze.
+- **Staging**: `content/staging/en-c2.json`, 599 items after the v3 re-read (10 fixed, 1 dropped). Review: 60 flagged (mostly `solve-missed`, the solver not finding a rare answer) plus 55 random, in Grist table Review_EN_C2. All 115 good; one typo corrected by hand (humdrum: "yesterday of sightseeing" → "a day of sightseeing").
+- **Bank**: `content/en/c2.json`, 599 items, ids en-c2-0001 to en-c2-0599.
+- **Cross-bank check**: no answer shared between C1 (590), B2 (589) and C2 (599). English banks complete: 1,778 items. Total English spend about $0.6.
+
 ### Staging
 
-C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
+Revised 19 Oct 2026: English first, all the way. English C1, then B2 and C2; then the full app and a UX test with real players; only then decide whether French is worth building. The French groundwork already showed more friction (noisy WOLF synonyms, a short C2 pool, Lexique gaps such as *porte-parole*), so it waits on the UX verdict.
 
 ## Environments
 

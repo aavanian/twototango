@@ -1,0 +1,294 @@
+[
+  {
+    "itemId": "en-c1-5336",
+    "why": "us-spelling: \"scoring\" → British \"scouring\""
+  },
+  {
+    "itemId": "en-c1-5361",
+    "why": "solve-missed: solver didn't find \"stench\" (said: strench, stink)"
+  },
+  {
+    "itemId": "en-c1-5239",
+    "why": "solve-missed: solver didn't find \"faithfulness\" (said: fidelity)"
+  },
+  {
+    "itemId": "en-c1-5253",
+    "why": "solve-missed: solver didn't find \"gelatin\" (said: gelatine)"
+  },
+  {
+    "itemId": "en-c1-5360",
+    "why": "solve-missed: solver didn't find \"squirt\" (said: spurt)"
+  },
+  {
+    "itemId": "en-c1-5231",
+    "why": "solve-missed: solver didn't find \"divergence\" (said: convergence)"
+  },
+  {
+    "itemId": "en-c1-5240",
+    "why": "solve-missed: solver didn't find \"faker\" (said: fraud)"
+  },
+  {
+    "itemId": "en-c1-5277",
+    "why": "solve-missed: solver didn't find \"intonation\" (said: inflection, inflexion)"
+  },
+  {
+    "itemId": "en-c1-5389",
+    "why": "solve-missed: solver didn't find \"wrongdoing\" (said: misconduct)"
+  },
+  {
+    "itemId": "en-c1-5577",
+    "why": "solve-missed: solver didn't find \"subdued\" (said: quelled)"
+  },
+  {
+    "itemId": "en-c1-5557",
+    "why": "solve-missed: solver didn't find \"revolves\" (said: revolve)"
+  },
+  {
+    "itemId": "en-c1-5536",
+    "why": "solve-missed: solver didn't find \"procure\" (said: obtain, secure)"
+  },
+  {
+    "itemId": "en-c1-5489",
+    "why": "solve-missed: solver didn't find \"immerse\" (said: immersed)"
+  },
+  {
+    "itemId": "en-c1-5517",
+    "why": "near-duplicate: 67% like en-c1-5491"
+  },
+  {
+    "itemId": "en-c1-5596",
+    "why": "solve-missed: solver didn't find \"unravelled\" (said: unraveled)"
+  },
+  {
+    "itemId": "en-c1-5561",
+    "why": "solve-missed: solver didn't find \"ruffled\" (said: ruffle)"
+  },
+  {
+    "itemId": "en-c1-5498",
+    "why": "solve-missed: solver didn't find \"inverting\" (said: invert)"
+  },
+  {
+    "itemId": "en-c1-5472",
+    "why": "solve-missed: solver didn't find \"foray\" (said: flâney)"
+  },
+  {
+    "itemId": "en-c1-5496",
+    "why": "solve-missed: solver didn't find \"instigated\" (said: instigate)"
+  },
+  {
+    "itemId": "en-c1-5597",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5343",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5046",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5554",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5437",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5045",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5208",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5207",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5270",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5249",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5546",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5334",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5143",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5251",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5158",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5167",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5264",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5413",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5213",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5189",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5403",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5201",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5101",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5087",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5074",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5265",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5449",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5340",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5479",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5513",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5506",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5053",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5457",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5186",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5195",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5256",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5003",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5530",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5094",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5212",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5590",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5221",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5114",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5339",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5225",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5203",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5191",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5349",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5552",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5306",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5018",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5304",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5379",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c1-5061",
+    "why": "random sample"
+  }
+]

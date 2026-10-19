@@ -1,0 +1,624 @@
+[
+  {
+    "itemId": "en-c1-0008",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "event",
+      "elect",
+      "egret"
+    ]
+  },
+  {
+    "itemId": "en-c1-0009",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "eczema",
+      "errata"
+    ]
+  },
+  {
+    "itemId": "en-c1-0011",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "marriages",
+      "carriages"
+    ]
+  },
+  {
+    "itemId": "en-c1-0012",
+    "issues": [],
+    "substituted": "The constant noise from the building site was a serious hindrance to our revision.",
+    "patternMatches": [
+      "windfalls"
+    ]
+  },
+  {
+    "itemId": "en-c1-0013",
+    "issues": [],
+    "substituted": "I had a hunch that the answer was hidden in the last paragraph.",
+    "patternMatches": [
+      "lunch",
+      "bunch",
+      "punch",
+      "butch",
+      "hutch",
+      "mulch",
+      "lurch"
+    ]
+  },
+  {
+    "itemId": "en-c1-0014",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "hyperbola"
+    ]
+  },
+  {
+    "itemId": "en-c1-0015",
+    "issues": [],
+    "substituted": "Maya has a real knack for making difficult maths problems look simple.",
+    "patternMatches": [
+      "knock",
+      "kayak",
+      "kiosk"
+    ]
+  },
+  {
+    "itemId": "en-c1-0016",
+    "issues": [],
+    "substituted": "After winning the regional final, the young pianist found herself in the limelight for weeks.",
+    "patternMatches": [
+      "limericks"
+    ]
+  },
+  {
+    "itemId": "en-c1-0017",
+    "issues": [],
+    "substituted": "A good translation captures every nuance in meaning, not just the general idea.",
+    "patternMatches": [
+      "tunnel",
+      "turner",
+      "runner",
+      "guinea",
+      "burner",
+      "funnel",
+      "gunner",
+      "gurney",
+      "quince",
+      "turnip",
+      "quanta"
+    ]
+  },
+  {
+    "itemId": "en-c1-0018",
+    "issues": [],
+    "substituted": "With both parents working late, the onus of cooking dinner fell on Tomas.",
+    "patternMatches": [
+      "once",
+      "ones",
+      "okay",
+      "odds",
+      "oral",
+      "ours",
+      "oven",
+      "olds",
+      "oval",
+      "oath",
+      "outs",
+      "oaks",
+      "ouch",
+      "odor",
+      "owls",
+      "oats",
+      "orgy",
+      "opal",
+      "opus",
+      "omen"
+    ]
+  },
+  {
+    "itemId": "en-c1-0019",
+    "issues": [
+      {
+        "itemId": "en-c1-0019",
+        "code": "solve-missed",
+        "severity": "flag",
+        "message": "solver didn't find \"plethora\" (said: profusion, plentitude)"
+      }
+    ],
+    "substituted": "The new streaming service offers a plethora of documentaries about the natural world.",
+    "patternMatches": [
+      "protozoa"
+    ]
+  },
+  {
+    "itemId": "en-c1-0020",
+    "issues": [],
+    "substituted": "When the final whistle blew, the stadium erupted into tumult.",
+    "patternMatches": [
+      "temple",
+      "timing",
+      "timber",
+      "tomato",
+      "temper",
+      "tumors",
+      "tumble",
+      "tumour",
+      "timers",
+      "tampon",
+      "tomboy",
+      "timbre",
+      "tomcat",
+      "tamale",
+      "tempos"
+    ]
+  },
+  {
+    "itemId": "en-c1-0021",
+    "issues": [
+      {
+        "itemId": "en-c1-0021",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'choose not to' is incomplete: it needs 'abstain' to take 'from', so the sentence should read 'choose not to abstain from eating' or simply 'abstain from eating'."
+      }
+    ],
+    "substituted": "During Ramadan, many Muslims abstain from eating and drinking between sunrise and sunset.",
+    "patternMatches": [
+      "sustain",
+      "despair",
+      "disdain",
+      "mislaid"
+    ]
+  },
+  {
+    "itemId": "en-c1-0022",
+    "issues": [
+      {
+        "itemId": "en-c1-0022",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'mention indirectly' should be 'alluded' and takes 'to', so the sentence is fine as written only if the answer is 'alluded'; otherwise 'mention indirectly to' is not natural English."
+      }
+    ],
+    "substituted": "In her speech, the head teacher alluded to the recent improvements in exam results.",
+    "patternMatches": [
+      "allowed",
+      "arrived",
+      "applied",
+      "adopted",
+      "accused",
+      "assumed",
+      "alleged",
+      "awarded",
+      "advised",
+      "adapted",
+      "assured",
+      "avoided",
+      "altered",
+      "annoyed",
+      "aligned",
+      "amended",
+      "admired",
+      "awaited",
+      "annexed",
+      "alarmed"
+    ]
+  },
+  {
+    "itemId": "en-c1-0023",
+    "issues": [
+      {
+        "itemId": "en-c1-0023",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined word 'collect' should be in the past tense to match 'Over the years' and 'has', so it should be 'collected' or 'amassed'."
+      }
+    ],
+    "substituted": "Over the years, my grandfather amassed a large collection of stamps.",
+    "patternMatches": [
+      "emerged",
+      "imposed",
+      "implied",
+      "smashed",
+      "amended",
+      "omitted",
+      "emailed",
+      "smelled",
+      "emitted",
+      "emptied",
+      "smacked",
+      "smeared",
+      "impeded",
+      "impaled",
+      "smirked",
+      "smudged",
+      "impound",
+      "imputed",
+      "imbibed",
+      "smelted"
+    ]
+  },
+  {
+    "itemId": "en-c1-0024",
+    "issues": [],
+    "substituted": "The king decided to banish the traitor from the kingdom.",
+    "patternMatches": [
+      "lavish",
+      "vanish",
+      "harass",
+      "caress",
+      "damask",
+      "ravish"
+    ]
+  },
+  {
+    "itemId": "en-c1-0025",
+    "issues": [
+      {
+        "itemId": "en-c1-0025",
+        "code": "solve-missed",
+        "severity": "flag",
+        "message": "solver didn't find \"belittle\" (said: victimise)"
+      }
+    ],
+    "substituted": "It's unkind to belittle someone for their accent.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0026",
+    "issues": [
+      {
+        "itemId": "en-c1-0026",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined word 'give' takes 'on' here, but the correct preposition with 'bestow' is 'on' or 'upon'; however, 'give an honour on someone' is not standard English: one gives something *to* someone, or confers/bestows an honour *on* someone."
+      }
+    ],
+    "substituted": "The queen will bestow an honour on the brave firefighter.",
+    "patternMatches": [
+      "review",
+      "yellow",
+      "mellow",
+      "bellow",
+      "redraw",
+      "seesaw",
+      "redrew"
+    ]
+  },
+  {
+    "itemId": "en-c1-0027",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "breach",
+      "sketch",
+      "pierce",
+      "trench",
+      "preach",
+      "bleach",
+      "wrench",
+      "fleece",
+      "fresco",
+      "quench",
+      "clench",
+      "drench"
+    ]
+  },
+  {
+    "itemId": "en-c1-0028",
+    "issues": [],
+    "substituted": "The council plans to curtail spending on new parks.",
+    "patternMatches": [
+      "control",
+      "channel",
+      "counsel",
+      "conceal",
+      "catcall",
+      "congeal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0029",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "advance",
+      "reverse",
+      "divorce",
+      "involve",
+      "revenge",
+      "inverse",
+      "invoice",
+      "revolve",
+      "deviate",
+      "diverge",
+      "devolve",
+      "devalue",
+      "bivalve",
+      "obviate",
+      "revalue"
+    ]
+  },
+  {
+    "itemId": "en-c1-0030",
+    "issues": [],
+    "substituted": "He likes to flaunt his new phone at school.",
+    "patternMatches": [
+      "forget",
+      "forest",
+      "forgot",
+      "fought",
+      "format",
+      "faggot",
+      "ferret",
+      "fillet",
+      "fidget",
+      "foment"
+    ]
+  },
+  {
+    "itemId": "en-c1-0031",
+    "issues": [],
+    "substituted": "When the storm clouds gathered, the hikers hastened back to the car park.",
+    "patternMatches": [
+      "happened",
+      "hardened",
+      "hammered",
+      "hampered",
+      "hindered",
+      "hollered",
+      "hunkered",
+      "hungered"
+    ]
+  },
+  {
+    "itemId": "en-c1-0032",
+    "issues": [
+      {
+        "itemId": "en-c1-0032",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'kept trying' is in the past tense, but the sentence requires a base-form verb after 'decided to'; it should be 'keep trying'."
+      }
+    ],
+    "substituted": "Even after failing the first two driving tests, Maya decided to persevere and book a third.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0033",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0034",
+    "issues": [
+      {
+        "itemId": "en-c1-0034",
+        "code": "solve-missed",
+        "severity": "flag",
+        "message": "solver didn't find \"relinquish\" (said: bequeathed)"
+      },
+      {
+        "itemId": "en-c1-0034",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'gave up' is in the past tense, but the sentence requires a base-form verb after 'had to'; it should be 'give up'. Also, 'gave up the trophy to the other team' is not idiomatic for handing over a trophy."
+      }
+    ],
+    "substituted": "After the injury, the captain had to relinquish the trophy to the other team.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0035",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "cauterize"
+    ]
+  },
+  {
+    "itemId": "en-c1-0036",
+    "issues": [],
+    "substituted": "The teacher scolded the boys for running down the corridor.",
+    "patternMatches": [
+      "applied",
+      "replied",
+      "skilled",
+      "evolved",
+      "implied",
+      "spelled",
+      "grilled",
+      "bullied",
+      "spilled",
+      "drilled",
+      "yielded",
+      "smelled",
+      "chilled",
+      "applaud",
+      "garland",
+      "stalled",
+      "rallied",
+      "mislead",
+      "stalked",
+      "exalted"
+    ]
+  },
+  {
+    "itemId": "en-c1-0037",
+    "issues": [
+      {
+        "itemId": "en-c1-0037",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'held back' is in the past tense, but the sentence requires a base-form verb after 'struggled to'; it should be 'hold back'."
+      }
+    ],
+    "substituted": "During the boring assembly, Leo struggled to stifle a yawn.",
+    "patternMatches": [
+      "strike",
+      "stable",
+      "stroke",
+      "strive",
+      "staple",
+      "starve",
+      "attire",
+      "stride",
+      "strode",
+      "strobe",
+      "strove",
+      "stymie",
+      "strafe",
+      "attune"
+    ]
+  },
+  {
+    "itemId": "en-c1-0038",
+    "issues": [
+      {
+        "itemId": "en-c1-0038",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'dried up' is in the past tense, but the sentence requires a base-form verb after 'began to'; it should be 'dry up'."
+      }
+    ],
+    "substituted": "Without enough water, the tomato plants in the garden began to wither.",
+    "patternMatches": [
+      "rights",
+      "lights",
+      "wishes",
+      "fights",
+      "dishes",
+      "wished",
+      "sights",
+      "fishes",
+      "sighed",
+      "cipher",
+      "fished",
+      "niches",
+      "siphon",
+      "tithes",
+      "dished",
+      "dither"
+    ]
+  },
+  {
+    "itemId": "en-c1-0039",
+    "issues": [],
+    "substituted": "She is an ardent supporter of the local wildlife charity.",
+    "patternMatches": [
+      "oldest",
+      "modest",
+      "eldest",
+      "widest",
+      "oddest",
+      "rudest"
+    ]
+  },
+  {
+    "itemId": "en-c1-0040",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "broad",
+      "bleak",
+      "basal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0041",
+    "issues": [],
+    "substituted": "The teacher gave my essay only a cursory look before handing it back.",
+    "patternMatches": [
+      "summary",
+      "runaway",
+      "buttery",
+      "rubbery",
+      "turnkey"
+    ]
+  },
+  {
+    "itemId": "en-c1-0042",
+    "issues": [],
+    "substituted": "We stayed away from the decrepit shed at the bottom of the garden.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0043",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "faulty",
+      "fluffy",
+      "fluent",
+      "feudal",
+      "fruity",
+      "frumpy"
+    ]
+  },
+  {
+    "itemId": "en-c1-0044",
+    "issues": [],
+    "substituted": "After weeks of illness, the rescue dog looked gaunt and tired.",
+    "patternMatches": [
+      "going",
+      "grand",
+      "giant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0045",
+    "issues": [],
+    "substituted": "The intrepid explorers crossed the frozen lake without a guide.",
+    "patternMatches": [
+      "intended"
+    ]
+  },
+  {
+    "itemId": "en-c1-0046",
+    "issues": [],
+    "substituted": "The goalkeeper was surprisingly nimble for such a tall player.",
+    "patternMatches": [
+      "viable",
+      "liable",
+      "limber"
+    ]
+  },
+  {
+    "itemId": "en-c1-0047",
+    "issues": [],
+    "substituted": "The film showed the queen dining in an opulent palace hall.",
+    "patternMatches": [
+      "routine",
+      "amusing",
+      "prudent"
+    ]
+  },
+  {
+    "itemId": "en-c1-0048",
+    "issues": [],
+    "substituted": "The final scene, where the old man says goodbye to his dog, was deeply poignant.",
+    "patternMatches": [
+      "pregnant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0049",
+    "issues": [],
+    "substituted": "She made a shrewd decision to buy the tickets early.",
+    "patternMatches": [
+      "unread"
+    ]
+  },
+  {
+    "itemId": "en-c1-0050",
+    "issues": [],
+    "substituted": "At dawn the lake was so tranquil that we could hear every bird.",
+    "patternMatches": []
+  }
+]

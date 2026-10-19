@@ -1,0 +1,996 @@
+{
+  "reports": [
+    {
+      "itemId": "en-c1-0001",
+      "issues": [],
+      "substituted": "Maya considered it a real affront when she wasn't invited to the party.",
+      "patternMatches": [
+        "affairs",
+        "affects",
+        "alfalfa",
+        "affixes"
+      ]
+    },
+    {
+      "itemId": "en-c1-0002",
+      "issues": [],
+      "substituted": "The suspect claimed he had a solid alibi: he was at the cinema with his cousin.",
+      "patternMatches": [
+        "plexi"
+      ]
+    },
+    {
+      "itemId": "en-c1-0003",
+      "issues": [
+        {
+          "itemId": "en-c1-0003",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"behemoth\" (said: colossus)"
+        }
+      ],
+      "substituted": "The new football stadium is an absolute behemoth, seating over eighty thousand fans.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0004",
+      "issues": [],
+      "substituted": "Her grandfather left her a generous bequest in his will: his entire book collection.",
+      "patternMatches": [
+        "baptism",
+        "bassist",
+        "ballast",
+        "blemish",
+        "badness",
+        "bombast",
+        "bigness",
+        "bulrush"
+      ]
+    },
+    {
+      "itemId": "en-c1-0005",
+      "issues": [],
+      "substituted": "The judge showed unusual clemency towards the young first-time offender.",
+      "patternMatches": [
+        "credence"
+      ]
+    },
+    {
+      "itemId": "en-c1-0006",
+      "issues": [],
+      "substituted": "To everyone's consternation, the school trip was cancelled an hour before departure.",
+      "patternMatches": [
+        "constellation"
+      ]
+    },
+    {
+      "itemId": "en-c1-0007",
+      "issues": [],
+      "substituted": "After the birthday party, the kitchen was in complete disarray, with plates and balloons everywhere.",
+      "patternMatches": [
+        "disunity"
+      ]
+    },
+    {
+      "itemId": "en-c1-0008",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "event",
+        "elect",
+        "egret"
+      ]
+    },
+    {
+      "itemId": "en-c1-0009",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "eczema",
+        "errata"
+      ]
+    },
+    {
+      "itemId": "en-c1-0010",
+      "issues": [],
+      "substituted": "The long-standing enmity between the two rival schools ended with a shared trophy.",
+      "patternMatches": [
+        "energy",
+        "equity",
+        "entity",
+        "eighty",
+        "eulogy",
+        "expiry",
+        "effigy",
+        "eatery"
+      ]
+    },
+    {
+      "itemId": "en-c1-0011",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "marriages",
+        "carriages"
+      ]
+    },
+    {
+      "itemId": "en-c1-0012",
+      "issues": [],
+      "substituted": "The heavy rain was a major hindrance to our journey home.",
+      "patternMatches": [
+        "windfalls"
+      ]
+    },
+    {
+      "itemId": "en-c1-0013",
+      "issues": [],
+      "substituted": "I had a hunch that Mia was hiding something from us.",
+      "patternMatches": [
+        "lunch",
+        "bunch",
+        "punch",
+        "butch",
+        "hutch",
+        "mulch",
+        "lurch"
+      ]
+    },
+    {
+      "itemId": "en-c1-0014",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "hyperbola"
+      ]
+    },
+    {
+      "itemId": "en-c1-0015",
+      "issues": [],
+      "substituted": "Amara has a real knack for calming angry customers.",
+      "patternMatches": [
+        "knock",
+        "kayak",
+        "kiosk"
+      ]
+    },
+    {
+      "itemId": "en-c1-0016",
+      "issues": [],
+      "substituted": "The young singer suddenly found herself in the limelight after her first hit song.",
+      "patternMatches": [
+        "limericks"
+      ]
+    },
+    {
+      "itemId": "en-c1-0017",
+      "issues": [],
+      "substituted": "A skilled translator notices every nuance in the poem's meaning.",
+      "patternMatches": [
+        "tunnel",
+        "turner",
+        "runner",
+        "guinea",
+        "burner",
+        "funnel",
+        "gunner",
+        "gurney",
+        "quince",
+        "turnip",
+        "quanta"
+      ]
+    },
+    {
+      "itemId": "en-c1-0018",
+      "issues": [],
+      "substituted": "The onus for organising the charity sale fell entirely on Priya.",
+      "patternMatches": [
+        "once",
+        "ones",
+        "okay",
+        "odds",
+        "oral",
+        "ours",
+        "oven",
+        "olds",
+        "oval",
+        "oath",
+        "outs",
+        "oaks",
+        "ouch",
+        "odor",
+        "owls",
+        "oats",
+        "orgy",
+        "opal",
+        "opus",
+        "omen"
+      ]
+    },
+    {
+      "itemId": "en-c1-0019",
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        }
+      ],
+      "substituted": "The new library offers a plethora of books on every subject.",
+      "patternMatches": [
+        "protozoa"
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "issues": [],
+      "substituted": "The surprise announcement caused complete tumult in the assembly hall.",
+      "patternMatches": [
+        "temple",
+        "timing",
+        "timber",
+        "tomato",
+        "temper",
+        "tumors",
+        "tumble",
+        "tumour",
+        "timers",
+        "tampon",
+        "tomboy",
+        "timbre",
+        "tomcat",
+        "tamale",
+        "tempos"
+      ]
+    },
+    {
+      "itemId": "en-c1-0021",
+      "issues": [],
+      "substituted": "Mia decided to abstain sweets for a whole month before the race.",
+      "patternMatches": [
+        "sustain",
+        "despair",
+        "disdain",
+        "mislaid"
+      ]
+    },
+    {
+      "itemId": "en-c1-0022",
+      "issues": [],
+      "substituted": "In her essay, Priya didn't mention the war directly; she only alluded briefly in one sentence.",
+      "patternMatches": [
+        "allowed",
+        "arrived",
+        "applied",
+        "adopted",
+        "accused",
+        "assumed",
+        "alleged",
+        "awarded",
+        "advised",
+        "adapted",
+        "assured",
+        "avoided",
+        "altered",
+        "annoyed",
+        "aligned",
+        "amended",
+        "admired",
+        "awaited",
+        "annexed",
+        "alarmed"
+      ]
+    },
+    {
+      "itemId": "en-c1-0023",
+      "issues": [],
+      "substituted": "Over ten years of saving, Grandad managed to amass an impressive collection of old coins.",
+      "patternMatches": [
+        "abuse",
+        "arise",
+        "arose",
+        "amuse"
+      ]
+    },
+    {
+      "itemId": "en-c1-0024",
+      "issues": [],
+      "substituted": "In the old legend, the king banished the dragon from the kingdom forever.",
+      "patternMatches": [
+        "believed",
+        "believes",
+        "besieged",
+        "banishes",
+        "bewilder"
+      ]
+    },
+    {
+      "itemId": "en-c1-0025",
+      "issues": [],
+      "substituted": "A good coach never belittles players who make mistakes during training.",
+      "patternMatches": [
+        "splatters",
+        "splotches"
+      ]
+    },
+    {
+      "itemId": "en-c1-0026",
+      "issues": [],
+      "substituted": "The head teacher will bestow the sports award on the fastest runner at Friday's assembly.",
+      "patternMatches": [
+        "review",
+        "yellow",
+        "mellow",
+        "bellow",
+        "redraw",
+        "seesaw",
+        "redrew"
+      ]
+    },
+    {
+      "itemId": "en-c1-0027",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "breach",
+        "sketch",
+        "pierce",
+        "trench",
+        "preach",
+        "bleach",
+        "wrench",
+        "fleece",
+        "fresco",
+        "quench",
+        "clench",
+        "drench"
+      ]
+    },
+    {
+      "itemId": "en-c1-0028",
+      "issues": [],
+      "substituted": "Heavy snowfall forced the council to curtail the opening ceremony of the winter festival.",
+      "patternMatches": [
+        "control",
+        "channel",
+        "counsel",
+        "conceal",
+        "catcall",
+        "congeal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0029",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "advance",
+        "reverse",
+        "divorce",
+        "involve",
+        "revenge",
+        "inverse",
+        "invoice",
+        "revolve",
+        "deviate",
+        "diverge",
+        "devolve",
+        "devalue",
+        "bivalve",
+        "obviate",
+        "revalue"
+      ]
+    },
+    {
+      "itemId": "en-c1-0030",
+      "issues": [],
+      "substituted": "Leo loves to flaunt his new trainers at the skate park every weekend.",
+      "patternMatches": [
+        "forget",
+        "forest",
+        "forgot",
+        "fought",
+        "format",
+        "faggot",
+        "ferret",
+        "fillet",
+        "fidget",
+        "foment"
+      ]
+    },
+    {
+      "itemId": "en-c1-0031",
+      "issues": [],
+      "substituted": "Seeing dark clouds gathering, the walkers hastened towards the shelter.",
+      "patternMatches": [
+        "happened",
+        "hardened",
+        "hammered",
+        "hampered",
+        "hindered",
+        "hollered",
+        "hunkered",
+        "hungered"
+      ]
+    },
+    {
+      "itemId": "en-c1-0032",
+      "issues": [],
+      "substituted": "Even after failing the driving test three times, Maya decided to persevere.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "issues": [],
+      "substituted": "After twenty years, the champion finally had to relinquish his title.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "cauterize"
+      ]
+    },
+    {
+      "itemId": "en-c1-0036",
+      "issues": [],
+      "substituted": "Mum scolded Ben for leaving his muddy boots in the hallway.",
+      "patternMatches": [
+        "applied",
+        "replied",
+        "skilled",
+        "evolved",
+        "implied",
+        "spelled",
+        "grilled",
+        "bullied",
+        "spilled",
+        "drilled",
+        "yielded",
+        "smelled",
+        "chilled",
+        "applaud",
+        "garland",
+        "stalled",
+        "rallied",
+        "mislead",
+        "stalked",
+        "exalted"
+      ]
+    },
+    {
+      "itemId": "en-c1-0037",
+      "issues": [],
+      "substituted": "During the head teacher's long speech, Leo struggled to stifle a yawn.",
+      "patternMatches": [
+        "strike",
+        "stable",
+        "stroke",
+        "strive",
+        "staple",
+        "starve",
+        "attire",
+        "stride",
+        "strode",
+        "strobe",
+        "strove",
+        "stymie",
+        "strafe",
+        "attune"
+      ]
+    },
+    {
+      "itemId": "en-c1-0038",
+      "issues": [],
+      "substituted": "The flowers in the neglected garden slowly began to wither in the summer heat.",
+      "patternMatches": [
+        "rights",
+        "lights",
+        "wishes",
+        "fights",
+        "dishes",
+        "wished",
+        "sights",
+        "fishes",
+        "sighed",
+        "cipher",
+        "fished",
+        "niches",
+        "siphon",
+        "tithes",
+        "dished",
+        "dither"
+      ]
+    },
+    {
+      "itemId": "en-c1-0039",
+      "issues": [],
+      "substituted": "As a(n) ardent supporter of the local team, Ravi never misses a home match.",
+      "patternMatches": [
+        "oldest",
+        "modest",
+        "eldest",
+        "widest",
+        "oddest",
+        "rudest"
+      ]
+    },
+    {
+      "itemId": "en-c1-0040",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "broad",
+        "bleak",
+        "basal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0041",
+      "issues": [],
+      "substituted": "He only gave the essay a cursory glance before handing it back to Priya.",
+      "patternMatches": [
+        "summary",
+        "runaway",
+        "buttery",
+        "rubbery",
+        "turnkey"
+      ]
+    },
+    {
+      "itemId": "en-c1-0042",
+      "issues": [],
+      "substituted": "The team refused to play in the stadium's decrepit changing rooms, which smelled of damp.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "faulty",
+        "fluffy",
+        "fluent",
+        "feudal",
+        "fruity",
+        "frumpy"
+      ]
+    },
+    {
+      "itemId": "en-c1-0044",
+      "issues": [],
+      "substituted": "After months at sea with little food, the sailors looked gaunt and pale.",
+      "patternMatches": [
+        "going",
+        "grand",
+        "giant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0045",
+      "issues": [],
+      "substituted": "The intrepid explorer led her team across the frozen mountains alone.",
+      "patternMatches": [
+        "intended"
+      ]
+    },
+    {
+      "itemId": "en-c1-0046",
+      "issues": [],
+      "substituted": "The goalkeeper was so nimble that he saved every shot in the second half.",
+      "patternMatches": [
+        "viable",
+        "liable",
+        "limber"
+      ]
+    },
+    {
+      "itemId": "en-c1-0047",
+      "issues": [],
+      "substituted": "The hotel lobby was opulent, with marble floors and enormous gold mirrors.",
+      "patternMatches": [
+        "routine",
+        "amusing",
+        "prudent"
+      ]
+    },
+    {
+      "itemId": "en-c1-0048",
+      "issues": [],
+      "substituted": "The film's final scene, where the brothers say goodbye, is deeply poignant.",
+      "patternMatches": [
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0049",
+      "issues": [],
+      "substituted": "It was a shrewd move to sell your bike before prices dropped, Omar.",
+      "patternMatches": [
+        "unread"
+      ]
+    },
+    {
+      "itemId": "en-c1-0050",
+      "issues": [],
+      "substituted": "We spent the afternoon by the tranquil lake, watching ducks drift past.",
+      "patternMatches": []
+    }
+  ],
+  "solve": [
+    {
+      "itemId": "en-c1-0001",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0002",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0003",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0003",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"behemoth\" (said: colossus)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0004",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0005",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0006",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0007",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0008",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0009",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0010",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0011",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0012",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0013",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0014",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0015",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0016",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0017",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0018",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0019",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0021",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0022",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0023",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0024",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0025",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0026",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0027",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0028",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0029",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0030",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0031",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0032",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0036",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0037",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0038",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0039",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0040",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0041",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0042",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0044",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0045",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0046",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0047",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0048",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0049",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0050",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    }
+  ],
+  "errors": []
+}

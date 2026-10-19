@@ -1,0 +1,633 @@
+[
+  {
+    "itemId": "en-c1-0001",
+    "issues": [],
+    "substituted": "Leaving the meeting early was a clear affront to the host who had prepared so carefully.",
+    "patternMatches": [
+      "affairs",
+      "affects",
+      "alfalfa",
+      "affixes"
+    ]
+  },
+  {
+    "itemId": "en-c1-0002",
+    "issues": [],
+    "substituted": "The suspect claimed he had an alibi for the night of the robbery, backed by cinema tickets.",
+    "patternMatches": [
+      "plexi"
+    ]
+  },
+  {
+    "itemId": "en-c1-0003",
+    "issues": [],
+    "substituted": "The new shopping centre is a retail behemoth that dwarfs every other building in the town.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0004",
+    "issues": [],
+    "substituted": "Her generous bequest in the will allowed the library to buy new computers.",
+    "patternMatches": [
+      "baptism",
+      "bassist",
+      "ballast",
+      "blemish",
+      "badness",
+      "bombast",
+      "bigness",
+      "bulrush"
+    ]
+  },
+  {
+    "itemId": "en-c1-0005",
+    "issues": [],
+    "substituted": "The judge showed clemency to the first-time offender by reducing the sentence.",
+    "patternMatches": [
+      "credence"
+    ]
+  },
+  {
+    "itemId": "en-c1-0006",
+    "issues": [],
+    "substituted": "To everyone's consternation, the favourite team lost the match in the final minute.",
+    "patternMatches": [
+      "constellation"
+    ]
+  },
+  {
+    "itemId": "en-c1-0007",
+    "issues": [],
+    "substituted": "After the storm, the garden was in complete disarray, with branches scattered across the lawn.",
+    "patternMatches": [
+      "disunity"
+    ]
+  },
+  {
+    "itemId": "en-c1-0008",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "event",
+      "elect",
+      "egret"
+    ]
+  },
+  {
+    "itemId": "en-c1-0009",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "eczema",
+      "errata"
+    ]
+  },
+  {
+    "itemId": "en-c1-0010",
+    "issues": [],
+    "substituted": "Years of competition created deep enmity between the two rival schools.",
+    "patternMatches": [
+      "energy",
+      "equity",
+      "entity",
+      "eighty",
+      "eulogy",
+      "expiry",
+      "effigy",
+      "eatery"
+    ]
+  },
+  {
+    "itemId": "en-c1-0011",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "marriages",
+      "carriages"
+    ]
+  },
+  {
+    "itemId": "en-c1-0012",
+    "issues": [],
+    "substituted": "The heavy rain became a major hindrance to our progress.",
+    "patternMatches": [
+      "windfalls"
+    ]
+  },
+  {
+    "itemId": "en-c1-0013",
+    "issues": [],
+    "substituted": "She had a strong hunch that the team would win despite the score.",
+    "patternMatches": [
+      "lunch",
+      "bunch",
+      "punch",
+      "butch",
+      "hutch",
+      "mulch",
+      "lurch"
+    ]
+  },
+  {
+    "itemId": "en-c1-0014",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "hyperbola"
+    ]
+  },
+  {
+    "itemId": "en-c1-0015",
+    "issues": [],
+    "substituted": "My brother has a real knack for fixing broken electronics without any tools.",
+    "patternMatches": [
+      "knock",
+      "kayak",
+      "kiosk"
+    ]
+  },
+  {
+    "itemId": "en-c1-0016",
+    "issues": [
+      {
+        "itemId": "en-c1-0016",
+        "code": "us-spelling",
+        "severity": "flag",
+        "message": "\"scoring\" → British \"scouring\""
+      }
+    ],
+    "substituted": "The young striker loved being in the limelight after scoring the winning goal in the final match.",
+    "patternMatches": [
+      "limericks"
+    ]
+  },
+  {
+    "itemId": "en-c1-0017",
+    "issues": [],
+    "substituted": "There was a slight nuance in the actor's performance that only critics noticed.",
+    "patternMatches": [
+      "tunnel",
+      "turner",
+      "runner",
+      "guinea",
+      "burner",
+      "funnel",
+      "gunner",
+      "gurney",
+      "quince",
+      "turnip",
+      "quanta"
+    ]
+  },
+  {
+    "itemId": "en-c1-0018",
+    "issues": [],
+    "substituted": "The onus is on the captain to lead the team fairly.",
+    "patternMatches": [
+      "once",
+      "ones",
+      "okay",
+      "odds",
+      "oral",
+      "ours",
+      "oven",
+      "olds",
+      "oval",
+      "oath",
+      "outs",
+      "oaks",
+      "ouch",
+      "odor",
+      "owls",
+      "oats",
+      "orgy",
+      "opal",
+      "opus",
+      "omen"
+    ]
+  },
+  {
+    "itemId": "en-c1-0019",
+    "issues": [],
+    "substituted": "We complained about the plethora of homework assignments this weekend.",
+    "patternMatches": [
+      "protozoa"
+    ]
+  },
+  {
+    "itemId": "en-c1-0020",
+    "issues": [],
+    "substituted": "There was great tumult in the streets after the storm hit the town.",
+    "patternMatches": [
+      "temple",
+      "timing",
+      "timber",
+      "tomato",
+      "temper",
+      "tumors",
+      "tumble",
+      "tumour",
+      "timers",
+      "tampon",
+      "tomboy",
+      "timbre",
+      "tomcat",
+      "tamale",
+      "tempos"
+    ]
+  },
+  {
+    "itemId": "en-c1-0021",
+    "issues": [],
+    "substituted": "During the dry month, many students chose to abstain sweets completely.",
+    "patternMatches": [
+      "sustain",
+      "despair",
+      "disdain",
+      "mislaid"
+    ]
+  },
+  {
+    "itemId": "en-c1-0022",
+    "issues": [
+      {
+        "itemId": "en-c1-0022",
+        "code": "fixed-word-missing",
+        "severity": "fail",
+        "message": "fixed word \"to\" is not in the sentence after the span"
+      }
+    ],
+    "substituted": "The teacher did not name the boy but alluded his late arrival in her speech.",
+    "patternMatches": [
+      "allowed",
+      "arrived",
+      "applied",
+      "adopted",
+      "accused",
+      "assumed",
+      "alleged",
+      "awarded",
+      "advised",
+      "adapted",
+      "assured",
+      "avoided",
+      "altered",
+      "annoyed",
+      "aligned",
+      "amended",
+      "admired",
+      "awaited",
+      "annexed",
+      "alarmed"
+    ]
+  },
+  {
+    "itemId": "en-c1-0023",
+    "issues": [],
+    "substituted": "Over the summer, he managed to amass a huge collection of rare shells.",
+    "patternMatches": [
+      "abuse",
+      "arise",
+      "arose",
+      "amuse"
+    ]
+  },
+  {
+    "itemId": "en-c1-0024",
+    "issues": [],
+    "substituted": "She tried to banish all negative thoughts before the exam.",
+    "patternMatches": [
+      "lavish",
+      "vanish",
+      "harass",
+      "caress",
+      "damask",
+      "ravish"
+    ]
+  },
+  {
+    "itemId": "en-c1-0025",
+    "issues": [],
+    "substituted": "It is unkind to belittle someone's achievements just because you are jealous.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0026",
+    "issues": [
+      {
+        "itemId": "en-c1-0026",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The underlined phrase 'give' is followed by 'the prize upon the winner', but 'give' does not take the preposition 'upon'; one gives something to someone, so the sentence should read 'give the prize to the winner'."
+      }
+    ],
+    "substituted": "The headteacher will bestow the prize upon the winner at noon.",
+    "patternMatches": [
+      "review",
+      "yellow",
+      "mellow",
+      "bellow",
+      "redraw",
+      "seesaw",
+      "redrew"
+    ]
+  },
+  {
+    "itemId": "en-c1-0027",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "breach",
+      "sketch",
+      "pierce",
+      "trench",
+      "preach",
+      "bleach",
+      "wrench",
+      "fleece",
+      "fresco",
+      "quench",
+      "clench",
+      "drench"
+    ]
+  },
+  {
+    "itemId": "en-c1-0028",
+    "issues": [],
+    "substituted": "The school decided to curtail the sports day due to the heavy rain.",
+    "patternMatches": [
+      "control",
+      "channel",
+      "counsel",
+      "conceal",
+      "catcall",
+      "congeal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0029",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "advance",
+      "reverse",
+      "divorce",
+      "involve",
+      "revenge",
+      "inverse",
+      "invoice",
+      "revolve",
+      "deviate",
+      "diverge",
+      "devolve",
+      "devalue",
+      "bivalve",
+      "obviate",
+      "revalue"
+    ]
+  },
+  {
+    "itemId": "en-c1-0030",
+    "issues": [],
+    "substituted": "He likes to flaunt his new mobile phone in front of everyone.",
+    "patternMatches": [
+      "forget",
+      "forest",
+      "forgot",
+      "fought",
+      "format",
+      "faggot",
+      "ferret",
+      "fillet",
+      "fidget",
+      "foment"
+    ]
+  },
+  {
+    "itemId": "en-c1-0031",
+    "issues": [],
+    "substituted": "The sudden drop in temperature will hasten the arrival of winter storms.",
+    "patternMatches": [
+      "listen",
+      "button",
+      "gotten",
+      "beaten",
+      "kitten",
+      "bitten",
+      "piston",
+      "soften",
+      "fasten",
+      "batten",
+      "fatten",
+      "whiten"
+    ]
+  },
+  {
+    "itemId": "en-c1-0032",
+    "issues": [],
+    "substituted": "Even when the maths problem seemed impossible, she chose to persevere until she found the solution.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0033",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0034",
+    "issues": [],
+    "substituted": "The captain was forced to relinquish control of the ship during the storm.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0035",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "cauterize"
+    ]
+  },
+  {
+    "itemId": "en-c1-0036",
+    "issues": [],
+    "substituted": "The teacher had to scold the boys for running in the corridor.",
+    "patternMatches": [
+      "blood",
+      "avoid",
+      "crowd",
+      "stood",
+      "cloud",
+      "flood",
+      "brood",
+      "booed",
+      "wooed",
+      "cooed"
+    ]
+  },
+  {
+    "itemId": "en-c1-0037",
+    "issues": [],
+    "substituted": "She tried to stifle a laugh during the serious assembly.",
+    "patternMatches": [
+      "strike",
+      "stable",
+      "stroke",
+      "strive",
+      "staple",
+      "starve",
+      "attire",
+      "stride",
+      "strode",
+      "strobe",
+      "strove",
+      "stymie",
+      "strafe",
+      "attune"
+    ]
+  },
+  {
+    "itemId": "en-c1-0038",
+    "issues": [],
+    "substituted": "Without water, the flowers in the vase began to wither and turn brown within two days.",
+    "patternMatches": [
+      "rights",
+      "lights",
+      "wishes",
+      "fights",
+      "dishes",
+      "wished",
+      "sights",
+      "fishes",
+      "sighed",
+      "cipher",
+      "fished",
+      "niches",
+      "siphon",
+      "tithes",
+      "dished",
+      "dither"
+    ]
+  },
+  {
+    "itemId": "en-c1-0039",
+    "issues": [
+      {
+        "itemId": "en-c1-0039",
+        "code": "clue-issue",
+        "severity": "fail",
+        "message": "The sentence uses 'an' before 'very enthusiastic', which is incorrect; it should be 'a very enthusiastic'."
+      }
+    ],
+    "substituted": "He is an ardent supporter of the local football club.",
+    "patternMatches": [
+      "oldest",
+      "modest",
+      "eldest",
+      "widest",
+      "oddest",
+      "rudest"
+    ]
+  },
+  {
+    "itemId": "en-c1-0040",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "broad",
+      "bleak",
+      "basal"
+    ]
+  },
+  {
+    "itemId": "en-c1-0041",
+    "issues": [],
+    "substituted": "She only had time for a cursory glance at the notes before the test.",
+    "patternMatches": [
+      "summary",
+      "runaway",
+      "buttery",
+      "rubbery",
+      "turnkey"
+    ]
+  },
+  {
+    "itemId": "en-c1-0042",
+    "issues": [],
+    "substituted": "The old, decrepit cottage on the hill needed urgent repairs.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c1-0043",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "faulty",
+      "fluffy",
+      "fluent",
+      "feudal",
+      "fruity",
+      "frumpy"
+    ]
+  },
+  {
+    "itemId": "en-c1-0044",
+    "issues": [],
+    "substituted": "His thin and gaunt face after weeks of illness worried everyone.",
+    "patternMatches": [
+      "going",
+      "grand",
+      "giant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0045",
+    "issues": [],
+    "substituted": "The intrepid explorer ventured deep into the unknown cave.",
+    "patternMatches": [
+      "intended"
+    ]
+  },
+  {
+    "itemId": "en-c1-0046",
+    "issues": [],
+    "substituted": "The quick and nimble gymnast landed perfectly on the balance beam.",
+    "patternMatches": [
+      "viable",
+      "liable",
+      "limber"
+    ]
+  },
+  {
+    "itemId": "en-c1-0047",
+    "issues": [],
+    "substituted": "Their huge, opulent mansion had gold taps in every bathroom.",
+    "patternMatches": [
+      "routine",
+      "amusing",
+      "prudent"
+    ]
+  },
+  {
+    "itemId": "en-c1-0048",
+    "issues": [],
+    "substituted": "The sad yet poignant ending of the film made everyone cry.",
+    "patternMatches": [
+      "pregnant"
+    ]
+  },
+  {
+    "itemId": "en-c1-0049",
+    "issues": [],
+    "substituted": "The shrewd investor predicted the market crash correctly.",
+    "patternMatches": [
+      "unread"
+    ]
+  },
+  {
+    "itemId": "en-c1-0050",
+    "issues": [],
+    "substituted": "The quiet and tranquil lake reflected the mountains like a mirror.",
+    "patternMatches": []
+  }
+]

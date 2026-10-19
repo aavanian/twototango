@@ -3,7 +3,8 @@
 import { Bank, type Item } from "@twototango/core";
 
 /** Real banks from content/<lang>/<level>.json, plus the dev bank when built with VITE_DEV_BANK=1. */
-const files = import.meta.glob<unknown>("../../../content/*/*.json", { eager: true, import: "default" });
+// Only shipping banks: content/pilot and other work files stay out of the app.
+const files = import.meta.glob<unknown>("../../../content/{en,fr}/{b2,c1,c2}.json", { eager: true, import: "default" });
 
 export async function loadItems(): Promise<Map<string, Item>> {
   const banks = Object.values(files).map((raw) => Bank.parse(raw));

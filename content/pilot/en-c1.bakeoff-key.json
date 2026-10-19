@@ -1,0 +1,245 @@
+{
+  "note": "Blind key for the bake-off rating in Grist (table Bakeoff). Item code \u2192 model.",
+  "key": {
+    "B01": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "clemency"
+    },
+    "B02": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "poignant"
+    },
+    "B03": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "tranquil"
+    },
+    "B04": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "bestow"
+    },
+    "B05": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "nuance"
+    },
+    "B06": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "curtail"
+    },
+    "B07": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "stifle"
+    },
+    "B08": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "bestow"
+    },
+    "B09": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "clemency"
+    },
+    "B10": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "wither"
+    },
+    "B11": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "clemency"
+    },
+    "B12": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "harbinger"
+    },
+    "B13": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "frugal"
+    },
+    "B14": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "curtail"
+    },
+    "B15": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "harbinger"
+    },
+    "B16": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "abstain"
+    },
+    "B17": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "poignant"
+    },
+    "B18": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "abstain"
+    },
+    "B19": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "tranquil"
+    },
+    "B20": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "harbinger"
+    },
+    "B21": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "stifle"
+    },
+    "B22": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "wither"
+    },
+    "B23": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "bestow"
+    },
+    "B24": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "stifle"
+    },
+    "B25": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "tranquil"
+    },
+    "B26": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "tranquil"
+    },
+    "B27": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "frugal"
+    },
+    "B28": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "hunch"
+    },
+    "B29": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "curtail"
+    },
+    "B30": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "hunch"
+    },
+    "B31": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "nuance"
+    },
+    "B32": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "poignant"
+    },
+    "B33": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "poignant"
+    },
+    "B34": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "clemency"
+    },
+    "B35": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "nuance"
+    },
+    "B36": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "wither"
+    },
+    "B37": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "clemency"
+    },
+    "B38": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "wither"
+    },
+    "B39": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "harbinger"
+    },
+    "B40": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "frugal"
+    },
+    "B41": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "abstain"
+    },
+    "B42": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "stifle"
+    },
+    "B43": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "nuance"
+    },
+    "B44": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "abstain"
+    },
+    "B45": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "curtail"
+    },
+    "B46": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "nuance"
+    },
+    "B47": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "hunch"
+    },
+    "B48": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "frugal"
+    },
+    "B49": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "wither"
+    },
+    "B50": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "hunch"
+    },
+    "B51": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "harbinger"
+    },
+    "B52": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "stifle"
+    },
+    "B53": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "tranquil"
+    },
+    "B54": {
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "bestow"
+    },
+    "B55": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "bestow"
+    },
+    "B56": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "abstain"
+    },
+    "B57": {
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "curtail"
+    },
+    "B58": {
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "hunch"
+    },
+    "B59": {
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "poignant"
+    },
+    "B60": {
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "frugal"
+    }
+  }
+}

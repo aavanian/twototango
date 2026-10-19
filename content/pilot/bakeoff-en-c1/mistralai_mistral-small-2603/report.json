@@ -1,0 +1,1138 @@
+{
+  "reports": [
+    {
+      "itemId": "en-c1-0001",
+      "issues": [],
+      "substituted": "The politician took the journalist's question as a deliberate affront.",
+      "patternMatches": [
+        "affairs",
+        "affects",
+        "alfalfa",
+        "affixes"
+      ]
+    },
+    {
+      "itemId": "en-c1-0002",
+      "issues": [],
+      "substituted": "The police questioned the suspect's alibi for the night of the robbery.",
+      "patternMatches": [
+        "plexi"
+      ]
+    },
+    {
+      "itemId": "en-c1-0003",
+      "issues": [
+        {
+          "itemId": "en-c1-0003",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"behemoth\" (said: bulldozer)"
+        }
+      ],
+      "substituted": "The construction company bought a massive behemoth to move the heavy machinery.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0004",
+      "issues": [],
+      "substituted": "In her will, Grandma left a small bequest to each of her grandchildren.",
+      "patternMatches": [
+        "baptism",
+        "bassist",
+        "ballast",
+        "blemish",
+        "badness",
+        "bombast",
+        "bigness",
+        "bulrush"
+      ]
+    },
+    {
+      "itemId": "en-c1-0005",
+      "issues": [],
+      "substituted": "The judge showed clemency and reduced the prisoner's sentence.",
+      "patternMatches": [
+        "credence"
+      ]
+    },
+    {
+      "itemId": "en-c1-0006",
+      "issues": [],
+      "substituted": "To the teacher's consternation, the whole class failed the test.",
+      "patternMatches": [
+        "constellation"
+      ]
+    },
+    {
+      "itemId": "en-c1-0007",
+      "issues": [],
+      "substituted": "After the party, the living room was in total disarray.",
+      "patternMatches": [
+        "disunity"
+      ]
+    },
+    {
+      "itemId": "en-c1-0008",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "event",
+        "elect",
+        "egret"
+      ]
+    },
+    {
+      "itemId": "en-c1-0009",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "eczema",
+        "errata"
+      ]
+    },
+    {
+      "itemId": "en-c1-0010",
+      "issues": [],
+      "substituted": "There was a deep enmity between the two rival football teams.",
+      "patternMatches": [
+        "energy",
+        "equity",
+        "entity",
+        "eighty",
+        "eulogy",
+        "expiry",
+        "effigy",
+        "eatery"
+      ]
+    },
+    {
+      "itemId": "en-c1-0011",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "marriages",
+        "carriages"
+      ]
+    },
+    {
+      "itemId": "en-c1-0012",
+      "issues": [
+        {
+          "itemId": "en-c1-0012",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The preposition 'to' is wrong after 'problem'; it should be 'for' (a problem for our travel plans)."
+        }
+      ],
+      "substituted": "The heavy snow was a major hindrance to our travel plans.",
+      "patternMatches": [
+        "windfalls"
+      ]
+    },
+    {
+      "itemId": "en-c1-0013",
+      "issues": [],
+      "substituted": "I have a strong hunch that the test will be easy.",
+      "patternMatches": [
+        "lunch",
+        "bunch",
+        "punch",
+        "butch",
+        "hutch",
+        "mulch",
+        "lurch"
+      ]
+    },
+    {
+      "itemId": "en-c1-0014",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "hyperbola"
+      ]
+    },
+    {
+      "itemId": "en-c1-0015",
+      "issues": [],
+      "substituted": "She has a real knack for solving puzzles quickly.",
+      "patternMatches": [
+        "knock",
+        "kayak",
+        "kiosk"
+      ]
+    },
+    {
+      "itemId": "en-c1-0016",
+      "issues": [
+        {
+          "itemId": "en-c1-0016",
+          "code": "us-spelling",
+          "severity": "flag",
+          "message": "\"scoring\" → British \"scouring\""
+        }
+      ],
+      "substituted": "After scoring the winning goal, Leo was suddenly in the limelight.",
+      "patternMatches": [
+        "limericks"
+      ]
+    },
+    {
+      "itemId": "en-c1-0017",
+      "issues": [],
+      "substituted": "The painting’s beauty lies in its subtle nuances of colour.",
+      "patternMatches": [
+        "running",
+        "turning",
+        "burning",
+        "quantum",
+        "runners",
+        "tunnels",
+        "turnout",
+        "furnace",
+        "surname",
+        "cunning",
+        "gunners",
+        "guineas",
+        "bunnies",
+        "burnout",
+        "burners",
+        "quintet",
+        "funnels",
+        "turnips",
+        "turnkey",
+        "quinine"
+      ]
+    },
+    {
+      "itemId": "en-c1-0018",
+      "issues": [],
+      "substituted": "The onus to organise the trip fell on me.",
+      "patternMatches": [
+        "once",
+        "ones",
+        "okay",
+        "odds",
+        "oral",
+        "ours",
+        "oven",
+        "olds",
+        "oval",
+        "oath",
+        "outs",
+        "oaks",
+        "ouch",
+        "odor",
+        "owls",
+        "oats",
+        "orgy",
+        "opal",
+        "opus",
+        "omen"
+      ]
+    },
+    {
+      "itemId": "en-c1-0019",
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        },
+        {
+          "itemId": "en-c1-0019",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The phrase 'a lot of choices' is informal and the sentence has a singular verb 'was' with a plural noun; a more formal noun is needed."
+        }
+      ],
+      "substituted": "There was a plethora of choices at the buffet.",
+      "patternMatches": [
+        "protozoa"
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "issues": [],
+      "substituted": "The crowd's tumult made it hard to hear the announcer.",
+      "patternMatches": [
+        "temple",
+        "timing",
+        "timber",
+        "tomato",
+        "temper",
+        "tumors",
+        "tumble",
+        "tumour",
+        "timers",
+        "tampon",
+        "tomboy",
+        "timbre",
+        "tomcat",
+        "tamale",
+        "tempos"
+      ]
+    },
+    {
+      "itemId": "en-c1-0021",
+      "issues": [],
+      "substituted": "At the meeting, Mia decided to abstain.",
+      "patternMatches": [
+        "sustain",
+        "despair",
+        "disdain",
+        "mislaid"
+      ]
+    },
+    {
+      "itemId": "en-c1-0022",
+      "issues": [
+        {
+          "itemId": "en-c1-0022",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined verb 'hinted' is normally followed by 'at', not 'to'; 'alluded' fits with 'to'."
+        }
+      ],
+      "substituted": "In his speech, the captain alluded to the team's recent victory without mentioning it directly.",
+      "patternMatches": [
+        "allowed",
+        "arrived",
+        "applied",
+        "adopted",
+        "accused",
+        "assumed",
+        "alleged",
+        "awarded",
+        "advised",
+        "adapted",
+        "assured",
+        "avoided",
+        "altered",
+        "annoyed",
+        "aligned",
+        "amended",
+        "admired",
+        "awaited",
+        "annexed",
+        "alarmed"
+      ]
+    },
+    {
+      "itemId": "en-c1-0023",
+      "issues": [
+        {
+          "itemId": "en-c1-0023",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'managed to' and with 'over the summer'."
+        }
+      ],
+      "substituted": "Over the summer, Leo managed to amass a huge pile of old comic books in his bedroom.",
+      "patternMatches": [
+        "abuse",
+        "arise",
+        "arose",
+        "amuse"
+      ]
+    },
+    {
+      "itemId": "en-c1-0024",
+      "issues": [
+        {
+          "itemId": "en-c1-0024",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"banish\" (said: bar)"
+        },
+        {
+          "itemId": "en-c1-0024",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'had to'."
+        }
+      ],
+      "substituted": "The teacher had to banish the noisy pupils from the classroom for disrupting the lesson.",
+      "patternMatches": [
+        "lavish",
+        "vanish",
+        "harass",
+        "caress",
+        "damask",
+        "ravish"
+      ]
+    },
+    {
+      "itemId": "en-c1-0025",
+      "issues": [
+        {
+          "itemId": "en-c1-0025",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"belittle\" (said: belittled)"
+        },
+        {
+          "itemId": "en-c1-0025",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a past-tense verb, but after 'would often' the sentence needs a bare infinitive."
+        }
+      ],
+      "substituted": "Instead of encouraging her, Tom would often belittle his sister’s dreams, which made her upset.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0026",
+      "issues": [],
+      "substituted": "The headteacher decided to bestow a special award to the student who saved a classmate from choking.",
+      "patternMatches": [
+        "review",
+        "yellow",
+        "mellow",
+        "bellow",
+        "redraw",
+        "seesaw",
+        "redrew"
+      ]
+    },
+    {
+      "itemId": "en-c1-0027",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "breach",
+        "sketch",
+        "pierce",
+        "trench",
+        "preach",
+        "bleach",
+        "wrench",
+        "fleece",
+        "fresco",
+        "quench",
+        "clench",
+        "drench"
+      ]
+    },
+    {
+      "itemId": "en-c1-0028",
+      "issues": [],
+      "substituted": "Due to the storm, the school had to curtail the outdoor sports day and move it indoors.",
+      "patternMatches": [
+        "control",
+        "channel",
+        "counsel",
+        "conceal",
+        "catcall",
+        "congeal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0029",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "advance",
+        "reverse",
+        "divorce",
+        "involve",
+        "revenge",
+        "inverse",
+        "invoice",
+        "revolve",
+        "deviate",
+        "diverge",
+        "devolve",
+        "devalue",
+        "bivalve",
+        "obviate",
+        "revalue"
+      ]
+    },
+    {
+      "itemId": "en-c1-0030",
+      "issues": [],
+      "substituted": "In the playground, Jake would always flaunt his new trainers to anyone who would look.",
+      "patternMatches": [
+        "forget",
+        "forest",
+        "forgot",
+        "fought",
+        "format",
+        "faggot",
+        "ferret",
+        "fillet",
+        "fidget",
+        "foment"
+      ]
+    },
+    {
+      "itemId": "en-c1-0031",
+      "issues": [],
+      "substituted": "When the teacher saw the mess, she decided to hasten to clean up before the next class arrived.",
+      "patternMatches": [
+        "listen",
+        "button",
+        "gotten",
+        "beaten",
+        "kitten",
+        "bitten",
+        "piston",
+        "soften",
+        "fasten",
+        "batten",
+        "fatten",
+        "whiten"
+      ]
+    },
+    {
+      "itemId": "en-c1-0032",
+      "issues": [],
+      "substituted": "Even after losing the first set, Emma chose to persevere until she won the match.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "issues": [],
+      "substituted": "After years of ownership, he finally agreed to relinquish control of the family business.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "issues": [
+        {
+          "itemId": "en-c1-0035",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"reiterate\" (said: iterate)"
+        }
+      ],
+      "substituted": null,
+      "patternMatches": [
+        "cauterize"
+      ]
+    },
+    {
+      "itemId": "en-c1-0036",
+      "issues": [],
+      "substituted": "Every time the dog chewed the sofa, Mum would scold him sharply for his bad behaviour.",
+      "patternMatches": [
+        "blood",
+        "avoid",
+        "crowd",
+        "stood",
+        "cloud",
+        "flood",
+        "brood",
+        "booed",
+        "wooed",
+        "cooed"
+      ]
+    },
+    {
+      "itemId": "en-c1-0037",
+      "issues": [
+        {
+          "itemId": "en-c1-0037",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"stifle\" (said: obstruct)"
+        }
+      ],
+      "substituted": "The thick fog seemed to stifle from seeing more than a few metres ahead.",
+      "patternMatches": [
+        "strike",
+        "stable",
+        "stroke",
+        "strive",
+        "staple",
+        "starve",
+        "attire",
+        "stride",
+        "strode",
+        "strobe",
+        "strove",
+        "stymie",
+        "strafe",
+        "attune"
+      ]
+    },
+    {
+      "itemId": "en-c1-0038",
+      "issues": [],
+      "substituted": "After weeks without rain, the garden plants began to wither and lose their bright colours.",
+      "patternMatches": [
+        "rights",
+        "lights",
+        "wishes",
+        "fights",
+        "dishes",
+        "wished",
+        "sights",
+        "fishes",
+        "sighed",
+        "cipher",
+        "fished",
+        "niches",
+        "siphon",
+        "tithes",
+        "dished",
+        "dither"
+      ]
+    },
+    {
+      "itemId": "en-c1-0039",
+      "issues": [],
+      "substituted": "Liam is an ardent supporter of the local football team and never misses a match.",
+      "patternMatches": [
+        "oldest",
+        "modest",
+        "eldest",
+        "widest",
+        "oddest",
+        "rudest"
+      ]
+    },
+    {
+      "itemId": "en-c1-0040",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "broad",
+        "bleak",
+        "basal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0041",
+      "issues": [],
+      "substituted": "The detective gave the crime scene only a cursory glance before leaving.",
+      "patternMatches": [
+        "summary",
+        "runaway",
+        "buttery",
+        "rubbery",
+        "turnkey"
+      ]
+    },
+    {
+      "itemId": "en-c1-0042",
+      "issues": [],
+      "substituted": "The old mansion stood decrepit and crumbling in the countryside.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "faulty",
+        "fluffy",
+        "fluent",
+        "feudal",
+        "fruity",
+        "frumpy"
+      ]
+    },
+    {
+      "itemId": "en-c1-0044",
+      "issues": [],
+      "substituted": "After months in the wilderness, Leo looked gaunt and exhausted.",
+      "patternMatches": [
+        "going",
+        "grand",
+        "giant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0045",
+      "issues": [],
+      "substituted": "The intrepid climber reached the summit without oxygen.",
+      "patternMatches": [
+        "intended"
+      ]
+    },
+    {
+      "itemId": "en-c1-0046",
+      "issues": [],
+      "substituted": "With her nimble fingers, Mia solved the puzzle in seconds.",
+      "patternMatches": [
+        "viable",
+        "liable",
+        "limber"
+      ]
+    },
+    {
+      "itemId": "en-c1-0047",
+      "issues": [],
+      "substituted": "The king’s palace was filled with opulent furnishings and gold decorations.",
+      "patternMatches": [
+        "routine",
+        "amusing",
+        "prudent"
+      ]
+    },
+    {
+      "itemId": "en-c1-0048",
+      "issues": [],
+      "substituted": "The film’s ending was so poignant that the audience sat in silence.",
+      "patternMatches": [
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0049",
+      "issues": [],
+      "substituted": "Maya made a shrewd decision that saved the company.",
+      "patternMatches": [
+        "unread"
+      ]
+    },
+    {
+      "itemId": "en-c1-0050",
+      "issues": [],
+      "substituted": "We spent the afternoon in a tranquil garden by the lake.",
+      "patternMatches": []
+    }
+  ],
+  "solve": [
+    {
+      "itemId": "en-c1-0001",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0002",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0003",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0003",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"behemoth\" (said: bulldozer)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0004",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0005",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0006",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0007",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0008",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0009",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0010",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0011",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0012",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The preposition 'to' is wrong after 'problem'; it should be 'for' (a problem for our travel plans).",
+      "issues": [
+        {
+          "itemId": "en-c1-0012",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The preposition 'to' is wrong after 'problem'; it should be 'for' (a problem for our travel plans)."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0013",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0014",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0015",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0016",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0017",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0018",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0019",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": "The phrase 'a lot of choices' is informal and the sentence has a singular verb 'was' with a plural noun; a more formal noun is needed.",
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        },
+        {
+          "itemId": "en-c1-0019",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The phrase 'a lot of choices' is informal and the sentence has a singular verb 'was' with a plural noun; a more formal noun is needed."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0021",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0022",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The underlined verb 'hinted' is normally followed by 'at', not 'to'; 'alluded' fits with 'to'.",
+      "issues": [
+        {
+          "itemId": "en-c1-0022",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined verb 'hinted' is normally followed by 'at', not 'to'; 'alluded' fits with 'to'."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0023",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'managed to' and with 'over the summer'.",
+      "issues": [
+        {
+          "itemId": "en-c1-0023",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'managed to' and with 'over the summer'."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0024",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'had to'.",
+      "issues": [
+        {
+          "itemId": "en-c1-0024",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"banish\" (said: bar)"
+        },
+        {
+          "itemId": "en-c1-0024",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a bare infinitive, but the sentence needs a past-tense verb after 'had to'."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0025",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": "The boxed word is a past-tense verb, but after 'would often' the sentence needs a bare infinitive.",
+      "issues": [
+        {
+          "itemId": "en-c1-0025",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"belittle\" (said: belittled)"
+        },
+        {
+          "itemId": "en-c1-0025",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxed word is a past-tense verb, but after 'would often' the sentence needs a bare infinitive."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0026",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0027",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0028",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0029",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0030",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0031",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0032",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0035",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"reiterate\" (said: iterate)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0036",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0037",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0037",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"stifle\" (said: obstruct)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0038",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0039",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0040",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0041",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0042",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0044",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0045",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0046",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0047",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0048",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0049",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0050",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    }
+  ],
+  "errors": []
+}

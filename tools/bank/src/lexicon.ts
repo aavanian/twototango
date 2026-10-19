@@ -78,13 +78,21 @@ export class Lexicon {
     return new Lexicon(lang, forms, syns);
   }
 
-  /** Every reading of a word form. */
+  /**
+   * Every reading of a word form. A British -ise form missing from the (mostly American)
+   * frequency data borrows the readings of its -ize spelling: itemise → itemize.
+   */
   entries(form: string): readonly FormEntry[] {
-    return this.#byForm.get(key(form)) ?? [];
+    const direct = this.#byForm.get(key(form));
+    if (direct || this.lang !== "en") return direct ?? [];
+    const ize = key(form).replace(/is(e|es|ed|ing|ation|ations|er|ers)$/u, "iz$1");
+    if (ize === key(form)) return [];
+    const toIse = (w: string) => w.replace(/iz(e|es|ed|ing|ation|ations|er|ers)$/u, "is$1");
+    return (this.#byForm.get(ize) ?? []).map((e) => ({ ...e, form: toIse(e.form), lemma: toIse(e.lemma) }));
   }
 
   has(form: string): boolean {
-    return this.#byForm.has(key(form));
+    return this.entries(form).length > 0;
   }
 
   zipf(form: string): number {

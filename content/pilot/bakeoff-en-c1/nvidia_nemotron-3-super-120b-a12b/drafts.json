@@ -1,0 +1,865 @@
+{
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "items": [
+    {
+      "lemma": "affront",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "His sarcastic remark during the meeting was an obvious ",
+      "span": [
+        "insult"
+      ],
+      "after": " to the team leader who had worked late.",
+      "fixedWords": [],
+      "answer": "affront",
+      "acceptable": [],
+      "nearMisses": [
+        "slight",
+        "snub",
+        "disrespect"
+      ]
+    },
+    {
+      "lemma": "alibi",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "The teenager claimed he was at the cinema, giving him a solid ",
+      "span": [
+        "excuse"
+      ],
+      "after": " for why he missed the curfew.",
+      "fixedWords": [],
+      "answer": "alibi",
+      "acceptable": [],
+      "nearMisses": [
+        "justification",
+        "reason",
+        "defence"
+      ]
+    },
+    {
+      "lemma": "behemoth",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "The new shopping centre is a concrete ",
+      "span": [
+        "giant"
+      ],
+      "after": " that dominates the entire high street.",
+      "fixedWords": [],
+      "answer": "behemoth",
+      "acceptable": [],
+      "nearMisses": [
+        "colossus",
+        "titanic",
+        "monster"
+      ]
+    },
+    {
+      "lemma": "bequest",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "Her grandmother’s will included a generous ",
+      "span": [
+        "inheritance"
+      ],
+      "after": " of vintage books and jewellery.",
+      "fixedWords": [],
+      "answer": "bequest",
+      "acceptable": [],
+      "nearMisses": [
+        "legacy",
+        "endowment",
+        "gift"
+      ]
+    },
+    {
+      "lemma": "clemency",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "After pleading guilty, the prisoner appealed to the judge for ",
+      "span": [
+        "mercy"
+      ],
+      "after": " rather than a harsh sentence.",
+      "fixedWords": [],
+      "answer": "clemency",
+      "acceptable": [],
+      "nearMisses": [
+        "leniency",
+        "compassion",
+        "forgiveness"
+      ]
+    },
+    {
+      "lemma": "consternation",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "There was widespread ",
+      "span": [
+        "alarm"
+      ],
+      "after": " when the power cut lasted through the evening.",
+      "fixedWords": [],
+      "answer": "consternation",
+      "acceptable": [],
+      "nearMisses": [
+        "dismay",
+        "unease",
+        "perturbation"
+      ]
+    },
+    {
+      "lemma": "disarray",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "After the celebration, the classroom was in total ",
+      "span": [
+        "mess"
+      ],
+      "after": " with chairs overturned and paper everywhere.",
+      "fixedWords": [],
+      "answer": "disarray",
+      "acceptable": [],
+      "nearMisses": [
+        "chaos",
+        "clutter",
+        "jumble"
+      ]
+    },
+    {
+      "lemma": "edict",
+      "pos": "noun",
+      "kind": "definition",
+      "definition": "A formal order issued by someone in authority",
+      "fixedWords": [],
+      "answer": "edict",
+      "acceptable": [],
+      "nearMisses": [
+        "decree",
+        "directive",
+        "proclamation"
+      ]
+    },
+    {
+      "lemma": "enigma",
+      "pos": "noun",
+      "kind": "definition",
+      "definition": "Something mysterious and difficult to understand or explain",
+      "fixedWords": [],
+      "answer": "enigma",
+      "acceptable": [],
+      "nearMisses": [
+        "puzzle",
+        "mystery",
+        "conundrum"
+      ]
+    },
+    {
+      "lemma": "enmity",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "Years of rivalry had turned their friendship into open ",
+      "span": [
+        "hatred"
+      ],
+      "after": " whenever they met on the football pitch.",
+      "fixedWords": [],
+      "answer": "enmity",
+      "acceptable": [],
+      "nearMisses": [
+        "hostility",
+        "animosity",
+        "antagonism"
+      ]
+    },
+    {
+      "lemma": "harbinger",
+      "pos": "noun",
+      "kind": "definition",
+      "definition": "A person or thing that signals the approach of something",
+      "fixedWords": [],
+      "answer": "harbinger",
+      "acceptable": [],
+      "nearMisses": [
+        "omen",
+        "sign",
+        "indicator"
+      ]
+    },
+    {
+      "lemma": "hindrance",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "Her fear of speaking in public was a real ",
+      "span": [
+        "obstacle"
+      ],
+      "after": " during the school debate competition.",
+      "fixedWords": [],
+      "answer": "hindrance",
+      "acceptable": [],
+      "nearMisses": [
+        "barrier",
+        "obstruction",
+        "impediment"
+      ]
+    },
+    {
+      "lemma": "hunch",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "I had a ",
+      "span": [
+        "feeling"
+      ],
+      "after": " that we would win the match despite the rain.",
+      "fixedWords": [],
+      "answer": "hunch",
+      "acceptable": [],
+      "nearMisses": [
+        "idea",
+        "suspicion",
+        "guess"
+      ]
+    },
+    {
+      "lemma": "hyperbole",
+      "pos": "noun",
+      "kind": "definition",
+      "definition": "Exaggerated statements or claims not meant to be taken literally",
+      "fixedWords": [],
+      "answer": "hyperbole",
+      "acceptable": [],
+      "nearMisses": [
+        "overstatement",
+        "exaggeration",
+        "embroidery"
+      ]
+    },
+    {
+      "lemma": "knack",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "She has a ",
+      "span": [
+        "talent"
+      ],
+      "after": " for remembering everyone's birthday without writing them down.",
+      "fixedWords": [],
+      "answer": "knack",
+      "acceptable": [],
+      "nearMisses": [
+        "gift",
+        "flair",
+        "aptitude"
+      ]
+    },
+    {
+      "lemma": "limelight",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "After scoring the winning goal, he found himself in the ",
+      "span": [
+        "spotlight"
+      ],
+      "after": " for the rest of the day.",
+      "fixedWords": [],
+      "answer": "limelight",
+      "acceptable": [],
+      "nearMisses": [
+        "focus",
+        "attention",
+        "glare"
+      ]
+    },
+    {
+      "lemma": "nuance",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "The teacher praised her essay for its subtle ",
+      "span": [
+        "difference"
+      ],
+      "after": " in interpreting the poem's meaning.",
+      "fixedWords": [],
+      "answer": "nuance",
+      "acceptable": [],
+      "nearMisses": [
+        "shade",
+        "hint",
+        "touch"
+      ]
+    },
+    {
+      "lemma": "onus",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "The ",
+      "span": [
+        "responsibility"
+      ],
+      "after": " for cleaning up after the picnic fell to the youngest members of the group.",
+      "fixedWords": [],
+      "answer": "onus",
+      "acceptable": [],
+      "nearMisses": [
+        "burden",
+        "duty",
+        "obligation"
+      ]
+    },
+    {
+      "lemma": "plethora",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "There was a ",
+      "span": [
+        "lot"
+      ],
+      "after": " of food left over after the party, so we sent some home with everyone.",
+      "fixedWords": [],
+      "answer": "plethora",
+      "acceptable": [],
+      "nearMisses": [
+        "abundance",
+        "surfeit",
+        "wealth"
+      ]
+    },
+    {
+      "lemma": "tumult",
+      "pos": "noun",
+      "kind": "sentence",
+      "before": "The crowd reacted with a ",
+      "span": [
+        "uproar"
+      ],
+      "after": " when the final whistle blew and the underdogs had won.",
+      "fixedWords": [],
+      "answer": "tumult",
+      "acceptable": [],
+      "nearMisses": [
+        "commotion",
+        "turmoil",
+        "uproar"
+      ]
+    },
+    {
+      "lemma": "abstain",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "During Ramadan, many Muslims ",
+      "span": [
+        "avoid eating"
+      ],
+      "after": " from dawn until sunset.",
+      "fixedWords": [],
+      "answer": "abstain",
+      "acceptable": [],
+      "nearMisses": [
+        "refrain",
+        "forgo",
+        "desist"
+      ]
+    },
+    {
+      "lemma": "allude",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "In her speech, the principal ",
+      "span": [
+        "referred to"
+      ],
+      "after": " the upcoming changes without giving details.",
+      "fixedWords": [],
+      "answer": "alluded",
+      "acceptable": [],
+      "nearMisses": [
+        "mentioned",
+        "hinted",
+        "implied"
+      ]
+    },
+    {
+      "lemma": "amass",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "Over the summer, she ",
+      "span": [
+        "gathered"
+      ],
+      "after": " a impressive collection of vintage comics.",
+      "fixedWords": [],
+      "answer": "amassed",
+      "acceptable": [],
+      "nearMisses": [
+        "accumulated",
+        "collected",
+        "hoarded"
+      ]
+    },
+    {
+      "lemma": "banish",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "The teacher decided to ",
+      "span": [
+        "send away"
+      ],
+      "after": " the disruptive student for the rest of the lesson.",
+      "fixedWords": [],
+      "answer": "banish",
+      "acceptable": [],
+      "nearMisses": [
+        "expel",
+        "exclude",
+        "dismiss"
+      ]
+    },
+    {
+      "lemma": "belittle",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "It’s unkind to ",
+      "span": [
+        "make fun of"
+      ],
+      "after": " someone’s efforts, no matter how small.",
+      "fixedWords": [],
+      "answer": "belittle",
+      "acceptable": [],
+      "nearMisses": [
+        "disparage",
+        "deride",
+        "mock"
+      ]
+    },
+    {
+      "lemma": "bestow",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "The queen will ",
+      "span": [
+        "give"
+      ],
+      "after": " honours to several citizens at the ceremony tomorrow.",
+      "fixedWords": [],
+      "answer": "bestow",
+      "acceptable": [],
+      "nearMisses": [
+        "confer",
+        "award",
+        "grant"
+      ]
+    },
+    {
+      "lemma": "coerce",
+      "pos": "verb",
+      "kind": "definition",
+      "definition": "To force someone to do something using threats or pressure",
+      "fixedWords": [],
+      "answer": "coerce",
+      "acceptable": [],
+      "nearMisses": [
+        "compel",
+        "oblige",
+        "intimidate"
+      ]
+    },
+    {
+      "lemma": "curtail",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "Due to budget cuts, the school had to ",
+      "span": [
+        "reduce"
+      ],
+      "after": " extracurricular activities this term.",
+      "fixedWords": [],
+      "answer": "curtail",
+      "acceptable": [],
+      "nearMisses": [
+        "limit",
+        "restrict",
+        "trim"
+      ]
+    },
+    {
+      "lemma": "divulge",
+      "pos": "verb",
+      "kind": "definition",
+      "definition": "To make private or secret information known to others",
+      "fixedWords": [],
+      "answer": "divulge",
+      "acceptable": [],
+      "nearMisses": [
+        "reveal",
+        "disclose",
+        "expose"
+      ]
+    },
+    {
+      "lemma": "flaunt",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "He likes to ",
+      "span": [
+        "show off"
+      ],
+      "after": " his new smartphone whenever he meets friends.",
+      "fixedWords": [],
+      "answer": "flaunt",
+      "acceptable": [],
+      "nearMisses": [
+        "display",
+        "ostentatiously show",
+        "parade"
+      ]
+    },
+    {
+      "lemma": "hasten",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "She grabbed her coat and ",
+      "span": [
+        "hurried"
+      ],
+      "after": " to catch the bus before it left.",
+      "fixedWords": [],
+      "answer": "hastened",
+      "acceptable": [],
+      "nearMisses": [
+        "rushed",
+        "dashed",
+        "sped"
+      ]
+    },
+    {
+      "lemma": "persevere",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "Even though the maths problem was tough, he kept trying and ",
+      "span": [
+        "continued"
+      ],
+      "after": " until he solved it.",
+      "fixedWords": [],
+      "answer": "persevered",
+      "acceptable": [],
+      "nearMisses": [
+        "persisted",
+        "endured",
+        "struggled"
+      ]
+    },
+    {
+      "lemma": "procrastinate",
+      "pos": "verb",
+      "kind": "definition",
+      "definition": "Delay doing something that should be done, often until later",
+      "fixedWords": [],
+      "answer": "procrastinate",
+      "acceptable": [],
+      "nearMisses": [
+        "postpone",
+        "delay",
+        "defer"
+      ]
+    },
+    {
+      "lemma": "relinquish",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "When the bell rang, the student had to ",
+      "span": [
+        "give up"
+      ],
+      "after": " his seat to the next class.",
+      "fixedWords": [],
+      "answer": "relinquish",
+      "acceptable": [],
+      "nearMisses": [
+        "surrender",
+        "yield",
+        "cede"
+      ]
+    },
+    {
+      "lemma": "reiterate",
+      "pos": "verb",
+      "kind": "definition",
+      "definition": "Say something again or repeatedly for emphasis or clarity",
+      "fixedWords": [],
+      "answer": "reiterate",
+      "acceptable": [],
+      "nearMisses": [
+        "repeat",
+        "restate",
+        "recap"
+      ]
+    },
+    {
+      "lemma": "scold",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "The teacher had to ",
+      "span": [
+        "tell off"
+      ],
+      "after": " the pupil for talking during the test.",
+      "fixedWords": [],
+      "answer": "scolded",
+      "acceptable": [],
+      "nearMisses": [
+        "reprimand",
+        "chide",
+        "berate"
+      ]
+    },
+    {
+      "lemma": "stifle",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "She tried not to laugh, but couldn't ",
+      "span": [
+        "hold back"
+      ],
+      "after": " a giggle during the serious assembly.",
+      "fixedWords": [],
+      "answer": "stifle",
+      "acceptable": [],
+      "nearMisses": [
+        "suppress",
+        "restrain",
+        "curb"
+      ]
+    },
+    {
+      "lemma": "wither",
+      "pos": "verb",
+      "kind": "sentence",
+      "before": "Without water for days, the flowers began to ",
+      "span": [
+        "fade"
+      ],
+      "after": " and lose their bright colours.",
+      "fixedWords": [],
+      "answer": "wither",
+      "acceptable": [],
+      "nearMisses": [
+        "wilting",
+        "dwindle",
+        "fade away"
+      ]
+    },
+    {
+      "lemma": "ardent",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "She is an ",
+      "span": [
+        "enthusiastic"
+      ],
+      "after": " supporter of the school's environmental club.",
+      "fixedWords": [],
+      "answer": "ardent",
+      "acceptable": [],
+      "nearMisses": [
+        "passionate",
+        "fervent",
+        "zealous"
+      ]
+    },
+    {
+      "lemma": "banal",
+      "pos": "adjective",
+      "kind": "definition",
+      "definition": "So lacking in originality as to be obvious and boring",
+      "fixedWords": [],
+      "answer": "banal",
+      "acceptable": [],
+      "nearMisses": [
+        "trite",
+        "hackneyed",
+        "stale"
+      ]
+    },
+    {
+      "lemma": "cursory",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The teacher gave the essays only a ",
+      "span": [
+        "quick"
+      ],
+      "after": " glance before handing them back.",
+      "fixedWords": [],
+      "answer": "cursory",
+      "acceptable": [],
+      "nearMisses": [
+        "brief",
+        "superficial",
+        "hasty"
+      ]
+    },
+    {
+      "lemma": "decrepit",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The old bridge looked ",
+      "span": [
+        "run-down"
+      ],
+      "after": " and unsafe to cross.",
+      "fixedWords": [],
+      "answer": "decrepit",
+      "acceptable": [],
+      "nearMisses": [
+        "dilapidated",
+        "crumbling",
+        "rickety"
+      ]
+    },
+    {
+      "lemma": "frugal",
+      "pos": "adjective",
+      "kind": "definition",
+      "definition": "Sparing or economical with regard to money or food",
+      "fixedWords": [],
+      "answer": "frugal",
+      "acceptable": [],
+      "nearMisses": [
+        "thrifty",
+        "stingy",
+        "miserly"
+      ]
+    },
+    {
+      "lemma": "gaunt",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "After weeks of illness, she looked ",
+      "span": [
+        "thin"
+      ],
+      "after": " and pale.",
+      "fixedWords": [],
+      "answer": "gaunt",
+      "acceptable": [],
+      "nearMisses": [
+        "emaciated",
+        "haggard",
+        "skinny"
+      ]
+    },
+    {
+      "lemma": "intrepid",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The ",
+      "span": [
+        "brave"
+      ],
+      "after": " explorer ventured into the unknown jungle alone.",
+      "fixedWords": [],
+      "answer": "intrepid",
+      "acceptable": [],
+      "nearMisses": [
+        "fearless",
+        "bold",
+        "courageous"
+      ]
+    },
+    {
+      "lemma": "nimble",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The ",
+      "span": [
+        "quick"
+      ],
+      "after": " gymnast landed the difficult routine perfectly.",
+      "fixedWords": [],
+      "answer": "nimble",
+      "acceptable": [],
+      "nearMisses": [
+        "agile",
+        "spry",
+        "light"
+      ]
+    },
+    {
+      "lemma": "opulent",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The hotel suite was ",
+      "span": [
+        "luxurious"
+      ],
+      "after": " with marble floors and crystal chandeliers.",
+      "fixedWords": [],
+      "answer": "opulent",
+      "acceptable": [],
+      "nearMisses": [
+        "lavish",
+        "sumptuous",
+        "luxuriant"
+      ]
+    },
+    {
+      "lemma": "poignant",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The farewell scene in the film was deeply ",
+      "span": [
+        "moving"
+      ],
+      "after": ", bringing tears to many eyes.",
+      "fixedWords": [],
+      "answer": "poignant",
+      "acceptable": [],
+      "nearMisses": [
+        "touching",
+        "affecting",
+        "emotional"
+      ]
+    },
+    {
+      "lemma": "shrewd",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "She made a ",
+      "span": [
+        "clever"
+      ],
+      "after": " investment that doubled her money in a year.",
+      "fixedWords": [],
+      "answer": "shrewd",
+      "acceptable": [],
+      "nearMisses": [
+        "astute",
+        "sharp",
+        "perceptive"
+      ]
+    },
+    {
+      "lemma": "tranquil",
+      "pos": "adjective",
+      "kind": "sentence",
+      "before": "The lake was ",
+      "span": [
+        "calm"
+      ],
+      "after": " at dawn, with not a ripple in sight.",
+      "fixedWords": [],
+      "answer": "tranquil",
+      "acceptable": [],
+      "nearMisses": [
+        "peaceful",
+        "serene",
+        "placid"
+      ]
+    }
+  ]
+}

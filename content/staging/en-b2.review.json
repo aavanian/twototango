@@ -1,0 +1,358 @@
+[
+  {
+    "itemId": "en-b2-5213",
+    "why": "solve-missed: solver didn't find \"dealings\" (said: dealing)"
+  },
+  {
+    "itemId": "en-b2-5268",
+    "why": "solve-missed: solver didn't find \"indicator\" (said: indication)"
+  },
+  {
+    "itemId": "en-b2-5304",
+    "why": "solve-missed: solver didn't find \"negotiation\" (said: negotiations)"
+  },
+  {
+    "itemId": "en-b2-5333",
+    "why": "us-spelling: \"timber\" → British \"timbre\""
+  },
+  {
+    "itemId": "en-b2-5384",
+    "why": "solve-missed: solver didn't find \"tornado\" (said: tempest)"
+  },
+  {
+    "itemId": "en-b2-5342",
+    "why": "solve-missed: solver didn't find \"rebirth\" (said: revival)"
+  },
+  {
+    "itemId": "en-b2-5257",
+    "why": "solve-missed: solver didn't find \"grocery\" (said: grocer)"
+  },
+  {
+    "itemId": "en-b2-5407",
+    "why": "solve-missed: solver didn't find \"approved\" (said: approve)"
+  },
+  {
+    "itemId": "en-b2-5519",
+    "why": "solve-missed: solver didn't find \"instructed\" (said: instruct)"
+  },
+  {
+    "itemId": "en-b2-5595",
+    "why": "solve-missed: solver didn't find \"teased\" (said: tease)"
+  },
+  {
+    "itemId": "en-b2-5478",
+    "why": "solve-missed: solver didn't find \"esteems\" (said: esteem)"
+  },
+  {
+    "itemId": "en-b2-5540",
+    "why": "solve-missed: solver didn't find \"overlooked\" (said: overlook)"
+  },
+  {
+    "itemId": "en-b2-5593",
+    "why": "solve-missed: solver didn't find \"tallying\" (said: tally)"
+  },
+  {
+    "itemId": "en-b2-5423",
+    "why": "solve-missed: solver didn't find \"chattering\" (said: chattered)"
+  },
+  {
+    "itemId": "en-b2-5566",
+    "why": "solve-missed: solver didn't find \"seize\" (said: seized)"
+  },
+  {
+    "itemId": "en-b2-5489",
+    "why": "solve-missed: solver didn't find \"fiddling\" (said: fiddled)"
+  },
+  {
+    "itemId": "en-b2-5440",
+    "why": "solve-missed: solver didn't find \"counterfeit\" (said: counterfeited)"
+  },
+  {
+    "itemId": "en-b2-5563",
+    "why": "solve-missed: solver didn't find \"saddle\" (said: saddled)"
+  },
+  {
+    "itemId": "en-b2-5457",
+    "why": "solve-missed: solver didn't find \"disguise\" (said: disguises)"
+  },
+  {
+    "itemId": "en-b2-5524",
+    "why": "solve-missed: solver didn't find \"invoked\" (said: invoke)"
+  },
+  {
+    "itemId": "en-b2-5456",
+    "why": "solve-missed: solver didn't find \"discredit\" (said: disparage)"
+  },
+  {
+    "itemId": "en-b2-5535",
+    "why": "solve-missed: solver didn't find \"merits\" (said: merited)"
+  },
+  {
+    "itemId": "en-b2-5427",
+    "why": "solve-missed: solver didn't find \"cloaked\" (said: shrouded)"
+  },
+  {
+    "itemId": "en-b2-5500",
+    "why": "solve-missed: solver didn't find \"glittered\" (said: glimmered)"
+  },
+  {
+    "itemId": "en-b2-5512",
+    "why": "solve-missed: solver didn't find \"inconvenience\" (said: inconvenienced)"
+  },
+  {
+    "itemId": "en-b2-5483",
+    "why": "solve-missed: solver didn't find \"exhausted\" (said: exhaust)"
+  },
+  {
+    "itemId": "en-b2-5579",
+    "why": "solve-missed: solver didn't find \"starved\" (said: starve)"
+  },
+  {
+    "itemId": "en-b2-5411",
+    "why": "solve-missed: solver didn't find \"assured\" (said: assure)"
+  },
+  {
+    "itemId": "en-b2-5404",
+    "why": "solve-missed: solver didn't find \"anchors\" (said: anchor)"
+  },
+  {
+    "itemId": "en-b2-5032",
+    "why": "solve-missed: solver didn't find \"discrete\" (said: distinct)"
+  },
+  {
+    "itemId": "en-b2-5114",
+    "why": "solve-missed: solver didn't find \"sizable\" (said: sizeable)"
+  },
+  {
+    "itemId": "en-b2-5157",
+    "why": "solve-missed: solver didn't find \"voiced\" (said: vocal)"
+  },
+  {
+    "itemId": "en-b2-5399",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5301",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5155",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5088",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5068",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5282",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5542",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5272",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5425",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5492",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5152",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5061",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5598",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5136",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5316",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5310",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5381",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5609",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5466",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5576",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5229",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5080",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5371",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5452",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5574",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5405",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5094",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5134",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5560",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5028",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5543",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5546",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5051",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5549",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5289",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5162",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5303",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5175",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5318",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5572",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5366",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5347",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5612",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5291",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5431",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5385",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5302",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5382",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5142",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5409",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5126",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5482",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5557",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5093",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5352",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5298",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-b2-5018",
+    "why": "random sample"
+  }
+]
