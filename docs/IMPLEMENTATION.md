@@ -62,6 +62,26 @@ Rejected for v1: native peer-to-peer (Multipeer Connectivity) on every phone. It
 - Placement: the pipeline enumerates every valid placement and, for each, counts the lexicon words that fit the pattern. It keeps only placements that rule out the plausible-but-unaccepted synonyms, then picks by informativeness for the level: first letters and rare letters for B2, the least telling letters that still disambiguate for C2.
 - `packages/core` provides the enumeration and pattern matching; scoring lives in the pipeline because it needs the lexicon.
 
+### Engine
+
+- `packages/core/src/engine.ts`: `apply(state, event)` is the whole game; `replay(log)` rebuilds the state on resume. Events are zod-validated so a saved log can be read back safely.
+- Randomness never happens inside the reducer. The caller draws the items (`pickItems`) and the turn order (`drawOrder`) with an injected RNG and records them in the `configure`, `start` and `rematch` events.
+- Undo is one level deep: a scoring decision (`correct` or `reveal`) remembers whether the item was shown or open, and `undo` puts it back there. `next` forgets it.
+- Dropouts are `leave` and `return` events. When an item comes up, it goes to its owner if present, else to the next present player in turn order. The transport decides when a lost connection counts as a `leave` (a grace period keeps a briefly locked phone from losing its turn).
+- An item counts as played for the history once it has come up, solved or not. The ranking covers decided items only.
+- `viewFor(state, items, viewer)` builds what each phone is sent. Player and spectator views carry no answer, lemma, alternates or gloss; letters reach them only in the cells, once revealed.
+- Item count options run from p to 30 in steps of p.
+
+### Session and dev host
+
+- The GM page runs the game: `Session` (`packages/core/src/session.ts`) holds the event log, maps each phone's token to a player or spectator, and sends every connection its view after each change. The host underneath only moves messages: the Swift plugin on the iPhone, `apps/devhost` on a desktop. Neither holds game state.
+- Phones keep a random token in local storage and send it on every connection, so a reload or a locked phone comes back in the same seat without asking for the name. A player on a new phone takes their seat back by typing the same name, but only while the old seat is marked away.
+- The join code in the QR link is checked on join and watch. A wrong code, a taken name and a new name after start each get their own error.
+- A player whose phone is gone for 20 seconds is marked away (`leave`). An item that comes up meanwhile goes to the next player in turn.
+- The dev host takes one GM page at a time. When it goes away, every phone is disconnected and retries each second until the GM page is back, as when the GM app is killed on the iPhone.
+- The GM page saves the session snapshot (log, code, tokens) and the play history to local storage in dev; the iOS shell will use the plugin's file store. A snapshot that no longer replays (for example, items removed from the build) is discarded with a notice.
+- A hand-written dev bank (30 English and 15 French C1 items, `packages/core/fixtures/dev-bank.ts`) stands in until the real banks exist. It is bundled only in builds made with `VITE_DEV_BANK=1` (`npm run dev`, `npm run e2e`), and only for languages and levels with no real bank.
+
 ## Bank generation
 
 Budget target: tens of dollars of API spend, not hundreds. The expensive checks move into code and human review; cheap models do the bulk.
@@ -78,6 +98,16 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
 9. **Freeze.** Write the bank JSON and a provenance file (prompt version, models used, check results).
 
+### What exists (before the pilot)
+
+Built 16 Oct 2026; nothing here has spent API credit.
+
+- **Lexicon import** (`tools/bank/lexicon/import_lexicon.py`, run by `scripts/setup.sh`): writes `data/lex/<lang>-forms.tsv` (form, lemma, part of speech, zipf, lemma zipf, gender, number, root) and `<lang>-synonyms.tsv`. English forms come from wordfreq's list lemmatized by lemminflect; French forms from Lexique 3.83, which writes œ as "oe" (the import restores œ where wordfreq shows it is the usual spelling). Roots are Snowball stems, or Lexique's derivational base when it has one (peureux → peur). Synonyms: WordNet 3.0 for English; for French, WOLF through Open Multilingual Wordnet 1.4, which is noisy and only used to flag.
+- **Word selection** (`npm run bank -- select --lang en`): lemmas in a zipf band per level, 4 to 14 letters, with at least one same-part-of-speech synonym at least 0.3 zipf more frequent (the easier clue) that doesn't share its root. One lemma per root across all levels. 800 per level in the 40/35/25 mix, one in five marked for a definition. Output in `tools/bank/work/` (not committed; regenerated in seconds). The bands (B2 3.3–4.1, C1 2.7–3.3, C2 2.0–2.7) are a first guess to tune on the pilot ratings. French C2 runs short (225 of 280 verbs, 174 of 200 adjectives): the band widens or the level gets fewer items. The model screen is not built yet, and the lists still contain words it must drop (cadmium, knickers, keuf).
+- **Deterministic checks** (`npm run bank -- check <items.json>`): core's item checks; the answer is a lexicon form of its lemma and part of speech; shared roots through the stems, against the span or definition and the fixed words; unaccepted synonyms that fit the boxes; profanity (vendored LDNOOBW lists plus `extra-<lang>`); near-duplicate prompts. It rebuilds the sentence with the answer in place, adapting only the article and the elision before the span, and lists the plausible words that also fit the boxes for the blind solve.
+- **Given-letter placement**: for items without given letters, the check places them. Usable placements rule out every unaccepted synonym form of the answer's shape; among them B2 takes the most telling letters (fewest plausible words fit), C2 the least telling, C1 the middle.
+- **OpenRouter client** (`tools/bank/src/openrouter.ts`): bearer header only when `OPENROUTER_API_KEY` is set, a 401 explained, structured JSON output, cost per call, a spend ledger per stage and model, and a budget guard that reads `/api/v1/key` before each batch. Node's built-in fetch ignores `HTTPS_PROXY`, so `npm run bank` sets `NODE_USE_ENV_PROXY=1`. `npm run bank -- key` reads the limit for free.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
@@ -87,7 +117,7 @@ C1 for both languages first (the sample sheets' level), then B2 and C2, so play 
 - **Cloud sessions** (claude.ai/code): engine, UI, dev host, Playwright tests, bank pipeline. The environment needs:
   - Network: "Allow package managers" plus `openrouter.ai`, `lexique.org` and the GitHub domains (`github.com`, `api.github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`). Optional: documentation sites. `www.lexique.org` stays blocked; the download link on the bare domain is enough.
   - OpenRouter: the proxy injects the key on requests to `openrouter.ai`, so no `OPENROUTER_API_KEY` is set in the session (see [API key](#api-key) and [Spend cap](#spend-cap)).
-  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0), each pinned by checksum. It skips anything already installed. The hook runs on startup and resume, not after compaction or `/clear`; its log is `/tmp/twototango-setup.log`, and on failure the hook prints the log's last lines into the session.
+  - No environment setup script. The repo's SessionStart hook (`.claude/settings.json`) runs `scripts/setup.sh`, which installs npm packages, the pipeline's Python packages in `.venv` (`tools/bank/requirements.txt`) and the lexicons in `data/` (Lexique 3.83, WordNet 3.0, Open Multilingual Wordnet 1.4), each pinned by checksum, then builds the plain lexicon files in `data/lex/`. It skips anything already installed. The hook runs on startup and resume, not after compaction or `/clear`; its log is `/tmp/twototango-setup.log`, and on failure the hook prints the log's last lines into the session.
 - **Bank pipeline languages.** TypeScript, except the lexicon import, which is Python: `wordfreq`, `lemminflect` and the NLTK WordNet reader exist only as Python packages. The import writes plain lexicon files that the TypeScript stages read.
 - **The GM's Mac**: the Swift plugin, Xcode, signing, TestFlight and device tests, via Claude Desktop or `claude remote-control`.
 
@@ -111,9 +141,9 @@ Before each batch the pipeline reads `GET /api/v1/key`, estimates the batch cost
 
 ## Roadmap
 
-1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(started)*
-2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker.
-3. Dev host and client UI (GM, player, spectator views), Playwright game tests.
-4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review.
+1. `packages/core`: item schema, box layout, given-letter enumeration, pattern matching. *(done)*
+2. Engine: setup, lobby, turn order, item states, scoring, undo, dropouts, history picker. *(done)*
+3. Dev host and client UI (GM, player, spectator views), Playwright game tests. *(done)*
+4. Bank pipeline: lexicon import, checks, pilot, bake-off, C1 batches, Grist review. *(started: everything up to the pilot)*
 5. Capacitor shell and Swift plugin, TestFlight build.
 6. B2 and C2 banks.

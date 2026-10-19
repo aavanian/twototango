@@ -1,0 +1,15 @@
+{
+  "name": "@twototango/devhost",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "dependencies": {
+    "@twototango/core": "*",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/ws": "^8.18.2"
+  }
+}
