@@ -31,6 +31,8 @@ final class PhoneServer {
     private var httpListener: NWListener?
     private var wsListener: NWListener?
     private var phones: [String: NWConnection] = [:]
+    /// Accepted WebSocket connections still in the handshake.
+    private var pending: [String: NWConnection] = [:]
     private var nextConn = 1
     private var restarting = false
     private var lastJoinBase = ""
@@ -98,8 +100,11 @@ final class PhoneServer {
         guard let nwPort = NWEndpoint.Port(rawValue: port),
               let listener = try? NWListener(using: parameters, on: nwPort) else { return nil }
         listener.newConnectionHandler = accept
-        listener.stateUpdateHandler = { [weak self] state in
-            if case .failed = state { self?.restartSoon() }
+        listener.stateUpdateHandler = { [weak self, weak listener] state in
+            // Only the current listeners: a failure queued by one already replaced is stale.
+            guard case .failed = state, let self, let listener,
+                  listener === self.httpListener || listener === self.wsListener else { return }
+            self.restartSoon()
         }
         listener.start(queue: queue)
         return listener
@@ -124,6 +129,8 @@ final class PhoneServer {
             guard let self else { return }
             self.restarting = false
             self.startListeners()
+            // Failed again: startListeners has already scheduled the next try.
+            guard self.httpListener != nil, self.wsListener != nil else { return }
             self.lastJoinBase = self.joinBase()
             self.events.ready(self.lastJoinBase)
         }
@@ -163,14 +170,23 @@ final class PhoneServer {
     private func acceptPhone(_ connection: NWConnection) {
         let conn = "n\(nextConn)"
         nextConn += 1
-        connection.stateUpdateHandler = { [weak self] state in
-            guard let self else { return }
+        pending[conn] = connection
+        connection.stateUpdateHandler = { [weak self, weak connection] state in
+            guard let self, let connection else { return }
             switch state {
             case .ready:
+                guard self.pending.removeValue(forKey: conn) != nil else { return connection.cancel() }
                 self.phones[conn] = connection
                 self.events.open(conn)
                 self.receive(conn, connection)
-            case .failed, .cancelled:
+            case .failed:
+                // A failed handshake (or plain HTTP on this port) must still release the socket.
+                connection.cancel()
+                self.pending.removeValue(forKey: conn)
+                self.closePhone(conn)
+            case .cancelled:
+                connection.stateUpdateHandler = nil
+                self.pending.removeValue(forKey: conn)
                 self.closePhone(conn)
             default:
                 break
@@ -205,6 +221,8 @@ final class PhoneServer {
     }
 
     private func dropPhones() {
+        for connection in pending.values { connection.cancel() }
+        pending.removeAll()
         for conn in Array(phones.keys) { closePhone(conn) }
     }
 
@@ -214,6 +232,8 @@ final class PhoneServer {
 
     private func serveHTTP(_ connection: NWConnection) {
         connection.start(queue: queue)
+        // A client that connects and sends nothing doesn't hold the socket forever.
+        queue.asyncAfter(deadline: .now() + 10) { connection.cancel() }
         receiveRequest(connection, buffer: Data())
     }
 
@@ -242,10 +262,10 @@ final class PhoneServer {
         guard method == "GET" || method == "HEAD" else {
             return reply(connection, status: "405 Method Not Allowed", type: "text/plain", body: Data(), headOnly: false, cache: false)
         }
-        guard let asset = asset(for: String(parts[1])) else {
+        guard let found = asset(for: String(parts[1])) else {
             return reply(connection, status: "404 Not Found", type: "text/plain", body: Data(), headOnly: false, cache: false)
         }
-        reply(connection, status: "200 OK", type: asset.type, body: asset.data, headOnly: method == "HEAD", cache: asset.immutable)
+        reply(connection, status: "200 OK", type: found.type, body: found.data, headOnly: method == "HEAD", cache: found.immutable)
     }
 
     private static let types: [String: String] = [

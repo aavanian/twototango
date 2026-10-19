@@ -28,6 +28,15 @@ public class HostPlugin: CAPPlugin, CAPBridgedPlugin {
     private let speech = Speech()
 
     override public func load() {
+        // Created here, never replaced: plugin methods and the foreground notification
+        // run on different threads and both read it.
+        if let webRoot = Bundle.main.url(forResource: "public", withExtension: nil) {
+            server = PhoneServer(webRoot: webRoot, events: PhoneServer.Events(
+                ready: { [weak self] base in self?.emit("ready", ["joinBase": base]) },
+                open: { [weak self] conn in self?.emit("open", ["conn": conn]) },
+                message: { [weak self] conn, text in self?.emit("message", ["conn": conn, "data": text]) },
+                close: { [weak self] conn in self?.emit("close", ["conn": conn]) }))
+        }
         NotificationCenter.default.addObserver(
             self, selector: #selector(willEnterForeground),
             name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -38,17 +47,8 @@ public class HostPlugin: CAPPlugin, CAPBridgedPlugin {
     }
 
     @objc func start(_ call: CAPPluginCall) {
-        if server == nil {
-            guard let webRoot = Bundle.main.url(forResource: "public", withExtension: nil) else {
-                return call.reject("web assets missing from the app bundle")
-            }
-            server = PhoneServer(webRoot: webRoot, events: PhoneServer.Events(
-                ready: { [weak self] base in self?.emit("ready", ["joinBase": base]) },
-                open: { [weak self] conn in self?.emit("open", ["conn": conn]) },
-                message: { [weak self] conn, text in self?.emit("message", ["conn": conn, "data": text]) },
-                close: { [weak self] conn in self?.emit("close", ["conn": conn]) }))
-        }
-        call.resolve(["joinBase": server!.start()])
+        guard let server else { return call.reject("web assets missing from the app bundle") }
+        call.resolve(["joinBase": server.start()])
     }
 
     @objc func send(_ call: CAPPluginCall) {
