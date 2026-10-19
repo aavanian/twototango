@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-19",
+  "models": {
+    "screen": "deepseek/deepseek-v4.1-flash",
+    "draft": "z-ai/glm-5.3-flash",
+    "solve": "deepseek/deepseek-v4.1-flash",
+    "repair": "deepseek/deepseek-v4-pro"
+  },
+  "prompts": {
+    "screen": "en-screen v1",
+    "draft": "en-draft v3",
+    "solve": "en-solve v2",
+    "repair": "en-repair v1"
+  },
+  "kept": {
+    "fromPilot": 50,
+    "generated": 550
+  },
+  "summary": {
+    "candidates": 782,
+    "screenedIn": 606,
+    "drafted": 605,
+    "passedFirst": 537,
+    "repaired": 51,
+    "dropped": 18,
+    "kept": 600,
+    "flagged": 19,
+    "review": 73,
+    "spend": 0.0883378916
+  },
+  "spend": [
+    {
+      "stage": "screen",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "calls": 20,
+      "items": 782,
+      "cost": 0.012097,
+      "promptTokens": 14163,
+      "completionTokens": 14779,
+      "reasoningTokens": 0
+    },
+    {
+      "stage": "draft",
+      "model": "z-ai/glm-5.3-flash",
+      "calls": 61,
+      "items": 606,
+      "cost": 0.025753,
+      "promptTokens": 78046,
+      "completionTokens": 75451,
+      "reasoningTokens": 14477
+    },
+    {
+      "stage": "solve",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "calls": 68,
+      "items": 669,
+      "cost": 0.024087,
+      "promptTokens": 56567,
+      "completionTokens": 23883,
+      "reasoningTokens": 0
+    },
+    {
+      "stage": "repair",
+      "model": "deepseek/deepseek-v4-pro",
+      "calls": 9,
+      "items": 69,
+      "cost": 0.0264,
+      "promptTokens": 21571,
+      "completionTokens": 6503,
+      "reasoningTokens": 0
+    }
+  ]
+}

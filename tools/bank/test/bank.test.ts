@@ -196,6 +196,10 @@ describe("British spelling", () => {
     ["organise", "organise", "verb", 4.0],
     ["organize", "organize", "verb", 4.2],
     ["motor", "motor", "noun", 4.0],
+    ["colored", "color", "verb", 3.5],
+    ["coloured", "colour", "verb", 3.5],
+    ["scoring", "score", "verb", 4.0],
+    ["scouring", "scour", "verb", 2.5],
   ]);
 
   it("maps American forms to British ones the lexicon knows", async () => {
@@ -204,6 +208,8 @@ describe("British spelling", () => {
     expect(britishVariant("organize", sp)).toBe("organise");
     expect(britishVariant("motor", sp)).toBeNull();
     expect(britishVariant("colour", sp)).toBeNull();
+    expect(britishVariant("colored", sp)).toBe("coloured");
+    expect(britishVariant("scoring", sp)).toBeNull();
   });
 
   it("fails an English item with an American answer", () => {
