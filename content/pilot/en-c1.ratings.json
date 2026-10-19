@@ -1,0 +1,309 @@
+{
+  "rater": "GM",
+  "date": "2026-10-19",
+  "source": "Grist doc 'Two to Tango – pilot ratings (EN C1)', table Pilot",
+  "prompt": "en-draft v1",
+  "note": "Every item rated good. The only comment, on most rows, was that the 'Also fits' column (letter-pattern matches) made no sense; it was a pipeline diagnostic and is no longer shown to reviewers.",
+  "ratings": [
+    {
+      "itemId": "en-c1-0001",
+      "lemma": "affront",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0002",
+      "lemma": "alibi",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0003",
+      "lemma": "behemoth",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0004",
+      "lemma": "bequest",
+      "verdict": "good",
+      "difficulty": "too hard"
+    },
+    {
+      "itemId": "en-c1-0005",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0006",
+      "lemma": "consternation",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0007",
+      "lemma": "disarray",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0008",
+      "lemma": "edict",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0009",
+      "lemma": "enigma",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0010",
+      "lemma": "enmity",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0011",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0012",
+      "lemma": "hindrance",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0013",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "too easy"
+    },
+    {
+      "itemId": "en-c1-0014",
+      "lemma": "hyperbole",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0015",
+      "lemma": "knack",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0016",
+      "lemma": "limelight",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0017",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "too easy"
+    },
+    {
+      "itemId": "en-c1-0018",
+      "lemma": "onus",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0019",
+      "lemma": "plethora",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0020",
+      "lemma": "tumult",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0021",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "too easy"
+    },
+    {
+      "itemId": "en-c1-0022",
+      "lemma": "allude",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0023",
+      "lemma": "amass",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0024",
+      "lemma": "banish",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0025",
+      "lemma": "belittle",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0026",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0027",
+      "lemma": "coerce",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0028",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "too hard"
+    },
+    {
+      "itemId": "en-c1-0029",
+      "lemma": "divulge",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0030",
+      "lemma": "flaunt",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0031",
+      "lemma": "hasten",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0032",
+      "lemma": "persevere",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0033",
+      "lemma": "procrastinate",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0034",
+      "lemma": "relinquish",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0035",
+      "lemma": "reiterate",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0036",
+      "lemma": "scold",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0037",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0038",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0039",
+      "lemma": "ardent",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0040",
+      "lemma": "banal",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0041",
+      "lemma": "cursory",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0042",
+      "lemma": "decrepit",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0043",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0044",
+      "lemma": "gaunt",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0045",
+      "lemma": "intrepid",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0046",
+      "lemma": "nimble",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0047",
+      "lemma": "opulent",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0048",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0049",
+      "lemma": "shrewd",
+      "verdict": "good",
+      "difficulty": "right"
+    },
+    {
+      "itemId": "en-c1-0050",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "right"
+    }
+  ]
+}

@@ -123,7 +123,7 @@ describe("given-letter placement", () => {
   it("gives the most telling letters at B2 and the least at C2", () => {
     const b2 = choosePlacement({ ...adorned, level: "B2" }, en).choice!;
     const c2 = choosePlacement({ ...adorned, level: "C2" }, en).choice!;
-    expect(b2.fits.length).toBeLessThanOrEqual(c2.fits.length);
+    expect(b2.patternMatches.length).toBeLessThanOrEqual(c2.patternMatches.length);
   });
 });
 

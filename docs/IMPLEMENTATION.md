@@ -93,7 +93,7 @@ Budget target: tens of dollars of API spend, not hundreds. The expensive checks 
 2. **Pilot (Claude Code, subscription).** Write the prompts, generate about 50 C1 items per language in-session, GM rates them. Those ratings become the fixed test set for everything after.
 3. **Bake-off (OpenRouter).** Three or four cheap models generate the same 50 words. Score each by the code checks plus the GM accept rate; keep the cheapest acceptable one.
 4. **Bulk drafting.** About 10 words per call, short structured JSON output, little or no reasoning. French prompts written in French. Sample sheets serve only as format examples; none of their text ships.
-5. **Deterministic checks (code).** Schema; fits the boxes; answer exists as a word form in the lexicon; substitution rebuilt mechanically with elision; shared roots (stemming plus common-substring threshold); given-letter placement and the list of other words fitting the pattern; profanity list; near-duplicate sentences.
+5. **Deterministic checks (code).** Schema; fits the boxes; answer exists as a word form in the lexicon; substitution rebuilt mechanically with elision; shared roots (stemming plus common-substring threshold); given-letter placement (the words matching the letter pattern, meaning not considered, only measure how telling the letters are and are never shown to reviewers); profanity list; near-duplicate sentences.
 6. **Blind solve (cheap model).** The model sees the item without the answer and lists every word that fits. A valid unlisted word becomes an alternate or fails the item.
 7. **Escalation.** Flagged items (expected around 15%) go to a Claude Code review session or a stronger model on OpenRouter, with one repair round. A second failure is discarded.
 8. **Human review (Grist).** Flagged items plus a random 10% of passes go into a Grist doc; the GM accepts, rejects or comments from their phone and the pipeline reads the decisions back. A sample rejection rate above about 5% means fix the prompts and rerun, not patch items.
@@ -119,6 +119,8 @@ Started 19 Oct 2026, in a Claude Code session; no API spend.
 - **Files**: `content/pilot/en-c1.drafts.json` (drafts), `en-c1.json` (items), `en-c1.report.json` (check results). The app only loads `content/<lang>/<level>.json`, so pilot files never ship by accident.
 - **Ratings**: Grist doc "Two to Tango – pilot ratings (EN C1)", table Pilot: verdict (good / fix / reject), difficulty (too easy / right / too hard), problem tags and a comment per item. The ratings become the fixed test set for the bake-off.
 - **Spelling**: British, decided during the pilot; the prompt is now en-draft v2. The pilot items already used British spelling.
+- **Ratings (19 Oct 2026)**: all 50 good; difficulty right for 45, too easy for 3 (hunch, nuance, abstain), too hard for 2 (bequest, curtail). Frequency doesn't explain the five (the too easy ones sit at zipf 3.07–3.09, ardent at 3.28 rated right), so the C1 band stays at 2.7–3.3. Saved as `content/pilot/en-c1.ratings.json`, the bake-off's test set.
+- **"Also fits" was a mistake to show**: the review sheet listed words matching the letter pattern regardless of meaning (affront: affairs, alfalfa), and the GM rightly found them nonsense. They now carry the name `patternMatches` and stay internal. Words that really fit an item come from the blind solve.
 - **Found while writing**: one draft had a span that doesn't take the answer's preposition ("hinted to" for "alluded to"). The deterministic checks can't see this; the blind solve or a grammar pass has to.
 
 ### Staging

@@ -2,7 +2,7 @@
 
 import { checkItem, type Item } from "@twototango/core";
 import { key, type Lexicon } from "./lexicon.ts";
-import { fitsFor, rivalsFitting } from "./placement.ts";
+import { patternMatchesFor, rivalsFitting } from "./placement.ts";
 import { relatedWords } from "./roots.ts";
 import { britishVariant } from "./spelling.ts";
 import { substitute } from "./substitute.ts";
@@ -26,8 +26,11 @@ export interface ItemReport {
   readonly issues: PipelineIssue[];
   /** The sentence with the answer in place, for the blind solve and reviewers. */
   readonly substituted: string | null;
-  /** Plausible lexicon words that also fit the boxes; the blind solve decides which matter. */
-  readonly fits: string[];
+  /**
+   * Words of the same part of speech matching the letter pattern, meaning not considered
+   * (affront: affairs, affects). Diagnostics only; the blind solve finds words that really fit.
+   */
+  readonly patternMatches: string[];
 }
 
 export interface CheckOptions {
@@ -61,7 +64,7 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
   // Schema-level rules from core: layout, given placement, alternates, roots against the span.
   for (const issue of checkItem(item)) add(issue.code, "fail", issue.message);
   if (issues.some((i) => i.code === "answer-layout" || i.code === "answer-too-short")) {
-    return { itemId: item.id, issues, substituted: null, fits: [] };
+    return { itemId: item.id, issues, substituted: null, patternMatches: [] };
   }
 
   // The answer is a real form of the stated lemma and part of speech.
@@ -103,7 +106,7 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
   const sub = substitute(item, lex);
   for (const note of sub?.notes ?? []) if (note.includes("unknown")) add("substitution", "flag", note);
 
-  return { itemId: item.id, issues, substituted: sub?.sentence ?? null, fits: fitsFor(item, lex).slice(0, 20) };
+  return { itemId: item.id, issues, substituted: sub?.sentence ?? null, patternMatches: patternMatchesFor(item, lex).slice(0, 20) };
 }
 
 /** Token-set similarity of two prompts, 0 to 1. */

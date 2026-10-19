@@ -18,8 +18,11 @@ export const PLAUSIBLE_ZIPF = 1.5;
 
 export interface PlacementChoice {
   readonly given: number[];
-  /** Plausible lexicon words of the answer's part of speech, other than the answer, that fit the chosen pattern. */
-  readonly fits: string[];
+  /**
+   * Words of the answer's part of speech that match the letter pattern, meaning not
+   * considered. Only a measure of how telling the letters are; never shown to reviewers.
+   */
+  readonly patternMatches: string[];
 }
 
 export interface PlacementReport {
@@ -76,12 +79,12 @@ export function choosePlacement(item: Item, lex: Lexicon, extraRivals: readonly 
   const all = [...placements(letterCount)];
   const usable = all
     .filter((given) => !rivals.some((r) => fitsPattern(r, cells, given, item.lang)))
-    .map((given) => ({ given, fits: plausibleFits(item, cells, given, lex) }));
+    .map((given) => ({ given, patternMatches: plausibleFits(item, cells, given, lex) }));
   if (usable.length === 0) return { choice: null, rivals, usable: 0, total: all.length };
 
   // Fewer fitting words means more telling letters.
   const byTelling = [...usable].sort(
-    (a, b) => a.fits.length - b.fits.length || Number(b.given.includes(0)) - Number(a.given.includes(0)) || compare(a.given, b.given),
+    (a, b) => a.patternMatches.length - b.patternMatches.length || Number(b.given.includes(0)) - Number(a.given.includes(0)) || compare(a.given, b.given),
   );
   const pick = (level: Item["level"]) => {
     if (level === "B2") return byTelling[0]!;
@@ -97,7 +100,7 @@ export function rivalsFitting(item: Item, lex: Lexicon, extraRivals: readonly st
   return rivalsFor(item, lex, extraRivals).filter((r) => fitsPattern(r, cells, item.given, item.lang));
 }
 
-export function fitsFor(item: Item, lex: Lexicon): string[] {
+export function patternMatchesFor(item: Item, lex: Lexicon): string[] {
   return plausibleFits(item, layoutBoxes(item.answer, item.lang), item.given, lex);
 }
 
