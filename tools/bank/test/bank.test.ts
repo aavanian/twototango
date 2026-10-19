@@ -210,6 +210,9 @@ describe("British spelling", () => {
     expect(britishVariant("colour", sp)).toBeNull();
     expect(britishVariant("colored", sp)).toBe("coloured");
     expect(britishVariant("scoring", sp)).toBeNull();
+    for (const w of ["timber", "filed", "carer", "prized", "capsize"]) expect(britishVariant(w, sp)).toBeNull();
+    expect(britishVariant("itemize", sp)).toBe("itemise");
+    expect(britishVariant("draftsman", sp)).toBe("draughtsman");
   });
 
   it("fails an English item with an American answer", () => {
@@ -242,5 +245,14 @@ describe("C1 review lessons", () => {
     expect(checkDraft({ ...long, prompt: { ...adorned.prompt, span: ["made it look pretty and nice"] } } as Item, en, opts).issues.map((i) => i.code)).toContain("span-too-long");
     const alt = { ...adorned, prompt: { ...adorned.prompt, span: ["decorated", "made pretty"] } } as Item;
     expect(checkDraft(alt, en, opts).issues.map((i) => i.code)).toContain("span-alternative-long");
+  });
+});
+
+describe("C2 defects", () => {
+  it("fails missing spaces around the span and a(n) placeholders", () => {
+    const glued = { ...adorned, prompt: { ...adorned.prompt, before: "They" } } as Item;
+    expect(checkDraft(glued, en, opts).issues.map((i) => i.code)).toContain("spacing");
+    const placeholder = { ...adorned, prompt: { ...adorned.prompt, before: "They gave it a(n) " } } as Item;
+    expect(checkDraft(placeholder, en, opts).issues.map((i) => i.code)).toContain("placeholder");
   });
 });

@@ -64,7 +64,7 @@ const SCREEN_JSON_SCHEMA = {
 const Screened = z.array(z.object({ lemma: z.string(), pos: z.enum(["noun", "verb", "adjective"]), kind: z.enum(["sentence", "definition"]), keep: z.boolean(), reason: z.string().nullable() }));
 type Screened = z.infer<typeof Screened>;
 
-export async function screen(ctx: Context, model: string, candidates: readonly Candidate[], level: Level): Promise<Screened> {
+export async function screenWords(ctx: Context, model: string, candidates: readonly Candidate[], level: Level): Promise<Screened> {
   const system = loadPrompt(ctx.lang, "screen");
   const batches = chunk(candidates, 40);
   const results = await pool(
@@ -164,9 +164,9 @@ export interface RunSummary {
   readonly spend: number;
 }
 
-export async function runLevel(ctx: Context, guard: BudgetGuard, candidates: readonly Candidate[], opts: RunOptions, log: (l: string) => void): Promise<RunSummary> {
+export async function runLevel(ctx: Context, guard: BudgetGuard, candidates: readonly Candidate[], opts: RunOptions, log: (l: string) => void, workTag?: string): Promise<RunSummary> {
   const t = tag(ctx.lang, ctx.level);
-  const dir = resolve(REPO, "tools/bank/work", t);
+  const dir = resolve(REPO, "tools/bank/work", workTag ?? t);
   mkdirSync(dir, { recursive: true });
   mkdirSync(STAGING, { recursive: true });
 
@@ -179,7 +179,7 @@ export async function runLevel(ctx: Context, guard: BudgetGuard, candidates: rea
   let screened = cached(resolve(dir, "screen.json"), Screened);
   if (!screened) {
     await guard.ensure(0.05);
-    screened = await screen(ctx, opts.solver, pool0, ctx.level);
+    screened = await screenWords(ctx, opts.solver, pool0, ctx.level);
     save(resolve(dir, "screen.json"), screened);
   }
   const words: Word[] = screened.filter((s) => s.keep).map(({ lemma, pos, kind }) => ({ lemma, pos, kind }));

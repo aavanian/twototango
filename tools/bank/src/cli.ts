@@ -18,6 +18,7 @@
  *   npm run bank -- freeze --lang en --level C1 --verdicts <verdicts.json> [--keep <bank.json>]
  *                                           apply the GM's review and write content/<lang>/<level>.json
  *   npm run bank -- fix <bank.json>         repair, in place, unshipped items that fail the current checks
+ *   npm run bank -- topup --lang en --level C2   repair, re-screen and refill an unshipped staging bank
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
 
@@ -32,7 +33,8 @@ import { finalize, parseDraftBatch } from "./draft.ts";
 import { Lexicon, profanity, REPO } from "./lexicon.ts";
 import { BudgetGuard, OpenRouter, SpendLedger } from "./openrouter.ts";
 import { blindSolve, runBakeoff, type Context, type Word } from "./bakeoff.ts";
-import { freeze, repairBank, runLevel } from "./run.ts";
+import { freeze, repairBank, runLevel, screenWords, STAGING } from "./run.ts";
+import { dedupeRoots, eligible, DEFINITION_EVERY, type Candidate } from "./select.ts";
 import type { Selection } from "./select.ts";
 import { choosePlacement } from "./placement.ts";
 import { selectCandidates } from "./select.ts";
@@ -252,6 +254,49 @@ async function fix(args: string[]): Promise<void> {
   console.log(`fixed ${result.fixed.length}, dropped ${result.dropped.length}; ${result.bank.items.length} items; spend $${ctx.ledger.total().toFixed(4)}`);
 }
 
+/**
+ * Refills a staging bank that came out short or weak: repairs items failing the current
+ * checks, re-screens the kept words with the current screen prompt, then drafts fresh
+ * candidates of the same level (never screened before) until the target is met.
+ */
+async function topup(args: string[]): Promise<void> {
+  const { values } = parseArgs({ args, options: { lang: { type: "string" }, level: { type: "string" }, target: { type: "string" } } });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const t = `${lang}-${level.toLowerCase()}`;
+  const path = resolve(STAGING, `${t}.json`);
+  const ctx = context(lang, level);
+  const guard = new BudgetGuard(ctx.client);
+  const log = (l: string) => console.log(l);
+
+  // 1. Repair what fails the current checks.
+  const repaired = await repairBank(ctx, guard, Bank.parse(JSON.parse(readFileSync(path, "utf8"))), MODELS.solver, MODELS.repairer, log);
+
+  // 2. Re-screen the kept words with the current screen.
+  const asCandidates = repaired.bank.items.map((i): Candidate => ({ lemma: i.lemma, pos: i.pos, level, zipf: 0, definition: i.prompt.kind === "definition", easier: [], synonyms: [] }));
+  const rescreen = await screenWords(ctx, MODELS.solver, asCandidates, level);
+  const out = new Set(rescreen.filter((r) => !r.keep).map((r) => r.lemma));
+  log(`re-screen: ${out.size} dropped (${[...out].slice(0, 30).join(", ")}${out.size > 30 ? "…" : ""})`);
+  const keep = repaired.bank.items.filter((i) => !out.has(i.lemma));
+
+  // 3. Fresh candidates of this level, never screened before.
+  const screenedBefore = new Set((JSON.parse(readFileSync(resolve(WORK, t, "screen.json"), "utf8")) as { lemma: string }[]).map((s) => s.lemma));
+  const pool = dedupeRoots(ctx.lex, eligible(ctx.lex, { profanity: ctx.profanity })).filter((c) => c.level === level && !screenedBefore.has(c.lemma));
+  const extra = pool.map((c, i): Candidate => ({ ...c, definition: i % DEFINITION_EVERY === 0 }));
+  log(`${keep.length} kept; ${extra.length} fresh candidates`);
+
+  // Keep the first run's provenance and review entries for the items that stay.
+  const prov = resolve(STAGING, `${t}.provenance.json`);
+  writeFileSync(resolve(STAGING, `${t}.provenance.run1.json`), readFileSync(prov));
+  const oldReview = (JSON.parse(readFileSync(resolve(STAGING, `${t}.review.json`), "utf8")) as { itemId: string; why: string }[]).filter((r) => keep.some((i) => i.id === r.itemId));
+
+  const summary = await runLevel(ctx, guard, extra, { target: Number(values.target ?? 600), ...MODELS, keep, reviewShare: 0.1, seed: 2 }, log, `${t}-topup`);
+  const newReview = JSON.parse(readFileSync(resolve(STAGING, `${t}.review.json`), "utf8")) as { itemId: string; why: string }[];
+  writeFileSync(resolve(STAGING, `${t}.review.json`), JSON.stringify([...oldReview, ...newReview], null, 2) + "\n");
+  console.log(JSON.stringify({ fixedInPlace: repaired.fixed.length, droppedByRepair: repaired.dropped.length, droppedByRescreen: out.size, ...summary }, null, 2));
+  console.log(`spend $${ctx.ledger.total().toFixed(4)}`);
+}
+
 async function key(): Promise<void> {
   const info = await new OpenRouter().keyInfo();
   console.log(`limit $${info.limit ?? "none"}, used $${info.usage.toFixed(4)}, remaining $${info.limitRemaining ?? "n/a"}`);
@@ -288,6 +333,9 @@ switch (command) {
     break;
   case "fix":
     await fix(rest);
+    break;
+  case "topup":
+    await topup(rest);
     break;
   case "key":
     await key();

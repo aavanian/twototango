@@ -96,6 +96,15 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
     for (const alt of alts) if (words(alt).length > 1) add("span-alternative-long", "fail", `alternative span "${alt}" should be a single word`);
   }
 
+  // Spacing around the span and leftover placeholders ("The earthquake**destroyed**", "a(n)").
+  if (item.prompt.kind === "sentence") {
+    const { before, after, determiner } = item.prompt;
+    const lead = determiner ? `${before}${determiner} ` : before;
+    if (lead !== "" && !/[\s(«"“‘'’-]$/u.test(lead)) add("spacing", "fail", `no space before the span: "…${lead.slice(-12)}"`);
+    if (after !== "" && !/^[\s.,;:!?)»"”’'—–-]/u.test(after)) add("spacing", "fail", `no space after the span: "${after.slice(0, 12)}…"`);
+  }
+  if (/\ba\(n\)|\(s\)|\[|\]|\{|\}/u.test(textOf(item))) add("placeholder", "fail", "the text contains a placeholder such as a(n) or brackets");
+
   // Fixed words are printed after the boxes and must be in the sentence too.
   if (item.prompt.kind === "sentence") {
     const after = new Set(words(item.prompt.after));
