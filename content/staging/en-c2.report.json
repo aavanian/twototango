@@ -31,33 +31,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5300",
-    "issues": [],
-    "substituted": "The new head teacher promised a complete shakeup of the school timetable from September.",
-    "patternMatches": [
-      "society",
-      "systems",
-      "success",
-      "student",
-      "subject",
-      "streets",
-      "surgery",
-      "suspect",
-      "sisters",
-      "secrets",
-      "segment",
-      "slavery",
-      "surgeon",
-      "servers",
-      "screens",
-      "surveys",
-      "sanders",
-      "squeeze",
-      "showers",
-      "sadness"
-    ]
-  },
-  {
     "itemId": "en-c2-5249",
     "issues": [],
     "substituted": "The wooden figure, a marionette controlled by strings, danced across the puppet theatre stage.",
@@ -68,14 +41,6 @@
       "dishonesty",
       "introverts",
       "extroverts"
-    ]
-  },
-  {
-    "itemId": "en-c2-5229",
-    "issues": [],
-    "substituted": "Years of war led to the impoverishment of entire villages across the region.",
-    "patternMatches": [
-      "accomplishment"
     ]
   },
   {
@@ -153,33 +118,6 @@
       "kidney",
       "timber",
       "ginger"
-    ]
-  },
-  {
-    "itemId": "en-c2-5309",
-    "issues": [],
-    "substituted": "Everyone agreed the chemistry paper was a stinker; hardly anyone finished it.",
-    "patternMatches": [
-      "studies",
-      "stories",
-      "species",
-      "sources",
-      "speaker",
-      "soldier",
-      "singles",
-      "samples",
-      "shelter",
-      "strikes",
-      "shooter",
-      "schemes",
-      "starter",
-      "striker",
-      "sweater",
-      "shelves",
-      "stripes",
-      "strokes",
-      "squares",
-      "sticker"
     ]
   },
   {
@@ -317,21 +255,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5336",
-    "issues": [],
-    "substituted": "Harbour rules require every watercraft to display a light after sunset.",
-    "patternMatches": [
-      "categories",
-      "waterproof",
-      "tapestries",
-      "sauerkraut",
-      "racehorses",
-      "watercress",
-      "cafeterias",
-      "caseworker"
-    ]
-  },
-  {
     "itemId": "en-c2-5196",
     "issues": [],
     "substituted": "Losing break time is a powerful disincentive hand in homework late.",
@@ -443,50 +366,6 @@
       "deliciousness",
       "semifinalists",
       "verifications"
-    ]
-  },
-  {
-    "itemId": "en-c2-5204",
-    "issues": [],
-    "substituted": "The retiring teacher was overwhelmed by the warm effusion of praise from her pupils.",
-    "patternMatches": [
-      "election",
-      "equation",
-      "emission",
-      "erection",
-      "eruption",
-      "eviction",
-      "ejection",
-      "exertion",
-      "emulsion",
-      "excision"
-    ]
-  },
-  {
-    "itemId": "en-c2-5301",
-    "issues": [],
-    "substituted": "The referee complained about the sloppiness of the team's passing in the second half.",
-    "patternMatches": [
-      "supporters",
-      "smoothness",
-      "sprinklers",
-      "sweeteners",
-      "sunflowers",
-      "subsystems",
-      "surrenders",
-      "seamstress",
-      "scavengers",
-      "suspenders",
-      "stewardess",
-      "stragglers",
-      "sleepiness",
-      "stretchers",
-      "sunscreens",
-      "slaughters",
-      "steadiness",
-      "stickiness",
-      "sacredness",
-      "stationers"
     ]
   },
   {
@@ -703,33 +582,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5260",
-    "issues": [],
-    "substituted": "a newsman spent the whole day interviewing players after the cup final.",
-    "patternMatches": [
-      "vitamin",
-      "foreman",
-      "abdomen",
-      "batsman",
-      "regimen",
-      "lineman",
-      "fireman",
-      "baseman",
-      "snowman",
-      "firemen",
-      "postman",
-      "pullman",
-      "batsmen",
-      "sandman",
-      "workman",
-      "linemen",
-      "workmen",
-      "caveman",
-      "mailman",
-      "bitumen"
-    ]
-  },
-  {
     "itemId": "en-c2-5200",
     "issues": [],
     "substituted": "After forty years in the orchestra, Mr Reyes is regarded as the doyen of British conductors.",
@@ -754,40 +606,6 @@
       "dozen",
       "holes",
       "boxes"
-    ]
-  },
-  {
-    "itemId": "en-c2-5259",
-    "issues": [
-      {
-        "itemId": "en-c2-5259",
-        "code": "us-spelling",
-        "severity": "flag",
-        "message": "\"tire\" → British \"tyre\""
-      }
-    ],
-    "substituted": "Her constant texting revealed a neediness that began to tire her friends.",
-    "patternMatches": [
-      "happiness",
-      "providers",
-      "retailers",
-      "specimens",
-      "receivers",
-      "readiness",
-      "outsiders",
-      "detainees",
-      "emptiness",
-      "dizziness",
-      "craziness",
-      "examiners",
-      "pharisees",
-      "sentinels",
-      "retainers",
-      "compilers",
-      "silliness",
-      "airliners",
-      "weariness",
-      "heaviness"
     ]
   },
   {
@@ -972,33 +790,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5339",
-    "issues": [],
-    "substituted": "The detective discovered a secret wiretap attached to the office phone line.",
-    "patternMatches": [
-      "general",
-      "federal",
-      "illegal",
-      "liberal",
-      "funeral",
-      "cameras",
-      "arsenal",
-      "veteran",
-      "mineral",
-      "renewal",
-      "gateway",
-      "literal",
-      "lateral",
-      "vinegar",
-      "freeway",
-      "foreman",
-      "cinemas",
-      "lineman",
-      "cheetah",
-      "fireman"
-    ]
-  },
-  {
     "itemId": "en-c2-5224",
     "issues": [],
     "substituted": "We sat on the grassy hillock and watched the sheep in the valley below.",
@@ -1053,70 +844,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5293",
-    "issues": [],
-    "substituted": "After the house prices rose, the bank ordered a fresh revaluation of the property.",
-    "patternMatches": [
-      "legislation",
-      "celebration",
-      "destination",
-      "restoration",
-      "declaration",
-      "resignation",
-      "reservation",
-      "negotiation",
-      "designation",
-      "termination",
-      "realization",
-      "penetration",
-      "degradation",
-      "segregation",
-      "ventilation",
-      "deportation",
-      "desperation",
-      "retaliation",
-      "reformation",
-      "deprivation"
-    ]
-  },
-  {
-    "itemId": "en-c2-5332",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "materials",
-      "intervals",
-      "comedians",
-      "waterways",
-      "calendars",
-      "referrals",
-      "bluegrass",
-      "giveaways",
-      "lifeboats",
-      "telegrams",
-      "upheavals",
-      "foreheads",
-      "reversals",
-      "integrals",
-      "forebears",
-      "bisexuals",
-      "internals",
-      "pedestals",
-      "lifespans",
-      "bohemians"
-    ]
-  },
-  {
-    "itemId": "en-c2-5242",
-    "issues": [],
-    "substituted": "The eerie luminescence of the deep-sea jellyfish lit up the dark water.",
-    "patternMatches": [
-      "fluorescence",
-      "obsolescence",
-      "acquiescence"
-    ]
-  },
-  {
     "itemId": "en-c2-5306",
     "issues": [],
     "substituted": "The history book described a daring night sortie behind enemy lines in 1944.",
@@ -1165,70 +892,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5208",
-    "issues": [],
-    "substituted": "The doctor warned that cold air could cause an exacerbation of Leo's asthma.",
-    "patternMatches": [
-      "conversation",
-      "compensation",
-      "conservation",
-      "presentation",
-      "appreciation",
-      "preservation",
-      "cancellation",
-      "dissertation",
-      "condemnation",
-      "depreciation",
-      "fermentation",
-      "segmentation",
-      "abbreviation",
-      "condensation",
-      "augmentation",
-      "commendation",
-      "consecration",
-      "pigmentation",
-      "dispensation",
-      "perpetuation"
-    ]
-  },
-  {
-    "itemId": "en-c2-5294",
-    "issues": [],
-    "substituted": "The coach's total ruthlessness towards weaker players shocked the whole team.",
-    "patternMatches": [
-      "restlessness",
-      "recklessness",
-      "reassessment"
-    ]
-  },
-  {
-    "itemId": "en-c2-5250",
-    "issues": [],
-    "substituted": "The dancer wore a cropped top that left her whole midriff showing as she spun.",
-    "patternMatches": [
-      "million",
-      "killing",
-      "mission",
-      "sitting",
-      "finding",
-      "billion",
-      "victims",
-      "fiction",
-      "listing",
-      "filling",
-      "binding",
-      "missile",
-      "fitting",
-      "airline",
-      "dignity",
-      "dislike",
-      "dioxide",
-      "winding",
-      "diaries",
-      "sibling"
-    ]
-  },
-  {
     "itemId": "en-c2-5177",
     "issues": [],
     "substituted": "After three years of practice, the driving test was a cinch for Nadia.",
@@ -1251,32 +914,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5228",
-    "issues": [],
-    "substituted": "Standing on the cliff, Maya felt the immensity of the ocean stretching to the horizon.",
-    "patternMatches": [
-      "interview",
-      "infection",
-      "intention",
-      "integrity",
-      "intensity",
-      "invention",
-      "injection",
-      "incentive",
-      "inception",
-      "immersion",
-      "insertion",
-      "inversion",
-      "ingenuity",
-      "intestine",
-      "ingestion",
-      "indemnity",
-      "invective",
-      "interdict",
-      "internist"
-    ]
-  },
-  {
     "itemId": "en-c2-5156",
     "issues": [],
     "substituted": "The debate between the two candidates ended in acrimony, with both sides refusing to shake hands.",
@@ -1288,50 +925,6 @@
       "auditors",
       "apricots",
       "antimony"
-    ]
-  },
-  {
-    "itemId": "en-c2-5343",
-    "issues": [],
-    "substituted": "Every Sunday morning, each quiet worshipper fills the old stone church.",
-    "patternMatches": [
-      "localities",
-      "mosquitoes",
-      "sororities",
-      "tourniquet",
-      "forefinger",
-      "polarities",
-      "councilmen",
-      "toxicities",
-      "mobilities",
-      "sonorities",
-      "moralities",
-      "tonalities"
-    ]
-  },
-  {
-    "itemId": "en-c2-5326",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "popularity",
-      "inequality",
-      "solidarity",
-      "neutrality",
-      "similarity",
-      "speciality",
-      "regularity",
-      "immorality",
-      "sensuality",
-      "incapacity",
-      "illegality",
-      "bestiality",
-      "inhumanity",
-      "generality",
-      "partiality",
-      "insularity",
-      "liberality",
-      "cordiality"
     ]
   },
   {
@@ -1454,22 +1047,6 @@
       "vintage",
       "embrace",
       "warfare"
-    ]
-  },
-  {
-    "itemId": "en-c2-5265",
-    "issues": [],
-    "substituted": "The club warned him that repeated nonpayment would mean losing his membership.",
-    "patternMatches": [
-      "government",
-      "tournament",
-      "commitment",
-      "compliment",
-      "complement",
-      "conformist",
-      "wonderment",
-      "polygamist",
-      "conferment"
     ]
   },
   {
@@ -1702,66 +1279,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5257",
-    "issues": [],
-    "substituted": "The swimmer felt a sudden sense of nakedness when his towel blew away.",
-    "patternMatches": [
-      "happiness",
-      "daughters",
-      "taxpayers",
-      "lawmakers",
-      "parallels",
-      "wanderers",
-      "cavaliers",
-      "marketers",
-      "pathogens",
-      "maneuvers",
-      "gardeners",
-      "gangsters",
-      "pamphlets",
-      "launchers",
-      "labourers",
-      "canisters",
-      "eagerness",
-      "gatherers",
-      "fasteners",
-      "hangovers"
-    ]
-  },
-  {
-    "itemId": "en-c2-5258",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "customers",
-      "disorders",
-      "designers",
-      "observers",
-      "disasters",
-      "listeners",
-      "deserters",
-      "fasteners",
-      "absentees",
-      "resisters",
-      "restorers",
-      "messiness",
-      "pushovers",
-      "riskiness",
-      "fussiness"
-    ]
-  },
-  {
-    "itemId": "en-c2-5312",
-    "issues": [],
-    "substituted": "Remember to apply sunblock every two hours at the beach, even when it's cloudy.",
-    "patternMatches": [
-      "syndrome",
-      "senators",
-      "sinkhole",
-      "sunspots"
-    ]
-  },
-  {
     "itemId": "en-c2-5170",
     "issues": [],
     "substituted": "There was a huge brouhaha at school when the canteen changed its lunch menu.",
@@ -1769,41 +1286,6 @@
       "blockade",
       "bookmark",
       "blockage"
-    ]
-  },
-  {
-    "itemId": "en-c2-5182",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "population",
-      "collection",
-      "commission",
-      "foundation",
-      "connection",
-      "convention",
-      "conclusion",
-      "possession",
-      "corruption",
-      "conversion",
-      "completion",
-      "motivation",
-      "politician",
-      "conviction",
-      "nomination",
-      "compassion",
-      "correction",
-      "confession",
-      "conception",
-      "contention"
-    ]
-  },
-  {
-    "itemId": "en-c2-5244",
-    "issues": [],
-    "substituted": "In the old manor house, the rooms were cleaned by a maidservant who had served the family for thirty years.",
-    "patternMatches": [
-      "candlelight"
     ]
   },
   {
@@ -1832,12 +1314,6 @@
       "embrace",
       "warfare"
     ]
-  },
-  {
-    "itemId": "en-c2-5322",
-    "issues": [],
-    "substituted": "Maya's thoughtfulness showed when she brought soup to her sick neighbour.",
-    "patternMatches": []
   },
   {
     "itemId": "en-c2-5290",
@@ -1932,33 +1408,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5337",
-    "issues": [],
-    "substituted": "A gentle breeze sent a tiny wavelet across the surface of the pond.",
-    "patternMatches": [
-      "married",
-      "manager",
-      "parties",
-      "partner",
-      "matches",
-      "cabinet",
-      "samples",
-      "carrier",
-      "battles",
-      "barrier",
-      "damages",
-      "watches",
-      "catches",
-      "painter",
-      "marines",
-      "patches",
-      "handles",
-      "candles",
-      "tackles",
-      "natives"
-    ]
-  },
-  {
     "itemId": "en-c2-5266",
     "issues": [],
     "substituted": "The whole village gathered in the churchyard to celebrate the young couple's nuptials.",
@@ -2013,65 +1462,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5173",
-    "issues": [],
-    "substituted": "In the museum's painting, a cavalryman raises his sword above the battlefield.",
-    "patternMatches": [
-      "countrymen",
-      "councilman",
-      "countryman",
-      "chairwoman",
-      "councilmen",
-      "cavalrymen"
-    ]
-  },
-  {
-    "itemId": "en-c2-5240",
-    "issues": [],
-    "substituted": "The looseness of the rope made it hard to tie a firm knot.",
-    "patternMatches": [
-      "consumers",
-      "computers",
-      "followers",
-      "footsteps",
-      "composers",
-      "coworkers",
-      "borrowers",
-      "toughness",
-      "commuters",
-      "toothless",
-      "governess",
-      "compilers",
-      "modifiers",
-      "roughness",
-      "commoners",
-      "sorceress",
-      "courtiers",
-      "foresters",
-      "sorcerers",
-      "pollsters"
-    ]
-  },
-  {
-    "itemId": "en-c2-5341",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "horsemen",
-      "horseman",
-      "nobleman",
-      "noblemen",
-      "nonhuman",
-      "bondsman",
-      "motorman",
-      "townsman",
-      "townsmen",
-      "bondsmen",
-      "woodsmen",
-      "cognomen"
-    ]
-  },
-  {
     "itemId": "en-c2-5303",
     "issues": [],
     "substituted": null,
@@ -2121,33 +1511,6 @@
       "beatitude",
       "plenitude",
       "lassitude"
-    ]
-  },
-  {
-    "itemId": "en-c2-5307",
-    "issues": [],
-    "substituted": "Grandpa turned the rusty spigot at the bottom of the water barrel to fill the watering can.",
-    "patternMatches": [
-      "spirit",
-      "skills",
-      "switch",
-      "shield",
-      "spider",
-      "shirts",
-      "slight",
-      "saints",
-      "sticks",
-      "shifts",
-      "smiles",
-      "spinal",
-      "spiral",
-      "sailor",
-      "slides",
-      "sniper",
-      "stigma",
-      "swings",
-      "stitch",
-      "slices"
     ]
   },
   {
@@ -2204,51 +1567,11 @@
     ]
   },
   {
-    "itemId": "en-c2-5168",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "wonderland",
-      "contestant",
-      "borderline",
-      "motherland",
-      "conversant",
-      "wonderment",
-      "concertina",
-      "houseplant",
-      "connexions",
-      "porcelains",
-      "collegians",
-      "conferment"
-    ]
-  },
-  {
     "itemId": "en-c2-5284",
     "issues": [],
     "substituted": "With its narrow lanes and tearooms, the village is the quintessence of English country life.",
     "patternMatches": [
       "luminescence"
-    ]
-  },
-  {
-    "itemId": "en-c2-5263",
-    "issues": [],
-    "substituted": "In the museum hangs a portrait of a noblewoman from the seventeenth century.",
-    "patternMatches": [
-      "collection",
-      "connection",
-      "convention",
-      "possession",
-      "conversion",
-      "correction",
-      "confession",
-      "conception",
-      "contention",
-      "congestion",
-      "concession",
-      "convection",
-      "confection",
-      "horsewoman"
     ]
   },
   {
@@ -2266,30 +1589,6 @@
       "dispensers",
       "descendent",
       "easterners"
-    ]
-  },
-  {
-    "itemId": "en-c2-5281",
-    "issues": [],
-    "substituted": "Watching the flood destroy the village, the residents felt a terrible powerlessness.",
-    "patternMatches": [
-      "sleeplessness",
-      "worthlessness",
-      "pointlessness",
-      "childlessness",
-      "schoolmasters",
-      "senselessness",
-      "heartlessness"
-    ]
-  },
-  {
-    "itemId": "en-c2-5195",
-    "issues": [],
-    "substituted": "The old stone lion suffered permanent disfigurement during decades of storms.",
-    "patternMatches": [
-      "mismanagement",
-      "disengagement",
-      "disparagement"
     ]
   },
   {
@@ -2381,33 +1680,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5239",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "sister",
-      "winter",
-      "cities",
-      "silver",
-      "winner",
-      "dinner",
-      "pieces",
-      "ticket",
-      "singer",
-      "miller",
-      "finger",
-      "killer",
-      "titles",
-      "wishes",
-      "filter",
-      "dishes",
-      "diesel",
-      "kidney",
-      "timber",
-      "ginger"
-    ]
-  },
-  {
     "itemId": "en-c2-5316",
     "issues": [],
     "substituted": "After a surfeit of sweets at the party, no one wanted dinner.",
@@ -2459,14 +1731,6 @@
       "discard",
       "nirvana",
       "disdain"
-    ]
-  },
-  {
-    "itemId": "en-c2-5318",
-    "issues": [],
-    "substituted": "The town is planning a huge parade for the school's tercentenary next summer.",
-    "patternMatches": [
-      "terrestrials"
     ]
   },
   {
@@ -2590,22 +1854,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5184",
-    "issues": [],
-    "substituted": "In his history project, Marcus wrote about a Russian cosmonaut who spent six months on the space station.",
-    "patternMatches": [
-      "southeast",
-      "northeast",
-      "consonant",
-      "confidant",
-      "combatant",
-      "pollutant",
-      "cormorant",
-      "woodcraft",
-      "coagulant"
-    ]
-  },
-  {
     "itemId": "en-c2-5276",
     "issues": [],
     "substituted": "The lawyer's formal phraseology made her speech sound like it came from a dusty textbook.",
@@ -2613,15 +1861,6 @@
       "terminology",
       "dermatology",
       "gerontology"
-    ]
-  },
-  {
-    "itemId": "en-c2-5261",
-    "issues": [],
-    "substituted": "The old newspaperman remembered when every story was typed on a manual machine.",
-    "patternMatches": [
-      "delicatessen",
-      "newspapermen"
     ]
   },
   {
@@ -2709,25 +1948,6 @@
       "nipples",
       "pickles",
       "virtues"
-    ]
-  },
-  {
-    "itemId": "en-c2-5331",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "investors",
-      "inventory",
-      "ancestors",
-      "endeavour",
-      "interiors",
-      "endeavors",
-      "inventors",
-      "underdogs",
-      "injectors",
-      "interlock",
-      "undertone",
-      "inferiors"
     ]
   },
   {
@@ -2920,25 +2140,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5340",
-    "issues": [],
-    "substituted": "The children watched the magician's tricks with wide-eyed wonderment.",
-    "patternMatches": [
-      "wonderland",
-      "contestant",
-      "borderline",
-      "motherland",
-      "conversant",
-      "borderland",
-      "concertina",
-      "houseplant",
-      "connexions",
-      "porcelains",
-      "collegians",
-      "conferment"
-    ]
-  },
-  {
     "itemId": "en-c2-5232",
     "issues": [],
     "substituted": "The history teacher warned us that jingoism can make people support a war without asking questions.",
@@ -2984,31 +2185,6 @@
     "patternMatches": [
       "input",
       "snout"
-    ]
-  },
-  {
-    "itemId": "en-c2-5338",
-    "issues": [],
-    "substituted": "The pitcher's slow, deceptive windup fooled the batter into swinging far too early.",
-    "patternMatches": [
-      "middle",
-      "window",
-      "wisdom",
-      "tinder",
-      "bidder",
-      "riddle",
-      "fiddle",
-      "midday",
-      "binder",
-      "finder",
-      "birdie",
-      "linden",
-      "cinder",
-      "diodes",
-      "mildew",
-      "girdle",
-      "girder",
-      "diadem"
     ]
   },
   {
@@ -3064,48 +2240,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5328",
-    "issues": [],
-    "substituted": "The golf course let the twosome play through before the storm arrived.",
-    "patternMatches": [
-      "someone",
-      "welcome",
-      "episode",
-      "purpose",
-      "outcome",
-      "console",
-      "hormone",
-      "glucose",
-      "cyclone",
-      "keynote",
-      "epitome",
-      "isotope",
-      "lactose",
-      "cathode",
-      "scrooge",
-      "keyhole",
-      "acetone",
-      "sucrose",
-      "manhole",
-      "pothole"
-    ]
-  },
-  {
-    "itemId": "en-c2-5193",
-    "issues": [],
-    "substituted": "Leaving the newspaper on the windowsill caused a yellowish discolouration on the paint.",
-    "patternMatches": [
-      "discrimination",
-      "disintegration",
-      "disinformation",
-      "disorientation",
-      "disciplinarian",
-      "disambiguation",
-      "disembarkation",
-      "disinclination"
-    ]
-  },
-  {
     "itemId": "en-c2-5222",
     "issues": [],
     "substituted": null,
@@ -3133,93 +2267,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5262",
-    "issues": [],
-    "substituted": "Everyone appreciated the niceness of the woman who ran the school canteen.",
-    "patternMatches": [
-      "citizens",
-      "fighters",
-      "wireless",
-      "kindness",
-      "distress",
-      "mistress",
-      "sickness",
-      "pioneers",
-      "pitchers",
-      "kitchens",
-      "highness",
-      "likeness",
-      "richness",
-      "lighters",
-      "firmness",
-      "misdeeds",
-      "missteps",
-      "dividers",
-      "fielders",
-      "wildness"
-    ]
-  },
-  {
-    "itemId": "en-c2-5201",
-    "issues": [
-      {
-        "itemId": "en-c2-5201",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"draftsman\" → British \"draughtsman\""
-      }
-    ],
-    "substituted": null,
-    "patternMatches": [
-      "statesman",
-      "craftsman",
-      "tradesman",
-      "guardsman"
-    ]
-  },
-  {
-    "itemId": "en-c2-5323",
-    "issues": [],
-    "substituted": "The hikers crossed miles of wet timberland before reaching the village.",
-    "patternMatches": [
-      "wonderland",
-      "borderline",
-      "motherland",
-      "fatherland",
-      "propellant",
-      "hinterland",
-      "miscellany",
-      "borderland",
-      "houseplant"
-    ]
-  },
-  {
-    "itemId": "en-c2-5256",
-    "issues": [],
-    "substituted": "A good friendship depends on mutuality — both people must give and receive equally.",
-    "patternMatches": [
-      "sexuality",
-      "mortality",
-      "mentality",
-      "brutality",
-      "disparity",
-      "plurality",
-      "formality",
-      "actuality",
-      "profanity",
-      "normality",
-      "causality",
-      "depravity",
-      "vulgarity",
-      "frugality",
-      "barbarity",
-      "mendacity",
-      "concavity",
-      "amorality",
-      "joviality"
-    ]
-  },
-  {
     "itemId": "en-c2-5225",
     "issues": [],
     "substituted": "The playlist was a strange hodgepodge of jazz, folk and eighties pop.",
@@ -3237,77 +2284,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5292",
-    "issues": [],
-    "substituted": "Critics dismissed the sequel as a dull retread of the original film.",
-    "patternMatches": [
-      "members",
-      "perfect",
-      "percent",
-      "respect",
-      "western",
-      "weekend",
-      "leaders",
-      "herself",
-      "request",
-      "letters",
-      "reviews",
-      "degrees",
-      "centers",
-      "readers",
-      "secrets",
-      "segment",
-      "beliefs",
-      "vessels",
-      "servers",
-      "dealers"
-    ]
-  },
-  {
-    "itemId": "en-c2-5299",
-    "issues": [],
-    "substituted": "Her quiet selflessness in helping refugees inspired the entire village.",
-    "patternMatches": [
-      "homelessness",
-      "hopelessness",
-      "helplessness",
-      "carelessness",
-      "restlessness",
-      "recklessness",
-      "ruthlessness",
-      "fearlessness",
-      "timelessness",
-      "listlessness"
-    ]
-  },
-  {
-    "itemId": "en-c2-5285",
-    "issues": [],
-    "substituted": "Months after losing her friend, Maya still spoke about it with painful rawness.",
-    "patternMatches": [
-      "members",
-      "players",
-      "process",
-      "systems",
-      "success",
-      "numbers",
-      "workers",
-      "address",
-      "leaders",
-      "matters",
-      "express",
-      "letters",
-      "streets",
-      "flowers",
-      "markets",
-      "answers",
-      "tickets",
-      "reviews",
-      "drivers",
-      "writers"
-    ]
-  },
-  {
     "itemId": "en-c2-5252",
     "issues": [],
     "substituted": "The magazine publishes a curious miscellany of quizzes, recipes and short essays.",
@@ -3321,50 +2297,6 @@
       "timberland",
       "borderland",
       "houseplant"
-    ]
-  },
-  {
-    "itemId": "en-c2-5271",
-    "issues": [],
-    "substituted": "There was an overabundance of cakes left after the party that nobody could finish.",
-    "patternMatches": []
-  },
-  {
-    "itemId": "en-c2-5342",
-    "issues": [],
-    "substituted": "Having travelled on every continent, my uncle speaks with an air of worldliness that impresses everyone.",
-    "patternMatches": [
-      "songwriters",
-      "complainers",
-      "rottweilers",
-      "copywriters"
-    ]
-  },
-  {
-    "itemId": "en-c2-5212",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "parameters",
-      "kilometers",
-      "uniqueness",
-      "cricketers",
-      "politeness",
-      "sweeteners",
-      "gentleness",
-      "beekeepers",
-      "remoteness",
-      "retrievers",
-      "bumblebees",
-      "perimeters",
-      "adulterers",
-      "humbleness",
-      "prophetess",
-      "trumpeters",
-      "adulteress",
-      "barometers",
-      "plasterers",
-      "innkeepers"
     ]
   },
   {
@@ -3403,18 +2335,6 @@
       "delectation",
       "benefaction",
       "detestation"
-    ]
-  },
-  {
-    "itemId": "en-c2-5330",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "interior",
-      "inferior",
-      "anterior",
-      "indexing",
-      "endemics"
     ]
   },
   {
@@ -3478,24 +2398,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5246",
-    "issues": [],
-    "substituted": "The malleability of the clay made it perfect for shaping by hand.",
-    "patternMatches": [
-      "availability",
-      "permeability",
-      "adaptability",
-      "irritability",
-      "desirability",
-      "excitability",
-      "habitability",
-      "flammability",
-      "immutability",
-      "incapability",
-      "advisability"
-    ]
-  },
-  {
     "itemId": "en-c2-5291",
     "issues": [],
     "substituted": "Marcus answered every question with such reticence that the interview felt like an interrogation.",
@@ -3514,52 +2416,6 @@
       "penitence",
       "vehemence",
       "petulance"
-    ]
-  },
-  {
-    "itemId": "en-c2-5317",
-    "issues": [],
-    "substituted": "The club's most loyal sympathiser turned up to every match, even in the rain.",
-    "patternMatches": []
-  },
-  {
-    "itemId": "en-c2-5313",
-    "issues": [],
-    "substituted": "The new superhighway cuts the journey to the coast by an hour.",
-    "patternMatches": [
-      "impartiality"
-    ]
-  },
-  {
-    "itemId": "en-c2-5171",
-    "issues": [],
-    "substituted": "Historians described the attack on the village as senseless butchery that no one could justify.",
-    "patternMatches": [
-      "pitchers",
-      "watchers",
-      "butchers",
-      "catchers",
-      "hatchery",
-      "antihero",
-      "witchery"
-    ]
-  },
-  {
-    "itemId": "en-c2-5175",
-    "issues": [],
-    "substituted": "The changeover from gas heating to electric took the whole of August.",
-    "patternMatches": [
-      "challenges",
-      "cigarettes",
-      "challenger",
-      "cemeteries",
-      "chandelier",
-      "congresses",
-      "compresses",
-      "collieries",
-      "courtesies",
-      "croquettes",
-      "concierges"
     ]
   },
   {
@@ -3585,40 +2441,6 @@
     "patternMatches": [
       "reassessment",
       "readjustment"
-    ]
-  },
-  {
-    "itemId": "en-c2-5333",
-    "issues": [
-      {
-        "itemId": "en-c2-5333",
-        "code": "near-duplicate",
-        "severity": "flag",
-        "message": "60% like en-c2-5228"
-      }
-    ],
-    "substituted": "Standing on the cliff, Maya was amazed by the vastness of the ocean stretching to the horizon.",
-    "patternMatches": [
-      "partners",
-      "managers",
-      "darkness",
-      "carriers",
-      "barriers",
-      "panthers",
-      "fairness",
-      "mattress",
-      "mariners",
-      "painters",
-      "waitress",
-      "cabinets",
-      "laborers",
-      "watchers",
-      "handlers",
-      "hardness",
-      "laziness",
-      "pancreas",
-      "gamblers",
-      "ranchers"
     ]
   },
   {
@@ -3833,15 +2655,8 @@
   },
   {
     "itemId": "en-c2-5401",
-    "issues": [
-      {
-        "itemId": "en-c2-5401",
-        "code": "spacing",
-        "severity": "fail",
-        "message": "no space before the span: \"…nse heat had\""
-      }
-    ],
-    "substituted": "The intense heat haddeformed the plastic ruler completely.",
+    "issues": [],
+    "substituted": "The intense heat had deformed the plastic ruler completely.",
     "patternMatches": [
       "reported",
       "returned",
@@ -3980,16 +2795,6 @@
       "venture",
       "restore",
       "resolve"
-    ]
-  },
-  {
-    "itemId": "en-c2-5483",
-    "issues": [],
-    "substituted": "In the final round of the quiz, Maya managed to outsmart the reigning champion with a clever answer.",
-    "patternMatches": [
-      "outreach",
-      "outflank",
-      "outclass"
     ]
   },
   {
@@ -4195,60 +3000,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5389",
-    "issues": [],
-    "substituted": "Every wooden stair in my grandmother's house creaks when you climb it at night.",
-    "patternMatches": [
-      "claims",
-      "causes",
-      "covers",
-      "colors",
-      "courts",
-      "copies",
-      "checks",
-      "counts",
-      "census",
-      "charts",
-      "clouds",
-      "cheers",
-      "chains",
-      "chairs",
-      "canvas",
-      "closes",
-      "cycles",
-      "chorus",
-      "cracks",
-      "cables"
-    ]
-  },
-  {
-    "itemId": "en-c2-5468",
-    "issues": [],
-    "substituted": "Farmers in the dry valley irrigate their fields with channels dug from the river.",
-    "patternMatches": [
-      "indicate",
-      "estimate",
-      "intimate",
-      "dominate",
-      "hesitate",
-      "activate",
-      "navigate",
-      "motivate",
-      "nominate",
-      "mitigate",
-      "dedicate",
-      "validate",
-      "meditate",
-      "irritate",
-      "laminate",
-      "marinade",
-      "envisage",
-      "silicate",
-      "abdicate",
-      "marinate"
-    ]
-  },
-  {
     "itemId": "en-c2-5387",
     "issues": [],
     "substituted": "Salt from the winter roads will slowly corrode the metal underneath older cars.",
@@ -4303,15 +3054,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5507",
-    "issues": [],
-    "substituted": "Just add hot water to the powder to reconstitute the soup's original texture and flavour.",
-    "patternMatches": [
-      "reconstructs",
-      "recapitulate"
-    ]
-  },
-  {
     "itemId": "en-c2-5351",
     "issues": [],
     "substituted": "An expert came to appraise the old painting before the auction.",
@@ -4340,23 +3082,6 @@
       "extort",
       "extols",
       "entomb"
-    ]
-  },
-  {
-    "itemId": "en-c2-5485",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "overcome",
-      "overdose",
-      "overlook",
-      "overload",
-      "overtook",
-      "overdone",
-      "overcoat",
-      "oversold",
-      "overrode",
-      "overcook"
     ]
   },
   {
@@ -4493,15 +3218,6 @@
       "articled",
       "frescoed",
       "broaches"
-    ]
-  },
-  {
-    "itemId": "en-c2-5484",
-    "issues": [],
-    "substituted": "The assistant overstepped her authority when she cancelled the exam without asking.",
-    "patternMatches": [
-      "overwhelmed",
-      "overdressed"
     ]
   },
   {
@@ -4662,28 +3378,6 @@
       "complimented",
       "complemented",
       "comprehended"
-    ]
-  },
-  {
-    "itemId": "en-c2-5547",
-    "issues": [],
-    "substituted": "The strong winds uprooted several trees along the riverbank.",
-    "patternMatches": [
-      "reported",
-      "imported",
-      "deported",
-      "exported",
-      "escorted",
-      "allotted",
-      "assorted",
-      "resorted",
-      "revolted",
-      "sprouted",
-      "accosted",
-      "retorted",
-      "rerouted",
-      "extorted",
-      "exhorted"
     ]
   },
   {
@@ -5143,31 +3837,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5528",
-    "issues": [],
-    "substituted": "The school is situated just outside the town centre, near the railway station.",
-    "patternMatches": [
-      "mistakes",
-      "mistaken",
-      "violated",
-      "violates",
-      "dictated",
-      "dictates",
-      "migrated",
-      "signaled",
-      "dismayed",
-      "vibrates",
-      "nitrates",
-      "pillaged",
-      "migrates",
-      "vibrated",
-      "pillared",
-      "situates",
-      "vitiated",
-      "kidnaped"
-    ]
-  },
-  {
     "itemId": "en-c2-5475",
     "issues": [],
     "substituted": "Grandma showed me how to knead the dough until it felt smooth and springy.",
@@ -5189,25 +3858,6 @@
       "kneed",
       "treed",
       "emend"
-    ]
-  },
-  {
-    "itemId": "en-c2-5363",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "station",
-      "abandon",
-      "sharpen",
-      "flatten",
-      "chagrin",
-      "dragoon",
-      "realign",
-      "hearken",
-      "gladden",
-      "smarten",
-      "slacken",
-      "chasten"
     ]
   },
   {
@@ -5384,19 +4034,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5502",
-    "issues": [],
-    "substituted": "After the merger, the company decided to reassign several managers to its new office in Manchester.",
-    "patternMatches": [
-      "reaching",
-      "reacting",
-      "roasting",
-      "reaffirm",
-      "readying",
-      "rearming"
-    ]
-  },
-  {
     "itemId": "en-c2-5403",
     "issues": [],
     "substituted": null,
@@ -5555,68 +4192,11 @@
     ]
   },
   {
-    "itemId": "en-c2-5407",
-    "issues": [
-      {
-        "itemId": "en-c2-5407",
-        "code": "spacing",
-        "severity": "fail",
-        "message": "no space before the span: \"…The referee\""
-      }
-    ],
-    "substituted": "The refereedisallowed the goal because a player had fouled the keeper.",
-    "patternMatches": [
-      "discovered",
-      "designated",
-      "distracted",
-      "discharged",
-      "dispatched",
-      "discounted",
-      "distressed",
-      "dismantled",
-      "dispatches",
-      "dissipated",
-      "discharges",
-      "dislocated",
-      "disordered",
-      "discourses",
-      "displeased",
-      "disfigured",
-      "disjointed",
-      "disengaged",
-      "designates",
-      "despatched"
-    ]
-  },
-  {
     "itemId": "en-c2-5479",
     "issues": [],
     "substituted": "Ella worried that people would misconstrue her joke and think she was being serious.",
     "patternMatches": [
       "cosponsored"
-    ]
-  },
-  {
-    "itemId": "en-c2-5546",
-    "issues": [],
-    "substituted": "The strange creaking noises upstairs unsettled everyone staying in the old house.",
-    "patternMatches": [
-      "inventory",
-      "investing",
-      "entertain",
-      "undertake",
-      "undertook",
-      "inserting",
-      "inventing",
-      "injecting",
-      "infecting",
-      "ingesting",
-      "indenture",
-      "inverting",
-      "infesting",
-      "unseating",
-      "indenting",
-      "unsettles"
     ]
   },
   {
@@ -5644,48 +4224,6 @@
       "hearing",
       "selling",
       "remains"
-    ]
-  },
-  {
-    "itemId": "en-c2-5346",
-    "issues": [
-      {
-        "itemId": "en-c2-5346",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"actualize\" → British \"actualise\""
-      }
-    ],
-    "substituted": "Maya worked for years to actualize her dream of opening a bakery.",
-    "patternMatches": [
-      "visualize"
-    ]
-  },
-  {
-    "itemId": "en-c2-5373",
-    "issues": [],
-    "substituted": "Critics said the rushed sequel cheapened the story when he sold the film rights so cheaply.",
-    "patternMatches": [
-      "completed",
-      "chartered",
-      "conquered",
-      "completes",
-      "complexes",
-      "countered",
-      "clustered",
-      "channeled",
-      "cluttered",
-      "checkered",
-      "counseled",
-      "crocheted",
-      "chequered",
-      "clambered",
-      "clobbered",
-      "chastened",
-      "chickened",
-      "clattered",
-      "complexed",
-      "concreted"
     ]
   },
   {
@@ -5987,28 +4525,6 @@
       "conspiring",
       "concealing",
       "conforming"
-    ]
-  },
-  {
-    "itemId": "en-c2-5464",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "encourage",
-      "interface",
-      "undertake",
-      "integrate",
-      "intricate",
-      "incarnate",
-      "instigate",
-      "insinuate",
-      "infuriate",
-      "enumerate",
-      "inculcate",
-      "enunciate",
-      "underrate",
-      "interlace",
-      "inebriate"
     ]
   },
   {
@@ -6412,26 +4928,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5356",
-    "issues": [],
-    "substituted": "Volunteers planted flowers to beautify the grey square outside the station.",
-    "patternMatches": [
-      "reducing",
-      "refusing",
-      "securing",
-      "resuming",
-      "debuting",
-      "seducing",
-      "refuting",
-      "perusing",
-      "deluding",
-      "defusing",
-      "rebuking",
-      "deducing",
-      "deputize"
-    ]
-  },
-  {
     "itemId": "en-c2-5538",
     "issues": [],
     "substituted": "The empire used harsh laws to subjugate the peoples it had conquered.",
@@ -6476,12 +4972,6 @@
       "deducted",
       "reverted"
     ]
-  },
-  {
-    "itemId": "en-c2-5429",
-    "issues": [],
-    "substituted": "In the final minute, Okafor scored to equalise at two goals each.",
-    "patternMatches": []
   },
   {
     "itemId": "en-c2-5426",
@@ -6538,33 +5028,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5501",
-    "issues": [],
-    "substituted": "In the novel, a scientist uses electricity to reanimate a creature assembled from old body parts.",
-    "patternMatches": [
-      "candidate",
-      "eliminate",
-      "terminate",
-      "duplicate",
-      "intricate",
-      "replicate",
-      "syndicate",
-      "cultivate",
-      "originate",
-      "eradicate",
-      "barricade",
-      "dissipate",
-      "fabricate",
-      "gravitate",
-      "predicate",
-      "implicate",
-      "liquidate",
-      "instigate",
-      "culminate",
-      "vaccinate"
-    ]
-  },
-  {
     "itemId": "en-c2-5488",
     "issues": [],
     "substituted": "With her endless patience and kindness, our coach seems to personify calm under pressure.",
@@ -6589,33 +5052,6 @@
       "deploring",
       "mellowing",
       "hectoring"
-    ]
-  },
-  {
-    "itemId": "en-c2-5545",
-    "issues": [],
-    "substituted": "When he called the storm understating, he was deliberately making it sound milder than it was.",
-    "patternMatches": [
-      "entertaining",
-      "interviewing",
-      "interpreting",
-      "interrupting",
-      "underwriting",
-      "interlocking",
-      "intersecting",
-      "underpinning",
-      "intensifying",
-      "intercepting",
-      "undercutting",
-      "underscoring",
-      "intertwining",
-      "endeavouring",
-      "interweaving",
-      "undervaluing",
-      "interleaving",
-      "interjecting",
-      "interlinking",
-      "underselling"
     ]
   },
   {
@@ -6764,15 +5200,8 @@
   },
   {
     "itemId": "en-c2-5409",
-    "issues": [
-      {
-        "itemId": "en-c2-5409",
-        "code": "spacing",
-        "severity": "fail",
-        "message": "no space before the span: \"…The rider\""
-      }
-    ],
-    "substituted": "The riderdismounted her horse and led it towards the stable.",
+    "issues": [],
+    "substituted": "The rider dismounted her horse and led it towards the stable.",
     "patternMatches": [
       "discovered",
       "designated",
@@ -7068,33 +5497,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5453",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "number",
-      "summer",
-      "turned",
-      "murder",
-      "budget",
-      "survey",
-      "pulled",
-      "suffer",
-      "pushed",
-      "judges",
-      "buried",
-      "butter",
-      "burned",
-      "funded",
-      "ruined",
-      "jumped",
-      "quotes",
-      "tunnel",
-      "burden",
-      "quoted"
-    ]
-  },
-  {
     "itemId": "en-c2-5516",
     "issues": [],
     "substituted": "The sound of the church bells reverberated through the valley every Sunday morning.",
@@ -7106,15 +5508,6 @@
       "renegotiated",
       "reverberates",
       "desegregated"
-    ]
-  },
-  {
-    "itemId": "en-c2-5539",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "scratched",
-      "scratches"
     ]
   },
   {
@@ -7324,23 +5717,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5395",
-    "issues": [],
-    "substituted": "After a week of exams, Mia needed a quiet weekend to decompress properly.",
-    "patternMatches": [
-      "recommends",
-      "recognizes",
-      "recognises",
-      "negotiates",
-      "decomposes",
-      "reconciles",
-      "demolishes",
-      "recollects",
-      "reconnects",
-      "reconvenes"
-    ]
-  },
-  {
     "itemId": "en-c2-5448",
     "issues": [],
     "substituted": "Doubt continued to gnaw at Leo long after he had handed in his test.",
@@ -7392,33 +5768,6 @@
       "despise",
       "cascade",
       "pasture"
-    ]
-  },
-  {
-    "itemId": "en-c2-5481",
-    "issues": [],
-    "substituted": "Add a splash of milk to moisten the cake before it goes in the oven.",
-    "patternMatches": [
-      "complex",
-      "located",
-      "sources",
-      "covered",
-      "focused",
-      "journey",
-      "noticed",
-      "worried",
-      "counter",
-      "founded",
-      "courses",
-      "founder",
-      "pointed",
-      "soldier",
-      "couples",
-      "wounded",
-      "touched",
-      "coaches",
-      "mounted",
-      "powered"
     ]
   },
   {
@@ -7607,54 +5956,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5438",
-    "issues": [],
-    "substituted": "The documentary about deep-sea creatures will fascinate anyone who watches it.",
-    "patternMatches": [
-      "associate",
-      "designate",
-      "dissipate",
-      "disengage",
-      "instigate",
-      "resurface",
-      "postulate",
-      "insinuate",
-      "disparage",
-      "misbehave",
-      "desecrate",
-      "displease",
-      "dislocate",
-      "castigate"
-    ]
-  },
-  {
-    "itemId": "en-c2-5408",
-    "issues": [],
-    "substituted": "I disbelieved his story about meeting a film star on the bus.",
-    "patternMatches": [
-      "disregarded",
-      "dismembered",
-      "dishevelled"
-    ]
-  },
-  {
-    "itemId": "en-c2-5541",
-    "issues": [],
-    "substituted": "For months, the older pupils terrorised the younger ones in the playground.",
-    "patternMatches": [
-      "authorised",
-      "improvised",
-      "apologised",
-      "customised",
-      "randomised",
-      "symbolised",
-      "patronised",
-      "hypnotised",
-      "harmonised",
-      "epitomised"
-    ]
-  },
-  {
     "itemId": "en-c2-5366",
     "issues": [],
     "substituted": "After losing the debate, the captain kept blustering about how unfair the judges had been.",
@@ -7709,40 +6010,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5469",
-    "issues": [
-      {
-        "itemId": "en-c2-5469",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"itemize\" → British \"itemise\""
-      }
-    ],
-    "substituted": "For the school trip form, please itemize every item you are packing.",
-    "patternMatches": [
-      "service",
-      "provide",
-      "imagine",
-      "machine",
-      "receive",
-      "realize",
-      "profile",
-      "require",
-      "promise",
-      "suicide",
-      "survive",
-      "decline",
-      "realise",
-      "forgive",
-      "examine",
-      "acquire",
-      "combine",
-      "precise",
-      "inspire",
-      "archive"
-    ]
-  },
-  {
     "itemId": "en-c2-5518",
     "issues": [],
     "substituted": "The whole class was riveted by the documentary about deep-sea creatures.",
@@ -7771,15 +6038,8 @@
   },
   {
     "itemId": "en-c2-5406",
-    "issues": [
-      {
-        "itemId": "en-c2-5406",
-        "code": "spacing",
-        "severity": "fail",
-        "message": "no space before the span: \"…e earthquake\""
-      }
-    ],
-    "substituted": "The earthquakedevastated the small coastal town last summer.",
+    "issues": [],
+    "substituted": "The earthquake devastated the small coastal town last summer.",
     "patternMatches": [
       "designated",
       "celebrated",
@@ -7804,25 +6064,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5457",
-    "issues": [
-      {
-        "itemId": "en-c2-5457",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"immortalize\" → British \"immortalise\""
-      }
-    ],
-    "substituted": "The photographer wanted to immortalize the moment the team lifted the cup.",
-    "patternMatches": [
-      "infuriating",
-      "interfacing",
-      "internalize",
-      "interlacing",
-      "internalise"
-    ]
-  },
-  {
     "itemId": "en-c2-5381",
     "issues": [],
     "substituted": "After Priya lost the final, her teammates came to commiserate with her.",
@@ -7833,15 +6074,8 @@
   },
   {
     "itemId": "en-c2-5405",
-    "issues": [
-      {
-        "itemId": "en-c2-5405",
-        "code": "spacing",
-        "severity": "fail",
-        "message": "no space before the span: \"…Vandals\""
-      }
-    ],
-    "substituted": "Vandalsdesecrated the old church by spray-painting graffiti on its walls.",
+    "issues": [],
+    "substituted": "Vandals desecrated the old church by spray-painting graffiti on its walls.",
     "patternMatches": [
       "designated",
       "celebrated",
@@ -8100,40 +6334,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5537",
-    "issues": [
-      {
-        "itemId": "en-c2-5537",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"stigmatize\" → British \"stigmatise\""
-      }
-    ],
-    "substituted": null,
-    "patternMatches": [
-      "capitalize",
-      "specialize",
-      "neutralize",
-      "generalize",
-      "revitalize",
-      "specialise",
-      "reorganize",
-      "capitalise",
-      "popularize",
-      "initialize",
-      "neutralise",
-      "centralize",
-      "revitalise",
-      "generalise",
-      "reorganise",
-      "demoralize",
-      "dehumanize",
-      "liberalize",
-      "plagiarize",
-      "traumatize"
-    ]
-  },
-  {
     "itemId": "en-c2-5496",
     "issues": [],
     "substituted": "The new head teacher promulgated the uniform rules to every class in the school.",
@@ -8166,21 +6366,6 @@
       "entreated",
       "undulated",
       "enervated"
-    ]
-  },
-  {
-    "itemId": "en-c2-5455",
-    "issues": [
-      {
-        "itemId": "en-c2-5455",
-        "code": "us-spelling",
-        "severity": "fail",
-        "message": "\"hypothesize\" → British \"hypothesise\""
-      }
-    ],
-    "substituted": "Before testing anything, the class tried to hypothesize why the plant had died.",
-    "patternMatches": [
-      "alphabetize"
     ]
   },
   {
@@ -8230,14 +6415,6 @@
       "seasick",
       "scarcer",
       "spacial"
-    ]
-  },
-  {
-    "itemId": "en-c2-5069",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "instantaneous"
     ]
   },
   {
@@ -8322,25 +6499,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5140",
-    "issues": [],
-    "substituted": "Despite the setbacks, Priya remained unshakable that her team would reach the final.",
-    "patternMatches": [
-      "disposable",
-      "despicable",
-      "unsuitable",
-      "observable",
-      "insatiable",
-      "hospitable",
-      "answerable",
-      "assignable",
-      "unsociable",
-      "insensible",
-      "disputable",
-      "desireable"
-    ]
-  },
-  {
     "itemId": "en-c2-5147",
     "issues": [],
     "substituted": "In the novel, a venal official lets the smugglers pass in exchange for gold.",
@@ -8354,23 +6512,6 @@
       "regal",
       "feral",
       "fecal"
-    ]
-  },
-  {
-    "itemId": "en-c2-5133",
-    "issues": [],
-    "substituted": "The goalkeeper had the unenviable task of saving three penalties in the final minutes.",
-    "patternMatches": [
-      "unreliable",
-      "indefinite",
-      "undeniable",
-      "insatiable",
-      "indecisive",
-      "inordinate",
-      "infinitive",
-      "invariable",
-      "unsociable",
-      "indelicate"
     ]
   },
   {
@@ -8483,35 +6624,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5064",
-    "issues": [],
-    "substituted": "Sandcastles remind us how impermanent, since the sea always washes them away by morning.",
-    "patternMatches": [
-      "independent",
-      "intelligent",
-      "impertinent"
-    ]
-  },
-  {
-    "itemId": "en-c2-5122",
-    "issues": [],
-    "substituted": "Mum felt unappreciated after cooking for the family every night.",
-    "patternMatches": [
-      "unanticipated",
-      "unadulterated"
-    ]
-  },
-  {
-    "itemId": "en-c2-5119",
-    "issues": [],
-    "substituted": "The new camping stove is lightweight and easily transportable, which makes it perfect for hiking trips.",
-    "patternMatches": [
-      "uncomfortable",
-      "unsupportable",
-      "insupportable"
-    ]
-  },
-  {
     "itemId": "en-c2-5036",
     "issues": [],
     "substituted": "Even brilliant scientists are fallible, so results must always be checked.",
@@ -8552,36 +6664,6 @@
       "hasty",
       "wacky",
       "dandy"
-    ]
-  },
-  {
-    "itemId": "en-c2-5109",
-    "issues": [],
-    "substituted": "The snake's warning came as a long, sibilant sound from beneath the rocks.",
-    "patternMatches": [
-      "dominant",
-      "militant",
-      "hesitant",
-      "vigilant",
-      "irritant",
-      "jubilant",
-      "aspirant",
-      "litigant",
-      "ruminant"
-    ]
-  },
-  {
-    "itemId": "en-c2-5013",
-    "issues": [],
-    "substituted": "We paddled across the lake under a cerulean summer sky.",
-    "patternMatches": [
-      "circular",
-      "cardinal",
-      "corporal",
-      "cerebral",
-      "cervical",
-      "cortical",
-      "corsican"
     ]
   },
   {
@@ -8707,33 +6789,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5126",
-    "issues": [],
-    "substituted": "The customer was uncivil to the waiter, snapping his fingers for attention.",
-    "patternMatches": [
-      "medical",
-      "capital",
-      "digital",
-      "typical",
-      "musical",
-      "radical",
-      "magical",
-      "logical",
-      "minimal",
-      "ethical",
-      "optical",
-      "optimal",
-      "nominal",
-      "cynical",
-      "marital",
-      "orbital",
-      "genital",
-      "topical",
-      "vaginal",
-      "lyrical"
-    ]
-  },
-  {
     "itemId": "en-c2-5117",
     "issues": [],
     "substituted": "Grandad's old jacket had been worn so often that the elbows were threadbare and starting to tear.",
@@ -8763,21 +6818,6 @@
       "incurable",
       "infertile",
       "unworldly"
-    ]
-  },
-  {
-    "itemId": "en-c2-5016",
-    "issues": [],
-    "substituted": "The novel's hero fears that anyone in power can be corruptible with enough money.",
-    "patternMatches": [
-      "comfortable",
-      "convertible",
-      "collectible",
-      "forgettable",
-      "combustible",
-      "collectable",
-      "correctable",
-      "contactable"
     ]
   },
   {
@@ -8894,33 +6934,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5004",
-    "issues": [],
-    "substituted": "The old library basement felt airless, so we opened the window to let in a breeze.",
-    "patternMatches": [
-      "useless",
-      "endless",
-      "foolish",
-      "stylish",
-      "coolest",
-      "tallest",
-      "fullest",
-      "topless",
-      "lawless",
-      "bullish",
-      "jobless",
-      "hellish",
-      "hapless",
-      "godless",
-      "ageless",
-      "aimless",
-      "gutless",
-      "noblest",
-      "girlish",
-      "joyless"
-    ]
-  },
-  {
     "itemId": "en-c2-5107",
     "issues": [],
     "substituted": "Loud laughter during the memorial service was hardly seemly, so the teacher gave them a stern look.",
@@ -8965,27 +6978,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5137",
-    "issues": [],
-    "substituted": "Without being asked, Leo offered unprompted help with the younger team's training session.",
-    "patternMatches": [
-      "interested",
-      "integrated",
-      "unexpected",
-      "undefeated",
-      "unaffected",
-      "undisputed",
-      "uneducated",
-      "antiquated",
-      "undetected",
-      "infatuated",
-      "unrequited",
-      "unassisted",
-      "unpolluted",
-      "unaccepted"
-    ]
-  },
-  {
     "itemId": "en-c2-5038",
     "issues": [],
     "substituted": "The morning mist formed a filmy layer over the surface of the lake.",
@@ -9010,25 +7002,6 @@
       "nifty",
       "hippy",
       "tipsy"
-    ]
-  },
-  {
-    "itemId": "en-c2-5054",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "special",
-      "feeling",
-      "opening",
-      "premier",
-      "precise",
-      "sterile",
-      "seeming",
-      "uterine",
-      "onetime",
-      "puerile",
-      "peevish",
-      "beefier"
     ]
   },
   {
@@ -9064,12 +7037,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5035",
-    "issues": [],
-    "substituted": "When the verdict was read, the defendant remained expressionless, staring straight ahead.",
-    "patternMatches": []
-  },
-  {
     "itemId": "en-c2-5074",
     "issues": [],
     "substituted": "We could see every pebble through the limpid water of the mountain lake.",
@@ -9085,18 +7052,6 @@
     "substituted": "Painting graffiti inside the ancient temple struck visitors as sacrilegious towards something sacred.",
     "patternMatches": [
       "vainglorious"
-    ]
-  },
-  {
-    "itemId": "en-c2-5087",
-    "issues": [],
-    "substituted": "On the clear night at the campsite, we saw numberless stars overhead.",
-    "patternMatches": [
-      "fatherless",
-      "colourless",
-      "motherless",
-      "flavorless",
-      "humourless"
     ]
   },
   {
@@ -9124,14 +7079,6 @@
       "restful",
       "wistful",
       "lustful"
-    ]
-  },
-  {
-    "itemId": "en-c2-5092",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "oversensitive"
     ]
   },
   {
@@ -9203,15 +7150,8 @@
   },
   {
     "itemId": "en-c2-5007",
-    "issues": [
-      {
-        "itemId": "en-c2-5007",
-        "code": "placeholder",
-        "severity": "fail",
-        "message": "the text contains a placeholder such as a(n) or brackets"
-      }
-    ],
-    "substituted": "The villain in the film gave the hero a(n) baleful look before the final duel.",
+    "issues": [],
+    "substituted": "The villain in the film gave the hero a baleful look before the final duel.",
     "patternMatches": [
       "beloved",
       "bullish",
@@ -9226,82 +7166,12 @@
     ]
   },
   {
-    "itemId": "en-c2-5123",
-    "issues": [],
-    "substituted": "Priya offered her unasked opinion on my new haircut.",
-    "patternMatches": [
-      "smaller",
-      "charged",
-      "adapted",
-      "smarter",
-      "heavier",
-      "unarmed",
-      "scarlet",
-      "guarded",
-      "bearded",
-      "cramped",
-      "flatter",
-      "sharper",
-      "exalted",
-      "heathen",
-      "crazier",
-      "scarier",
-      "grander",
-      "slacker",
-      "blacker",
-      "flatbed"
-    ]
-  },
-  {
     "itemId": "en-c2-5077",
     "issues": [],
     "substituted": null,
     "patternMatches": [
       "preferred",
       "uniformed"
-    ]
-  },
-  {
-    "itemId": "en-c2-5063",
-    "issues": [],
-    "substituted": "In her philosophy, the divine is immanent every living thing, not separate from the world.",
-    "patternMatches": [
-      "greatest",
-      "apparent",
-      "adjacent",
-      "cheapest",
-      "clearest",
-      "decadent",
-      "broadest",
-      "cleanest",
-      "bleakest"
-    ]
-  },
-  {
-    "itemId": "en-c2-5034",
-    "issues": [],
-    "substituted": "Our chemistry teacher is wonderfully exigent: she expects every report to be perfect.",
-    "patternMatches": [
-      "current",
-      "perfect",
-      "present",
-      "content",
-      "subject",
-      "biggest",
-      "largest",
-      "highest",
-      "correct",
-      "patient",
-      "ancient",
-      "suspect",
-      "violent",
-      "collect",
-      "fastest",
-      "longest",
-      "closest",
-      "nearest",
-      "hardest",
-      "evident"
     ]
   },
   {
@@ -9329,14 +7199,6 @@
       "tactile",
       "evasive",
       "gentile"
-    ]
-  },
-  {
-    "itemId": "en-c2-5131",
-    "issues": [],
-    "substituted": "Even when the results were announced, Maya stayed completely unemotional, giving nothing away.",
-    "patternMatches": [
-      "promotional"
     ]
   },
   {
@@ -9408,64 +7270,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5090",
-    "issues": [],
-    "substituted": "We bumped into my onetime classmate at the station; we hadn't met since primary school.",
-    "patternMatches": [
-      "outside",
-      "massive",
-      "genuine",
-      "routine",
-      "precise",
-      "hostile",
-      "passive",
-      "abusive",
-      "fragile",
-      "captive",
-      "fertile",
-      "festive",
-      "sublime",
-      "elusive",
-      "concise",
-      "sterile",
-      "bedside",
-      "tactile",
-      "evasive",
-      "gentile"
-    ]
-  },
-  {
-    "itemId": "en-c2-5136",
-    "issues": [],
-    "substituted": "Tickets for the final were almost unobtainable once the news spread.",
-    "patternMatches": [
-      "unimaginable",
-      "inexplicable",
-      "unforgivable",
-      "unprofitable",
-      "unattainable",
-      "intelligible",
-      "inhospitable",
-      "interminable",
-      "unassailable",
-      "incorrigible",
-      "inapplicable",
-      "uncharitable",
-      "inextricable"
-    ]
-  },
-  {
-    "itemId": "en-c2-5044",
-    "issues": [],
-    "substituted": "Moving to a new city mid-year left Priya feeling friendless for the first months of school.",
-    "patternMatches": [
-      "fatherless",
-      "flightless",
-      "flavorless",
-      "fathomless"
-    ]
-  },
-  {
     "itemId": "en-c2-5097",
     "issues": [],
     "substituted": "Reading about the operation in biology class made Leo feel queasy, so he left the room.",
@@ -9509,65 +7313,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5125",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "unchanged",
-      "enchanted",
-      "unfounded",
-      "unplanned",
-      "undaunted",
-      "entranced",
-      "unpainted",
-      "untainted",
-      "unbranded",
-      "uncounted"
-    ]
-  },
-  {
-    "itemId": "en-c2-5005",
-    "issues": [],
-    "substituted": "After weeks indoors, Maya looked anaemic at the start of term.",
-    "patternMatches": [
-      "genetic",
-      "generic",
-      "kinetic",
-      "comedic",
-      "endemic",
-      "angelic",
-      "numeric",
-      "heretic",
-      "ascetic",
-      "polemic",
-      "mimetic",
-      "totemic",
-      "amoebic"
-    ]
-  },
-  {
-    "itemId": "en-c2-5108",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "priceless",
-      "shameless",
-      "senseless",
-      "tasteless",
-      "spineless",
-      "stateless",
-      "blameless",
-      "voiceless",
-      "smokeless",
-      "ceaseless",
-      "valueless",
-      "noiseless",
-      "graceless",
-      "guileless",
-      "nerveless"
-    ]
-  },
-  {
     "itemId": "en-c2-5142",
     "issues": [],
     "substituted": "The coach gave Marcus an unvarnished account of why he had been dropped from the squad.",
@@ -9599,31 +7344,10 @@
     ]
   },
   {
-    "itemId": "en-c2-5149",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "carnivorous",
-      "herbivorous"
-    ]
-  },
-  {
     "itemId": "en-c2-5112",
     "issues": [],
     "substituted": "Marcus is so spendthrift that he emptied his savings in a single weekend.",
     "patternMatches": []
-  },
-  {
-    "itemId": "en-c2-5121",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "structural",
-      "collateral",
-      "unilateral",
-      "sculptural",
-      "scriptural"
-    ]
   },
   {
     "itemId": "en-c2-5129",
@@ -9632,18 +7356,6 @@
     "patternMatches": [
       "unwarranted",
       "unsurpassed"
-    ]
-  },
-  {
-    "itemId": "en-c2-5010",
-    "issues": [],
-    "substituted": "The retired doctor was known for her beneficent work with children in the village.",
-    "patternMatches": [
-      "beneficial",
-      "veterinary",
-      "repetitive",
-      "hereditary",
-      "redesigned"
     ]
   },
   {
@@ -9698,12 +7410,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5085",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": []
-  },
-  {
     "itemId": "en-c2-5080",
     "issues": [],
     "substituted": "My uncle is so misanthropic that he refuses every invitation to family gatherings.",
@@ -9726,25 +7432,6 @@
       "inexpressible",
       "unsupportable",
       "insupportable"
-    ]
-  },
-  {
-    "itemId": "en-c2-5141",
-    "issues": [],
-    "substituted": "The referee's reputation stayed untainted despite the bribery scandal around the league.",
-    "patternMatches": [
-      "unlimited",
-      "unrelated",
-      "enchanted",
-      "untreated",
-      "uncharted",
-      "inhibited",
-      "uninvited",
-      "undaunted",
-      "undoubted",
-      "unpainted",
-      "undiluted",
-      "uncounted"
     ]
   },
   {
@@ -9782,28 +7469,6 @@
       "rapturous",
       "dexterous",
       "cretinous"
-    ]
-  },
-  {
-    "itemId": "en-c2-5134",
-    "issues": [],
-    "substituted": "Grandma greeted every visitor with unfailing warmth, even on her most tiring days.",
-    "patternMatches": [
-      "agonizing",
-      "oxidizing",
-      "beguiling",
-      "confiding",
-      "unsmiling",
-      "oxidising",
-      "nonliving"
-    ]
-  },
-  {
-    "itemId": "en-c2-5082",
-    "issues": [],
-    "substituted": "Without new members, the chess club is moribund and may close by summer.",
-    "patternMatches": [
-      "purebred"
     ]
   },
   {
@@ -9870,14 +7535,6 @@
       "apposite",
       "allusive",
       "aquiline"
-    ]
-  },
-  {
-    "itemId": "en-c2-5070",
-    "issues": [],
-    "substituted": "After watching the horror film, Priya was so jumpy that she screamed at a slamming door.",
-    "patternMatches": [
-      "jumbo"
     ]
   },
   {
@@ -10064,14 +7721,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5132",
-    "issues": [],
-    "substituted": "Some of the older characters in the novel hold unenlightened views about what women should do with their lives.",
-    "patternMatches": [
-      "unanticipated"
-    ]
-  },
-  {
     "itemId": "en-c2-5103",
     "issues": [],
     "substituted": "The flooded pitch and broken stands left the club facing a ruinous repair bill.",
@@ -10156,33 +7805,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5027",
-    "issues": [],
-    "substituted": "Copper is prized for wiring because it is highly ductile.",
-    "patternMatches": [
-      "outside",
-      "sublime",
-      "cunning",
-      "funnier",
-      "bullish",
-      "cursive",
-      "luckier",
-      "nuptial",
-      "hulking",
-      "furtive",
-      "puerile",
-      "luddite",
-      "bulkier",
-      "sunnier",
-      "outsize",
-      "juicier",
-      "furrier",
-      "murkier",
-      "funkier",
-      "curvier"
-    ]
-  },
-  {
     "itemId": "en-c2-5029",
     "issues": [],
     "substituted": "a dumpy little man in a raincoat was waiting at the bus stop.",
@@ -10240,19 +7862,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5139",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "unsettled",
-      "unskilled",
-      "unspoiled",
-      "unrivaled",
-      "unlabeled",
-      "unequaled"
-    ]
-  },
-  {
     "itemId": "en-c2-5021",
     "issues": [],
     "substituted": "After losing the final on penalties, Priya was disconsolate for days.",
@@ -10304,14 +7913,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5014",
-    "issues": [],
-    "substituted": "My uncle holds some rather chauvinistic views about women playing football.",
-    "patternMatches": [
-      "relativistic"
-    ]
-  },
-  {
     "itemId": "en-c2-5153",
     "issues": [],
     "substituted": "United lost 5–0, undone by a woeful defence that collapsed in the first half.",
@@ -10356,60 +7957,6 @@
       "stubby",
       "plucky",
       "jaunty"
-    ]
-  },
-  {
-    "itemId": "en-c2-5128",
-    "issues": [],
-    "substituted": "The castle gate stood undefended as the enemy approached at dawn.",
-    "patternMatches": [
-      "interested",
-      "integrated",
-      "underwater",
-      "undercover",
-      "undefeated",
-      "unresolved",
-      "unreleased",
-      "undetected",
-      "uncensored",
-      "unfettered",
-      "interwoven",
-      "unrequited",
-      "unverified",
-      "undeserved",
-      "undeclared",
-      "unrealized",
-      "undersized",
-      "undeterred",
-      "unreserved",
-      "unrecorded"
-    ]
-  },
-  {
-    "itemId": "en-c2-5106",
-    "issues": [],
-    "substituted": "The lighthouse keeper stepped outside and felt a strong seaward wind on his face.",
-    "patternMatches": [
-      "smaller",
-      "shallow",
-      "smarter",
-      "spatial",
-      "scarlet",
-      "sharper",
-      "shadowy",
-      "staunch",
-      "stately",
-      "scarier",
-      "sparing",
-      "slacker",
-      "spastic",
-      "starchy",
-      "shapely",
-      "stabler",
-      "seasick",
-      "slavish",
-      "scarcer",
-      "spacial"
     ]
   },
   {
@@ -10535,25 +8082,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5127",
-    "issues": [],
-    "substituted": "Hours were spent uncounted in the library before the final exams.",
-    "patternMatches": [
-      "unlimited",
-      "unrelated",
-      "enchanted",
-      "untreated",
-      "uncharted",
-      "inhibited",
-      "uninvited",
-      "undaunted",
-      "undoubted",
-      "unpainted",
-      "untainted",
-      "undiluted"
-    ]
-  },
-  {
     "itemId": "en-c2-5068",
     "issues": [],
     "substituted": "Neil's insipid speech sent half the audience quietly to sleep.",
@@ -10608,39 +8136,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5055",
-    "issues": [],
-    "substituted": "Dad gets grouchy whenever he misses his morning coffee.",
-    "patternMatches": [
-      "primary",
-      "orderly",
-      "urinary",
-      "grizzly",
-      "crunchy",
-      "prickly",
-      "wrinkly",
-      "crumbly",
-      "preachy",
-      "breathy",
-      "bristly",
-      "crinkly",
-      "crackly"
-    ]
-  },
-  {
-    "itemId": "en-c2-5030",
-    "issues": [],
-    "substituted": null,
-    "patternMatches": [
-      "designing",
-      "deserving",
-      "upsetting",
-      "disarming",
-      "besetting",
-      "unsmiling"
-    ]
-  },
-  {
     "itemId": "en-c2-5045",
     "issues": [],
     "substituted": "Her retiring head teacher received fulsome praise in the staff's farewell speeches.",
@@ -10666,11 +8161,4190 @@
     ]
   },
   {
+    "itemId": "en-c2-5272",
+    "issues": [],
+    "substituted": "Everyone recognised the cheerful lilt of her voice.",
+    "patternMatches": [
+      "will",
+      "time",
+      "life",
+      "find",
+      "high",
+      "give",
+      "city",
+      "side",
+      "line",
+      "kind",
+      "mind",
+      "girl",
+      "fire",
+      "kids",
+      "list",
+      "fine",
+      "wife",
+      "miss",
+      "site",
+      "film"
+    ]
+  },
+  {
+    "itemId": "en-c2-5168",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "debut",
+      "venue",
+      "setup",
+      "serum",
+      "genus",
+      "nexus",
+      "fetus",
+      "menus",
+      "revue",
+      "femur",
+      "rerun",
+      "beaux",
+      "lemur",
+      "segue",
+      "rebus",
+      "beaus"
+    ]
+  },
+  {
+    "itemId": "en-c2-5415",
+    "issues": [],
+    "substituted": "When Leo teased her about losing, Nadia fired back a sharp riposte that made everyone laugh.",
+    "patternMatches": [
+      "picture",
+      "disease",
+      "village",
+      "mistake",
+      "finance",
+      "license",
+      "silence",
+      "visible",
+      "divorce",
+      "dispute",
+      "mixture",
+      "vintage",
+      "missile",
+      "miracle",
+      "airline",
+      "bicycle",
+      "licence",
+      "dislike",
+      "dioxide",
+      "fixture"
+    ]
+  },
+  {
+    "itemId": "en-c2-5175",
+    "issues": [],
+    "substituted": "The engineer joked that a tiny invisible gremlin in the machine kept switching the signal on and off.",
+    "patternMatches": [
+      "primary",
+      "promise",
+      "premier",
+      "premium",
+      "grammar",
+      "premise",
+      "drummer",
+      "crimson",
+      "trumpet",
+      "prompts",
+      "crumble",
+      "primate",
+      "tremble",
+      "tremors",
+      "primacy",
+      "grumble",
+      "primers",
+      "trimmer",
+      "bromide",
+      "grimace"
+    ]
+  },
+  {
+    "itemId": "en-c2-5088",
+    "issues": [],
+    "substituted": "The head teacher stood on the dais to present the prizes at the end of term.",
+    "patternMatches": [
+      "this",
+      "does",
+      "days",
+      "news",
+      "guys",
+      "kids",
+      "goes",
+      "miss",
+      "eyes",
+      "loss",
+      "ones",
+      "ways",
+      "pass",
+      "boys",
+      "fans",
+      "jobs",
+      "plus",
+      "cars",
+      "laws",
+      "lots"
+    ]
+  },
+  {
+    "itemId": "en-c2-5491",
+    "issues": [],
+    "substituted": "To escape the tedium of the long train ride, Priya started a crossword.",
+    "patternMatches": [
+      "series",
+      "behind",
+      "period",
+      "design",
+      "review",
+      "region",
+      "senior",
+      "device",
+      "desire",
+      "medium",
+      "relief",
+      "belief",
+      "genius",
+      "regime",
+      "recipe",
+      "serial",
+      "median",
+      "denial",
+      "aerial",
+      "legion"
+    ]
+  },
+  {
+    "itemId": "en-c2-5116",
+    "issues": [],
+    "substituted": "His first draft was mostly dross, but a few brilliant sentences survived the editing.",
+    "patternMatches": [
+      "looks",
+      "shows",
+      "books",
+      "cross",
+      "shoes",
+      "shots",
+      "goods",
+      "tools",
+      "rooms",
+      "doors",
+      "gross",
+      "woods",
+      "foods",
+      "stops",
+      "roots",
+      "shops",
+      "boots",
+      "drops",
+      "spots",
+      "lions"
+    ]
+  },
+  {
+    "itemId": "en-c2-5057",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "matter",
+      "market",
+      "father",
+      "career",
+      "cancer",
+      "master",
+      "target",
+      "garden",
+      "valley",
+      "lawyer",
+      "values",
+      "ladies",
+      "causes",
+      "danger",
+      "latter",
+      "manner",
+      "babies",
+      "passes",
+      "walker",
+      "fallen"
+    ]
+  },
+  {
+    "itemId": "en-c2-5555",
+    "issues": [],
+    "substituted": "The old map marked a narrow watercourse running behind the farm.",
+    "patternMatches": [
+      "watercolour",
+      "watercolors"
+    ]
+  },
+  {
+    "itemId": "en-c2-5299",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "service",
+      "outside",
+      "justice",
+      "machine",
+      "profile",
+      "promise",
+      "suicide",
+      "decline",
+      "routine",
+      "missile",
+      "combine",
+      "airline",
+      "passive",
+      "vampire",
+      "vaccine",
+      "archive",
+      "cocaine",
+      "outline",
+      "dislike",
+      "granite"
+    ]
+  },
+  {
+    "itemId": "en-c2-5442",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "disability",
+      "capability",
+      "visibility",
+      "durability",
+      "solubility",
+      "immobility",
+      "legibility",
+      "livability",
+      "mutability",
+      "affability",
+      "amiability",
+      "pliability"
+    ]
+  },
+  {
+    "itemId": "en-c2-5366",
+    "issues": [],
+    "substituted": "My aunt has a curious predilection for detective novels set in cold countries.",
+    "patternMatches": [
+      "presentation",
+      "preservation",
+      "prescription",
+      "precondition",
+      "precognition"
+    ]
+  },
+  {
+    "itemId": "en-c2-5441",
+    "issues": [],
+    "substituted": "Grandpa wore his old sheepskin whenever he walked the dog in winter.",
+    "patternMatches": [
+      "spokesman",
+      "statesman",
+      "secession",
+      "sportsman",
+      "sportsmen",
+      "seclusion",
+      "statesmen",
+      "swordsman",
+      "spokesmen",
+      "swordsmen",
+      "sacristan",
+      "suffusion"
+    ]
+  },
+  {
+    "itemId": "en-c2-5539",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "reference",
+      "residence",
+      "relevance",
+      "vengeance",
+      "resonance",
+      "reverence",
+      "severance",
+      "semblance",
+      "deference",
+      "decadence",
+      "reticence",
+      "sentience",
+      "penitence",
+      "petulance"
+    ]
+  },
+  {
+    "itemId": "en-c2-5297",
+    "issues": [],
+    "substituted": "Littering in the park is a minor misdemeanour that usually results in only a small fine.",
+    "patternMatches": [
+      "misbehaviour"
+    ]
+  },
+  {
+    "itemId": "en-c2-5082",
+    "issues": [],
+    "substituted": "Maya found a tiny flower growing in a crevice in the old stone wall.",
+    "patternMatches": [
+      "service",
+      "outside",
+      "justice",
+      "machine",
+      "profile",
+      "promise",
+      "suicide",
+      "decline",
+      "routine",
+      "missile",
+      "combine",
+      "airline",
+      "passive",
+      "vampire",
+      "vaccine",
+      "archive",
+      "cocaine",
+      "outline",
+      "dislike",
+      "granite"
+    ]
+  },
+  {
+    "itemId": "en-c2-5341",
+    "issues": [],
+    "substituted": "In his first novel, the author cruelly mocks the pedagogue who ruled his old school with a cane and a frown.",
+    "patternMatches": [
+      "departure",
+      "recapture",
+      "decadence",
+      "menagerie",
+      "megaphone",
+      "semaphore",
+      "demagogue"
+    ]
+  },
+  {
+    "itemId": "en-c2-5542",
+    "issues": [],
+    "substituted": "The union investigated complaints of victimisation several younger colleagues reported after the restructuring.",
+    "patternMatches": [
+      "stabilisation",
+      "fertilisation",
+      "sterilisation",
+      "sensitisation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5443",
+    "issues": [],
+    "substituted": "The crowd cheered when Maya did a lively shimmy during the talent show.",
+    "patternMatches": [
+      "safety",
+      "supply",
+      "survey",
+      "salary",
+      "steady",
+      "subway",
+      "surrey",
+      "storey",
+      "sanity",
+      "sturdy",
+      "sherry",
+      "sentry",
+      "shoddy",
+      "savory",
+      "sodomy",
+      "steely",
+      "surety",
+      "shanty",
+      "scurvy",
+      "stubby"
+    ]
+  },
+  {
+    "itemId": "en-c2-5306",
+    "issues": [],
+    "substituted": "The toddler refused every morsel of broccoli on her plate.",
+    "patternMatches": [
+      "former",
+      "mother",
+      "forces",
+      "wonder",
+      "coffee",
+      "movies",
+      "corner",
+      "houses",
+      "border",
+      "bodies",
+      "pocket",
+      "soccer",
+      "horses",
+      "losses",
+      "copies",
+      "worker",
+      "hockey",
+      "bother",
+      "voices",
+      "rocket"
+    ]
+  },
+  {
+    "itemId": "en-c2-5385",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "standard",
+      "boarders",
+      "bladders",
+      "hoarders",
+      "slanders"
+    ]
+  },
+  {
+    "itemId": "en-c2-5554",
+    "issues": [],
+    "substituted": "Everyone said his cousin was a lazy waster who never finished anything he started.",
+    "patternMatches": [
+      "matter",
+      "market",
+      "father",
+      "career",
+      "cancer",
+      "master",
+      "target",
+      "garden",
+      "valley",
+      "lawyer",
+      "values",
+      "ladies",
+      "causes",
+      "danger",
+      "latter",
+      "manner",
+      "babies",
+      "passes",
+      "walker",
+      "fallen"
+    ]
+  },
+  {
+    "itemId": "en-c2-5288",
+    "issues": [],
+    "substituted": "The rescued dogs had suffered maltreatment before arriving at the shelter.",
+    "patternMatches": [
+      "haberdashery",
+      "haberdashers"
+    ]
+  },
+  {
+    "itemId": "en-c2-5139",
+    "issues": [],
+    "substituted": "With her discipline and kindness, Aisha is an exemplar of what a team captain should be.",
+    "patternMatches": [
+      "elevator",
+      "eyeliner",
+      "executor"
+    ]
+  },
+  {
+    "itemId": "en-c2-5095",
+    "issues": [],
+    "substituted": "Talking during assembly earned Marcus a demerit in his school record.",
+    "patternMatches": [
+      "perfect",
+      "percent",
+      "respect",
+      "benefit",
+      "request",
+      "default",
+      "segment",
+      "deposit",
+      "servant",
+      "deficit",
+      "verdict",
+      "delight",
+      "descent",
+      "receipt",
+      "recruit",
+      "dentist",
+      "dessert",
+      "neglect",
+      "leftist",
+      "peasant"
+    ]
+  },
+  {
+    "itemId": "en-c2-5371",
+    "issues": [],
+    "substituted": "The diary entries from the siege describe the privation that the townspeople endured for months.",
+    "patternMatches": [
+      "education",
+      "situation",
+      "operation",
+      "formation",
+      "radiation",
+      "animation",
+      "violation",
+      "inflation",
+      "migration",
+      "companion",
+      "variation",
+      "isolation",
+      "salvation",
+      "elevation",
+      "sensation",
+      "battalion",
+      "probation",
+      "valuation",
+      "librarian",
+      "vibration"
+    ]
+  },
+  {
+    "itemId": "en-c2-5486",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "still",
+      "smith",
+      "stick",
+      "smile",
+      "shirt",
+      "shift",
+      "ships",
+      "skill",
+      "saint",
+      "swing",
+      "slide",
+      "suits",
+      "suite",
+      "shine",
+      "swift",
+      "spite",
+      "slice",
+      "skirt",
+      "spike",
+      "spice"
+    ]
+  },
+  {
+    "itemId": "en-c2-5505",
+    "issues": [],
+    "substituted": "We crossed the marsh, stepping carefully from one rough tussock to the next.",
+    "patternMatches": [
+      "support",
+      "purpose",
+      "authors",
+      "outcome",
+      "custody",
+      "customs",
+      "outlook",
+      "buttons",
+      "turnout",
+      "turmoil",
+      "summons",
+      "juniors",
+      "bullock",
+      "outpost",
+      "burrows",
+      "rundown",
+      "burnout",
+      "suitors",
+      "sundown",
+      "cuckold"
+    ]
+  },
+  {
+    "itemId": "en-c2-5342",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "female",
+      "demand",
+      "senate",
+      "debate",
+      "detail",
+      "retail",
+      "decade",
+      "behalf",
+      "repair",
+      "recall",
+      "legacy",
+      "regard",
+      "reward",
+      "delays",
+      "medals",
+      "herald",
+      "metals",
+      "remake",
+      "tenant",
+      "remark"
+    ]
+  },
+  {
+    "itemId": "en-c2-5535",
+    "issues": [],
+    "substituted": "There has been a sudden upsurge in interest in chess since the school tournament.",
+    "patternMatches": [
+      "message",
+      "justice",
+      "disease",
+      "mistake",
+      "reserve",
+      "visible",
+      "absence",
+      "dispute",
+      "passage",
+      "costume",
+      "missile",
+      "essence",
+      "passive",
+      "massage",
+      "gesture",
+      "hostage",
+      "dislike",
+      "posture",
+      "jasmine",
+      "residue"
+    ]
+  },
+  {
+    "itemId": "en-c2-5112",
+    "issues": [],
+    "substituted": "Her dogmatism made the debate frustrating for everyone.",
+    "patternMatches": [
+      "companies",
+      "formation",
+      "socialist",
+      "companion",
+      "mortality",
+      "socialism",
+      "formative",
+      "formality",
+      "contagion",
+      "normality",
+      "lookalike",
+      "formalism",
+      "collation",
+      "moccasins",
+      "concavity",
+      "joviality"
+    ]
+  },
+  {
+    "itemId": "en-c2-5548",
+    "issues": [],
+    "substituted": "a waft of garlic drifted from the kitchen.",
+    "patternMatches": [
+      "make",
+      "back",
+      "want",
+      "take",
+      "many",
+      "last",
+      "part",
+      "game",
+      "each",
+      "days",
+      "name",
+      "care",
+      "case",
+      "call",
+      "face",
+      "talk",
+      "fact",
+      "half",
+      "hand",
+      "past"
+    ]
+  },
+  {
+    "itemId": "en-c2-5312",
+    "issues": [],
+    "substituted": "Teenagers often invent a playful neologism that spreads rapidly through social media.",
+    "patternMatches": [
+      "economics",
+      "promotion",
+      "economies",
+      "economist",
+      "apologies",
+      "crocodile",
+      "biologist",
+      "geologist",
+      "apologist",
+      "ecologist",
+      "urologist",
+      "zoologist",
+      "ecologies"
+    ]
+  },
+  {
+    "itemId": "en-c2-5383",
+    "issues": [],
+    "substituted": "Everyone thought Mr Hargreaves would be a pushover, but he turned out to be the strictest teacher of all.",
+    "patternMatches": [
+      "purposes",
+      "prisoner",
+      "promoter",
+      "pathogen",
+      "potholes",
+      "pullover",
+      "petioles",
+      "proposer",
+      "poisoner",
+      "pinholes"
+    ]
+  },
+  {
+    "itemId": "en-c2-5132",
+    "issues": [],
+    "substituted": "Even when the referee made a terrible call, Nadia accepted it with equanimity.",
+    "patternMatches": [
+      "disability",
+      "capability",
+      "creativity",
+      "visibility",
+      "simplicity",
+      "negativity",
+      "volatility",
+      "durability",
+      "relativity",
+      "femininity",
+      "elasticity",
+      "inactivity",
+      "complicity",
+      "plasticity",
+      "solubility",
+      "proclivity",
+      "immobility",
+      "alkalinity",
+      "legibility",
+      "invalidity"
+    ]
+  },
+  {
+    "itemId": "en-c2-5365",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "precipitation",
+      "preoccupation",
+      "premeditation",
+      "prevarication"
+    ]
+  },
+  {
+    "itemId": "en-c2-5260",
+    "issues": [],
+    "substituted": "In the old tale, a sly knave cheats the king out of his gold.",
+    "patternMatches": [
+      "state",
+      "place",
+      "leave",
+      "space",
+      "share",
+      "trade",
+      "stage",
+      "peace",
+      "image",
+      "scale",
+      "grade",
+      "plane",
+      "shape",
+      "phase",
+      "blame",
+      "frame",
+      "grace",
+      "plate",
+      "shame",
+      "chase"
+    ]
+  },
+  {
+    "itemId": "en-c2-5303",
+    "issues": [],
+    "substituted": "Revision for five subjects at once felt like a hopeless morass of notes and deadlines.",
+    "patternMatches": [
+      "months",
+      "points",
+      "forces",
+      "sounds",
+      "movies",
+      "models",
+      "houses",
+      "powers",
+      "bodies",
+      "pounds",
+      "covers",
+      "colors",
+      "courts",
+      "voters",
+      "horses",
+      "losses",
+      "copies",
+      "voices",
+      "boards",
+      "rounds"
+    ]
+  },
+  {
+    "itemId": "en-c2-5233",
+    "issues": [],
+    "substituted": "The teacher sent Priya out of the class for her insolence.",
+    "patternMatches": [
+      "challenge",
+      "ambulance",
+      "freelance",
+      "imbalance",
+      "vigilance",
+      "semblance",
+      "virulence",
+      "indolence",
+      "petulance"
+    ]
+  },
+  {
+    "itemId": "en-c2-5423",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "magazine",
+      "capacity",
+      "vacation",
+      "paradise",
+      "salaries",
+      "taxation",
+      "paradigm",
+      "galaxies",
+      "parasite",
+      "calamity",
+      "fanatics",
+      "cavalier",
+      "fatality",
+      "paganism",
+      "canaries",
+      "laxative",
+      "tamarind",
+      "vagaries",
+      "vanadium",
+      "satanism"
+    ]
+  },
+  {
+    "itemId": "en-c2-5534",
+    "issues": [],
+    "substituted": "The negotiations dragged on for weeks, but the upshot was a fair deal for both clubs.",
+    "patternMatches": [
+      "vision",
+      "lesson",
+      "custom",
+      "bishop",
+      "wisdom",
+      "pastor",
+      "fusion",
+      "pistol",
+      "mascot",
+      "cosmos",
+      "piston",
+      "castor",
+      "lesion",
+      "discos",
+      "lessor",
+      "busboy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5406",
+    "issues": [],
+    "substituted": "The journalist's vivid reportage from the flooded valley brought the disaster to life.",
+    "patternMatches": [
+      "sensitive",
+      "departure",
+      "detective",
+      "defective",
+      "recapture",
+      "destitute",
+      "servitude",
+      "peacetime",
+      "rectitude",
+      "certitude",
+      "beatitude"
+    ]
+  },
+  {
+    "itemId": "en-c2-5071",
+    "issues": [],
+    "substituted": "Maya felt no compunction about selling her brother's old bike.",
+    "patternMatches": [
+      "consumption",
+      "circulation",
+      "conjunction",
+      "calculation",
+      "computation",
+      "conjugation",
+      "coagulation",
+      "commutation",
+      "colouration",
+      "coeducation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5344",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "reference",
+      "residence",
+      "relevance",
+      "vengeance",
+      "resonance",
+      "reverence",
+      "severance",
+      "semblance",
+      "deference",
+      "decadence",
+      "reticence",
+      "sentience",
+      "vehemence",
+      "petulance"
+    ]
+  },
+  {
+    "itemId": "en-c2-5550",
+    "issues": [],
+    "substituted": "The butler wore a grey suit with a matching waistcoat under his jacket.",
+    "patternMatches": [
+      "driftwood",
+      "evictions",
+      "sainthood",
+      "frictions"
+    ]
+  },
+  {
+    "itemId": "en-c2-5125",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "encampments"
+    ]
+  },
+  {
+    "itemId": "en-c2-5544",
+    "issues": [],
+    "substituted": "The retired athlete suffered months of vilification in the press after the leaked photographs.",
+    "patternMatches": [
+      "organization",
+      "organisation",
+      "civilization",
+      "notification",
+      "humanitarian",
+      "coordination",
+      "exploitation",
+      "modification",
+      "anticipation",
+      "verification",
+      "optimization",
+      "legalization",
+      "intimidation",
+      "civilisation",
+      "colonization",
+      "illumination",
+      "complication",
+      "denomination",
+      "purification",
+      "emancipation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5338",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "apartment",
+      "detriment",
+      "sacrament",
+      "increment",
+      "matrimony",
+      "reprimand",
+      "excrement",
+      "pheromone",
+      "merriment",
+      "adornment"
+    ]
+  },
+  {
+    "itemId": "en-c2-5268",
+    "issues": [],
+    "substituted": "The sailors anchored on the leeward of the island to escape the storm.",
+    "patternMatches": [
+      "members",
+      "century",
+      "network",
+      "western",
+      "feature",
+      "leaders",
+      "letters",
+      "measure",
+      "welfare",
+      "centers",
+      "readers",
+      "venture",
+      "lecture",
+      "jewelry",
+      "repairs",
+      "sectors",
+      "servers",
+      "mercury",
+      "dealers",
+      "sensors"
+    ]
+  },
+  {
+    "itemId": "en-c2-5237",
+    "issues": [],
+    "substituted": "I needed the film explained to me because of the intricacy of the plot.",
+    "patternMatches": [
+      "imaginary",
+      "candidacy",
+      "pituitary",
+      "dignitary",
+      "obstinacy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5393",
+    "issues": [],
+    "substituted": "The two rival clubs finally reached a rapprochement after years of refusing to speak.",
+    "patternMatches": [
+      "reinforcement",
+      "reimbursement",
+      "reinstatement",
+      "rearrangement"
+    ]
+  },
+  {
+    "itemId": "en-c2-5063",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "certainty",
+      "captaincy",
+      "causality",
+      "crematory",
+      "concavity"
+    ]
+  },
+  {
+    "itemId": "en-c2-5195",
+    "issues": [],
+    "substituted": "Their week by the quiet lake felt like a perfect idyll compared with the busy city they had left.",
+    "patternMatches": [
+      "adult",
+      "idols"
+    ]
+  },
+  {
+    "itemId": "en-c2-5183",
+    "issues": [],
+    "substituted": "My cousin is a real hedonist: he spends every weekend chasing food, sunshine and luxury.",
+    "patternMatches": [
+      "weakness",
+      "feminist",
+      "feminism",
+      "deafness",
+      "leninist",
+      "sexiness",
+      "hedonism",
+      "leninism",
+      "meanness",
+      "nearness",
+      "meekness",
+      "neatness",
+      "keenness",
+      "lewdness",
+      "deepness",
+      "deftness",
+      "leanness",
+      "dearness"
+    ]
+  },
+  {
+    "itemId": "en-c2-5440",
+    "issues": [],
+    "substituted": "The farmer carried a sheaf of freshly cut wheat across the field.",
+    "patternMatches": [
+      "sleep",
+      "speed",
+      "scene",
+      "sweet",
+      "steps",
+      "steel",
+      "steam",
+      "smell",
+      "steal",
+      "sheet",
+      "shell",
+      "spell",
+      "seeds",
+      "sheep",
+      "sweat",
+      "shelf",
+      "sneak",
+      "steak",
+      "sweep",
+      "siege"
+    ]
+  },
+  {
+    "itemId": "en-c2-5352",
+    "issues": [],
+    "substituted": "The detective claimed he could read a stranger's physiognomy and guess their profession.",
+    "patternMatches": [
+      "preliminary"
+    ]
+  },
+  {
+    "itemId": "en-c2-5552",
+    "issues": [],
+    "substituted": "Mum handed Maya a damp washcloth to wipe the paint off her hands.",
+    "patternMatches": [
+      "satellite",
+      "pamphlets",
+      "causality",
+      "gauntlets"
+    ]
+  },
+  {
+    "itemId": "en-c2-5047",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "back",
+      "best",
+      "both",
+      "book",
+      "body",
+      "baby",
+      "bank",
+      "bill",
+      "blue",
+      "base",
+      "ball",
+      "boys",
+      "beat",
+      "band",
+      "boss",
+      "bear",
+      "boat",
+      "beer",
+      "bird",
+      "bowl"
+    ]
+  },
+  {
+    "itemId": "en-c2-5478",
+    "issues": [],
+    "substituted": "After the flood, volunteers brought food and succour to the flooded villages.",
+    "patternMatches": [
+      "senator",
+      "speaker",
+      "soldier",
+      "shelter",
+      "shooter",
+      "sponsor",
+      "starter",
+      "scholar",
+      "striker",
+      "sweater",
+      "seminar",
+      "sticker",
+      "scooter",
+      "scanner",
+      "spoiler",
+      "skipper",
+      "swimmer",
+      "shutter",
+      "sleeper",
+      "stalker"
+    ]
+  },
+  {
+    "itemId": "en-c2-5391",
+    "issues": [],
+    "substituted": "After their argument, Maya felt no rancour towards her friend, only sadness.",
+    "patternMatches": [
+      "nations",
+      "factors",
+      "factory",
+      "harmony",
+      "cartoon",
+      "harbour",
+      "balloon",
+      "balcony",
+      "payroll",
+      "sailors",
+      "patrons",
+      "fallout",
+      "ballots",
+      "gallons",
+      "carrots",
+      "parsons",
+      "falcons",
+      "laptops",
+      "patrols",
+      "cannons"
+    ]
+  },
+  {
+    "itemId": "en-c2-5058",
+    "issues": [],
+    "substituted": "We recognised Granny Rosa by her cackle echoing from the kitchen.",
+    "patternMatches": [
+      "nature",
+      "battle",
+      "damage",
+      "handle",
+      "native",
+      "marine",
+      "sample",
+      "castle",
+      "palace",
+      "garage",
+      "parade",
+      "cattle",
+      "tackle",
+      "savage",
+      "marble",
+      "candle",
+      "gamble",
+      "parole",
+      "saddle",
+      "salute"
+    ]
+  },
+  {
+    "itemId": "en-c2-5072",
+    "issues": [],
+    "substituted": "Missing the train was just one event in a whole concatenation that ruined our trip.",
+    "patternMatches": [
+      "communication",
+      "collaboration",
+      "consideration",
+      "concentration",
+      "configuration",
+      "documentation",
+      "confrontation",
+      "consolidation",
+      "contamination",
+      "confederation",
+      "constellation",
+      "modernization",
+      "commemoration",
+      "contemplation",
+      "socialization",
+      "normalization",
+      "modernisation",
+      "fortification",
+      "consternation",
+      "domestication"
+    ]
+  },
+  {
+    "itemId": "en-c2-5115",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "players",
+      "leaders",
+      "academy",
+      "readers",
+      "amateur",
+      "slavery",
+      "tragedy",
+      "prayers",
+      "planets",
+      "travels",
+      "dealers",
+      "traders",
+      "imagery",
+      "heavens",
+      "plateau",
+      "bravery",
+      "dialect",
+      "placebo",
+      "graders",
+      "diapers"
+    ]
+  },
+  {
+    "itemId": "en-c2-5422",
+    "issues": [],
+    "substituted": "Everyone on the farm loved the runt, even though he was loud and stubborn.",
+    "patternMatches": [
+      "such",
+      "must",
+      "full",
+      "guys",
+      "turn",
+      "hurt",
+      "rule",
+      "luck",
+      "runs",
+      "fund",
+      "pull",
+      "push",
+      "dude",
+      "fuel",
+      "duty",
+      "suit",
+      "jump",
+      "guns",
+      "quit",
+      "burn"
+    ]
+  },
+  {
+    "itemId": "en-c2-5444",
+    "issues": [],
+    "substituted": "The security guard caught a shoplifter hiding a phone charger under his jacket.",
+    "patternMatches": [
+      "prosecutor",
+      "proprietor",
+      "progenitor",
+      "procurator",
+      "prospector",
+      "woodcutter",
+      "protractor"
+    ]
+  },
+  {
+    "itemId": "en-c2-5405",
+    "issues": [],
+    "substituted": "After breaking his neighbour's window with a football, Tomás made reparation by paying for the repair.",
+    "patternMatches": [
+      "population",
+      "generation",
+      "foundation",
+      "reputation",
+      "regulation",
+      "innovation",
+      "federation",
+      "motivation",
+      "evaluation",
+      "occupation",
+      "medication",
+      "invitation",
+      "separation",
+      "graduation",
+      "nomination",
+      "obligation",
+      "indication",
+      "recreation",
+      "navigation",
+      "adaptation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5389",
+    "issues": [],
+    "substituted": "The jazz band opened the concert with a lively ragtime tune that got everyone tapping their feet.",
+    "patternMatches": [
+      "married",
+      "machine",
+      "parties",
+      "fashion",
+      "passing",
+      "warning",
+      "hanging",
+      "passion",
+      "landing",
+      "failing",
+      "carrier",
+      "backing",
+      "ranking",
+      "partial",
+      "tactics",
+      "warrior",
+      "barrier",
+      "casting",
+      "washing",
+      "darling"
+    ]
+  },
+  {
+    "itemId": "en-c2-5022",
+    "issues": [],
+    "substituted": "Grandma sat reading in the shady garden arbour she had built from climbing roses.",
+    "patternMatches": [
+      "driver",
+      "writer",
+      "prayer",
+      "broker",
+      "archer",
+      "drawer",
+      "trader",
+      "armour",
+      "crater",
+      "brewer",
+      "primer",
+      "grader",
+      "tracer",
+      "tremor",
+      "grower",
+      "grocer",
+      "eraser",
+      "orator",
+      "kroner",
+      "grater"
+    ]
+  },
+  {
+    "itemId": "en-c2-5384",
+    "issues": [],
+    "substituted": "The biology teacher showed us the slow putrefaction of the fallen leaves on the forest floor.",
+    "patternMatches": [
+      "presentation",
+      "preservation",
+      "pigmentation",
+      "perpetuation",
+      "perpetration",
+      "protestation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5471",
+    "issues": [],
+    "substituted": "a steamroller flattens everything in its path on the road.",
+    "patternMatches": [
+      "stepbrother",
+      "steakhouses"
+    ]
+  },
+  {
+    "itemId": "en-c2-5328",
+    "issues": [],
+    "substituted": "After the quarrel, Maya faced ostracism by the whole group for weeks.",
+    "patternMatches": [
+      "mechanism",
+      "socialism",
+      "vandalism",
+      "gymnasium",
+      "palladium",
+      "pluralism",
+      "feudalism",
+      "barbarism",
+      "formalism",
+      "tribalism",
+      "germanium",
+      "terrarium",
+      "defeatism",
+      "dogmatism",
+      "ritualism"
+    ]
+  },
+  {
+    "itemId": "en-c2-5140",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "registration",
+      "civilization",
+      "notification",
+      "manipulation",
+      "modification",
+      "anticipation",
+      "verification",
+      "optimization",
+      "intimidation",
+      "civilisation",
+      "purification",
+      "mobilization",
+      "infiltration",
+      "annihilation",
+      "assimilation",
+      "solicitation",
+      "ratification",
+      "articulation",
+      "deliberation",
+      "facilitation"
+    ]
+  },
+  {
+    "itemId": "en-c2-5311",
+    "issues": [],
+    "substituted": "The old legend told of a necromancer who raised the dead in the castle crypt.",
+    "patternMatches": [
+      "testimonies"
+    ]
+  },
+  {
+    "itemId": "en-c2-5263",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "lifespan",
+      "linesman",
+      "linesmen"
+    ]
+  },
+  {
+    "itemId": "en-c2-5157",
+    "issues": [],
+    "substituted": "a fracas broke out in the lunch queue when two boys argued over the last pasty.",
+    "patternMatches": [
+      "states",
+      "places",
+      "status",
+      "claims",
+      "starts",
+      "leaves",
+      "images",
+      "awards",
+      "plants",
+      "stands",
+      "shares",
+      "deaths",
+      "tracks",
+      "hearts",
+      "stages",
+      "brands",
+      "guards",
+      "boards",
+      "giants",
+      "grades"
+    ]
+  },
+  {
+    "itemId": "en-c2-5295",
+    "issues": [],
+    "substituted": "Owen's terrible impression of the headmaster sent the whole class into mirth.",
+    "patternMatches": [
+      "fifth",
+      "birth",
+      "gifts",
+      "lists",
+      "ninth",
+      "width",
+      "kitty",
+      "sixty",
+      "riots",
+      "hints",
+      "lifts",
+      "vista",
+      "diets",
+      "fists",
+      "filth",
+      "ditto",
+      "pints",
+      "firth",
+      "pinto",
+      "piety"
+    ]
+  },
+  {
+    "itemId": "en-c2-5281",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "military",
+      "solitary",
+      "efficacy",
+      "intimacy",
+      "seminary",
+      "delicacy",
+      "celibacy",
+      "salivary",
+      "lapidary"
+    ]
+  },
+  {
+    "itemId": "en-c2-5541",
+    "issues": [],
+    "substituted": "What struck me most was the vibrancy of the market at night, with its noise, colours and smells.",
+    "patternMatches": [
+      "distance",
+      "dispatch",
+      "mismatch",
+      "riddance",
+      "piquancy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5061",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "petroleum",
+      "cytoplasm",
+      "ritualism"
+    ]
+  },
+  {
+    "itemId": "en-c2-5485",
+    "issues": [],
+    "substituted": "The storm cut a wide swathe through the forest, flattening hundreds of trees.",
+    "patternMatches": [
+      "states",
+      "season",
+      "search",
+      "status",
+      "starts",
+      "stands",
+      "shares",
+      "stable",
+      "shadow",
+      "stages",
+      "spaces",
+      "slaves",
+      "stairs",
+      "statue",
+      "stance",
+      "static",
+      "stakes",
+      "shades",
+      "shapes",
+      "scales"
+    ]
+  },
+  {
+    "itemId": "en-c2-5190",
+    "issues": [],
+    "substituted": "Everyone called Dan the team's hotshot who could fix any shot from three metres.",
+    "patternMatches": [
+      "tonight",
+      "content",
+      "contact",
+      "comment",
+      "concept",
+      "context",
+      "concert",
+      "contest",
+      "conduct",
+      "comfort",
+      "collect",
+      "consent",
+      "tourist",
+      "convert",
+      "compact",
+      "workout",
+      "coconut",
+      "boycott",
+      "lookout",
+      "cockpit"
+    ]
+  },
+  {
+    "itemId": "en-c2-5102",
+    "issues": [],
+    "substituted": "The famous seventeenth-century diarist Samuel Pepys recorded the Great Fire of London.",
+    "patternMatches": [
+      "reading",
+      "quality",
+      "station",
+      "reality",
+      "meaning",
+      "hearing",
+      "stadium",
+      "dealing",
+      "drawing",
+      "heading",
+      "charity",
+      "beating",
+      "healing",
+      "bearing",
+      "gravity",
+      "heating",
+      "loading",
+      "imaging",
+      "clarity",
+      "granite"
+    ]
+  },
+  {
+    "itemId": "en-c2-5317",
+    "issues": [],
+    "substituted": "Ravi dismissed every rule and value as pointless, sounding like a complete nihilist.",
+    "patternMatches": [
+      "division",
+      "civilian",
+      "vicinity",
+      "divinity",
+      "militias",
+      "civility",
+      "rigidity",
+      "nihilism",
+      "virility",
+      "timidity"
+    ]
+  },
+  {
+    "itemId": "en-c2-5056",
+    "issues": [],
+    "substituted": "Nervous on stage, Theo managed to bungle the simplest magic trick.",
+    "patternMatches": [
+      "single",
+      "minute",
+      "centre",
+      "handle",
+      "manage",
+      "ignore",
+      "tongue",
+      "gentle",
+      "donate",
+      "bundle",
+      "tenure",
+      "candle",
+      "kindle",
+      "mantle",
+      "menace",
+      "ignite",
+      "denote",
+      "jingle",
+      "mingle",
+      "manure"
+    ]
+  },
+  {
+    "itemId": "en-c2-5353",
+    "issues": [],
+    "substituted": "The critics unfairly pigeonholed the young writer as a writer of horror stories only.",
+    "patternMatches": [
+      "microscopes"
+    ]
+  },
+  {
+    "itemId": "en-c2-5110",
+    "issues": [],
+    "substituted": "Stop dithering and choose your topic before the bell rings.",
+    "patternMatches": [
+      "depending",
+      "defending",
+      "demanding",
+      "directing",
+      "designing",
+      "declining",
+      "declaring",
+      "defeating",
+      "detailing",
+      "differing",
+      "deserving",
+      "departing",
+      "depicting",
+      "detecting",
+      "degrading",
+      "deploying",
+      "deepening",
+      "disabling",
+      "deceiving",
+      "dwindling"
+    ]
+  },
+  {
+    "itemId": "en-c2-5042",
+    "issues": [],
+    "substituted": "The sails billowed as the yacht caught the strong afternoon wind.",
+    "patternMatches": [
+      "discover",
+      "disposed",
+      "mirrored",
+      "siphoned",
+      "windowed",
+      "disposes",
+      "disrobed",
+      "winnowed",
+      "visioned"
+    ]
+  },
+  {
+    "itemId": "en-c2-5064",
+    "issues": [],
+    "substituted": "Mum gently chided Leo for leaving his muddy boots in the hallway again.",
+    "patternMatches": [
+      "united",
+      "prices",
+      "raised",
+      "failed",
+      "joined",
+      "driven",
+      "gained",
+      "writes",
+      "voices",
+      "edited",
+      "drives",
+      "ruined",
+      "waited",
+      "guided",
+      "whites",
+      "raises",
+      "seized",
+      "suited",
+      "prizes",
+      "guides"
+    ]
+  },
+  {
+    "itemId": "en-c2-5449",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "states",
+      "summer",
+      "showed",
+      "screen",
+      "signed",
+      "seemed",
+      "served",
+      "silver",
+      "stated",
+      "survey",
+      "shared",
+      "scored",
+      "stores",
+      "scared",
+      "shares",
+      "stayed",
+      "shower",
+      "spoken",
+      "suffer",
+      "scores"
+    ]
+  },
+  {
+    "itemId": "en-c2-5447",
+    "issues": [],
+    "substituted": "When the reporter asked about the lost match, the captain cleverly sidestepped the question.",
+    "patternMatches": [
+      "overstepped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5073",
+    "issues": [],
+    "substituted": "Leo concocted an elaborate excuse for being late to training.",
+    "patternMatches": [
+      "continued",
+      "continues",
+      "concerned",
+      "connected",
+      "confirmed",
+      "conducted",
+      "contained",
+      "convinced",
+      "concluded",
+      "cancelled",
+      "converted",
+      "convicted",
+      "contacted",
+      "condemned",
+      "consisted",
+      "conceived",
+      "contested",
+      "concludes",
+      "confessed",
+      "concealed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5155",
+    "issues": [],
+    "substituted": "Some cyclists openly flout the traffic lights, weaving through junctions as if no rules existed.",
+    "patternMatches": [
+      "plant",
+      "alert",
+      "blast",
+      "slept",
+      "elect",
+      "float",
+      "blunt",
+      "flirt",
+      "clout",
+      "slant",
+      "cleft",
+      "sleet",
+      "allot",
+      "glint",
+      "gloat",
+      "bloat",
+      "blurt",
+      "plait",
+      "pleat",
+      "blest"
+    ]
+  },
+  {
+    "itemId": "en-c2-5018",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "kneel",
+      "enrol",
+      "snarl"
+    ]
+  },
+  {
+    "itemId": "en-c2-5532",
+    "issues": [],
+    "substituted": "Leo could hardly wait to unwrap his birthday presents on Saturday morning.",
+    "patternMatches": [
+      "inbred",
+      "snares",
+      "snorts",
+      "snores",
+      "snarls",
+      "entrap",
+      "snared",
+      "inured",
+      "snored",
+      "gnarls"
+    ]
+  },
+  {
+    "itemId": "en-c2-5468",
+    "issues": [],
+    "substituted": "We had to squelch the muddy marsh on our way to the campsite.",
+    "patternMatches": [
+      "settled",
+      "singles",
+      "samples",
+      "skilled",
+      "shallow",
+      "shields",
+      "swallow",
+      "spoiled",
+      "spelled",
+      "spilled",
+      "staples",
+      "swollen",
+      "smelled",
+      "sampled",
+      "scrolls",
+      "stables",
+      "settles",
+      "stalled",
+      "singled",
+      "shelled"
+    ]
+  },
+  {
+    "itemId": "en-c2-5324",
+    "issues": [],
+    "substituted": "Booking the coach in advance will obviate queuing at the station.",
+    "patternMatches": [
+      "average",
+      "release",
+      "message",
+      "surface",
+      "mistake",
+      "replace",
+      "prepare",
+      "operate",
+      "package",
+      "compare",
+      "upgrade",
+      "embrace",
+      "declare",
+      "massage",
+      "mandate",
+      "educate",
+      "terrace",
+      "outrage",
+      "violate",
+      "salvage"
+    ]
+  },
+  {
+    "itemId": "en-c2-5093",
+    "issues": [],
+    "substituted": "In her essay, Priya delineated the differences between the two political systems.",
+    "patternMatches": [
+      "designated",
+      "celebrated",
+      "negotiated",
+      "celebrates",
+      "terminated",
+      "devastated",
+      "segregated",
+      "reinstated",
+      "reiterated",
+      "dehydrated",
+      "penetrated",
+      "replicated",
+      "perforated",
+      "terminates",
+      "reappeared",
+      "ventilated",
+      "resurfaced",
+      "penetrates",
+      "retaliated",
+      "designates"
+    ]
+  },
+  {
+    "itemId": "en-c2-5403",
+    "issues": [],
+    "substituted": "After hours of pleading, Dad finally relented and let us stay up to watch the match.",
+    "patternMatches": [
+      "remember",
+      "received",
+      "released",
+      "selected",
+      "revealed",
+      "referred",
+      "rejected",
+      "deserves",
+      "releases",
+      "repeated",
+      "reserves",
+      "receives",
+      "reserved",
+      "defeated",
+      "deserved",
+      "detected",
+      "defended",
+      "deceased",
+      "reversed",
+      "remedies"
+    ]
+  },
+  {
+    "itemId": "en-c2-5331",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c2-5114",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "doubt",
+      "drugs",
+      "drunk",
+      "drums",
+      "daunt"
+    ]
+  },
+  {
+    "itemId": "en-c2-5397",
+    "issues": [],
+    "substituted": "The council voted to raze the old cinema and build flats on the site.",
+    "patternMatches": [
+      "size",
+      "jazz",
+      "buzz",
+      "gaze",
+      "maze",
+      "haze",
+      "fuzz",
+      "fizz",
+      "faze",
+      "daze",
+      "ooze",
+      "doze"
+    ]
+  },
+  {
+    "itemId": "en-c2-5490",
+    "issues": [],
+    "substituted": "The guide warned us not to tarry by the river as the light was fading.",
+    "patternMatches": [
+      "party",
+      "carry",
+      "worry",
+      "harry",
+      "dirty",
+      "marry",
+      "spray",
+      "hurry",
+      "array",
+      "ferry",
+      "berry",
+      "curry",
+      "stray",
+      "parry",
+      "foray"
+    ]
+  },
+  {
+    "itemId": "en-c2-5483",
+    "issues": [],
+    "substituted": "Leo had to surmount his fear of heights before the climbing trip.",
+    "patternMatches": [
+      "swimming",
+      "slamming",
+      "stemming",
+      "spamming",
+      "stamping",
+      "stomping",
+      "skimming",
+      "slimming",
+      "scamming",
+      "slumping",
+      "stumping",
+      "slumming",
+      "skimping",
+      "swamping"
+    ]
+  },
+  {
+    "itemId": "en-c2-5084",
+    "issues": [],
+    "substituted": "Suffering from a terrible cold, the actor croaked his few lines during the rehearsal.",
+    "patternMatches": [
+      "written",
+      "created",
+      "arrived",
+      "ordered",
+      "dropped",
+      "treated",
+      "granted",
+      "trained",
+      "premier",
+      "dressed",
+      "printed",
+      "crossed",
+      "creates",
+      "trigger",
+      "trusted",
+      "trapped",
+      "proceed",
+      "wrapped",
+      "pressed",
+      "arrives"
+    ]
+  },
+  {
+    "itemId": "en-c2-5275",
+    "issues": [],
+    "substituted": "The security guard warned two teenagers for loitering outside the shop instead of going in.",
+    "patternMatches": [
+      "listening",
+      "featuring",
+      "switching",
+      "capturing",
+      "restoring",
+      "filtering",
+      "mastering",
+      "fostering",
+      "mentoring",
+      "torturing",
+      "nurturing",
+      "imitating",
+      "lettering",
+      "clutching",
+      "lecturing",
+      "stitching",
+      "softening",
+      "mistaking",
+      "sketching",
+      "twitching"
+    ]
+  },
+  {
+    "itemId": "en-c2-5174",
+    "issues": [],
+    "substituted": "The young author's manager decided to gratify her with news that she had won the writing prize.",
+    "patternMatches": [
+      "playing",
+      "reading",
+      "amazing",
+      "station",
+      "leading",
+      "leaving",
+      "imagine",
+      "meaning",
+      "wearing",
+      "realize",
+      "hearing",
+      "sharing",
+      "trading",
+      "dealing",
+      "drawing",
+      "staying",
+      "heading",
+      "beating",
+      "realise",
+      "healing"
+    ]
+  },
+  {
+    "itemId": "en-c2-5128",
+    "issues": [],
+    "substituted": "Twisted and entangled in the vines, the suffragettes' banner stayed exactly where it had been hung.",
+    "patternMatches": [
+      "installed",
+      "unsettled",
+      "instilled",
+      "encircled",
+      "unraveled",
+      "enamelled",
+      "uncoupled",
+      "untangled",
+      "enfeebled",
+      "unbuckled",
+      "initialed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5230",
+    "issues": [],
+    "substituted": "Before giving the novel away, Amara inscribed his name on the first page of the notebook.",
+    "patternMatches": [
+      "described",
+      "describes",
+      "sustained",
+      "disguised",
+      "misguided",
+      "enshrined",
+      "disguises",
+      "abstained",
+      "despaired",
+      "disdained",
+      "enshrines",
+      "disunited",
+      "despoiled"
+    ]
+  },
+  {
+    "itemId": "en-c2-5438",
+    "issues": [],
+    "substituted": "Dev seethed with anger after losing the final on a technicality.",
+    "patternMatches": [
+      "started",
+      "studies",
+      "sources",
+      "stopped",
+      "studied",
+      "soldier",
+      "settled",
+      "singles",
+      "samples",
+      "succeed",
+      "shocked",
+      "shelter",
+      "strikes",
+      "secured",
+      "stepped",
+      "spotted",
+      "skilled",
+      "sounded",
+      "schemes",
+      "shipped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5329",
+    "issues": [],
+    "substituted": "The wingers sprinted wide to outflank the defenders and reach the byline.",
+    "patternMatches": [
+      "tumbling",
+      "bubbling",
+      "juggling",
+      "bustling",
+      "puzzling",
+      "cuddling",
+      "humbling",
+      "rumbling",
+      "hustling",
+      "mumbling",
+      "rustling",
+      "fumbling",
+      "bumbling",
+      "suckling",
+      "buckling",
+      "bundling",
+      "fuelling",
+      "hurtling",
+      "supplant",
+      "gurgling"
+    ]
+  },
+  {
+    "itemId": "en-c2-5557",
+    "issues": [],
+    "substituted": "Leo couldn't help but wince when the dentist touched the sore tooth.",
+    "patternMatches": [
+      "title",
+      "piece",
+      "rifle",
+      "ridge",
+      "niche",
+      "binge",
+      "rinse",
+      "hinge",
+      "mince",
+      "sieve",
+      "pique",
+      "tithe",
+      "tinge",
+      "mitre",
+      "singe",
+      "sidle"
+    ]
+  },
+  {
+    "itemId": "en-c2-5327",
+    "issues": [],
+    "substituted": "The captain quietly orchestrated a surprise celebration for the team's final match.",
+    "patternMatches": [
+      "necessitated",
+      "encapsulated",
+      "necessitates",
+      "encapsulates",
+      "orchestrates"
+    ]
+  },
+  {
+    "itemId": "en-c2-5124",
+    "issues": [],
+    "substituted": "The reviewer managed to encapsulate the essence of the novel in a few sentences.",
+    "patternMatches": [
+      "necessitate",
+      "orchestrate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5012",
+    "issues": [],
+    "substituted": "The head teacher decided to amalgamate the two small schools into one.",
+    "patternMatches": [
+      "appreciate",
+      "anticipate",
+      "accelerate",
+      "articulate",
+      "accumulate",
+      "assimilate",
+      "annihilate",
+      "accentuate",
+      "ameliorate",
+      "adjudicate",
+      "abbreviate",
+      "asphyxiate",
+      "adulterate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5021",
+    "issues": [],
+    "substituted": "The two captains couldn't agree on the score, so the referee had to arbitrate.",
+    "patternMatches": [
+      "affiliate",
+      "designate",
+      "humiliate",
+      "scrimmage",
+      "legislate",
+      "calibrate",
+      "officiate",
+      "immigrate",
+      "denigrate",
+      "insinuate",
+      "delineate",
+      "oscillate",
+      "titillate",
+      "vacillate",
+      "extirpate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5477",
+    "issues": [],
+    "substituted": "A last-minute rule change stymied our plans for the school trip.",
+    "patternMatches": [
+      "started",
+      "studies",
+      "sources",
+      "stopped",
+      "studied",
+      "soldier",
+      "settled",
+      "singles",
+      "samples",
+      "succeed",
+      "shocked",
+      "shelter",
+      "strikes",
+      "secured",
+      "stepped",
+      "spotted",
+      "skilled",
+      "sounded",
+      "schemes",
+      "shipped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5048",
+    "issues": [],
+    "substituted": "Jamie completely botched the cake by forgetting the sugar and baking powder.",
+    "patternMatches": [
+      "complex",
+      "located",
+      "sources",
+      "covered",
+      "focused",
+      "journey",
+      "noticed",
+      "worried",
+      "counter",
+      "founded",
+      "courses",
+      "founder",
+      "pointed",
+      "soldier",
+      "couples",
+      "wounded",
+      "touched",
+      "coaches",
+      "mounted",
+      "powered"
+    ]
+  },
+  {
+    "itemId": "en-c2-5020",
+    "issues": [],
+    "substituted": "Remember to append your email address at the bottom of the application form.",
+    "patternMatches": [
+      "expand",
+      "depend",
+      "ripped",
+      "topped",
+      "popped",
+      "copied",
+      "tapped",
+      "capped",
+      "tipped",
+      "dipped",
+      "mapped",
+      "hopped",
+      "repaid",
+      "lapsed",
+      "expend",
+      "lipped",
+      "zipped",
+      "lapped",
+      "rapped",
+      "sipped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5252",
+    "issues": [],
+    "substituted": "Frustrated, Leo jiggled the handle until the lock finally clicked open.",
+    "patternMatches": [
+      "journey",
+      "jingles",
+      "jumbled",
+      "jointed",
+      "jostled",
+      "juggled",
+      "juggles",
+      "jiggles",
+      "jimmies",
+      "jangled",
+      "jumbles"
+    ]
+  },
+  {
+    "itemId": "en-c2-5496",
+    "issues": [],
+    "substituted": "After the football match, Marcus's ankle began to throb with every step.",
+    "patternMatches": [
+      "terms",
+      "throw",
+      "turns",
+      "tired",
+      "threw",
+      "tires",
+      "tarry",
+      "thrum",
+      "tares",
+      "turfs"
+    ]
+  },
+  {
+    "itemId": "en-c2-5499",
+    "issues": [],
+    "substituted": "Wearing her sister's enormous heels, Ella began to totter across the kitchen floor.",
+    "patternMatches": [
+      "better",
+      "matter",
+      "father",
+      "mother",
+      "letter",
+      "gotten",
+      "titles",
+      "butter",
+      "bother",
+      "gather",
+      "metres",
+      "fitted",
+      "potter",
+      "titled",
+      "esteem",
+      "litter",
+      "kitten",
+      "batter",
+      "bitten",
+      "dotted"
+    ]
+  },
+  {
+    "itemId": "en-c2-5335",
+    "issues": [],
+    "substituted": "Some websites simply pander to teenagers' worst habits to keep them scrolling.",
+    "patternMatches": [
+      "called",
+      "matter",
+      "wanted",
+      "market",
+      "father",
+      "happen",
+      "career",
+      "master",
+      "passed",
+      "caused",
+      "raised",
+      "failed",
+      "target",
+      "garden",
+      "values",
+      "walked",
+      "causes",
+      "talked",
+      "earned",
+      "marked"
+    ]
+  },
+  {
+    "itemId": "en-c2-5201",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "improve",
+      "imposed",
+      "impacts",
+      "implies",
+      "implied",
+      "impress",
+      "imports",
+      "impulse",
+      "implant",
+      "imprint",
+      "imposes",
+      "impeach",
+      "impeded",
+      "implore",
+      "impaled",
+      "implode",
+      "imparts",
+      "impairs",
+      "impedes",
+      "impound"
+    ]
+  },
+  {
+    "itemId": "en-c2-5163",
+    "issues": [],
+    "substituted": "The puppies frolicked in the garden all afternoon.",
+    "patternMatches": [
+      "collected",
+      "reflected",
+      "neglected",
+      "inflicted",
+      "afflicted",
+      "deflected",
+      "reelected",
+      "inflected",
+      "unblocked",
+      "padlocked"
+    ]
+  },
+  {
+    "itemId": "en-c2-5377",
+    "issues": [],
+    "substituted": "The school used every social media platform it could to publicise the charity concert next month.",
+    "patternMatches": [
+      "subsidise"
+    ]
+  },
+  {
+    "itemId": "en-c2-5070",
+    "issues": [],
+    "substituted": "His parents coddled him so much that he'd never done his own laundry.",
+    "patternMatches": [
+      "changes",
+      "changed",
+      "created",
+      "complex",
+      "channel",
+      "covered",
+      "carried",
+      "classes",
+      "clothes",
+      "charges",
+      "claimed",
+      "chicken",
+      "charged",
+      "counter",
+      "checked",
+      "chances",
+      "courses",
+      "crossed",
+      "couples",
+      "creates"
+    ]
+  },
+  {
+    "itemId": "en-c2-5104",
+    "issues": [],
+    "substituted": "The optometrist used drops to make your pupils dilate before the eye test.",
+    "patternMatches": [
+      "please",
+      "became",
+      "create",
+      "damage",
+      "square",
+      "update",
+      "debate",
+      "escape",
+      "manage",
+      "engage",
+      "phrase",
+      "garage",
+      "relate",
+      "parade",
+      "savage",
+      "donate",
+      "behave",
+      "pirate",
+      "locate",
+      "voyage"
+    ]
+  },
+  {
+    "itemId": "en-c2-5545",
+    "issues": [],
+    "substituted": "Good architects can visualise the finished bridge before the first stone was laid.",
+    "patternMatches": [
+      "republish"
+    ]
+  },
+  {
+    "itemId": "en-c2-5452",
+    "issues": [],
+    "substituted": "Priya spent the weekend sleuthing who had borrowed her bike without asking.",
+    "patternMatches": [
+      "suffering",
+      "searching",
+      "screaming",
+      "streaming",
+      "spreading",
+      "screening",
+      "switching",
+      "surviving",
+      "selecting",
+      "splitting",
+      "supplying",
+      "schooling",
+      "signaling",
+      "sparkling",
+      "smuggling",
+      "stripping",
+      "scrolling",
+      "stressing",
+      "servicing",
+      "shrinking"
+    ]
+  },
+  {
+    "itemId": "en-c2-5105",
+    "issues": [],
+    "substituted": "Dad had to disassemble the bookshelf to fit it through the doorway.",
+    "patternMatches": [
+      "desegregate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5426",
+    "issues": [],
+    "substituted": "The volunteers worked through the night and sandbagged the riverbank with tens of heavy loads.",
+    "patternMatches": [
+      "candidates",
+      "sandwiches",
+      "landscapes",
+      "randomized",
+      "handcuffed",
+      "landslides",
+      "landscaped",
+      "sandwiched",
+      "vandalized",
+      "handpicked",
+      "randomised",
+      "vandalised",
+      "daydreamed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5368",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "present",
+      "prevent",
+      "premier",
+      "prepare",
+      "pleased",
+      "pretend",
+      "precise",
+      "pressed",
+      "predict",
+      "preview",
+      "premise",
+      "prefers",
+      "pleaded",
+      "pledged",
+      "presume",
+      "prevail",
+      "presses",
+      "pierced",
+      "pledges",
+      "preface"
+    ]
+  },
+  {
+    "itemId": "en-c2-5224",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "interface",
+      "alternate",
+      "undertake",
+      "incarnate",
+      "hibernate",
+      "resurface",
+      "procreate",
+      "underrate",
+      "luxuriate",
+      "demarcate",
+      "interlace",
+      "bifurcate",
+      "excoriate",
+      "extirpate",
+      "inebriate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5015",
+    "issues": [],
+    "substituted": "A short break outside will ameliorate your mood before the next exam.",
+    "patternMatches": [
+      "appreciate",
+      "anticipate",
+      "accelerate",
+      "articulate",
+      "accumulate",
+      "assimilate",
+      "annihilate",
+      "accentuate",
+      "adjudicate",
+      "abbreviate",
+      "amalgamate",
+      "asphyxiate",
+      "adulterate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5199",
+    "issues": [],
+    "substituted": "After the match, Theo gratefully imbibed every drop of the cold milkshake.",
+    "patternMatches": [
+      "decided",
+      "limited",
+      "arrived",
+      "excited",
+      "claimed",
+      "noticed",
+      "trained",
+      "defined",
+      "deliver",
+      "invited",
+      "visited",
+      "divided",
+      "retired",
+      "derived",
+      "strikes",
+      "advised",
+      "decides",
+      "desired",
+      "revised",
+      "arrives"
+    ]
+  },
+  {
+    "itemId": "en-c2-5166",
+    "issues": [],
+    "substituted": "The tourists gaped at the enormous waterfall below them.",
+    "patternMatches": [
+      "water",
+      "based",
+      "makes",
+      "games",
+      "taken",
+      "takes",
+      "paper",
+      "cases",
+      "named",
+      "names",
+      "rates",
+      "saved",
+      "taxes",
+      "pages",
+      "wales",
+      "faces",
+      "panel",
+      "dates",
+      "faced",
+      "label"
+    ]
+  },
+  {
     "itemId": "en-c2-5043",
     "issues": [],
-    "substituted": "Unlike the other houses on the street, ours is freestanding, with a garden on every side.",
+    "substituted": "Priya blabbed about the surprise party, ruining everything for Marcus.",
     "patternMatches": [
-      "entertaining"
+      "started",
+      "changed",
+      "learned",
+      "reached",
+      "planned",
+      "claimed",
+      "charged",
+      "granted",
+      "trained",
+      "awarded",
+      "trapped",
+      "adapted",
+      "wrapped",
+      "enabled",
+      "grabbed",
+      "crashed",
+      "planted",
+      "praised",
+      "dragged",
+      "cracked"
+    ]
+  },
+  {
+    "itemId": "en-c2-5332",
+    "issues": [],
+    "substituted": "In the final chess round, Priya managed to outwit the champion with a clever trap.",
+    "patternMatches": [
+      "detail",
+      "retail",
+      "obtain",
+      "outfit",
+      "retain",
+      "attain",
+      "detain",
+      "entail",
+      "outbid",
+      "intuit",
+      "outdid"
+    ]
+  },
+  {
+    "itemId": "en-c2-5507",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "suicide",
+      "whistle",
+      "glimpse",
+      "utilize",
+      "imitate",
+      "trickle",
+      "cripple",
+      "twinkle",
+      "drizzle",
+      "animate",
+      "wrinkle",
+      "spindle",
+      "dribble",
+      "reissue",
+      "shingle",
+      "utilise",
+      "whittle",
+      "urinate",
+      "bristle",
+      "quibble"
+    ]
+  },
+  {
+    "itemId": "en-c2-5307",
+    "issues": [],
+    "substituted": "In late summer the parrots moult their old feathers and grow a fresh set.",
+    "patternMatches": [
+      "court",
+      "trust",
+      "doubt",
+      "count",
+      "fault",
+      "fruit",
+      "mount",
+      "blunt",
+      "vault",
+      "stunt",
+      "crust",
+      "haunt",
+      "squat",
+      "grunt",
+      "erupt",
+      "taunt",
+      "shunt",
+      "jaunt",
+      "blurt",
+      "joust"
+    ]
+  },
+  {
+    "itemId": "en-c2-5409",
+    "issues": [],
+    "substituted": "The lifeguard used a defibrillator to resuscitate the swimmer pulled from the pool.",
+    "patternMatches": [
+      "investigate",
+      "assassinate",
+      "necessitate",
+      "domesticate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5456",
+    "issues": [],
+    "substituted": "The guard dog began to snarl as the stranger approached the gate.",
+    "patternMatches": [
+      "start",
+      "short",
+      "share",
+      "store",
+      "stars",
+      "score",
+      "smart",
+      "sport",
+      "storm",
+      "shore",
+      "spare",
+      "scare",
+      "spurs",
+      "spark",
+      "skirt",
+      "stare",
+      "sworn",
+      "scars",
+      "swore",
+      "sears"
+    ]
+  },
+  {
+    "itemId": "en-c2-5254",
+    "issues": [],
+    "substituted": "Excited fans began to jostle each other as the gates finally opened.",
+    "patternMatches": [
+      "posted",
+      "doctor",
+      "bottom",
+      "bottle",
+      "gotten",
+      "foster",
+      "hosted",
+      "routes",
+      "potter",
+      "roster",
+      "sorted",
+      "rooted",
+      "mortar",
+      "mouths",
+      "coated",
+      "vortex",
+      "dotted",
+      "soften",
+      "routed",
+      "footed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5446",
+    "issues": [],
+    "substituted": "The grapes left in the sun began to shrivel until they looked like raisins.",
+    "patternMatches": [
+      "started",
+      "studies",
+      "sources",
+      "stopped",
+      "studied",
+      "soldier",
+      "settled",
+      "singles",
+      "samples",
+      "succeed",
+      "shocked",
+      "shelter",
+      "strikes",
+      "secured",
+      "stepped",
+      "spotted",
+      "skilled",
+      "sounded",
+      "schemes",
+      "shipped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5428",
+    "issues": [],
+    "substituted": "One small sandwich was nowhere near enough to satiate my hunger after the ten-mile hike.",
+    "patternMatches": [
+      "service",
+      "surface",
+      "suicide",
+      "suppose",
+      "survive",
+      "silence",
+      "squeeze",
+      "shuttle",
+      "salvage",
+      "shuffle",
+      "sublime",
+      "suffice",
+      "stumble",
+      "sparkle",
+      "syringe",
+      "scourge",
+      "sulfate",
+      "smuggle",
+      "spindle",
+      "snuggle"
+    ]
+  },
+  {
+    "itemId": "en-c2-5094",
+    "issues": [],
+    "substituted": "Don't delude yourself into thinking you can pass without revising at all.",
+    "patternMatches": [
+      "people",
+      "become",
+      "became",
+      "league",
+      "centre",
+      "decide",
+      "reduce",
+      "remove",
+      "debate",
+      "secure",
+      "desire",
+      "rescue",
+      "refuse",
+      "settle",
+      "define",
+      "relate",
+      "delete",
+      "gentle",
+      "resume",
+      "retire"
+    ]
+  },
+  {
+    "itemId": "en-c2-5109",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "missing",
+      "winning",
+      "killing",
+      "sitting",
+      "finding",
+      "willing",
+      "singing",
+      "fishing",
+      "hitting",
+      "picking",
+      "signing",
+      "listing",
+      "kidding",
+      "filling",
+      "filming",
+      "kicking",
+      "binding",
+      "fitting",
+      "viewing",
+      "lifting"
+    ]
+  },
+  {
+    "itemId": "en-c2-5000",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "appreciate",
+      "anticipate",
+      "accelerate",
+      "articulate",
+      "accumulate",
+      "assimilate",
+      "annihilate",
+      "accentuate",
+      "ameliorate",
+      "adjudicate",
+      "amalgamate",
+      "asphyxiate",
+      "adulterate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5036",
+    "issues": [],
+    "substituted": "A grand ceremony would befit the retirement of such a respected headteacher.",
+    "patternMatches": [
+      "meant",
+      "debut",
+      "dealt",
+      "react",
+      "merit",
+      "feast",
+      "reset",
+      "yeast",
+      "debit",
+      "tempt",
+      "remit",
+      "beset",
+      "leapt",
+      "refit",
+      "rebut",
+      "feint",
+      "leant",
+      "beget",
+      "begot"
+    ]
+  },
+  {
+    "itemId": "en-c2-5039",
+    "issues": [],
+    "substituted": "Fans besieged the singer at the stage door, hoping for a photo.",
+    "patternMatches": [
+      "designed",
+      "believed",
+      "register",
+      "believes",
+      "reviewed",
+      "reminded",
+      "resigned",
+      "relieved",
+      "verified",
+      "depicted",
+      "resisted",
+      "mediated",
+      "perished",
+      "decipher",
+      "relieves",
+      "deviated",
+      "refilled",
+      "relished",
+      "deviates",
+      "mediates"
+    ]
+  },
+  {
+    "itemId": "en-c2-5453",
+    "issues": [],
+    "substituted": "We watched the adder slither away through the tall grass.",
+    "patternMatches": [
+      "started",
+      "studies",
+      "sources",
+      "stopped",
+      "studied",
+      "soldier",
+      "settled",
+      "singles",
+      "samples",
+      "succeed",
+      "shocked",
+      "shelter",
+      "strikes",
+      "secured",
+      "stepped",
+      "spotted",
+      "skilled",
+      "sounded",
+      "schemes",
+      "shipped"
+    ]
+  },
+  {
+    "itemId": "en-c2-5396",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "please",
+      "became",
+      "create",
+      "damage",
+      "square",
+      "update",
+      "debate",
+      "escape",
+      "manage",
+      "engage",
+      "phrase",
+      "garage",
+      "relate",
+      "parade",
+      "savage",
+      "donate",
+      "behave",
+      "pirate",
+      "locate",
+      "voyage"
+    ]
+  },
+  {
+    "itemId": "en-c2-5001",
+    "issues": [],
+    "substituted": "After the scandal, the elderly king was forced to abdicate the throne in favour of his niece.",
+    "patternMatches": [
+      "indicate",
+      "estimate",
+      "intimate",
+      "dominate",
+      "hesitate",
+      "activate",
+      "navigate",
+      "motivate",
+      "nominate",
+      "mitigate",
+      "dedicate",
+      "validate",
+      "meditate",
+      "irritate",
+      "laminate",
+      "marinade",
+      "envisage",
+      "silicate",
+      "marinate",
+      "irrigate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5091",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "legitimate",
+      "deliberate",
+      "degenerate",
+      "perpetuate",
+      "regenerate",
+      "hemorrhage",
+      "retrograde",
+      "deactivate",
+      "reevaluate",
+      "recuperate",
+      "rejuvenate",
+      "reactivate",
+      "perpetrate",
+      "depreciate",
+      "repatriate",
+      "redecorate",
+      "decelerate",
+      "deregulate",
+      "reallocate",
+      "deescalate"
+    ]
+  },
+  {
+    "itemId": "en-c2-5086",
+    "issues": [],
+    "substituted": "Leo read the rejection letter once, then crumpled it and threw it in the bin.",
+    "patternMatches": [
+      "prompted",
+      "crippled",
+      "trampled",
+      "cripples",
+      "grappled",
+      "grapples",
+      "tramples",
+      "crumples"
+    ]
+  },
+  {
+    "itemId": "en-c2-5470",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "smaller",
+      "shallow",
+      "smarter",
+      "spatial",
+      "scarlet",
+      "sharper",
+      "shadowy",
+      "staunch",
+      "stately",
+      "scarier",
+      "sparing",
+      "slacker",
+      "spastic",
+      "shapely",
+      "seaward",
+      "stabler",
+      "seasick",
+      "slavish",
+      "scarcer",
+      "spacial"
+    ]
+  },
+  {
+    "itemId": "en-c2-5469",
+    "issues": [],
+    "substituted": "The pianist played a staccato series of notes that echoed through the theatre.",
+    "patternMatches": [
+      "standard",
+      "stagnant",
+      "statuary"
+    ]
+  },
+  {
+    "itemId": "en-c2-5046",
+    "issues": [],
+    "substituted": "Despite the storm warnings, the hikers remained blithe, laughing as they set off.",
+    "patternMatches": [
+      "slight",
+      "flashy",
+      "alight",
+      "fleshy",
+      "slushy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5523",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "unlimited",
+      "unnoticed",
+      "undecided",
+      "inhibited",
+      "undivided",
+      "undefined",
+      "untrained",
+      "unclaimed",
+      "uninvited",
+      "unionized",
+      "unspoiled",
+      "unionised"
+    ]
+  },
+  {
+    "itemId": "en-c2-5461",
+    "issues": [],
+    "substituted": "Dad always finds the documentary narrator's voice so soporific that he dozes off on the sofa.",
+    "patternMatches": [
+      "nonprofit",
+      "honorific",
+      "monarchic"
+    ]
+  },
+  {
+    "itemId": "en-c2-5261",
+    "issues": [],
+    "substituted": "The team's lackadaisical defending cost them the match in the final minutes.",
+    "patternMatches": []
+  },
+  {
+    "itemId": "en-c2-5488",
+    "issues": [],
+    "substituted": "It was tactless of Sam to mention the party that Ella wasn't invited to.",
+    "patternMatches": [
+      "fabulous",
+      "harmless",
+      "careless",
+      "painless",
+      "nameless",
+      "baseless",
+      "faceless",
+      "hairless",
+      "backless",
+      "tailless"
+    ]
+  },
+  {
+    "itemId": "en-c2-5412",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "biggest",
+      "highest",
+      "violent",
+      "sincere",
+      "richest",
+      "wildest",
+      "tiniest",
+      "silvery",
+      "fittest",
+      "kindest",
+      "jittery",
+      "aimless",
+      "sickest",
+      "witless",
+      "airhead",
+      "airless",
+      "fidgety",
+      "midyear",
+      "mildest",
+      "hippest"
+    ]
+  },
+  {
+    "itemId": "en-c2-5529",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "increasing",
+      "underlying",
+      "unwavering",
+      "unassuming",
+      "unchanging",
+      "unyielding",
+      "unbecoming",
+      "unexciting",
+      "unswerving",
+      "unflagging"
+    ]
+  },
+  {
+    "itemId": "en-c2-5023",
+    "issues": [],
+    "substituted": "It is arguable whether homework actually improves results at school.",
+    "patternMatches": [
+      "probable",
+      "credible",
+      "provable",
+      "writable"
+    ]
+  },
+  {
+    "itemId": "en-c2-5013",
+    "issues": [],
+    "substituted": "The school play looked amateurish, with wobbly scenery and forgotten lines.",
+    "patternMatches": [
+      "reassuring",
+      "unassuming"
+    ]
+  },
+  {
+    "itemId": "en-c2-5519",
+    "issues": [],
+    "substituted": "By his third year at the school, Marcus had become ungovernable, and three teachers had resigned.",
+    "patternMatches": [
+      "unreasonable",
+      "unimaginable",
+      "unattainable",
+      "interminable",
+      "unobtainable",
+      "unpardonable",
+      "unseasonable"
+    ]
+  },
+  {
+    "itemId": "en-c2-5414",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "various",
+      "serious",
+      "obvious",
+      "curious",
+      "nervous",
+      "jealous",
+      "anxious",
+      "furious",
+      "vicious",
+      "tedious",
+      "dubious",
+      "hideous",
+      "ominous",
+      "envious",
+      "arduous",
+      "aqueous",
+      "copious",
+      "callous",
+      "pompous",
+      "devious"
+    ]
+  },
+  {
+    "itemId": "en-c2-5340",
+    "issues": [],
+    "substituted": "The prize for the essay competition is purely pecuniary — there is no trophy, just a cheque.",
+    "patternMatches": [
+      "necessary",
+      "secondary",
+      "temporary",
+      "legendary",
+      "centenary",
+      "mercenary",
+      "sedentary"
+    ]
+  },
+  {
+    "itemId": "en-c2-5357",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "intact",
+      "vacant",
+      "mutant",
+      "extant",
+      "errant",
+      "aghast",
+      "truant",
+      "arrant"
+    ]
+  },
+  {
+    "itemId": "en-c2-5516",
+    "issues": [],
+    "substituted": "The shop assistant's unctuous smile made us distrust every word he said.",
+    "patternMatches": [
+      "cautious",
+      "virtuous",
+      "lustrous",
+      "tortuous",
+      "dextrous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5137",
+    "issues": [],
+    "substituted": "The letter said Grandad had 'passed away', a euphemistic phrase nobody quite believed.",
+    "patternMatches": [
+      "mechanistic",
+      "eucharistic"
+    ]
+  },
+  {
+    "itemId": "en-c2-5343",
+    "issues": [],
+    "substituted": "The documentary followed tuna and sharks on their vast pelagic journeys far from any coast.",
+    "patternMatches": [
+      "certain",
+      "genetic",
+      "generic",
+      "ceramic",
+      "seismic",
+      "demonic",
+      "melodic",
+      "aerobic",
+      "hepatic",
+      "heretic",
+      "delphic",
+      "negroid"
+    ]
+  },
+  {
+    "itemId": "en-c2-5135",
+    "issues": [],
+    "substituted": "Raising money for the flood victims was an estimable effort by the whole class.",
+    "patternMatches": [
+      "enjoyable",
+      "equitable",
+      "excitable",
+      "excusable",
+      "execrable"
+    ]
+  },
+  {
+    "itemId": "en-c2-5450",
+    "issues": [],
+    "substituted": "Our new pony is still skittish and shies away whenever anyone claps.",
+    "patternMatches": [
+      "skinless",
+      "slimmest",
+      "swiftest",
+      "stiffest",
+      "slickest",
+      "shiniest",
+      "spiciest"
+    ]
+  },
+  {
+    "itemId": "en-c2-5257",
+    "issues": [],
+    "substituted": "The whole class was jubilant when the headteacher announced an extra day off.",
+    "patternMatches": [
+      "dominant",
+      "militant",
+      "hesitant",
+      "vigilant",
+      "irritant",
+      "aspirant",
+      "litigant",
+      "ruminant",
+      "sibilant"
+    ]
+  },
+  {
+    "itemId": "en-c2-5008",
+    "issues": [],
+    "substituted": "Our new headteacher seems strict, but he is actually affable and easy to talk to.",
+    "patternMatches": [
+      "diffuse"
+    ]
+  },
+  {
+    "itemId": "en-c2-5075",
+    "issues": [],
+    "substituted": "Before the debate, Priya made sure she was conversant with every detail of the school's recycling policy.",
+    "patternMatches": [
+      "convenient",
+      "conceptual",
+      "contestant",
+      "centennial",
+      "congenital",
+      "consensual",
+      "contextual",
+      "consequent",
+      "connective",
+      "concentric",
+      "convergent",
+      "congestive"
+    ]
+  },
+  {
+    "itemId": "en-c2-5473",
+    "issues": [],
+    "substituted": "Even when the referee sent him off, Marcus stayed stolid and said nothing.",
+    "patternMatches": [
+      "scored",
+      "smooth",
+      "slower",
+      "sloppy",
+      "spooky",
+      "stormy",
+      "smokey",
+      "sporty",
+      "shoddy",
+      "spotty",
+      "stoney",
+      "stocky",
+      "spongy",
+      "snooty",
+      "snotty",
+      "snobby",
+      "stodgy",
+      "smoggy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5494",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "contentious",
+      "pretentious",
+      "tendentious"
+    ]
+  },
+  {
+    "itemId": "en-c2-5153",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "primary",
+      "thirsty",
+      "urinary",
+      "grizzly",
+      "unitary",
+      "prickly",
+      "weighty",
+      "saintly",
+      "wrinkly",
+      "spindly",
+      "bristly",
+      "crinkly",
+      "spidery"
+    ]
+  },
+  {
+    "itemId": "en-c2-5514",
+    "issues": [],
+    "substituted": "Priya's excuse for missing training was so unconvincing that the coach simply laughed.",
+    "patternMatches": [
+      "inconvenient"
+    ]
+  },
+  {
+    "itemId": "en-c2-5079",
+    "issues": [],
+    "substituted": "He threw a covetous at the trophy his rival was holding.",
+    "patternMatches": [
+      "numerous",
+      "generous",
+      "grievous",
+      "ravenous",
+      "libelous",
+      "tuberous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5433",
+    "issues": [],
+    "substituted": "Priya is extremely scrupulous about citing every source in her history essay.",
+    "patternMatches": [
+      "horrendous",
+      "miraculous",
+      "marvellous",
+      "harmonious",
+      "pernicious",
+      "herbaceous",
+      "fortuitous",
+      "circuitous",
+      "curvaceous",
+      "portentous",
+      "perfidious",
+      "uproarious"
+    ]
+  },
+  {
+    "itemId": "en-c2-5053",
+    "issues": [],
+    "substituted": "The new coach was brusque when players asked him simple questions.",
+    "patternMatches": [
+      "outside",
+      "awesome",
+      "massive",
+      "passive",
+      "abusive",
+      "elusive",
+      "bedside",
+      "evasive",
+      "tensile",
+      "cursive",
+      "pensive",
+      "winsome",
+      "irksome",
+      "hirsute",
+      "fulsome",
+      "outsize",
+      "erosive",
+      "noisome"
+    ]
+  },
+  {
+    "itemId": "en-c2-5293",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "responsive",
+      "persuasive",
+      "depressive",
+      "repressive",
+      "regressive",
+      "permissive"
+    ]
+  },
+  {
+    "itemId": "en-c2-5236",
+    "issues": [],
+    "substituted": "Neither side in the pay dispute would move an inch; both were intransigent, and the talks collapsed after just one day.",
+    "patternMatches": [
+      "intransitive",
+      "unprincipled"
+    ]
+  },
+  {
+    "itemId": "en-c2-5489",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "party",
+      "early",
+      "happy",
+      "daily",
+      "fancy",
+      "nasty",
+      "sandy",
+      "handy",
+      "randy",
+      "hardy",
+      "tasty",
+      "fatty",
+      "hairy",
+      "rainy",
+      "salty",
+      "manly",
+      "savvy",
+      "hasty",
+      "wacky",
+      "dandy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5373",
+    "issues": [],
+    "substituted": "The film critics called the plot prosaic and said the dialogue felt like a shopping list.",
+    "patternMatches": [
+      "present",
+      "drastic",
+      "fresher",
+      "crested",
+      "grosser",
+      "brusque",
+      "irksome",
+      "crisper",
+      "bristly",
+      "crosser",
+      "brasher",
+      "erosive",
+      "brisker"
+    ]
+  },
+  {
+    "itemId": "en-c2-5148",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "reckless",
+      "helpless",
+      "needless",
+      "restless",
+      "fearless",
+      "seamless",
+      "selfless",
+      "perilous",
+      "headless",
+      "peerless",
+      "nebulous",
+      "seedless",
+      "heedless",
+      "leafless"
+    ]
+  },
+  {
+    "itemId": "en-c2-5547",
+    "issues": [],
+    "substituted": "The students were vociferous in their demands for a longer lunch break.",
+    "patternMatches": [
+      "continuous",
+      "courageous",
+      "contagious",
+      "horrendous",
+      "contiguous",
+      "posthumous",
+      "monotonous",
+      "boisterous",
+      "monogamous",
+      "voluminous",
+      "voluptuous",
+      "fortuitous",
+      "coniferous",
+      "polygamous",
+      "portentous",
+      "loquacious",
+      "solicitous",
+      "commodious"
+    ]
+  },
+  {
+    "itemId": "en-c2-5218",
+    "issues": [],
+    "substituted": "Standing on the summit at sunrise, she felt ineffable.",
+    "patternMatches": [
+      "invisible",
+      "incapable",
+      "irritable",
+      "incurable",
+      "immutable",
+      "insoluble",
+      "indelible",
+      "inaudible",
+      "immovable",
+      "illegible",
+      "irascible"
+    ]
+  },
+  {
+    "itemId": "en-c2-5437",
+    "issues": [],
+    "substituted": "The writer's seditious pamphlets against the government were banned in 1817.",
+    "patternMatches": [
+      "religious",
+      "delicious",
+      "ambitious",
+      "malicious",
+      "ambiguous",
+      "ludicrous",
+      "oblivious",
+      "insidious",
+      "deciduous",
+      "delirious",
+      "judicious",
+      "litigious",
+      "assiduous",
+      "invidious",
+      "officious",
+      "siliceous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5241",
+    "issues": [],
+    "substituted": "The players agreed that the dressing room was inviolable, and no journalists were allowed in.",
+    "patternMatches": [
+      "incredible",
+      "inevitable",
+      "invaluable",
+      "unreliable",
+      "unbearable",
+      "invincible",
+      "undeniable",
+      "ineligible",
+      "unsuitable",
+      "inflatable",
+      "intangible",
+      "unbeatable",
+      "insatiable",
+      "infallible",
+      "inflexible",
+      "inoperable",
+      "answerable",
+      "inimitable",
+      "unknowable",
+      "unworkable"
+    ]
+  },
+  {
+    "itemId": "en-c2-5425",
+    "issues": [],
+    "substituted": "The doctor advised the family to move to a salubrious climate than the damp, foggy city they left behind.",
+    "patternMatches": [
+      "marvellous",
+      "harmonious",
+      "capricious",
+      "fallacious",
+      "fastidious",
+      "lascivious",
+      "calamitous",
+      "gangrenous",
+      "languorous",
+      "malodorous",
+      "factitious",
+      "cadaverous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5294",
+    "issues": [],
+    "substituted": "Everyone loved listening to the presenter's mellifluous voice, which flowed like warm honey.",
+    "patternMatches": [
+      "herbivorous",
+      "vertiginous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5515",
+    "issues": [],
+    "substituted": "Grandma called her cousin uncouth for talking with his mouth full at dinner.",
+    "patternMatches": [
+      "ongoing",
+      "inbound",
+      "ungodly",
+      "unbound",
+      "unloved",
+      "unsound",
+      "unmoved",
+      "inboard"
+    ]
+  },
+  {
+    "itemId": "en-c2-5381",
+    "issues": [],
+    "substituted": null,
+    "patternMatches": [
+      "paradoxical",
+      "paramedical"
+    ]
+  },
+  {
+    "itemId": "en-c2-5314",
+    "issues": [],
+    "substituted": "Feeling nervy before her audition, Priya could hardly hold the sheet music steady.",
+    "patternMatches": [
+      "ready",
+      "heavy",
+      "petty",
+      "messy",
+      "merry",
+      "weary",
+      "needy",
+      "hefty",
+      "leafy",
+      "nerdy",
+      "jerky",
+      "pesky",
+      "leaky",
+      "teeny",
+      "meaty",
+      "perky",
+      "heady",
+      "teary",
+      "seedy",
+      "beefy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5287",
+    "issues": [],
+    "substituted": "The film portrays the scientist as a malign genius pulling strings behind the scenes.",
+    "patternMatches": [
+      "easier",
+      "native",
+      "marine",
+      "facing",
+      "racist",
+      "racial",
+      "facial",
+      "varied",
+      "radial",
+      "lavish",
+      "canine",
+      "saline",
+      "maniac",
+      "facile",
+      "garish",
+      "raring",
+      "dative",
+      "lazier",
+      "labial",
+      "rakish"
+    ]
+  },
+  {
+    "itemId": "en-c2-5536",
+    "issues": [],
+    "substituted": "After the storm, we found a rowing boat lying upturned on the beach.",
+    "patternMatches": [
+      "unmarked",
+      "unharmed",
+      "undersea",
+      "unearned",
+      "upmarket",
+      "unformed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5204",
+    "issues": [],
+    "substituted": "The plan to carry the piano up the cliff steps was completely impracticable because the path was too narrow for the equipment.",
+    "patternMatches": [
+      "imperceptible",
+      "impermissible",
+      "imperturbable",
+      "implementable"
+    ]
+  },
+  {
+    "itemId": "en-c2-5538",
+    "issues": [],
+    "substituted": "Critics called the film vapid, with flat characters and a predictable plot.",
+    "patternMatches": [
+      "based",
+      "faced",
+      "naked",
+      "rapid",
+      "valid",
+      "dated",
+      "paved",
+      "gated",
+      "fated",
+      "rabid",
+      "jaded",
+      "mated",
+      "bated",
+      "pawed"
+    ]
+  },
+  {
+    "itemId": "en-c2-5476",
+    "issues": [],
+    "substituted": "The old oak was so damaged that only a stumpy trunk remained after the storm.",
+    "patternMatches": [
+      "grumpy",
+      "clumsy",
+      "flimsy",
+      "skimpy",
+      "swampy",
+      "clammy",
+      "frumpy",
+      "seemly"
+    ]
+  },
+  {
+    "itemId": "en-c2-5248",
+    "issues": [],
+    "substituted": "Leo strolled into school with a jaunty whistle, quite unlike his usual grumpy self.",
+    "patternMatches": [
+      "faulty",
+      "fluffy",
+      "grumpy",
+      "clumsy",
+      "sturdy",
+      "chubby",
+      "chunky",
+      "blurry",
+      "fruity",
+      "bouncy",
+      "touchy",
+      "stuffy",
+      "trusty",
+      "crusty",
+      "clunky",
+      "grubby",
+      "scurvy",
+      "stubby",
+      "plucky",
+      "mouldy"
+    ]
+  },
+  {
+    "itemId": "en-c2-5498",
+    "issues": [],
+    "substituted": "The coach took a tortuous mountain road with hairpin bends at every turn.",
+    "patternMatches": [
+      "gorgeous",
+      "populous",
+      "wondrous",
+      "sonorous",
+      "covetous",
+      "dolorous"
+    ]
+  },
+  {
+    "itemId": "en-c2-5280",
+    "issues": [],
+    "substituted": "Poor luckless Jamal missed the last train by one minute.",
+    "patternMatches": [
+      "reckless",
+      "faceless",
+      "ticklish",
+      "feckless",
+      "backless",
+      "tactless",
+      "ductless"
     ]
   }
 ]

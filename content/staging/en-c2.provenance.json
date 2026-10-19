@@ -7,67 +7,67 @@
     "repair": "deepseek/deepseek-v4-pro"
   },
   "prompts": {
-    "screen": "en-screen v2",
+    "screen": "en-screen v3",
     "draft": "en-draft v4",
     "solve": "en-solve v2",
     "repair": "en-repair v1"
   },
   "kept": {
-    "fromPilot": 0,
-    "generated": 527
+    "fromPilot": 393,
+    "generated": 207
   },
   "summary": {
-    "candidates": 800,
-    "screenedIn": 552,
-    "drafted": 552,
-    "passedFirst": 465,
-    "repaired": 62,
-    "dropped": 25,
-    "kept": 527,
-    "flagged": 96,
-    "review": 140,
-    "spend": 0.07284989011000001
+    "candidates": 1008,
+    "screenedIn": 561,
+    "drafted": 561,
+    "passedFirst": 451,
+    "repaired": 80,
+    "dropped": 30,
+    "kept": 600,
+    "flagged": 0,
+    "review": 21,
+    "spend": 0.12067759832799999
   },
   "spend": [
     {
+      "stage": "repair",
+      "model": "deepseek/deepseek-v4-pro",
+      "calls": 16,
+      "items": 122,
+      "cost": 0.042128,
+      "promptTokens": 39247,
+      "completionTokens": 13419,
+      "reasoningTokens": 0
+    },
+    {
+      "stage": "solve",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "calls": 69,
+      "items": 673,
+      "cost": 0.026466,
+      "promptTokens": 56637,
+      "completionTokens": 26314,
+      "reasoningTokens": 0
+    },
+    {
       "stage": "screen",
       "model": "deepseek/deepseek-v4.1-flash",
-      "calls": 20,
-      "items": 800,
-      "cost": 0.010455,
-      "promptTokens": 14736,
-      "completionTokens": 16166,
+      "calls": 40,
+      "items": 1530,
+      "cost": 0.027072,
+      "promptTokens": 32675,
+      "completionTokens": 32922,
       "reasoningTokens": 0
     },
     {
       "stage": "draft",
       "model": "z-ai/glm-5.3-flash",
-      "calls": 56,
-      "items": 552,
-      "cost": 0.023523,
-      "promptTokens": 74888,
-      "completionTokens": 63258,
-      "reasoningTokens": 5411
-    },
-    {
-      "stage": "solve",
-      "model": "deepseek/deepseek-v4.1-flash",
-      "calls": 64,
-      "items": 635,
-      "cost": 0.022062,
-      "promptTokens": 53996,
-      "completionTokens": 22665,
-      "reasoningTokens": 0
-    },
-    {
-      "stage": "repair",
-      "model": "deepseek/deepseek-v4-pro",
-      "calls": 11,
-      "items": 87,
-      "cost": 0.016809,
-      "promptTokens": 28591,
-      "completionTokens": 7465,
-      "reasoningTokens": 0
+      "calls": 57,
+      "items": 561,
+      "cost": 0.025012,
+      "promptTokens": 77014,
+      "completionTokens": 59830,
+      "reasoningTokens": 2568
     }
   ]
 }
