@@ -1,0 +1,517 @@
+{
+  "rater": "GM",
+  "date": "2026-10-19",
+  "source": "Grist table Bakeoff (blind)",
+  "ratings": [
+    {
+      "item": "B01",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B02",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B03",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "too easy",
+      "problems": [
+        "Span gives it away"
+      ]
+    },
+    {
+      "item": "B04",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B05",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B06",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B07",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B08",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B09",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B10",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B11",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B12",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B13",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B14",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B15",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B16",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B17",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B18",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B19",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span gives it away"
+      ]
+    },
+    {
+      "item": "B20",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B21",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B22",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B23",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B24",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B25",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span gives it away"
+      ]
+    },
+    {
+      "item": "B26",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span gives it away"
+      ]
+    },
+    {
+      "item": "B27",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B28",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B29",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B30",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B31",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B32",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B33",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B34",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B35",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B36",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B37",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "clemency",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B38",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B39",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B40",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B41",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B42",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B43",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B44",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B45",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B46",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "nuance",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B47",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B48",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B49",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "wither",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B50",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B51",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "harbinger",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B52",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "stifle",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B53",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "tranquil",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span gives it away"
+      ]
+    },
+    {
+      "item": "B54",
+      "model": "deepseek_deepseek-v4-pro",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B55",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "bestow",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B56",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "abstain",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B57",
+      "model": "qwen_qwen3.5-397b-a17b",
+      "lemma": "curtail",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": [
+        "Span too hard"
+      ]
+    },
+    {
+      "item": "B58",
+      "model": "nvidia_nemotron-3-super-120b-a12b",
+      "lemma": "hunch",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B59",
+      "model": "z-ai_glm-5.3-flash",
+      "lemma": "poignant",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    },
+    {
+      "item": "B60",
+      "model": "deepseek_deepseek-v4.1-flash",
+      "lemma": "frugal",
+      "verdict": "good",
+      "difficulty": "right",
+      "problems": []
+    }
+  ]
+}

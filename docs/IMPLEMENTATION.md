@@ -134,6 +134,10 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 - **Full-run cost from these numbers** (about 4,800 drafts, blind solve, 15% repaired by a big model): under $5 even with the dearest drafter, so cost no longer decides; the GM's blind rating does.
 - **Blind rating**: Grist table Bakeoff, 12 words × 5 finalists (GLM-5.3 Flash, DeepSeek V4.1 Flash, Nemotron 3 Super, Qwen3.5 397B, DeepSeek V4 Pro), shuffled. Key: `content/pilot/en-c1.bakeoff-key.json`.
 
+- **Blind rating result (19 Oct 2026)**: all 60 rated good, difficulty right for 59. Problem tags follow the word, not the model: every model's *tranquil* item was "span gives it away", every *stifle* and *curtail* item "span too hard". The rating does not separate the finalists. Saved as `content/pilot/en-c1.bakeoff-ratings.json`.
+- **Choice**: with quality indistinguishable to the GM, the plan's rule applies (the cheapest acceptable model). Drafting: GLM-5.3 Flash (the cheapest with the best automatic clean rate among the cheap models, 47 of 50). Blind solve: DeepSeek V4.1 Flash. Repair of flagged items: DeepSeek V4 Pro. Check the GLM-5.3 Flash licence on its model card before the bulk run.
+- **Open question**: the GM rated good some items the solver fails ("will [give] the award on the runner" for *bestow on*, a fixed "from" missing from the sentence). Either the solver is stricter than needed, or those slipped past in rating.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.
