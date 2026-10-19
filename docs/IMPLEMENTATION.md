@@ -139,6 +139,13 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 - **Solver strictness**: the GM rated good some items the solver fails ("will [give] the award on the runner" for *bestow on*, a fixed "from" missing from the sentence). The GM confirmed these slipped past in rating: the solver stays strict.
 - **Span difficulty**: "span gives it away" (tranquil) and "span too hard" (stifle, curtail) mean relative to other items, all within the acceptable range. Clue difficulty is a property of the word more than of the model or prompt; no prompt change.
 
+### English C1 bank (frozen 19 Oct 2026)
+
+- **Run**: 782 candidates → screen kept 606 → 605 drafted (GLM-5.3 Flash) → 537 passed checks and blind solve → 51 of 69 repaired (DeepSeek V4 Pro) → capped at 600 with the 50 pilot items. Spend $0.09.
+- **Review**: 19 flagged plus 54 random. All flagged good. Random sample: 3 "fix" (5.6%): *concealment* in an awkward construction, *dribbles* with a wrong clue ("lets fall"), *curate* (definition correct, word felt obscure). Comments on long or doubled clues and on *huntsman* sharing a root with *hunter*.
+- **Lessons applied before B2/C2**: prompt en-draft v4 (spans at most 4 words, alternatives single words, the answer must be the natural word), screen v2 (no culture-specific titles), checks for span length and for roots built on a shared common word (hunt-er/hunts-man), English a/an set from the clue (models wrote the article for the answer: "an [curse]" for *obscenity*).
+- **Bank**: `content/en/c1.json`, 594 items after removing the 3 "fix" items and repairing, in place, the 20 that failed the new checks (17 fixed, 3 dropped). Ids en-c1-0001 to en-c1-0597 with gaps where items were dropped; ids are permanent from first play.
+
 ### Staging
 
 Revised 19 Oct 2026: English first, all the way. English C1, then B2 and C2; then the full app and a UX test with real players; only then decide whether French is worth building. The French groundwork already showed more friction (noisy WOLF synonyms, a short C2 pool, Lexique gaps such as *porte-parole*), so it waits on the UX verdict.

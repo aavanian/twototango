@@ -28,7 +28,7 @@ export function britishVariant(word: string, lex: Lexicon): string | null {
     const m = pattern.exec(w);
     if (!m) continue;
     // A suffixed -or form counts only if the bare -or word exists: colored (color), not scoring (scor).
-    if (pattern === RULES[0]![0] && m[2] && !lex.has(w.slice(0, m.index + m[0].length - m[2].length))) continue;
+    if (pattern === RULES[0]![0] && m[2] && !lex.entries(w.slice(0, m.index + m[0].length - m[2].length)).some((e) => e.pos !== "other")) continue;
     const british = w.replace(pattern, replacement);
     if (british !== w && lex.has(british) && lex.zipf(british) >= lex.zipf(w) - 1.5) return british;
   }

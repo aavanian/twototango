@@ -4,6 +4,7 @@ import { fitsPattern, Item, layoutBoxes, PARTS_OF_SPEECH, type Lang } from "@two
 import { z } from "zod";
 import { key, type Lexicon } from "./lexicon.ts";
 import { choosePlacement } from "./placement.ts";
+import { enStartsWithVowelSound } from "./substitute.ts";
 
 /**
  * Drafts: what a model (or a Claude Code session, for the pilot) writes. Given
@@ -118,6 +119,17 @@ export function splitDeterminer(draft: Pick<Draft, "before" | "determiner">, lan
   return determiner ? { before, determiner } : { before };
 }
 
+/**
+ * English a/an as displayed must suit the clue, not the answer: models tend to write
+ * "an [curse]" for *obscenity*, which is wrong on screen and hints at the answer.
+ * The game adapts the article to the answer on reveal.
+ */
+export function articleForSpan(determiner: string | undefined, span: readonly string[], lang: Lang): string | undefined {
+  if (lang !== "en" || determiner === undefined || !/^an?$/iu.test(determiner) || !span[0]) return determiner;
+  const want = enStartsWithVowelSound(span[0]) ? "an" : "a";
+  return determiner[0] === "A" ? want[0]!.toUpperCase() + want.slice(1) : want;
+}
+
 export interface Finalized {
   readonly item: Item | null;
   readonly draft: Draft;
@@ -135,7 +147,11 @@ export function finalize(draft: Draft, id: string, lang: Lang, level: Item["leve
   const notes: string[] = [];
   const prompt =
     draft.kind === "sentence"
-      ? { kind: "sentence" as const, ...splitDeterminer(draft, lang), span: draft.span ?? [], after: draft.after ?? "" }
+      ? (() => {
+          const { before, determiner } = splitDeterminer(draft, lang);
+          const det = articleForSpan(determiner, draft.span ?? [], lang);
+          return { kind: "sentence" as const, before, ...(det ? { determiner: det } : {}), span: draft.span ?? [], after: draft.after ?? "" };
+        })()
       : { kind: "definition" as const, definition: draft.definition ?? "" };
   const parsed = Item.safeParse({
     id,

@@ -97,3 +97,14 @@ describe("splitDeterminer", async () => {
     expect(splitDeterminer({ before: "I had a strong a ", determiner: "a" }, "en")).toEqual({ before: "I had a strong ", determiner: "a" });
   });
 });
+
+describe("articleForSpan", async () => {
+  const { articleForSpan } = await import("../src/draft.ts");
+  it("matches a/an to the clue, not the answer", () => {
+    expect(articleForSpan("an", ["curse"], "en")).toBe("a");
+    expect(articleForSpan("a", ["insult"], "en")).toBe("an");
+    expect(articleForSpan("An", ["curse"], "en")).toBe("A");
+    expect(articleForSpan("the", ["curse"], "en")).toBe("the");
+    expect(articleForSpan("une", ["peur"], "fr")).toBe("une");
+  });
+});

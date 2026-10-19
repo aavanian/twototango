@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
-<!-- prompt: en-draft v3 (19 Oct 2026; v2 adds British spelling, v3 drops the determiner field: models duplicated the article). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
+<!-- prompt: en-draft v4 (19 Oct 2026; v2 British spelling, v3 no determiner field, v4 shorter spans and natural answers after the C1 review). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
 
 ---
 
@@ -18,7 +18,8 @@ You get a list of target words (the answers), each with its part of speech and t
 - One natural sentence, 8 to 18 words, in contemporary English. Topics a 15-year-old knows: school, sport, friends, family, travel, nature, science, history, books, films, food, weather.
 - The underlined span (`span`) is an easier word or short phrase (up to 4 words) with the same meaning, so that the sentence still reads correctly with the answer in its place. The span should be something a B1–B2 learner knows; the answer is C1.
 - The span must not share a root with the answer: no "adornment" for "adorn", no "irritated" for "irritable". Avoid spans that contain a word of the answer's family in any form.
-- You may give one or two extra spans as alternative clues when they help (`"span": ["hardship", "trial"]`). The first is the main one.
+- Keep the span short: at most 4 words, ideally 1 or 2. You may add one or two single-word alternative clues when they help (`"span": ["hardship", "trial"]`); the first span is the main one. Never put a phrase in an alternative.
+- The answer must be the word a native speaker would naturally choose in that sentence, not just a word that technically fits. If the answer only works in an awkward construction ("remained in concealment"), write a different sentence.
 - An article right before the span ("a", "an", "the") is written at the end of `before`, never inside `span`. Do not worry about a/an changing with the answer; the game handles it.
 - When the answer is followed by a preposition or particle that belongs with it (succumb **to**, bristle **at**, adorn **with**), put that word in `fixedWords`; it also stays in `after`, where it belongs in the sentence. Players see it printed after the boxes. "He refused to [give in] to their demands" → answer "succumb", fixedWords ["to"]. Otherwise fixedWords is empty.
 - `before` + span + `after` must form the sentence exactly, spaces included: `before` ends with a space when a word precedes the span; `after` starts with a space or punctuation. Read the whole sentence back once: no repeated words, and it must be grammatical with the span in place.

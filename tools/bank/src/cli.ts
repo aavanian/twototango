@@ -17,6 +17,7 @@
  *   npm run bank -- review-rows --lang en --level C1   Grist rows for the review list (stdout, JSON)
  *   npm run bank -- freeze --lang en --level C1 --verdicts <verdicts.json> [--keep <bank.json>]
  *                                           apply the GM's review and write content/<lang>/<level>.json
+ *   npm run bank -- fix <bank.json>         repair, in place, unshipped items that fail the current checks
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
 
@@ -31,7 +32,7 @@ import { finalize, parseDraftBatch } from "./draft.ts";
 import { Lexicon, profanity, REPO } from "./lexicon.ts";
 import { BudgetGuard, OpenRouter, SpendLedger } from "./openrouter.ts";
 import { blindSolve, runBakeoff, type Context, type Word } from "./bakeoff.ts";
-import { freeze, runLevel } from "./run.ts";
+import { freeze, repairBank, runLevel } from "./run.ts";
 import type { Selection } from "./select.ts";
 import { choosePlacement } from "./placement.ts";
 import { selectCandidates } from "./select.ts";
@@ -241,6 +242,16 @@ function freezeCommand(args: string[]): void {
   if (sampleRejectRate > 0.05) console.log("Above 5%: fix the prompts and rerun rather than patching items.");
 }
 
+async function fix(args: string[]): Promise<void> {
+  const { positionals } = parseArgs({ args, allowPositionals: true, options: {} });
+  const path = resolve(positionals[0] ?? "");
+  const bank = Bank.parse(JSON.parse(readFileSync(path, "utf8")));
+  const ctx = context(bank.lang, bank.level);
+  const result = await repairBank(ctx, new BudgetGuard(ctx.client), bank, MODELS.solver, MODELS.repairer, (l) => console.log(l));
+  writeFileSync(path, JSON.stringify(result.bank, null, 2) + "\n");
+  console.log(`fixed ${result.fixed.length}, dropped ${result.dropped.length}; ${result.bank.items.length} items; spend $${ctx.ledger.total().toFixed(4)}`);
+}
+
 async function key(): Promise<void> {
   const info = await new OpenRouter().keyInfo();
   console.log(`limit $${info.limit ?? "none"}, used $${info.usage.toFixed(4)}, remaining $${info.limitRemaining ?? "n/a"}`);
@@ -274,6 +285,9 @@ switch (command) {
     break;
   case "freeze":
     freezeCommand(rest);
+    break;
+  case "fix":
+    await fix(rest);
     break;
   case "key":
     await key();

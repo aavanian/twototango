@@ -99,7 +99,7 @@ interface Attempt {
 }
 
 /** Finalize, check and blind-solve drafts; items keyed by the provisional id given. */
-async function evaluate(ctx: Context, solver: string, drafts: readonly (Draft | null)[], ids: readonly string[]): Promise<Attempt[]> {
+export async function evaluate(ctx: Context, solver: string, drafts: readonly (Draft | null)[], ids: readonly string[]): Promise<Attempt[]> {
   const finalized = drafts.map((d, i) => (d ? finalize(d, ids[i]!, ctx.lang, ctx.level, ctx.lex) : null));
   const items = finalized.flatMap((f) => (f?.item ? [f.item] : []));
   const reports = checkDrafts(items, ctx.lex, { profanity: ctx.profanity });
@@ -113,7 +113,7 @@ async function evaluate(ctx: Context, solver: string, drafts: readonly (Draft | 
   });
 }
 
-async function repair(ctx: Context, model: string, failed: readonly { word: Word; attempt: Attempt }[]): Promise<(Draft | null)[]> {
+export async function repair(ctx: Context, model: string, failed: readonly { word: Word; attempt: Attempt }[]): Promise<(Draft | null)[]> {
   const system = `${loadPrompt(ctx.lang, "repair")}\n\n${loadPrompt(ctx.lang, "draft")}`;
   const results = await pool(
     chunk(failed, 8).map((batch) => async () => {
@@ -295,4 +295,45 @@ export function freeze(lang: Lang, level: Level, verdicts: ReadonlyMap<string, "
     review: { reviewed: review.length, removed: removed.length, sampleRejectRate },
   });
   return { bank, removed, sampleRejectRate };
+}
+
+/** What a model would have drafted for an existing item, so the repair prompt can see it. */
+function draftOf(item: Item): Draft {
+  const p = item.prompt;
+  return p.kind === "sentence"
+    ? { lemma: item.lemma, pos: item.pos, kind: "sentence", before: `${p.before}${p.determiner ? `${p.determiner} ` : ""}`, span: p.span, after: p.after, fixedWords: item.fixedWords, answer: item.answer, acceptable: item.alternates, nearMisses: [] }
+    : { lemma: item.lemma, pos: item.pos, kind: "definition", definition: p.definition, fixedWords: item.fixedWords, answer: item.answer, acceptable: item.alternates, nearMisses: [] };
+}
+
+/**
+ * Re-checks a bank that hasn't shipped yet against the current rules and repairs what
+ * now fails, in place: same word, same id. Items that still fail are dropped.
+ */
+export async function repairBank(ctx: Context, guard: BudgetGuard, bank: Bank, solver: string, repairer: string, log: (l: string) => void): Promise<{ bank: Bank; fixed: string[]; dropped: string[] }> {
+  const reports = checkDrafts(bank.items, ctx.lex, { profanity: ctx.profanity });
+  const failing = bank.items.filter((i) => reports.find((r) => r.itemId === i.id)?.issues.some((x) => x.severity === "fail"));
+  log(`${failing.length} items fail the current checks`);
+  if (failing.length === 0) return { bank, fixed: [], dropped: [] };
+  await guard.ensure(failing.length * 0.003);
+  const failed = failing.map((item) => ({
+    word: { lemma: item.lemma, pos: item.pos, kind: item.prompt.kind } as Word,
+    attempt: { draft: draftOf(item), item, issues: reports.find((r) => r.itemId === item.id)!.issues } as Attempt,
+  }));
+  const drafts = await repair(ctx, repairer, failed);
+  const attempts = await evaluate(ctx, solver, drafts, failing.map((i) => i.id));
+  const fixed: string[] = [];
+  const dropped: string[] = [];
+  const replaced = new Map<string, Item>();
+  attempts.forEach((a, k) => {
+    const id = failing[k]!.id;
+    if (a.item && !a.issues.some((x) => x.severity === "fail")) {
+      replaced.set(id, a.item);
+      fixed.push(id);
+    } else {
+      dropped.push(id);
+      log(`  dropped ${id} ${failing[k]!.lemma}: ${a.issues.filter((x) => x.severity === "fail").map((x) => x.message).join(" | ")}`);
+    }
+  });
+  const items = bank.items.filter((i) => !dropped.includes(i.id)).map((i) => replaced.get(i.id) ?? i);
+  return { bank: Bank.parse({ ...bank, items }), fixed, dropped };
 }

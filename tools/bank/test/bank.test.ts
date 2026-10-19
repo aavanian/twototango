@@ -225,3 +225,22 @@ describe("fixed words", () => {
     expect(checkDraft(item, en, opts).issues.map((i) => i.code)).toContain("fixed-word-missing");
   });
 });
+
+describe("C1 review lessons", () => {
+  const lex2 = lexicon("en", [
+    ["hunt", "hunt", "verb", 4.0],
+    ["hunter", "hunter", "noun", 3.8],
+    ["huntsman", "huntsman", "noun", 2.8],
+  ]);
+
+  it("relates words built on a shared common word", () => {
+    expect(relatedWords(lex2, "hunter", "huntsman")).toBe(true);
+  });
+
+  it("fails long spans and phrase alternatives", () => {
+    const long = { ...adorned, prompt: { ...adorned.prompt, span: ["made pretty and nice"] } } as Item;
+    expect(checkDraft({ ...long, prompt: { ...adorned.prompt, span: ["made it look pretty and nice"] } } as Item, en, opts).issues.map((i) => i.code)).toContain("span-too-long");
+    const alt = { ...adorned, prompt: { ...adorned.prompt, span: ["decorated", "made pretty"] } } as Item;
+    expect(checkDraft(alt, en, opts).issues.map((i) => i.code)).toContain("span-alternative-long");
+  });
+});

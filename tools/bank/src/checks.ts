@@ -33,6 +33,8 @@ export interface ItemReport {
   readonly patternMatches: string[];
 }
 
+export const MAX_SPAN_WORDS = 4;
+
 export interface CheckOptions {
   readonly profanity: ReadonlySet<string>;
   /** Extra unaccepted words for this item (from the draft or the blind solve). */
@@ -85,6 +87,13 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
     for (const target of new Set([item.answer, item.lemma])) {
       if (relatedWords(lex, w, target)) add("shared-root-stem", "fail", `"${target}" shares a root with "${w}"`);
     }
+  }
+
+  // Short clues: the main span at most 4 words, slash alternatives single words (GM review, C1).
+  if (item.prompt.kind === "sentence") {
+    const [main, ...alts] = item.prompt.span;
+    if (main && words(main).length > MAX_SPAN_WORDS) add("span-too-long", "fail", `span "${main}" has more than ${MAX_SPAN_WORDS} words`);
+    for (const alt of alts) if (words(alt).length > 1) add("span-alternative-long", "fail", `alternative span "${alt}" should be a single word`);
   }
 
   // Fixed words are printed after the boxes and must be in the sentence too.
