@@ -1,0 +1,1034 @@
+{
+  "reports": [
+    {
+      "itemId": "en-c1-0001",
+      "issues": [],
+      "substituted": "The critic's harsh review of the young artist's work was a direct affront to her talent.",
+      "patternMatches": [
+        "affairs",
+        "affects",
+        "alfalfa",
+        "affixes"
+      ]
+    },
+    {
+      "itemId": "en-c1-0002",
+      "issues": [],
+      "substituted": "The suspect had a solid alibi because he was at the cinema during the crime.",
+      "patternMatches": [
+        "plexi"
+      ]
+    },
+    {
+      "itemId": "en-c1-0003",
+      "issues": [],
+      "substituted": "The new sports stadium is a concrete behemoth that towers over the surrounding houses.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0004",
+      "issues": [],
+      "substituted": "The local library was built thanks to a generous bequest from a wealthy former resident.",
+      "patternMatches": [
+        "baptism",
+        "bassist",
+        "ballast",
+        "blemish",
+        "badness",
+        "bombast",
+        "bigness",
+        "bulrush"
+      ]
+    },
+    {
+      "itemId": "en-c1-0005",
+      "issues": [],
+      "substituted": "The prisoner's lawyers appealed for clemency due to his good behaviour in jail.",
+      "patternMatches": [
+        "credence"
+      ]
+    },
+    {
+      "itemId": "en-c1-0006",
+      "issues": [],
+      "substituted": "To the consternation of the crowd, the favourite player missed the final shot.",
+      "patternMatches": [
+        "constellation"
+      ]
+    },
+    {
+      "itemId": "en-c1-0007",
+      "issues": [],
+      "substituted": "After the sudden power cut, the office was left in a state of total disarray and chaos.",
+      "patternMatches": [
+        "disunity"
+      ]
+    },
+    {
+      "itemId": "en-c1-0008",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "event",
+        "elect",
+        "egret"
+      ]
+    },
+    {
+      "itemId": "en-c1-0009",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "eczema",
+        "errata"
+      ]
+    },
+    {
+      "itemId": "en-c1-0010",
+      "issues": [],
+      "substituted": "There has been a long history of enmity between the two rival families for generations.",
+      "patternMatches": [
+        "energy",
+        "equity",
+        "entity",
+        "eighty",
+        "eulogy",
+        "expiry",
+        "effigy",
+        "eatery"
+      ]
+    },
+    {
+      "itemId": "en-c1-0011",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "marriages",
+        "carriages"
+      ]
+    },
+    {
+      "itemId": "en-c1-0012",
+      "issues": [],
+      "substituted": "The heavy rain proved to be a significant hindrance to the team's progress during the match.",
+      "patternMatches": [
+        "windfalls"
+      ]
+    },
+    {
+      "itemId": "en-c1-0013",
+      "issues": [],
+      "substituted": "I didn't have any proof, but I had a hunch that the surprise party was actually for me.",
+      "patternMatches": [
+        "lunch",
+        "bunch",
+        "punch",
+        "butch",
+        "hutch",
+        "mulch",
+        "lurch"
+      ]
+    },
+    {
+      "itemId": "en-c1-0014",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "hyperbola"
+      ]
+    },
+    {
+      "itemId": "en-c1-0015",
+      "issues": [],
+      "substituted": "Maya has a natural knack for remembering people's names after meeting them once.",
+      "patternMatches": [
+        "knock",
+        "kayak",
+        "kiosk"
+      ]
+    },
+    {
+      "itemId": "en-c1-0016",
+      "issues": [],
+      "substituted": "After winning the national debate, Leo found himself in the limelight for several weeks.",
+      "patternMatches": [
+        "limericks"
+      ]
+    },
+    {
+      "itemId": "en-c1-0017",
+      "issues": [],
+      "substituted": "To truly master the language, you must understand every nuance of meaning in the poetry.",
+      "patternMatches": [
+        "tunnel",
+        "turner",
+        "runner",
+        "guinea",
+        "burner",
+        "funnel",
+        "gunner",
+        "gurney",
+        "quince",
+        "turnip",
+        "quanta"
+      ]
+    },
+    {
+      "itemId": "en-c1-0018",
+      "issues": [],
+      "substituted": "The onus is on the claimant to provide evidence for the case.",
+      "patternMatches": [
+        "once",
+        "ones",
+        "okay",
+        "odds",
+        "oral",
+        "ours",
+        "oven",
+        "olds",
+        "oval",
+        "oath",
+        "outs",
+        "oaks",
+        "ouch",
+        "odor",
+        "owls",
+        "oats",
+        "orgy",
+        "opal",
+        "opus",
+        "omen"
+      ]
+    },
+    {
+      "itemId": "en-c1-0019",
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        }
+      ],
+      "substituted": "The library offers a plethora of resources for students researching the Industrial Revolution.",
+      "patternMatches": [
+        "protozoa"
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "issues": [],
+      "substituted": "The speaker struggled to be heard over the tumult of the cheering crowd.",
+      "patternMatches": [
+        "temple",
+        "timing",
+        "timber",
+        "tomato",
+        "temper",
+        "tumors",
+        "tumble",
+        "tumour",
+        "timers",
+        "tampon",
+        "tomboy",
+        "timbre",
+        "tomcat",
+        "tamale",
+        "tempos"
+      ]
+    },
+    {
+      "itemId": "en-c1-0021",
+      "issues": [
+        {
+          "itemId": "en-c1-0021",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined phrase 'stop eating/give up' is followed by 'sugary snacks'; 'abstain' requires 'from' after it, and 'from' is already printed after the boxes, so the sentence reads 'abstain from from sugary snacks', which is ungrammatical."
+        }
+      ],
+      "substituted": "The doctor advised Leo to abstain sugary snacks for a month.",
+      "patternMatches": [
+        "sustain",
+        "despair",
+        "disdain",
+        "mislaid"
+      ]
+    },
+    {
+      "itemId": "en-c1-0022",
+      "issues": [],
+      "substituted": "During the debate, Sarah seemed to allude a secret plan without naming it.",
+      "patternMatches": [
+        "clouds",
+        "blouse",
+        "allure",
+        "plough",
+        "slough",
+        "flaunt",
+        "slouch",
+        "sleuth",
+        "flours",
+        "flouts"
+      ]
+    },
+    {
+      "itemId": "en-c1-0023",
+      "issues": [],
+      "substituted": "Over the summer, Maya managed to amass a huge amount of data for her project.",
+      "patternMatches": [
+        "abuse",
+        "arise",
+        "arose",
+        "amuse"
+      ]
+    },
+    {
+      "itemId": "en-c1-0024",
+      "issues": [],
+      "substituted": "The king decided to banish the traitor from the realm forever.",
+      "patternMatches": [
+        "lavish",
+        "vanish",
+        "harass",
+        "caress",
+        "damask",
+        "ravish"
+      ]
+    },
+    {
+      "itemId": "en-c1-0025",
+      "issues": [],
+      "substituted": "It is unkind to belittle someone's achievements just because you are jealous.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0026",
+      "issues": [
+        {
+          "itemId": "en-c1-0026",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined word 'give' is followed by 'an honorary degree upon the visiting scientist'; 'bestow' fits the meaning and boxes but requires 'on/upon' after it, so the sentence reads 'bestow an honorary degree upon the visiting scientist', which is acceptable, but 'bestow' often takes 'on' rather than 'upon'; the issue is that the preposition 'upon' is already present after the object, making the sentence slightly awkward but grammatical."
+        }
+      ],
+      "substituted": "The university decided to bestow an honorary degree upon the visiting scientist.",
+      "patternMatches": [
+        "review",
+        "yellow",
+        "mellow",
+        "bellow",
+        "redraw",
+        "seesaw",
+        "redrew"
+      ]
+    },
+    {
+      "itemId": "en-c1-0027",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "breach",
+        "sketch",
+        "pierce",
+        "trench",
+        "preach",
+        "bleach",
+        "wrench",
+        "fleece",
+        "fresco",
+        "quench",
+        "clench",
+        "drench"
+      ]
+    },
+    {
+      "itemId": "en-c1-0028",
+      "issues": [
+        {
+          "itemId": "en-c1-0028",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined phrase 'cut back on' is a phrasal verb that takes the object 'the sports budget'; replacing it with 'curtail' gives 'curtail the sports budget', which is grammatical, but the preposition 'on' is part of the underlined phrase, so removing it leaves 'curtail the sports budget', which is fine. No issue."
+        }
+      ],
+      "substituted": "The school had to curtail the sports budget due to lack of funding.",
+      "patternMatches": [
+        "control",
+        "channel",
+        "counsel",
+        "conceal",
+        "catcall",
+        "congeal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0029",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "advance",
+        "reverse",
+        "divorce",
+        "involve",
+        "revenge",
+        "inverse",
+        "invoice",
+        "revolve",
+        "deviate",
+        "diverge",
+        "devolve",
+        "devalue",
+        "bivalve",
+        "obviate",
+        "revalue"
+      ]
+    },
+    {
+      "itemId": "en-c1-0030",
+      "issues": [],
+      "substituted": "He likes to flaunt his expensive new watch whenever he is with friends.",
+      "patternMatches": [
+        "forget",
+        "forest",
+        "forgot",
+        "fought",
+        "format",
+        "faggot",
+        "ferret",
+        "fillet",
+        "fidget",
+        "foment"
+      ]
+    },
+    {
+      "itemId": "en-c1-0031",
+      "issues": [],
+      "substituted": "The sudden rain began to hasten our departure from the campsite.",
+      "patternMatches": [
+        "listen",
+        "button",
+        "gotten",
+        "beaten",
+        "kitten",
+        "bitten",
+        "piston",
+        "soften",
+        "fasten",
+        "batten",
+        "fatten",
+        "whiten"
+      ]
+    },
+    {
+      "itemId": "en-c1-0032",
+      "issues": [],
+      "substituted": "Despite the difficulty of the climb, Maya decided to persevere until she reached the summit.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "issues": [],
+      "substituted": "The captain was forced to relinquish control of the ship during the storm.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "cauterize"
+      ]
+    },
+    {
+      "itemId": "en-c1-0036",
+      "issues": [],
+      "substituted": "The teacher had to scold the students for chatting during the exam.",
+      "patternMatches": [
+        "blood",
+        "avoid",
+        "crowd",
+        "stood",
+        "cloud",
+        "flood",
+        "brood",
+        "booed",
+        "wooed",
+        "cooed"
+      ]
+    },
+    {
+      "itemId": "en-c1-0037",
+      "issues": [],
+      "substituted": "Leo tried to stifle a laugh when his friend tripped over the rug.",
+      "patternMatches": [
+        "strike",
+        "stable",
+        "stroke",
+        "strive",
+        "staple",
+        "starve",
+        "attire",
+        "stride",
+        "strode",
+        "strobe",
+        "strove",
+        "stymie",
+        "strafe",
+        "attune"
+      ]
+    },
+    {
+      "itemId": "en-c1-0038",
+      "issues": [],
+      "substituted": "Without enough water, the delicate flowers began to wither in the scorching summer heat.",
+      "patternMatches": [
+        "rights",
+        "lights",
+        "wishes",
+        "fights",
+        "dishes",
+        "wished",
+        "sights",
+        "fishes",
+        "sighed",
+        "cipher",
+        "fished",
+        "niches",
+        "siphon",
+        "tithes",
+        "dished",
+        "dither"
+      ]
+    },
+    {
+      "itemId": "en-c1-0039",
+      "issues": [],
+      "substituted": "She has been an ardent supporter of the local football team since childhood.",
+      "patternMatches": [
+        "oldest",
+        "modest",
+        "eldest",
+        "widest",
+        "oddest",
+        "rudest"
+      ]
+    },
+    {
+      "itemId": "en-c1-0040",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "broad",
+        "bleak",
+        "basal"
+      ]
+    },
+    {
+      "itemId": "en-c1-0041",
+      "issues": [],
+      "substituted": "The teacher gave the essay a cursory before returning it to the student.",
+      "patternMatches": [
+        "summary",
+        "runaway",
+        "buttery",
+        "rubbery",
+        "turnkey"
+      ]
+    },
+    {
+      "itemId": "en-c1-0042",
+      "issues": [],
+      "substituted": "The old shed was so decrepit that it collapsed during the storm.",
+      "patternMatches": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "issues": [],
+      "substituted": null,
+      "patternMatches": [
+        "faulty",
+        "fluffy",
+        "fluent",
+        "feudal",
+        "fruity",
+        "frumpy"
+      ]
+    },
+    {
+      "itemId": "en-c1-0044",
+      "issues": [],
+      "substituted": "After weeks of hiking without enough food, he looked gaunt and exhausted.",
+      "patternMatches": [
+        "going",
+        "grand",
+        "giant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0045",
+      "issues": [],
+      "substituted": "The intrepid explorers climbed the peak despite the freezing wind.",
+      "patternMatches": [
+        "intended"
+      ]
+    },
+    {
+      "itemId": "en-c1-0046",
+      "issues": [],
+      "substituted": "The goalkeeper was nimble enough to stop the ball from entering the net.",
+      "patternMatches": [
+        "viable",
+        "liable",
+        "limber"
+      ]
+    },
+    {
+      "itemId": "en-c1-0047",
+      "issues": [
+        {
+          "itemId": "en-c1-0047",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxes have 7 letters; 'luxurious' (9) and 'sumptuous' (9) do not fit. 'luxury' (6) does not fit the pattern __u__n_ (7)."
+        }
+      ],
+      "substituted": "They stayed in an opulent hotel with gold taps and velvet curtains.",
+      "patternMatches": [
+        "routine",
+        "amusing",
+        "prudent"
+      ]
+    },
+    {
+      "itemId": "en-c1-0048",
+      "issues": [],
+      "substituted": "The film's ending was a poignant reminder of how quickly time passes.",
+      "patternMatches": [
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "en-c1-0049",
+      "issues": [],
+      "substituted": "She made a shrewd decision to invest her savings in the new company.",
+      "patternMatches": [
+        "unread"
+      ]
+    },
+    {
+      "itemId": "en-c1-0050",
+      "issues": [
+        {
+          "itemId": "en-c1-0050",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxes pattern _r__q_i_ does not match 'tranquil' (t r a n q u i l) at positions: pattern has r at 2? Actually 'tranquil' letters: t,r,a,n,q,u,i,l; pattern _r__q_i_ has r at 2, q at 5, i at __; let's check: _ r _ _ q _ i _ vs t r a n q u i l: r at 2 okay, q at 5 okay, pattern has i at 7 but 'tranquil' has i at 7? t(1) r(2) a(3) n(4) q(5) u(6) i(7) l(8) yes i at 7. So 'tranquil' fits pattern _r__q_i_? q at 5, i at 7, pattern ends with letter at 8: l. Pattern _r__q_i_ ends with _, could be l. Wait pattern is _ r _ _ q _ i _ : letters: unknown, r, unknown, unknown, q, unknown, i, unknown. 'tranquil': t r a n q u i l. So positions: 1=t,2=r,3=a,4=n,5=q,6=u,7=i,8=l. Pattern: 1=_,2=r,3=_,4=_,5=q,6=_,7=i,8=_. Yes 'tranquil' fits. So clueIssue should be null. I mistakenly thought not. So null."
+        }
+      ],
+      "substituted": "The lakeside village was incredibly tranquil during the winter months.",
+      "patternMatches": []
+    }
+  ],
+  "solve": [
+    {
+      "itemId": "en-c1-0001",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0002",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0003",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0004",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0005",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0006",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0007",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0008",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0009",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0010",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0011",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0012",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0013",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0014",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0015",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0016",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0017",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0018",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0019",
+      "foundAnswer": false,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": [
+        {
+          "itemId": "en-c1-0019",
+          "code": "solve-missed",
+          "severity": "flag",
+          "message": "solver didn't find \"plethora\" (said: profusion)"
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0020",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0021",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The underlined phrase 'stop eating/give up' is followed by 'sugary snacks'; 'abstain' requires 'from' after it, and 'from' is already printed after the boxes, so the sentence reads 'abstain from from sugary snacks', which is ungrammatical.",
+      "issues": [
+        {
+          "itemId": "en-c1-0021",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined phrase 'stop eating/give up' is followed by 'sugary snacks'; 'abstain' requires 'from' after it, and 'from' is already printed after the boxes, so the sentence reads 'abstain from from sugary snacks', which is ungrammatical."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0022",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0023",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0024",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0025",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0026",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The underlined word 'give' is followed by 'an honorary degree upon the visiting scientist'; 'bestow' fits the meaning and boxes but requires 'on/upon' after it, so the sentence reads 'bestow an honorary degree upon the visiting scientist', which is acceptable, but 'bestow' often takes 'on' rather than 'upon'; the issue is that the preposition 'upon' is already present after the object, making the sentence slightly awkward but grammatical.",
+      "issues": [
+        {
+          "itemId": "en-c1-0026",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined word 'give' is followed by 'an honorary degree upon the visiting scientist'; 'bestow' fits the meaning and boxes but requires 'on/upon' after it, so the sentence reads 'bestow an honorary degree upon the visiting scientist', which is acceptable, but 'bestow' often takes 'on' rather than 'upon'; the issue is that the preposition 'upon' is already present after the object, making the sentence slightly awkward but grammatical."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0027",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0028",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The underlined phrase 'cut back on' is a phrasal verb that takes the object 'the sports budget'; replacing it with 'curtail' gives 'curtail the sports budget', which is grammatical, but the preposition 'on' is part of the underlined phrase, so removing it leaves 'curtail the sports budget', which is fine. No issue.",
+      "issues": [
+        {
+          "itemId": "en-c1-0028",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The underlined phrase 'cut back on' is a phrasal verb that takes the object 'the sports budget'; replacing it with 'curtail' gives 'curtail the sports budget', which is grammatical, but the preposition 'on' is part of the underlined phrase, so removing it leaves 'curtail the sports budget', which is fine. No issue."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0029",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0030",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0031",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0032",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0033",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0034",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0035",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0036",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0037",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0038",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0039",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0040",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0041",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0042",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0043",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0044",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0045",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0046",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0047",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The boxes have 7 letters; 'luxurious' (9) and 'sumptuous' (9) do not fit. 'luxury' (6) does not fit the pattern __u__n_ (7).",
+      "issues": [
+        {
+          "itemId": "en-c1-0047",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxes have 7 letters; 'luxurious' (9) and 'sumptuous' (9) do not fit. 'luxury' (6) does not fit the pattern __u__n_ (7)."
+        }
+      ]
+    },
+    {
+      "itemId": "en-c1-0048",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0049",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": null,
+      "issues": []
+    },
+    {
+      "itemId": "en-c1-0050",
+      "foundAnswer": true,
+      "rivals": [],
+      "clueIssue": "The boxes pattern _r__q_i_ does not match 'tranquil' (t r a n q u i l) at positions: pattern has r at 2? Actually 'tranquil' letters: t,r,a,n,q,u,i,l; pattern _r__q_i_ has r at 2, q at 5, i at __; let's check: _ r _ _ q _ i _ vs t r a n q u i l: r at 2 okay, q at 5 okay, pattern has i at 7 but 'tranquil' has i at 7? t(1) r(2) a(3) n(4) q(5) u(6) i(7) l(8) yes i at 7. So 'tranquil' fits pattern _r__q_i_? q at 5, i at 7, pattern ends with letter at 8: l. Pattern _r__q_i_ ends with _, could be l. Wait pattern is _ r _ _ q _ i _ : letters: unknown, r, unknown, unknown, q, unknown, i, unknown. 'tranquil': t r a n q u i l. So positions: 1=t,2=r,3=a,4=n,5=q,6=u,7=i,8=l. Pattern: 1=_,2=r,3=_,4=_,5=q,6=_,7=i,8=_. Yes 'tranquil' fits. So clueIssue should be null. I mistakenly thought not. So null.",
+      "issues": [
+        {
+          "itemId": "en-c1-0050",
+          "code": "clue-issue",
+          "severity": "fail",
+          "message": "The boxes pattern _r__q_i_ does not match 'tranquil' (t r a n q u i l) at positions: pattern has r at 2? Actually 'tranquil' letters: t,r,a,n,q,u,i,l; pattern _r__q_i_ has r at 2, q at 5, i at __; let's check: _ r _ _ q _ i _ vs t r a n q u i l: r at 2 okay, q at 5 okay, pattern has i at 7 but 'tranquil' has i at 7? t(1) r(2) a(3) n(4) q(5) u(6) i(7) l(8) yes i at 7. So 'tranquil' fits pattern _r__q_i_? q at 5, i at 7, pattern ends with letter at 8: l. Pattern _r__q_i_ ends with _, could be l. Wait pattern is _ r _ _ q _ i _ : letters: unknown, r, unknown, unknown, q, unknown, i, unknown. 'tranquil': t r a n q u i l. So positions: 1=t,2=r,3=a,4=n,5=q,6=u,7=i,8=l. Pattern: 1=_,2=r,3=_,4=_,5=q,6=_,7=i,8=_. Yes 'tranquil' fits. So clueIssue should be null. I mistakenly thought not. So null."
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

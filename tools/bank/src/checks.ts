@@ -87,6 +87,12 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
     }
   }
 
+  // Fixed words are printed after the boxes and must be in the sentence too.
+  if (item.prompt.kind === "sentence") {
+    const after = new Set(words(item.prompt.after));
+    for (const w of item.fixedWords) if (!after.has(w.toLowerCase())) add("fixed-word-missing", "fail", `fixed word "${w}" is not in the sentence after the span`);
+  }
+
   // Unaccepted synonyms that the given letters don't rule out.
   const fitting = rivalsFitting(item, lex, options.rivals?.get(item.id) ?? []);
   if (fitting.length > 0) add("rival-fits", "fail", `also fits the boxes: ${fitting.join(", ")}`);

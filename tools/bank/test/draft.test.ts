@@ -62,4 +62,38 @@ describe("parseDraftBatch", () => {
     expect(d).toMatchObject({ lemma: "clemency" });
     expect(d && "determiner" in d).toBe(false);
   });
+
+  it("drops empty strings for fields that don't apply to the item's kind", () => {
+    const [sentence, definition] = parseDraftBatch({
+      items: [
+        { ...draft, determiner: "", definition: "" },
+        { ...draft, kind: "definition", before: "", span: [], after: "", determiner: "", definition: "Mercy shown by a judge" },
+      ],
+    });
+    expect(sentence).not.toHaveProperty("determiner");
+    expect(sentence).not.toHaveProperty("definition");
+    expect(definition).toMatchObject({ kind: "definition", definition: "Mercy shown by a judge" });
+    expect(definition).not.toHaveProperty("span");
+  });
+});
+
+describe("splitDeterminer", async () => {
+  const { splitDeterminer } = await import("../src/draft.ts");
+
+  it("moves a trailing article out of before", () => {
+    expect(splitDeterminer({ before: "I had a " }, "en")).toEqual({ before: "I had ", determiner: "a" });
+    expect(splitDeterminer({ before: "The " }, "en")).toEqual({ before: "", determiner: "The" });
+    expect(splitDeterminer({ before: "Elle a eu une " }, "fr")).toEqual({ before: "Elle a eu ", determiner: "une" });
+    expect(splitDeterminer({ before: "Ce bruit a fini par m’" }, "fr")).toEqual({ before: "Ce bruit a fini par m’" });
+  });
+
+  it("leaves possessives and article-like word endings alone", () => {
+    expect(splitDeterminer({ before: "His " }, "en")).toEqual({ before: "His " });
+    expect(splitDeterminer({ before: "Nobody saw the area " }, "en")).toEqual({ before: "Nobody saw the area " });
+  });
+
+  it("removes an article repeated before a given determiner", () => {
+    expect(splitDeterminer({ before: "The ", determiner: "The" }, "en")).toEqual({ before: "", determiner: "The" });
+    expect(splitDeterminer({ before: "I had a strong a ", determiner: "a" }, "en")).toEqual({ before: "I had a strong ", determiner: "a" });
+  });
 });

@@ -9,6 +9,9 @@
  *   npm run bank -- check <items.json>      deterministic checks; places given letters where missing
  *   npm run bank -- finalize <drafts.json> --lang en --level C1 --out <bank.json> [--start 1]
  *                                           drafts → items (ids, given letters), then the checks
+ *   npm run bank -- bakeoff --models a,b --solver s --words <drafts.json> --lang en --level C1
+ *                                           draft the same words with each model, blind-solve with one solver
+ *   npm run bank -- solve <bank.json> --solver s   blind-solve existing items (e.g. to calibrate the solver)
  *   npm run bank -- key                     the OpenRouter key's limit and usage (free call)
  */
 
@@ -21,7 +24,8 @@ import { z } from "zod";
 import { checkDrafts } from "./checks.ts";
 import { finalize, parseDraftBatch } from "./draft.ts";
 import { Lexicon, profanity, REPO } from "./lexicon.ts";
-import { OpenRouter } from "./openrouter.ts";
+import { BudgetGuard, OpenRouter, SpendLedger } from "./openrouter.ts";
+import { blindSolve, runBakeoff, type Context, type Word } from "./bakeoff.ts";
 import { choosePlacement } from "./placement.ts";
 import { selectCandidates } from "./select.ts";
 
@@ -128,6 +132,49 @@ function finalizeDrafts(args: string[]): void {
   if (failed.length > 0 || dropped.length > 0) process.exitCode = 1;
 }
 
+function context(lang: Lang, level: Item["level"]): Context {
+  return { client: new OpenRouter(), ledger: new SpendLedger(), lex: Lexicon.load(lang), lang, level, profanity: profanity(lang), batchSize: 10 };
+}
+
+async function bakeoff(args: string[]): Promise<void> {
+  const { values } = parseArgs({
+    args,
+    options: { models: { type: "string" }, solver: { type: "string" }, words: { type: "string" }, lang: { type: "string" }, level: { type: "string" }, out: { type: "string" } },
+  });
+  const lang = z.enum(LANGS).parse(values.lang);
+  const level = z.enum(LEVELS).parse(values.level);
+  const models = (values.models ?? "").split(",").filter(Boolean);
+  const solver = z.string().min(1).parse(values.solver);
+  const raw = JSON.parse(readFileSync(resolve(values.words ?? ""), "utf8")) as { items: Word[] };
+  const words = raw.items.map(({ lemma, pos, kind }) => ({ lemma, pos, kind }));
+  const out = resolve(values.out ?? resolve(WORK, "bakeoff", `${lang}-${level.toLowerCase()}`));
+  mkdirSync(out, { recursive: true });
+  const ctx = context(lang, level);
+  const summaries = await runBakeoff(ctx, new BudgetGuard(ctx.client), models, solver, words, out, (l) => console.log(l));
+  console.log("\nmodel | items | clean | solver found | rivals | clue issues | $ drafting | $/item | reasoning tok/item | s");
+  for (const s of summaries) {
+    console.log(
+      `${s.model} | ${s.items}/${s.words} | ${s.clean} | ${s.solverFoundAnswer} | ${s.solverRivals} | ${s.clueIssues} | ${s.draftCost.toFixed(4)} | ${s.draftCostPerItem.toFixed(5)} | ${s.reasoningTokensPerItem.toFixed(0)} | ${s.seconds.toFixed(0)}`,
+    );
+  }
+  for (const r of ctx.ledger.rows()) console.log(`spend ${r.stage} ${r.model}: $${r.cost} (${r.calls} calls)`);
+  console.log(`total spend $${ctx.ledger.total().toFixed(4)}`);
+}
+
+async function solve(args: string[]): Promise<void> {
+  const { values, positionals } = parseArgs({ args, allowPositionals: true, options: { solver: { type: "string" } } });
+  const path = resolve(positionals[0] ?? "");
+  const bank = Bank.parse(JSON.parse(readFileSync(path, "utf8")));
+  const ctx = context(bank.lang, bank.level);
+  await new BudgetGuard(ctx.client).ensure(0.05);
+  const { verdicts, errors } = await blindSolve(ctx, z.string().min(1).parse(values.solver), bank.items);
+  writeFileSync(path.replace(/\.json$/u, "") + ".solve.json", JSON.stringify({ solver: values.solver, verdicts, errors }, null, 2) + "\n");
+  console.log(`${verdicts.length} items: answer found ${verdicts.filter((v) => v.foundAnswer).length}, rivals ${verdicts.filter((v) => v.rivals.length).length}, clue issues ${verdicts.filter((v) => v.clueIssue).length}`);
+  for (const v of verdicts) for (const i of v.issues) console.log(`  ${i.itemId} ${i.code}: ${i.message}`);
+  for (const e of errors) console.log(`  ! ${e}`);
+  console.log(`spend $${ctx.ledger.total().toFixed(4)}`);
+}
+
 async function key(): Promise<void> {
   const info = await new OpenRouter().keyInfo();
   console.log(`limit $${info.limit ?? "none"}, used $${info.usage.toFixed(4)}, remaining $${info.limitRemaining ?? "n/a"}`);
@@ -146,6 +193,12 @@ switch (command) {
     break;
   case "finalize":
     finalizeDrafts(rest);
+    break;
+  case "bakeoff":
+    await bakeoff(rest);
+    break;
+  case "solve":
+    await solve(rest);
     break;
   case "key":
     await key();

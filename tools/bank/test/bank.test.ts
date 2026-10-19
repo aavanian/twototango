@@ -212,3 +212,10 @@ describe("British spelling", () => {
     expect(issues.find((i) => i.code === "us-spelling")).toMatchObject({ severity: "fail" });
   });
 });
+
+describe("fixed words", () => {
+  it("fails a fixed word that the sentence doesn't contain", () => {
+    const item = { ...adorned, prompt: { ...adorned.prompt, after: " the hall for the party." } } as Item;
+    expect(checkDraft(item, en, opts).issues.map((i) => i.code)).toContain("fixed-word-missing");
+  });
+});

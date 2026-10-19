@@ -123,6 +123,17 @@ Started 19 Oct 2026, in a Claude Code session; no API spend.
 - **"Also fits" was a mistake to show**: the review sheet listed words matching the letter pattern regardless of meaning (affront: affairs, alfalfa), and the GM rightly found them nonsense. They now carry the name `patternMatches` and stay internal. Words that really fit an item come from the blind solve.
 - **Found while writing**: one draft had a span that doesn't take the answer's preposition ("hinted to" for "alluded to"). The deterministic checks can't see this; the blind solve or a grammar pass has to.
 
+### Bake-off (English C1)
+
+Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
+
+- **Runner**: `npm run bank -- bakeoff` drafts the words with each model (batches of 10, reasoning off, or lowest effort where it can't be turned off), finalizes, runs the checks, then blind-solves every model's items with one fixed solver so drafters are judged alike. Outputs in `content/pilot/bakeoff-en-c1/`.
+- **Solver**: DeepSeek V4.1 Flash with `prompts/en/solve.md` v2. On the GM-rated pilot it found 49 of 50 answers and raised no false issues; it caught planted preposition errors. DeepSeek V4 Pro as solver did worse (19 of 30 answers on a hard subset). Solver v2 spells out the preposition check after v1 missed "give … on" for *bestow*; its example is that very case, so watch for other error kinds.
+- **What the first run taught**: models duplicated the article when asked for a separate determiner field ("The The [calm] lake"); prompt v3 drops the field and code splits a trailing article off `before`. Strict JSON mode sends "" for fields that don't apply; the parser drops them by item kind. A fixed word missing from the sentence is now a deterministic failure.
+- **Measured** (drafting $/item, clean items of 50 after checks and solver v2): GLM-5.3 Flash $0.00006, 47; DeepSeek V4.1 Flash $0.00007, 43; Gemma 4 31B $0.00008, 47; Mistral Small 2603 $0.00006, 45; Nemotron 3 Super $0.00010, 49; DeepSeek V4 Pro $0.00045, 45; Qwen3.5 397B $0.00048, 47; DeepSeek V4.1 Flash 1017 $0.00008, 34 of 42 (dropped spans in one batch). No model spent reasoning tokens to speak of. Blind solving costs about $0.00004 per item.
+- **Full-run cost from these numbers** (about 4,800 drafts, blind solve, 15% repaired by a big model): under $5 even with the dearest drafter, so cost no longer decides; the GM's blind rating does.
+- **Blind rating**: Grist table Bakeoff, 12 words × 5 finalists (GLM-5.3 Flash, DeepSeek V4.1 Flash, Nemotron 3 Super, Qwen3.5 397B, DeepSeek V4 Pro), shuffled. Key: `content/pilot/en-c1.bakeoff-key.json`.
+
 ### Staging
 
 C1 for both languages first (the sample sheets' level), then B2 and C2, so play starts early and review lessons improve the later levels.

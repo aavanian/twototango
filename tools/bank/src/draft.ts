@@ -45,13 +45,12 @@ export const DRAFT_JSON_SCHEMA = {
         items: {
           type: "object",
           additionalProperties: false,
-          required: ["lemma", "pos", "kind", "before", "determiner", "span", "after", "definition", "fixedWords", "answer", "acceptable", "nearMisses"],
+          required: ["lemma", "pos", "kind", "before", "span", "after", "definition", "fixedWords", "answer", "acceptable", "nearMisses"],
           properties: {
             lemma: { type: "string" },
             pos: { type: "string", enum: [...PARTS_OF_SPEECH] },
             kind: { type: "string", enum: ["sentence", "definition"] },
             before: { type: ["string", "null"] },
-            determiner: { type: ["string", "null"] },
             span: { type: ["array", "null"], items: { type: "string" } },
             after: { type: ["string", "null"] },
             definition: { type: ["string", "null"] },
@@ -66,15 +65,57 @@ export const DRAFT_JSON_SCHEMA = {
   },
 } as const;
 
-/** Strict-mode output uses null for absent fields; drop them before parsing. */
+/**
+ * Strict-mode output must fill every key, so models send null or "" for fields that
+ * don't apply. Drop those before parsing: the definition fields for a sentence item,
+ * the sentence fields for a definition item, and an empty determiner. An empty
+ * before/after stays (a span may open or close the sentence).
+ */
 export function parseDraftBatch(raw: unknown): Draft[] {
-  const strip = (v: unknown): unknown =>
-    Array.isArray(v)
-      ? v.map(strip)
-      : v !== null && typeof v === "object"
-        ? Object.fromEntries(Object.entries(v).filter(([, x]) => x !== null).map(([k, x]) => [k, strip(x)]))
-        : v;
-  return DraftBatch.parse(strip(raw)).items;
+  const SENTENCE_ONLY = ["before", "determiner", "span", "after"];
+  const items = (raw as { items?: unknown }).items;
+  if (!Array.isArray(items)) return DraftBatch.parse(raw).items;
+  const cleaned = items.map((item) => {
+    if (item === null || typeof item !== "object") return item;
+    const entries = Object.entries(item as Record<string, unknown>).filter(([k, v]) => {
+      if (v === null) return false;
+      const kind = (item as { kind?: unknown }).kind;
+      if (kind === "sentence" && k === "definition") return false;
+      if (kind === "definition" && SENTENCE_ONLY.includes(k)) return false;
+      if (k === "determiner" && v === "") return false;
+      return true;
+    });
+    return Object.fromEntries(entries);
+  });
+  return DraftBatch.parse({ items: cleaned }).items;
+}
+
+// Articles that may change with the answer (a/an, un/une, le/l’). Possessives and demonstratives stay in the text.
+const ARTICLES: Record<Lang, RegExp> = {
+  en: /(^|\s)(a|an|the)\s+$/iu,
+  fr: /(^|\s)(un|une|le|la|les|du|des|de la|de l['’]|l['’])\s*$/iu,
+};
+
+/**
+ * Models write the sentence naturally, article included in `before`. The article right
+ * before the span moves to `determiner`, which the game keeps outside the underline and
+ * the substitution check adapts. A determiner the model did give is kept, and removed
+ * from the end of `before` if repeated there ("The The [calm] lake").
+ */
+export function splitDeterminer(draft: Pick<Draft, "before" | "determiner">, lang: Lang): { before: string; determiner?: string } {
+  let before = draft.before ?? "";
+  let determiner = draft.determiner?.trim();
+  if (determiner) {
+    const repeated = new RegExp(`(^|\\s)${determiner.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}\\s*$`, "iu");
+    if (repeated.test(before)) before = before.replace(repeated, "$1");
+  } else {
+    const m = ARTICLES[lang].exec(before);
+    if (m) {
+      determiner = m[2]!;
+      before = before.slice(0, m.index) + m[1];
+    }
+  }
+  return determiner ? { before, determiner } : { before };
 }
 
 export interface Finalized {
@@ -94,7 +135,7 @@ export function finalize(draft: Draft, id: string, lang: Lang, level: Item["leve
   const notes: string[] = [];
   const prompt =
     draft.kind === "sentence"
-      ? { kind: "sentence" as const, before: draft.before ?? "", ...(draft.determiner ? { determiner: draft.determiner } : {}), span: draft.span ?? [], after: draft.after ?? "" }
+      ? { kind: "sentence" as const, ...splitDeterminer(draft, lang), span: draft.span ?? [], after: draft.after ?? "" }
       : { kind: "definition" as const, definition: draft.definition ?? "" };
   const parsed = Item.safeParse({
     id,

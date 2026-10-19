@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
-<!-- prompt: en-draft v2 (19 Oct 2026; v2 adds British spelling). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
+<!-- prompt: en-draft v3 (19 Oct 2026; v2 adds British spelling, v3 drops the determiner field: models duplicated the article). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
 
 ---
 
@@ -19,16 +19,16 @@ You get a list of target words (the answers), each with its part of speech and t
 - The underlined span (`span`) is an easier word or short phrase (up to 4 words) with the same meaning, so that the sentence still reads correctly with the answer in its place. The span should be something a B1–B2 learner knows; the answer is C1.
 - The span must not share a root with the answer: no "adornment" for "adorn", no "irritated" for "irritable". Avoid spans that contain a word of the answer's family in any form.
 - You may give one or two extra spans as alternative clues when they help (`"span": ["hardship", "trial"]`). The first is the main one.
-- An article right before the span goes in `determiner`, not in `before` or `span` ("a", "an", "the"). It stays outside the underline and may change with the answer ("a hunch" / "an intuition"); do not worry about a/an, the game handles it.
+- An article right before the span ("a", "an", "the") is written at the end of `before`, never inside `span`. Do not worry about a/an changing with the answer; the game handles it.
 - When the answer is followed by a preposition or particle that belongs with it (succumb **to**, bristle **at**, adorn **with**), put that word in `fixedWords`; it also stays in `after`, where it belongs in the sentence. Players see it printed after the boxes. "He refused to [give in] to their demands" → answer "succumb", fixedWords ["to"]. Otherwise fixedWords is empty.
-- `before` + `determiner` + span + `after` must form the sentence exactly, spaces included: `before` ends with a space when a word precedes the span; `after` starts with a space or punctuation.
+- `before` + span + `after` must form the sentence exactly, spaces included: `before` ends with a space when a word precedes the span; `after` starts with a space or punctuation. Read the whole sentence back once: no repeated words, and it must be grammatical with the span in place.
 - Make the context point to the answer specifically, so a strong player can find it and few other words fit as well.
 
 ## Definition items
 
 - A short dictionary-style definition, 5 to 14 words, that would make a good crossword clue at this level: "A sign that something is going to happen".
 - It must not contain the answer or any word of its family.
-- Leave `before`, `span`, `after` and `determiner` out; give `definition`.
+- Set `before`, `span` and `after` to null; give `definition`.
 
 ## Synonyms
 
