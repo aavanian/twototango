@@ -80,12 +80,11 @@
       "pos": "noun",
       "prompt": {
         "kind": "sentence",
-        "before": "In her will, Grandma left ",
-        "determiner": "a",
+        "before": "In her will, Grandma made a generous ",
         "span": [
           "gift"
         ],
-        "after": " of books to the village library."
+        "after": " of antique maps to the museum."
       },
       "fixedWords": [],
       "answer": "bequest",
@@ -107,7 +106,7 @@
         "span": [
           "mercy"
         ],
-        "after": " because the boy was so young and truly sorry."
+        "after": " and reduced his sentence."
       },
       "fixedWords": [],
       "answer": "clemency",
@@ -152,8 +151,7 @@
         "kind": "sentence",
         "before": "After the party, the flat was in complete ",
         "span": [
-          "mess",
-          "chaos"
+          "disorder"
         ],
         "after": "."
       },
@@ -460,7 +458,7 @@
         "kind": "sentence",
         "before": "Athletes must ",
         "span": [
-          "stay away"
+          "keep away"
         ],
         "after": " from junk food before the race."
       },
@@ -2783,7 +2781,7 @@
         "before": "After the match, fans had to brave ",
         "determiner": "a",
         "span": [
-          "sudden downpour"
+          "heavy downpour"
         ],
         "after": " on the way to the station."
       },
@@ -3150,7 +3148,7 @@
       "answer": "gulp",
       "lemma": "gulp",
       "given": [
-        3
+        2
       ],
       "alternates": []
     },
@@ -3656,7 +3654,7 @@
         "kind": "sentence",
         "before": "The reporter mentioned the scandal only as a casual ",
         "span": [
-          "remark"
+          "offhand comment"
         ],
         "after": " during the interview."
       },
@@ -4235,7 +4233,7 @@
         "before": "We heard ",
         "determiner": "the",
         "span": [
-          "harsh cry"
+          "piercing noise"
         ],
         "after": " of brakes as the bus stopped suddenly."
       },
@@ -4301,7 +4299,7 @@
       "pos": "noun",
       "prompt": {
         "kind": "definition",
-        "definition": "A thing that causes endless worry or misery"
+        "definition": "A cause of great distress or annoyance"
       },
       "fixedWords": [],
       "answer": "bane",
@@ -4367,7 +4365,7 @@
         "before": "The monks guarded ",
         "determiner": "the",
         "span": [
-          "holiness"
+          "sacredness"
         ],
         "after": " of the ancient temple above everything else."
       },
@@ -4408,7 +4406,7 @@
         "kind": "sentence",
         "before": "At the beach barbecue, Dad grilled huge ",
         "span": [
-          "shrimps"
+          "shellfish"
         ],
         "after": " that everyone ate with garlic sauce."
       },
@@ -4616,28 +4614,6 @@
       "alternates": []
     },
     {
-      "id": "en-c1-0210",
-      "lang": "en",
-      "level": "C1",
-      "pos": "noun",
-      "prompt": {
-        "kind": "sentence",
-        "before": "Amir has joined an after-school ",
-        "span": [
-          "culinary"
-        ],
-        "after": " club to learn new recipes."
-      },
-      "fixedWords": [],
-      "answer": "cookery",
-      "lemma": "cookery",
-      "given": [
-        3,
-        5
-      ],
-      "alternates": []
-    },
-    {
       "id": "en-c1-0211",
       "lang": "en",
       "level": "C1",
@@ -4690,7 +4666,7 @@
         "kind": "sentence",
         "before": "After a week in the rain, the fallen leaves had turned into a soggy ",
         "span": [
-          "soft wet mixture"
+          "pulp"
         ],
         "after": " on the path."
       },
@@ -6390,7 +6366,7 @@
         "kind": "sentence",
         "before": "When the mower jammed, Dad had to ",
         "span": [
-          "unhook"
+          "release"
         ],
         "after": " the blade before he could fix it."
       },
@@ -6482,7 +6458,7 @@
         "kind": "sentence",
         "before": "If you ",
         "span": [
-          "use too much of"
+          "use too much"
         ],
         "after": " the chilli, the curry becomes impossible to eat."
       },
@@ -7163,7 +7139,7 @@
         "kind": "sentence",
         "before": "Elena could hardly ",
         "span": [
-          "hold back"
+          "control"
         ],
         "after": " her laughter during the headmaster's serious speech."
       },
@@ -7813,7 +7789,7 @@
         "kind": "sentence",
         "before": "The street performer chose to ",
         "span": [
-          "act without speaking"
+          "act out silently"
         ],
         "after": " a tourist trying to open an umbrella in the wind."
       },
@@ -7821,7 +7797,7 @@
       "answer": "mime",
       "lemma": "mime",
       "given": [
-        0
+        2
       ],
       "alternates": []
     },
@@ -7857,7 +7833,7 @@
         "kind": "sentence",
         "before": "From a quick look at the timetable, we managed to ",
         "span": [
-          "pick up"
+          "gather"
         ],
         "after": " a few facts about the trip."
       },
@@ -7865,7 +7841,7 @@
       "answer": "glean",
       "lemma": "glean",
       "given": [
-        2,
+        0,
         4
       ],
       "alternates": []
@@ -8027,9 +8003,9 @@
       "pos": "verb",
       "prompt": {
         "kind": "sentence",
-        "before": "A long day of revision was ",
+        "before": "A long day of revision ",
         "span": [
-          "made up for"
+          "was offset by"
         ],
         "after": " a relaxing evening of music and games."
       },
@@ -8222,7 +8198,7 @@
         "kind": "sentence",
         "before": "Before moving house, Dad ",
         "span": [
-          "sold"
+          "sold off"
         ],
         "after": " most of his old records at the car boot sale."
       },
@@ -9092,7 +9068,7 @@
         "kind": "sentence",
         "before": "Several older pupils were suspended for ",
         "span": [
-          "kept bothering"
+          "repeatedly bothering"
         ],
         "after": " younger students on the bus."
       },
@@ -9422,28 +9398,6 @@
       "given": [
         1,
         6
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-c1-0435",
-      "lang": "en",
-      "level": "C1",
-      "pos": "verb",
-      "prompt": {
-        "kind": "sentence",
-        "before": "My headphones always ",
-        "span": [
-          "get knotted"
-        ],
-        "after": " at the bottom of my school bag."
-      },
-      "fixedWords": [],
-      "answer": "tangle",
-      "lemma": "tangle",
-      "given": [
-        0,
-        5
       ],
       "alternates": []
     },
@@ -10108,7 +10062,7 @@
         "kind": "sentence",
         "before": "The little cottage felt warm and ",
         "span": [
-          "cosy"
+          "comfortable"
         ],
         "after": " on that rainy evening."
       },
@@ -10304,12 +10258,12 @@
       "pos": "adjective",
       "prompt": {
         "kind": "sentence",
-        "before": "The referee accused the team of having ",
+        "before": "The referee criticised the club for fielding ",
         "determiner": "an",
         "span": [
-          "unfair"
+          "uneven"
         ],
-        "after": " squad, with three professional players and no amateurs."
+        "after": " team, with three professional players and no amateurs."
       },
       "fixedWords": [],
       "answer": "unbalanced",
@@ -10401,7 +10355,7 @@
         "before": "For ",
         "determiner": "the",
         "span": [
-          "new to it"
+          "people new to it"
         ],
         "after": ", the rules of cricket can seem completely baffling."
       },
@@ -10437,28 +10391,6 @@
         3,
         7,
         9
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-c1-0481",
-      "lang": "en",
-      "level": "C1",
-      "pos": "adjective",
-      "prompt": {
-        "kind": "sentence",
-        "before": "The storm left a trail of ",
-        "span": [
-          "deliberate"
-        ],
-        "after": " destruction across the whole village."
-      },
-      "fixedWords": [],
-      "answer": "wanton",
-      "lemma": "wanton",
-      "given": [
-        2,
-        4
       ],
       "alternates": []
     },
@@ -10989,8 +10921,7 @@
         "kind": "sentence",
         "before": "Because it was Priya's first offence, the referee was ",
         "span": [
-          "not strict",
-          "gentle"
+          "not strict"
         ],
         "after": " and only gave her a warning."
       },
@@ -12156,15 +12087,15 @@
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Someone who lies and tricks others to get what they want"
+        "definition": "Acting in a way that is intended to make people believe something that is not true"
       },
       "fixedWords": [],
       "answer": "deceitful",
       "lemma": "deceitful",
       "given": [
-        0,
         2,
-        5
+        6,
+        8
       ],
       "alternates": []
     },
@@ -12973,30 +12904,6 @@
         2,
         5,
         7
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-c1-0596",
-      "lang": "en",
-      "level": "C1",
-      "pos": "verb",
-      "prompt": {
-        "kind": "sentence",
-        "before": "On holiday, the twins loved to ",
-        "span": [
-          "venture out"
-        ],
-        "after": " into the narrow streets of the old town."
-      },
-      "fixedWords": [
-        "into"
-      ],
-      "answer": "foray",
-      "lemma": "foray",
-      "given": [
-        0,
-        4
       ],
       "alternates": []
     },

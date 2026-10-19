@@ -196,7 +196,10 @@ export async function runLevel(ctx: Context, guard: BudgetGuard, candidates: rea
     save(resolve(dir, "drafts.json"), drafts);
     log(`draft: ${drafts.filter(Boolean).length}/${words.length}, $${run.cost.toFixed(4)}${run.errors.length ? `, ${run.errors.length} errors` : ""}`);
   }
-  const ids = words.map((_, i) => `${ctx.lang}-${ctx.level.toLowerCase()}-${String(5000 + i).padStart(4, "0")}`);
+  // Provisional ids, numbered after any kept item so they can't collide (they are renumbered at freeze).
+  const firstId = Math.max(5000, ...opts.keep.map((k) => Number(k.id.slice(-4)) + 1));
+  if (firstId + words.length > 9999) throw new Error("provisional ids would overflow four digits");
+  const ids = words.map((_, i) => `${ctx.lang}-${ctx.level.toLowerCase()}-${String(firstId + i).padStart(4, "0")}`);
 
   // 3. Finalize, check, solve.
   const first = await evaluate(ctx, opts.solver, drafts, ids);
@@ -236,6 +239,7 @@ export async function runLevel(ctx: Context, guard: BudgetGuard, candidates: rea
 
   // 6. Staging bank, review list, provenance.
   const items = [...opts.keep, ...chosen.map((a) => a.item)];
+  assertUnique(items);
   save(resolve(STAGING, `${t}.json`), Bank.parse({ lang: ctx.lang, level: ctx.level, items }));
   const flagged = chosen.filter((a) => a.issues.length > 0);
   const clean = chosen.filter((a) => a.issues.length === 0);
@@ -281,6 +285,7 @@ export function freeze(lang: Lang, level: Level, verdicts: ReadonlyMap<string, "
   const staging = Bank.parse(JSON.parse(readFileSync(resolve(STAGING, `${t}.json`), "utf8")));
   const review = z.array(z.object({ itemId: z.string(), why: z.string() })).parse(JSON.parse(readFileSync(resolve(STAGING, `${t}.review.json`), "utf8")));
   const removed = staging.items.filter((i) => (verdicts.get(i.id) ?? "good") !== "good").map((i) => i.id);
+  assertUnique(staging.items);
   const kept = staging.items.filter((i) => !removed.includes(i.id));
   let n = Math.max(0, ...kept.filter((i) => pilotIds.has(i.id)).map((i) => Number(i.id.slice(-4))));
   const items = kept.map((i) => (pilotIds.has(i.id) ? i : { ...i, id: `${t}-${String(++n).padStart(4, "0")}` }));
@@ -309,7 +314,20 @@ function draftOf(item: Item): Draft {
  * Re-checks a bank that hasn't shipped yet against the current rules and repairs what
  * now fails, in place: same word, same id. Items that still fail are dropped.
  */
+/** Ids and lemmas must be unique within a bank; repairs and reviews are keyed by id. */
+export function assertUnique(items: readonly Item[]): void {
+  const ids = new Set<string>();
+  const lemmas = new Set<string>();
+  for (const i of items) {
+    if (ids.has(i.id)) throw new Error(`duplicate id ${i.id}`);
+    if (lemmas.has(i.lemma)) throw new Error(`duplicate lemma ${i.lemma}`);
+    ids.add(i.id);
+    lemmas.add(i.lemma);
+  }
+}
+
 export async function repairBank(ctx: Context, guard: BudgetGuard, bank: Bank, solver: string, repairer: string, log: (l: string) => void, withSolver = false): Promise<{ bank: Bank; fixed: string[]; dropped: string[] }> {
+  assertUnique(bank.items);
   const reports = checkDrafts(bank.items, ctx.lex, { profanity: ctx.profanity });
   if (withSolver) {
     // Re-read every item with the current solver prompt too.
@@ -341,5 +359,6 @@ export async function repairBank(ctx: Context, guard: BudgetGuard, bank: Bank, s
     }
   });
   const items = bank.items.filter((i) => !dropped.includes(i.id)).map((i) => replaced.get(i.id) ?? i);
+  assertUnique(items);
   return { bank: Bank.parse({ ...bank, items }), fixed, dropped };
 }

@@ -27,7 +27,7 @@
   {
     "itemId": "en-c1-0004",
     "issues": [],
-    "substituted": "In her will, Grandma left a bequest of books to the village library.",
+    "substituted": "In her will, Grandma made a generous bequest of antique maps to the museum.",
     "patternMatches": [
       "baptism",
       "bassist",
@@ -42,7 +42,7 @@
   {
     "itemId": "en-c1-0005",
     "issues": [],
-    "substituted": "The judge showed clemency because the boy was so young and truly sorry.",
+    "substituted": "The judge showed clemency and reduced his sentence.",
     "patternMatches": [
       "credence"
     ]
@@ -1961,26 +1961,26 @@
     "issues": [],
     "substituted": "Nervous before her speech, Priya took a huge gulp and stepped onto the stage.",
     "patternMatches": [
+      "will",
+      "well",
       "help",
-      "keep",
-      "stop",
-      "step",
-      "drop",
-      "ship",
-      "trip",
-      "shop",
-      "camp",
-      "jump",
-      "crap",
-      "trap",
-      "chip",
-      "loop",
-      "pump",
-      "slip",
-      "clip",
-      "skip",
-      "snap",
-      "flip"
+      "full",
+      "call",
+      "talk",
+      "half",
+      "self",
+      "film",
+      "hold",
+      "gold",
+      "role",
+      "bill",
+      "fall",
+      "felt",
+      "hell",
+      "kill",
+      "walk",
+      "ball",
+      "wall"
     ]
   },
   {
@@ -2978,33 +2978,6 @@
       "subclass",
       "subplots",
       "sibilant"
-    ]
-  },
-  {
-    "itemId": "en-c1-0210",
-    "issues": [],
-    "substituted": "Amir has joined an after-school cookery club to learn new recipes.",
-    "patternMatches": [
-      "workers",
-      "packers",
-      "bankers",
-      "markers",
-      "hackers",
-      "brokers",
-      "seekers",
-      "smokers",
-      "walkers",
-      "mockery",
-      "backers",
-      "hookers",
-      "suckers",
-      "tankers",
-      "hickory",
-      "rockers",
-      "bunkers",
-      "lockers",
-      "shakers",
-      "kickers"
     ]
   },
   {
@@ -5261,26 +5234,26 @@
     "issues": [],
     "substituted": "The street performer chose to mime a tourist trying to open an umbrella in the wind.",
     "patternMatches": [
-      "make",
-      "made",
-      "must",
-      "mean",
-      "mind",
-      "move",
-      "meet",
-      "miss",
-      "mark",
-      "mine",
-      "mass",
-      "mike",
-      "mail",
-      "moon",
-      "milk",
-      "mess",
-      "mate",
-      "meal",
-      "maps",
-      "mill"
+      "time",
+      "home",
+      "come",
+      "game",
+      "name",
+      "came",
+      "damn",
+      "arms",
+      "camp",
+      "jump",
+      "bomb",
+      "fame",
+      "pump",
+      "aims",
+      "dump",
+      "lamb",
+      "bump",
+      "lame",
+      "dome",
+      "sums"
     ]
   },
   {
@@ -5297,11 +5270,11 @@
     "issues": [],
     "substituted": "From a quick look at the timetable, we managed to glean a few facts about the trip.",
     "patternMatches": [
+      "given",
       "green",
-      "clean",
-      "queen",
-      "skein",
-      "preen"
+      "grown",
+      "grain",
+      "groan"
     ]
   },
   {
@@ -5399,7 +5372,7 @@
   {
     "itemId": "en-c1-0369",
     "issues": [],
-    "substituted": "A long day of revision was counterbalanced a relaxing evening of music and games.",
+    "substituted": "A long day of revision counterbalanced a relaxing evening of music and games.",
     "patternMatches": []
   },
   {
@@ -6439,33 +6412,6 @@
     ]
   },
   {
-    "itemId": "en-c1-0435",
-    "issues": [],
-    "substituted": "My headphones always tangle at the bottom of my school bag.",
-    "patternMatches": [
-      "tongue",
-      "triple",
-      "tackle",
-      "throne",
-      "tenure",
-      "thrive",
-      "torque",
-      "tumble",
-      "treble",
-      "tickle",
-      "toggle",
-      "topple",
-      "trifle",
-      "triage",
-      "tingle",
-      "tiptoe",
-      "tussle",
-      "twinge",
-      "trudge",
-      "tipple"
-    ]
-  },
-  {
     "itemId": "en-c1-0436",
     "issues": [],
     "substituted": "The enormous pile of revision before the exams overwhelmed Jess, and she didn't know where to start.",
@@ -6932,7 +6878,7 @@
   {
     "itemId": "en-c1-0475",
     "issues": [],
-    "substituted": "The referee accused the team of having an unbalanced squad, with three professional players and no amateurs.",
+    "substituted": "The referee criticised the club for fielding an unbalanced team, with three professional players and no amateurs.",
     "patternMatches": []
   },
   {
@@ -6973,16 +6919,6 @@
     "issues": [],
     "substituted": "My little cousin is so inquisitive that she asks a hundred questions about everything.",
     "patternMatches": []
-  },
-  {
-    "itemId": "en-c1-0481",
-    "issues": [],
-    "substituted": "The storm left a trail of wanton destruction across the whole village.",
-    "patternMatches": [
-      "senior",
-      "random",
-      "junior"
-    ]
   },
   {
     "itemId": "en-c1-0482",
@@ -7660,9 +7596,7 @@
     "itemId": "en-c1-0558",
     "issues": [],
     "substituted": null,
-    "patternMatches": [
-      "deceptive"
-    ]
+    "patternMatches": []
   },
   {
     "itemId": "en-c1-0559",
@@ -7997,15 +7931,6 @@
     "substituted": "Copying out the whole manuscript by hand was so laborious that Tom's wrist ached after an hour.",
     "patternMatches": [
       "ambitious"
-    ]
-  },
-  {
-    "itemId": "en-c1-0596",
-    "issues": [],
-    "substituted": "On holiday, the twins loved to foray into the narrow streets of the old town.",
-    "patternMatches": [
-      "fancy",
-      "ferry"
     ]
   },
   {

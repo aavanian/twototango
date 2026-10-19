@@ -279,9 +279,9 @@
       "prompt": {
         "kind": "sentence",
         "before": "At the wedding, Marcus was chosen as ",
-        "determiner": "a",
+        "determiner": "the",
         "span": [
-          "person who carries"
+          "person carrying"
         ],
         "after": " of the rings during the ceremony."
       },
@@ -318,28 +318,6 @@
       "alternates": []
     },
     {
-      "id": "en-b2-0015",
-      "lang": "en",
-      "level": "B2",
-      "pos": "noun",
-      "prompt": {
-        "kind": "sentence",
-        "before": "Our new flat is on the top ",
-        "span": [
-          "floor"
-        ],
-        "after": " of the building, so we get a lovely view."
-      },
-      "fixedWords": [],
-      "answer": "storey",
-      "lemma": "storey",
-      "given": [
-        1,
-        5
-      ],
-      "alternates": []
-    },
-    {
       "id": "en-b2-0016",
       "lang": "en",
       "level": "B2",
@@ -348,7 +326,7 @@
         "kind": "sentence",
         "before": "The tiny bakery found its ",
         "span": [
-          "own special place"
+          "specialised segment"
         ],
         "after": " in the town's crowded food market."
       },
@@ -4169,11 +4147,12 @@
       "pos": "noun",
       "prompt": {
         "kind": "sentence",
-        "before": "You can judge the quality of the paintwork by its ",
+        "before": "The decorator admired ",
+        "determiner": "the",
         "span": [
           "shine"
         ],
-        "after": ", which made the floorboards look brand new."
+        "after": " on the freshly painted wall."
       },
       "fixedWords": [],
       "answer": "gloss",
@@ -4237,7 +4216,7 @@
         "span": [
           "speed of the story"
         ],
-        "after": " made the final chapters feel dull."
+        "after": " of the novel made the final chapters feel dull."
       },
       "fixedWords": [],
       "answer": "pacing",
@@ -4298,7 +4277,7 @@
         "before": "Regular practice is ",
         "determiner": "the",
         "span": [
-          "main base"
+          "foundation"
         ],
         "after": " of any successful football team."
       },
@@ -4322,7 +4301,7 @@
         "kind": "sentence",
         "before": "The heavy snow caused serious ",
         "span": [
-          "problems"
+          "interruption"
         ],
         "after": " to train services across the region."
       },
@@ -4345,11 +4324,11 @@
       "pos": "noun",
       "prompt": {
         "kind": "sentence",
-        "before": "Before its official release, the film was shown to critics at a special ",
+        "before": "The film was shown to critics at a special ",
         "span": [
-          "early showing"
+          "advance screening"
         ],
-        "after": "."
+        "after": " before its official release."
       },
       "fixedWords": [],
       "answer": "preview",
@@ -4618,7 +4597,7 @@
         "kind": "sentence",
         "before": "Under the stage lights, the judges held her ",
         "span": [
-          "stare"
+          "look"
         ],
         "after": " throughout her sonata."
       },
@@ -5020,28 +4999,6 @@
       "given": [
         3,
         6
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-b2-0231",
-      "lang": "en",
-      "level": "B2",
-      "pos": "noun",
-      "prompt": {
-        "kind": "sentence",
-        "before": "Mum sent Lewis round to the corner ",
-        "span": [
-          "shop"
-        ],
-        "after": " before it shut for the evening."
-      },
-      "fixedWords": [],
-      "answer": "grocery",
-      "lemma": "grocery",
-      "given": [
-        0,
-        3
       ],
       "alternates": []
     },
@@ -6322,14 +6279,14 @@
       "pos": "verb",
       "prompt": {
         "kind": "definition",
-        "definition": "Come into existence; happen, often unexpectedly"
+        "definition": "To come into being or start to happen"
       },
       "fixedWords": [],
       "answer": "arise",
       "lemma": "arise",
       "given": [
         0,
-        3
+        2
       ],
       "alternates": []
     },
@@ -6459,14 +6416,14 @@
       "pos": "verb",
       "prompt": {
         "kind": "definition",
-        "definition": "Make small changes to a text or plan to improve it"
+        "definition": "To make minor improvements or corrections to a document"
       },
       "fixedWords": [],
       "answer": "amend",
       "lemma": "amend",
       "given": [
-        1,
-        3
+        0,
+        2
       ],
       "alternates": []
     },
@@ -6503,7 +6460,7 @@
         "span": [
           "fascinated"
         ],
-        "after": "."
+        "after": " everyone in the office."
       },
       "fixedWords": [],
       "answer": "intrigued",
@@ -6644,28 +6601,6 @@
       "alternates": []
     },
     {
-      "id": "en-b2-0307",
-      "lang": "en",
-      "level": "B2",
-      "pos": "verb",
-      "prompt": {
-        "kind": "sentence",
-        "before": "The coach had to ",
-        "span": [
-          "hold back"
-        ],
-        "after": " his excitement when the young team reached the final."
-      },
-      "fixedWords": [],
-      "answer": "temper",
-      "lemma": "temper",
-      "given": [
-        0,
-        2
-      ],
-      "alternates": []
-    },
-    {
       "id": "en-b2-0308",
       "lang": "en",
       "level": "B2",
@@ -6680,28 +6615,6 @@
       "given": [
         0,
         4
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-b2-0309",
-      "lang": "en",
-      "level": "B2",
-      "pos": "verb",
-      "prompt": {
-        "kind": "sentence",
-        "before": "We tried to ",
-        "span": [
-          "creep quietly"
-        ],
-        "after": " past the sleeping dog without waking it."
-      },
-      "fixedWords": [],
-      "answer": "sneak",
-      "lemma": "sneak",
-      "given": [
-        1,
-        3
       ],
       "alternates": []
     },
@@ -7128,29 +7041,6 @@
       "lemma": "assert",
       "given": [
         1,
-        5
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-b2-0330",
-      "lang": "en",
-      "level": "B2",
-      "pos": "verb",
-      "prompt": {
-        "kind": "sentence",
-        "before": "The smoke alarm ",
-        "span": [
-          "noticed"
-        ],
-        "after": " a trace of burning in the kitchen and sounded."
-      },
-      "fixedWords": [],
-      "answer": "detected",
-      "lemma": "detect",
-      "given": [
-        0,
-        2,
         5
       ],
       "alternates": []
@@ -7807,7 +7697,7 @@
         "kind": "sentence",
         "before": "Cyclists should ",
         "span": [
-          "pay attention to"
+          "take notice of"
         ],
         "after": " the warning signs on this steep country road."
       },
@@ -8651,7 +8541,7 @@
         "kind": "sentence",
         "before": "After the match, the angry fans rushed onto the pitch to ",
         "span": [
-          "take back"
+          "get back"
         ],
         "after": " the goalposts their club had sold years ago."
       },
@@ -10329,7 +10219,7 @@
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Extremely bad or unpleasant"
+        "definition": "Causing great fear or suffering; very bad indeed"
       },
       "fixedWords": [],
       "answer": "dreadful",
@@ -10364,34 +10254,13 @@
       "alternates": []
     },
     {
-      "id": "en-b2-0477",
-      "lang": "en",
-      "level": "B2",
-      "pos": "adjective",
-      "prompt": {
-        "kind": "sentence",
-        "before": "When the teacher asked Sam to explain, he stayed completely ",
-        "span": [
-          "silent"
-        ],
-        "after": "."
-      },
-      "fixedWords": [],
-      "answer": "mute",
-      "lemma": "mute",
-      "given": [
-        2
-      ],
-      "alternates": []
-    },
-    {
       "id": "en-b2-0478",
       "lang": "en",
       "level": "B2",
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Working secretly to gather information"
+        "definition": "Done or working in secret to catch criminals or get information"
       },
       "fixedWords": [],
       "answer": "undercover",
@@ -10412,7 +10281,7 @@
         "kind": "sentence",
         "before": "Mia found it ",
         "span": [
-          "strange"
+          "doubtful"
         ],
         "after": " that Tom knew the answer before reading the question."
       },
@@ -11861,7 +11730,7 @@
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Food that remains uneaten after a meal"
+        "definition": "Remaining after the rest has been used or eaten"
       },
       "fixedWords": [],
       "answer": "leftover",
@@ -11924,7 +11793,7 @@
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Holding very strong views far outside what most people accept"
+        "definition": "Relating to beliefs far outside the mainstream"
       },
       "fixedWords": [],
       "answer": "extremist",

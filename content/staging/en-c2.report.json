@@ -257,7 +257,7 @@
   {
     "itemId": "en-c2-5196",
     "issues": [],
-    "substituted": "Losing break time is a powerful disincentive hand in homework late.",
+    "substituted": "Losing break time is a powerful disincentive to handing in homework late.",
     "patternMatches": [
       "disadvantage",
       "distributive",
@@ -266,42 +266,49 @@
   },
   {
     "itemId": "en-c2-5183",
-    "issues": [],
-    "substituted": "The harvest festival table was a cornucopia of pumpkins, plums, bread and honey.",
+    "issues": [
+      {
+        "itemId": "en-c2-5183",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5183"
+      }
+    ],
+    "substituted": "My cousin is a real hedonist: he spends every weekend chasing food, sunshine and luxury.",
     "patternMatches": [
-      "curriculum",
-      "correction",
-      "corrective",
-      "carjacking",
-      "corkscrews",
-      "correctors"
+      "weakness",
+      "feminist",
+      "feminism",
+      "deafness",
+      "leninist",
+      "sexiness",
+      "hedonism",
+      "leninism",
+      "meanness",
+      "nearness",
+      "meekness",
+      "neatness",
+      "keenness",
+      "lewdness",
+      "deepness",
+      "deftness",
+      "leanness",
+      "dearness"
     ]
   },
   {
     "itemId": "en-c2-5297",
-    "issues": [],
-    "substituted": "The note was written in a hasty scrawl that the teacher could barely read.",
+    "issues": [
+      {
+        "itemId": "en-c2-5297",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5297"
+      }
+    ],
+    "substituted": "Littering in the park is a minor misdemeanour that usually results in only a small fine.",
     "patternMatches": [
-      "series",
-      "street",
-      "spring",
-      "screen",
-      "spread",
-      "stress",
-      "survey",
-      "strike",
-      "stream",
-      "server",
-      "string",
-      "serves",
-      "script",
-      "stroke",
-      "serial",
-      "strain",
-      "scream",
-      "streak",
-      "sprint",
-      "scroll"
+      "misbehaviour"
     ]
   },
   {
@@ -309,26 +316,26 @@
     "issues": [],
     "substituted": "Choosing the trip destination caused dissension among the members of the walking club.",
     "patternMatches": [
-      "collection",
-      "protection",
-      "connection",
+      "discussion",
+      "definition",
       "depression",
-      "expression",
-      "convention",
-      "possession",
-      "impression",
-      "prevention",
-      "conversion",
-      "suspension",
-      "suggestion",
-      "perception",
-      "inspection",
-      "profession",
-      "recreation",
-      "perfection",
-      "succession",
-      "correction",
-      "aggression"
+      "dedication",
+      "delegation",
+      "discretion",
+      "decoration",
+      "disruption",
+      "domination",
+      "demolition",
+      "distortion",
+      "deposition",
+      "defamation",
+      "dispersion",
+      "detonation",
+      "devolution",
+      "derivation",
+      "desolation",
+      "dissection",
+      "divination"
     ]
   },
   {
@@ -336,26 +343,26 @@
     "issues": [],
     "substituted": "The rabbit vanished into a dense thicket of brambles behind the school field.",
     "patternMatches": [
-      "twitter",
-      "neither",
+      "teacher",
+      "species",
+      "kitchen",
       "chicken",
+      "matches",
       "cricket",
-      "trigger",
-      "bridges",
-      "painter",
-      "printer",
-      "builder",
-      "thieves",
-      "whiskey",
-      "whisper",
-      "sticker",
-      "princes",
-      "pointer",
-      "glitter",
-      "thinner",
-      "chimney",
-      "skipper",
-      "swimmer"
+      "coaches",
+      "reaches",
+      "muscles",
+      "circles",
+      "watches",
+      "touches",
+      "beaches",
+      "catches",
+      "patches",
+      "bitches",
+      "bracket",
+      "pitcher",
+      "butcher",
+      "sticker"
     ]
   },
   {
@@ -845,29 +852,36 @@
   },
   {
     "itemId": "en-c2-5306",
-    "issues": [],
-    "substituted": "The history book described a daring night sortie behind enemy lines in 1944.",
+    "issues": [
+      {
+        "itemId": "en-c2-5306",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5306"
+      }
+    ],
+    "substituted": "The toddler refused every morsel of broccoli on her plate.",
     "patternMatches": [
-      "series",
-      "street",
-      "spring",
-      "screen",
-      "spread",
-      "stress",
-      "survey",
-      "strike",
-      "stream",
-      "server",
-      "string",
-      "serves",
-      "script",
-      "stroke",
-      "serial",
-      "strain",
-      "scream",
-      "streak",
-      "sprint",
-      "scroll"
+      "former",
+      "mother",
+      "forces",
+      "wonder",
+      "coffee",
+      "movies",
+      "corner",
+      "houses",
+      "border",
+      "bodies",
+      "pocket",
+      "soccer",
+      "horses",
+      "losses",
+      "copies",
+      "worker",
+      "hockey",
+      "bother",
+      "voices",
+      "rocket"
     ]
   },
   {
@@ -1620,12 +1634,36 @@
   },
   {
     "itemId": "en-c2-5254",
-    "issues": [],
-    "substituted": "On the rocky shore we found every kind of mollusc, from mussels to sea snails.",
+    "issues": [
+      {
+        "itemId": "en-c2-5254",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5254"
+      }
+    ],
+    "substituted": "Excited fans began to jostle each other as the gates finally opened.",
     "patternMatches": [
-      "caloric",
-      "polemic",
-      "bulimic"
+      "posted",
+      "doctor",
+      "bottom",
+      "bottle",
+      "gotten",
+      "foster",
+      "hosted",
+      "routes",
+      "potter",
+      "roster",
+      "sorted",
+      "rooted",
+      "mortar",
+      "mouths",
+      "coated",
+      "vortex",
+      "dotted",
+      "soften",
+      "routed",
+      "footed"
     ]
   },
   {
@@ -2925,35 +2963,28 @@
   },
   {
     "itemId": "en-c2-5498",
-    "issues": [],
-    "substituted": "The lemon juice made everyone's mouths pucker in surprise.",
+    "issues": [
+      {
+        "itemId": "en-c2-5498",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5498"
+      }
+    ],
+    "substituted": "The coach took a tortuous mountain road with hairpin bends at every turn.",
     "patternMatches": [
-      "played",
-      "places",
-      "posted",
-      "passed",
-      "prices",
-      "placed",
-      "picked",
-      "pieces",
-      "pulled",
-      "prefer",
-      "pocket",
-      "proved",
-      "passes",
-      "phones",
-      "pushed",
-      "proven",
-      "packed",
-      "pissed",
-      "powder",
-      "plates"
+      "gorgeous",
+      "populous",
+      "wondrous",
+      "sonorous",
+      "covetous",
+      "dolorous"
     ]
   },
   {
     "itemId": "en-c2-5482",
     "issues": [],
-    "substituted": "She wrapped the baby's toy drum in a blanket to muffle its sound during the long train journey.",
+    "substituted": "He pressed a pillow against the wall to muffle the noise from the party next door.",
     "patternMatches": [
       "muscle",
       "pursue",
@@ -3029,7 +3060,7 @@
   {
     "itemId": "en-c2-5497",
     "issues": [],
-    "substituted": "A rusty nail was protruding of the old fence, so we reported it.",
+    "substituted": "A rusty nail was protruding from the old fence, so we reported it.",
     "patternMatches": [
       "continuing",
       "containing",
@@ -3070,18 +3101,28 @@
   },
   {
     "itemId": "en-c2-5425",
-    "issues": [],
-    "substituted": "Undercover officers pretended to be buyers so they could entrap the gang selling stolen tickets.",
+    "issues": [
+      {
+        "itemId": "en-c2-5425",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5425"
+      }
+    ],
+    "substituted": "The doctor advised the family to move to a salubrious climate than the damp, foggy city they left behind.",
     "patternMatches": [
-      "eating",
-      "extend",
-      "enters",
-      "esteem",
-      "entail",
-      "entice",
-      "extort",
-      "extols",
-      "entomb"
+      "marvellous",
+      "harmonious",
+      "capricious",
+      "fallacious",
+      "fastidious",
+      "lascivious",
+      "calamitous",
+      "gangrenous",
+      "languorous",
+      "malodorous",
+      "factitious",
+      "cadaverous"
     ]
   },
   {
@@ -3879,29 +3920,17 @@
   },
   {
     "itemId": "en-c2-5377",
-    "issues": [],
-    "substituted": "Everyone was shocked when City clobbered us eleven-nil in the final.",
+    "issues": [
+      {
+        "itemId": "en-c2-5377",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5377"
+      }
+    ],
+    "substituted": "The school used every social media platform it could to publicise the charity concert next month.",
     "patternMatches": [
-      "completed",
-      "chartered",
-      "conquered",
-      "completes",
-      "complexes",
-      "countered",
-      "clustered",
-      "channeled",
-      "cluttered",
-      "checkered",
-      "counseled",
-      "crocheted",
-      "chequered",
-      "clambered",
-      "chastened",
-      "chickened",
-      "clattered",
-      "cheapened",
-      "complexed",
-      "concreted"
+      "subsidise"
     ]
   },
   {
@@ -4649,29 +4678,23 @@
   },
   {
     "itemId": "en-c2-5444",
-    "issues": [],
-    "substituted": "Mr Okafor furrows his brow as he reads the confusing exam question.",
+    "issues": [
+      {
+        "itemId": "en-c2-5444",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5444"
+      }
+    ],
+    "substituted": "The security guard caught a shoplifter hiding a phone charger under his jacket.",
     "patternMatches": [
-      "parties",
-      "markets",
-      "targets",
-      "gardens",
-      "borders",
-      "strikes",
-      "springs",
-      "carries",
-      "worries",
-      "circles",
-      "streams",
-      "arrives",
-      "careers",
-      "forests",
-      "corners",
-      "murders",
-      "strings",
-      "screens",
-      "surveys",
-      "pirates"
+      "prosecutor",
+      "proprietor",
+      "progenitor",
+      "procurator",
+      "prospector",
+      "woodcutter",
+      "protractor"
     ]
   },
   {
@@ -7410,12 +7433,6 @@
     ]
   },
   {
-    "itemId": "en-c2-5080",
-    "issues": [],
-    "substituted": "My uncle is so misanthropic that he refuses every invitation to family gatherings.",
-    "patternMatches": []
-  },
-  {
     "itemId": "en-c2-5008",
     "issues": [],
     "substituted": "We arrived at the campsite completely bedraggled after the sudden storm.",
@@ -7436,29 +7453,36 @@
   },
   {
     "itemId": "en-c2-5084",
-    "issues": [],
-    "substituted": null,
+    "issues": [
+      {
+        "itemId": "en-c2-5084",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5084"
+      }
+    ],
+    "substituted": "Suffering from a terrible cold, the actor croaked his few lines during the rehearsal.",
     "patternMatches": [
-      "funny",
-      "lucky",
-      "pussy",
-      "sunny",
-      "bully",
-      "juicy",
-      "dusty",
-      "fuzzy",
-      "funky",
-      "rusty",
-      "curly",
-      "muddy",
-      "furry",
-      "buggy",
-      "bulky",
-      "husky",
-      "nutty",
-      "bumpy",
-      "curvy",
-      "puffy"
+      "written",
+      "created",
+      "arrived",
+      "ordered",
+      "dropped",
+      "treated",
+      "granted",
+      "trained",
+      "premier",
+      "dressed",
+      "printed",
+      "crossed",
+      "creates",
+      "trigger",
+      "trusted",
+      "trapped",
+      "proceed",
+      "wrapped",
+      "pressed",
+      "arrives"
     ]
   },
   {
@@ -7593,13 +7617,20 @@
   },
   {
     "itemId": "en-c2-5023",
-    "issues": [],
-    "substituted": "The older students were disdainful of the new beginners' team.",
+    "issues": [
+      {
+        "itemId": "en-c2-5023",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5023"
+      }
+    ],
+    "substituted": "It is arguable whether homework actually improves results at school.",
     "patternMatches": [
-      "villainous",
-      "bituminous",
-      "libidinous",
-      "diaphanous"
+      "probable",
+      "credible",
+      "provable",
+      "writable"
     ]
   },
   {
@@ -7937,26 +7968,26 @@
     "issues": [],
     "substituted": "After the thaw, the pitch was so slushy that the match had to be cancelled.",
     "patternMatches": [
-      "faulty",
-      "fluffy",
-      "grumpy",
-      "clumsy",
+      "steady",
+      "skinny",
+      "sticky",
+      "sleepy",
+      "speedy",
+      "sloppy",
+      "sweaty",
+      "spooky",
+      "sneaky",
+      "stormy",
       "sturdy",
-      "chubby",
-      "chunky",
-      "blurry",
-      "fruity",
-      "bouncy",
-      "touchy",
-      "stuffy",
-      "trusty",
-      "crusty",
-      "clunky",
-      "grubby",
-      "scurvy",
-      "stubby",
-      "plucky",
-      "jaunty"
+      "smelly",
+      "shabby",
+      "smokey",
+      "shaggy",
+      "starry",
+      "sugary",
+      "sporty",
+      "steamy",
+      "shoddy"
     ]
   },
   {
@@ -8481,7 +8512,14 @@
   },
   {
     "itemId": "en-c2-5297",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5297",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5297"
+      }
+    ],
     "substituted": "Littering in the park is a minor misdemeanour that usually results in only a small fine.",
     "patternMatches": [
       "misbehaviour"
@@ -8568,7 +8606,14 @@
   },
   {
     "itemId": "en-c2-5306",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5306",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5306"
+      }
+    ],
     "substituted": "The toddler refused every morsel of broccoli on her plate.",
     "patternMatches": [
       "former",
@@ -8995,7 +9040,7 @@
   {
     "itemId": "en-c2-5233",
     "issues": [],
-    "substituted": "The teacher sent Priya out of the class for her insolence.",
+    "substituted": "The head teacher was shocked by the pupil's outright insolence.",
     "patternMatches": [
       "challenge",
       "ambulance",
@@ -9250,7 +9295,14 @@
   },
   {
     "itemId": "en-c2-5183",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5183",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5183"
+      }
+    ],
     "substituted": "My cousin is a real hedonist: he spends every weekend chasing food, sunshine and luxury.",
     "patternMatches": [
       "weakness",
@@ -9510,7 +9562,14 @@
   },
   {
     "itemId": "en-c2-5444",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5444",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5444"
+      }
+    ],
     "substituted": "The security guard caught a shoplifter hiding a phone charger under his jacket.",
     "patternMatches": [
       "prosecutor",
@@ -10293,7 +10352,14 @@
   },
   {
     "itemId": "en-c2-5084",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5084",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5084"
+      }
+    ],
     "substituted": "Suffering from a terrible cold, the actor croaked his few lines during the rehearsal.",
     "patternMatches": [
       "written",
@@ -10766,7 +10832,14 @@
   },
   {
     "itemId": "en-c2-5377",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5377",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5377"
+      }
+    ],
     "substituted": "The school used every social media platform it could to publicise the charity concert next month.",
     "patternMatches": [
       "subsidise"
@@ -11151,7 +11224,14 @@
   },
   {
     "itemId": "en-c2-5254",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5254",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5254"
+      }
+    ],
     "substituted": "Excited fans began to jostle each other as the gates finally opened.",
     "patternMatches": [
       "posted",
@@ -11627,7 +11707,14 @@
   },
   {
     "itemId": "en-c2-5023",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5023",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5023"
+      }
+    ],
     "substituted": "It is arguable whether homework actually improves results at school.",
     "patternMatches": [
       "probable",
@@ -12129,7 +12216,14 @@
   },
   {
     "itemId": "en-c2-5425",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5425",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5425"
+      }
+    ],
     "substituted": "The doctor advised the family to move to a salubrious climate than the damp, foggy city they left behind.",
     "patternMatches": [
       "marvellous",
@@ -12322,7 +12416,14 @@
   },
   {
     "itemId": "en-c2-5498",
-    "issues": [],
+    "issues": [
+      {
+        "itemId": "en-c2-5498",
+        "code": "near-duplicate",
+        "severity": "flag",
+        "message": "100% like en-c2-5498"
+      }
+    ],
     "substituted": "The coach took a tortuous mountain road with hairpin bends at every turn.",
     "patternMatches": [
       "gorgeous",

@@ -145,6 +145,21 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 - **Review**: 19 flagged plus 54 random. All flagged good. Random sample: 3 "fix" (5.6%): *concealment* in an awkward construction, *dribbles* with a wrong clue ("lets fall"), *curate* (definition correct, word felt obscure). Comments on long or doubled clues and on *huntsman* sharing a root with *hunter*.
 - **Lessons applied before B2/C2**: prompt en-draft v4 (spans at most 4 words, alternatives single words, the answer must be the natural word), screen v2 (no culture-specific titles), checks for span length and for roots built on a shared common word (hunt-er/hunts-man), English a/an set from the clue (models wrote the article for the answer: "an [curse]" for *obscenity*).
 - **Bank**: `content/en/c1.json`, 594 items after removing the 3 "fix" items and repairing, in place, the 20 that failed the new checks (17 fixed, 3 dropped). Ids en-c1-0001 to en-c1-0597 with gaps where items were dropped; ids are permanent from first play.
+- **Solver v3 re-read**: 590 items after the B2 lessons below were run over C1 too (`fix --solve`).
+
+### English B2 bank (frozen 19 Oct 2026)
+
+- **Run**: 800 candidates → screen kept 616 → 551 passed first time → 52 of 65 repaired → capped at 600. Spend $0.08.
+- **Review**: 32 flagged plus 57 random. Fix rate about 7%, mostly a span that takes the wrong preposition or verb pattern for the answer ("hinted to"). The blind solver had read those sentences without complaint.
+- **Lessons applied**: solver prompt v3 checks that the answer can replace the span word for word (preposition, part of speech, verb pattern) and reports a `clueIssue`; it no longer counts the American spelling of the answer as a rival. Re-read over B2 and C1 with `fix --solve`, which repairs in place and keeps ids.
+- **Bank**: `content/en/b2.json`, 595 items after review, 589 after the v3 re-read.
+
+### English C2 (in review)
+
+- **Runs**: first run 800 → 552 screened in → 527 kept, too many odd derivatives. Screen v3 (drops easy derivatives and compounds) and a top-up run filled it to 600.
+- **Bug found and fixed**: the top-up numbered its provisional ids from 5000 again, colliding with 146 kept items; the id-keyed repair then overwrote 10 of them. Rebuilt from the pre-top-up staging, top-up items renumbered from en-c2-7000, review list remapped. `runLevel` now numbers past the highest kept id, and `assertUnique` (no duplicate id or lemma) runs before staging is saved, around every repair, and at freeze.
+- **Staging**: `content/staging/en-c2.json`, 599 items after the v3 re-read (10 fixed, 1 dropped). Review: 60 flagged (mostly `solve-missed`, the solver not finding a rare answer) plus 55 random, in Grist table Review_EN_C2.
+- **Cross-bank check**: no lemma shared between C1 (590), B2 (589) and C2 (599).
 
 ### Staging
 

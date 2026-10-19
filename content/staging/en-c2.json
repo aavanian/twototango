@@ -1032,7 +1032,7 @@
         "before": "After three years of practice, the driving test was ",
         "determiner": "a",
         "span": [
-          "piece of cake"
+          "walk in the park"
         ],
         "after": " for Nadia."
       },
@@ -4039,7 +4039,7 @@
         "kind": "sentence",
         "before": "Everyone was shocked when City ",
         "span": [
-          "soundly beat"
+          "thoroughly defeated"
         ],
         "after": " us eleven-nil in the final."
       },
@@ -4047,9 +4047,9 @@
       "answer": "clobbered",
       "lemma": "clobber",
       "given": [
-        0,
+        1,
         5,
-        7
+        8
       ],
       "alternates": []
     },
@@ -7790,7 +7790,7 @@
       "pos": "adjective",
       "prompt": {
         "kind": "definition",
-        "definition": "Very hard and showing no emotion or pity"
+        "definition": "Uncompromisingly tough and showing no sympathy"
       },
       "fixedWords": [],
       "answer": "flinty",
@@ -8058,7 +8058,7 @@
         "kind": "sentence",
         "before": "The older students were ",
         "span": [
-          "showing contempt"
+          "scornful"
         ],
         "after": " of the new beginners' team."
       },
@@ -8680,7 +8680,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5272",
+      "id": "en-c2-7000",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8701,7 +8701,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5168",
+      "id": "en-c2-7001",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8719,7 +8719,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5415",
+      "id": "en-c2-7002",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8741,7 +8741,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5175",
+      "id": "en-c2-7003",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8763,7 +8763,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5088",
+      "id": "en-c2-7004",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8785,7 +8785,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5491",
+      "id": "en-c2-7005",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8808,7 +8808,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5116",
+      "id": "en-c2-7006",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8830,7 +8830,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5057",
+      "id": "en-c2-7007",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8848,7 +8848,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5555",
+      "id": "en-c2-7008",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8872,7 +8872,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5299",
+      "id": "en-c2-7009",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8890,7 +8890,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5442",
+      "id": "en-c2-7010",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8909,7 +8909,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5366",
+      "id": "en-c2-7011",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8936,7 +8936,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5441",
+      "id": "en-c2-7012",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8944,7 +8944,7 @@
         "kind": "sentence",
         "before": "Grandpa wore his old ",
         "span": [
-          "fleece-lined coat"
+          "shearling coat"
         ],
         "after": " whenever he walked the dog in winter."
       },
@@ -8959,7 +8959,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5539",
+      "id": "en-c2-7013",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -8978,7 +8978,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5297",
+      "id": "en-c2-7014",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9002,7 +9002,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5082",
+      "id": "en-c2-7015",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9027,7 +9027,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5341",
+      "id": "en-c2-7016",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9051,7 +9051,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5542",
+      "id": "en-c2-7017",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9075,7 +9075,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5443",
+      "id": "en-c2-7018",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9097,7 +9097,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5306",
+      "id": "en-c2-7019",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9119,7 +9119,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5385",
+      "id": "en-c2-7020",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9138,7 +9138,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5554",
+      "id": "en-c2-7021",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9160,7 +9160,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5288",
+      "id": "en-c2-7022",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9184,7 +9184,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5139",
+      "id": "en-c2-7023",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9208,7 +9208,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5095",
+      "id": "en-c2-7024",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9231,7 +9231,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5371",
+      "id": "en-c2-7025",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9255,7 +9255,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5486",
+      "id": "en-c2-7026",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9273,7 +9273,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5505",
+      "id": "en-c2-7027",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9295,7 +9295,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5342",
+      "id": "en-c2-7028",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9313,7 +9313,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5535",
+      "id": "en-c2-7029",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9335,7 +9335,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5112",
+      "id": "en-c2-7030",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9358,7 +9358,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5548",
+      "id": "en-c2-7031",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9382,7 +9382,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5312",
+      "id": "en-c2-7032",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9405,7 +9405,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5383",
+      "id": "en-c2-7033",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9429,7 +9429,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5132",
+      "id": "en-c2-7034",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9452,7 +9452,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5365",
+      "id": "en-c2-7035",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9472,7 +9472,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5260",
+      "id": "en-c2-7036",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9494,7 +9494,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5303",
+      "id": "en-c2-7037",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9516,7 +9516,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5233",
+      "id": "en-c2-7038",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9539,7 +9539,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5423",
+      "id": "en-c2-7039",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9558,7 +9558,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5534",
+      "id": "en-c2-7040",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9581,7 +9581,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5406",
+      "id": "en-c2-7041",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9604,7 +9604,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5071",
+      "id": "en-c2-7042",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9628,7 +9628,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5344",
+      "id": "en-c2-7043",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9647,7 +9647,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5550",
+      "id": "en-c2-7044",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9670,7 +9670,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5125",
+      "id": "en-c2-7045",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9690,7 +9690,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5544",
+      "id": "en-c2-7046",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9714,7 +9714,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5338",
+      "id": "en-c2-7047",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9733,7 +9733,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5268",
+      "id": "en-c2-7048",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9756,7 +9756,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5237",
+      "id": "en-c2-7049",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9780,16 +9780,16 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5393",
+      "id": "en-c2-7050",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
       "prompt": {
         "kind": "sentence",
         "before": "The two rival clubs finally reached ",
-        "determiner": "an",
+        "determiner": "a",
         "span": [
-          "improved relations"
+          "renewal of friendship"
         ],
         "after": " after years of refusing to speak."
       },
@@ -9805,7 +9805,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5063",
+      "id": "en-c2-7051",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9824,7 +9824,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5195",
+      "id": "en-c2-7052",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9846,7 +9846,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5183",
+      "id": "en-c2-7053",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9869,7 +9869,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5440",
+      "id": "en-c2-7054",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9894,7 +9894,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5352",
+      "id": "en-c2-7055",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9918,7 +9918,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5552",
+      "id": "en-c2-7056",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9941,7 +9941,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5047",
+      "id": "en-c2-7057",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9958,7 +9958,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5478",
+      "id": "en-c2-7058",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -9981,7 +9981,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5391",
+      "id": "en-c2-7059",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10003,7 +10003,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5058",
+      "id": "en-c2-7060",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10025,7 +10025,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5072",
+      "id": "en-c2-7061",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10049,7 +10049,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5115",
+      "id": "en-c2-7062",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10067,7 +10067,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5422",
+      "id": "en-c2-7063",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10089,7 +10089,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5444",
+      "id": "en-c2-7064",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10113,7 +10113,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5405",
+      "id": "en-c2-7065",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10136,7 +10136,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5389",
+      "id": "en-c2-7066",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10158,7 +10158,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5022",
+      "id": "en-c2-7067",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10180,7 +10180,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5384",
+      "id": "en-c2-7068",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10204,7 +10204,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5471",
+      "id": "en-c2-7069",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10229,7 +10229,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5328",
+      "id": "en-c2-7070",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10252,7 +10252,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5140",
+      "id": "en-c2-7071",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10272,7 +10272,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5311",
+      "id": "en-c2-7072",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10297,7 +10297,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5263",
+      "id": "en-c2-7073",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10316,7 +10316,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5157",
+      "id": "en-c2-7074",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10339,7 +10339,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5295",
+      "id": "en-c2-7075",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10361,7 +10361,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5281",
+      "id": "en-c2-7076",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10380,7 +10380,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5541",
+      "id": "en-c2-7077",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10404,7 +10404,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5061",
+      "id": "en-c2-7078",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10423,7 +10423,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5485",
+      "id": "en-c2-7079",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10446,7 +10446,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5190",
+      "id": "en-c2-7080",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10468,7 +10468,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5102",
+      "id": "en-c2-7081",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10490,7 +10490,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5317",
+      "id": "en-c2-7082",
       "lang": "en",
       "level": "C2",
       "pos": "noun",
@@ -10513,7 +10513,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5056",
+      "id": "en-c2-7083",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10535,7 +10535,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5353",
+      "id": "en-c2-7084",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10561,7 +10561,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5110",
+      "id": "en-c2-7085",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10584,7 +10584,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5042",
+      "id": "en-c2-7086",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10607,7 +10607,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5064",
+      "id": "en-c2-7087",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10631,7 +10631,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5449",
+      "id": "en-c2-7088",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10649,7 +10649,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5447",
+      "id": "en-c2-7089",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10673,7 +10673,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5073",
+      "id": "en-c2-7090",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10696,7 +10696,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5155",
+      "id": "en-c2-7091",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10718,7 +10718,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5018",
+      "id": "en-c2-7092",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10736,7 +10736,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5532",
+      "id": "en-c2-7093",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10744,7 +10744,7 @@
         "kind": "sentence",
         "before": "Leo could hardly wait to ",
         "span": [
-          "open"
+          "undo the paper on"
         ],
         "after": " his birthday presents on Saturday morning."
       },
@@ -10758,7 +10758,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5468",
+      "id": "en-c2-7094",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10780,7 +10780,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5324",
+      "id": "en-c2-7095",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10802,7 +10802,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5093",
+      "id": "en-c2-7096",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10825,7 +10825,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5403",
+      "id": "en-c2-7097",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10848,7 +10848,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5331",
+      "id": "en-c2-7098",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10867,7 +10867,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5114",
+      "id": "en-c2-7099",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10885,7 +10885,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5397",
+      "id": "en-c2-7100",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10906,7 +10906,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5490",
+      "id": "en-c2-7101",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10928,7 +10928,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5483",
+      "id": "en-c2-7102",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10951,7 +10951,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5084",
+      "id": "en-c2-7103",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10973,7 +10973,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5275",
+      "id": "en-c2-7104",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -10996,7 +10996,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5174",
+      "id": "en-c2-7105",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11018,7 +11018,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5128",
+      "id": "en-c2-7106",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11041,7 +11041,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5230",
+      "id": "en-c2-7107",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11064,7 +11064,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5438",
+      "id": "en-c2-7108",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11086,7 +11086,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5329",
+      "id": "en-c2-7109",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11109,7 +11109,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5557",
+      "id": "en-c2-7110",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11131,7 +11131,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5327",
+      "id": "en-c2-7111",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11155,7 +11155,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5124",
+      "id": "en-c2-7112",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11179,7 +11179,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5012",
+      "id": "en-c2-7113",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11202,7 +11202,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5021",
+      "id": "en-c2-7114",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11225,7 +11225,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5477",
+      "id": "en-c2-7115",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11247,7 +11247,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5048",
+      "id": "en-c2-7116",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11269,7 +11269,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5020",
+      "id": "en-c2-7117",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11291,7 +11291,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5252",
+      "id": "en-c2-7118",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11313,7 +11313,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5496",
+      "id": "en-c2-7119",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11335,7 +11335,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5499",
+      "id": "en-c2-7120",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11357,7 +11357,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5335",
+      "id": "en-c2-7121",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11381,7 +11381,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5201",
+      "id": "en-c2-7122",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11399,7 +11399,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5163",
+      "id": "en-c2-7123",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11422,7 +11422,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5377",
+      "id": "en-c2-7124",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11445,7 +11445,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5070",
+      "id": "en-c2-7125",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11467,7 +11467,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5104",
+      "id": "en-c2-7126",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11489,7 +11489,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5545",
+      "id": "en-c2-7127",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11512,7 +11512,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5452",
+      "id": "en-c2-7128",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11535,7 +11535,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5105",
+      "id": "en-c2-7129",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11559,7 +11559,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5426",
+      "id": "en-c2-7130",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11582,25 +11582,25 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5368",
+      "id": "en-c2-7131",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
       "prompt": {
         "kind": "definition",
-        "definition": "To stop something happening by acting first"
+        "definition": "To forestall an event by taking advance action"
       },
       "fixedWords": [],
       "answer": "preempt",
       "lemma": "preempt",
       "given": [
-        0,
-        2
+        1,
+        3
       ],
       "alternates": []
     },
     {
-      "id": "en-c2-5224",
+      "id": "en-c2-7132",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11619,7 +11619,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5015",
+      "id": "en-c2-7133",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11642,7 +11642,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5199",
+      "id": "en-c2-7134",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11664,7 +11664,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5166",
+      "id": "en-c2-7135",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11686,7 +11686,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5043",
+      "id": "en-c2-7136",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11708,7 +11708,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5332",
+      "id": "en-c2-7137",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11731,7 +11731,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5507",
+      "id": "en-c2-7138",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11749,7 +11749,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5307",
+      "id": "en-c2-7139",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11771,17 +11771,17 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5409",
+      "id": "en-c2-7140",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
       "prompt": {
         "kind": "sentence",
-        "before": "The lifeguard used a defibrillator to ",
+        "before": "The medical team worked tirelessly to ",
         "span": [
-          "bring round"
+          "bring back"
         ],
-        "after": " the swimmer pulled from the pool."
+        "after": " the patient after the cardiac arrest."
       },
       "fixedWords": [],
       "answer": "resuscitate",
@@ -11795,7 +11795,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5456",
+      "id": "en-c2-7141",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11817,7 +11817,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5254",
+      "id": "en-c2-7142",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11840,17 +11840,17 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5446",
+      "id": "en-c2-7143",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
       "prompt": {
         "kind": "sentence",
-        "before": "The grapes left in the sun began to ",
+        "before": "Without water, the delicate seedlings began to ",
         "span": [
-          "dry out and wrinkle"
+          "dry up"
         ],
-        "after": " until they looked like raisins."
+        "after": " in the intense heat of the greenhouse."
       },
       "fixedWords": [],
       "answer": "shrivel",
@@ -11862,7 +11862,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5428",
+      "id": "en-c2-7144",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11884,7 +11884,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5094",
+      "id": "en-c2-7145",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11906,7 +11906,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5109",
+      "id": "en-c2-7146",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11924,7 +11924,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5000",
+      "id": "en-c2-7147",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11943,7 +11943,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5036",
+      "id": "en-c2-7148",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11965,7 +11965,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5039",
+      "id": "en-c2-7149",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -11988,7 +11988,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5453",
+      "id": "en-c2-7150",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -12010,7 +12010,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5396",
+      "id": "en-c2-7151",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -12028,7 +12028,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5001",
+      "id": "en-c2-7152",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -12051,7 +12051,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5091",
+      "id": "en-c2-7153",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -12070,7 +12070,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5086",
+      "id": "en-c2-7154",
       "lang": "en",
       "level": "C2",
       "pos": "verb",
@@ -12093,7 +12093,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5470",
+      "id": "en-c2-7155",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12111,7 +12111,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5469",
+      "id": "en-c2-7156",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12135,7 +12135,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5046",
+      "id": "en-c2-7157",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12157,7 +12157,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5523",
+      "id": "en-c2-7158",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12176,7 +12176,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5461",
+      "id": "en-c2-7159",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12199,7 +12199,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5261",
+      "id": "en-c2-7160",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12223,7 +12223,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5488",
+      "id": "en-c2-7161",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12246,7 +12246,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5412",
+      "id": "en-c2-7162",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12264,7 +12264,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5529",
+      "id": "en-c2-7163",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12283,7 +12283,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5023",
+      "id": "en-c2-7164",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12306,7 +12306,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5013",
+      "id": "en-c2-7165",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12329,7 +12329,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5519",
+      "id": "en-c2-7166",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12353,7 +12353,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5414",
+      "id": "en-c2-7167",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12371,7 +12371,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5340",
+      "id": "en-c2-7168",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12395,7 +12395,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5357",
+      "id": "en-c2-7169",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12413,7 +12413,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5516",
+      "id": "en-c2-7170",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12436,7 +12436,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5137",
+      "id": "en-c2-7171",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12461,7 +12461,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5343",
+      "id": "en-c2-7172",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12484,7 +12484,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5135",
+      "id": "en-c2-7173",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12508,7 +12508,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5450",
+      "id": "en-c2-7174",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12531,7 +12531,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5257",
+      "id": "en-c2-7175",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12554,7 +12554,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5008",
+      "id": "en-c2-7176",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12576,7 +12576,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5075",
+      "id": "en-c2-7177",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12601,7 +12601,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5473",
+      "id": "en-c2-7178",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12623,7 +12623,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5494",
+      "id": "en-c2-7179",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12643,7 +12643,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5153",
+      "id": "en-c2-7180",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12661,7 +12661,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5514",
+      "id": "en-c2-7181",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12685,7 +12685,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5079",
+      "id": "en-c2-7182",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12709,7 +12709,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5433",
+      "id": "en-c2-7183",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12732,7 +12732,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5053",
+      "id": "en-c2-7184",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12754,7 +12754,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5293",
+      "id": "en-c2-7185",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12773,7 +12773,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5236",
+      "id": "en-c2-7186",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12797,7 +12797,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5489",
+      "id": "en-c2-7187",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12815,7 +12815,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5373",
+      "id": "en-c2-7188",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12838,7 +12838,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5148",
+      "id": "en-c2-7189",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12857,30 +12857,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5547",
-      "lang": "en",
-      "level": "C2",
-      "pos": "adjective",
-      "prompt": {
-        "kind": "sentence",
-        "before": "The students were ",
-        "span": [
-          "loud"
-        ],
-        "after": " in their demands for a longer lunch break."
-      },
-      "fixedWords": [],
-      "answer": "vociferous",
-      "lemma": "vociferous",
-      "given": [
-        1,
-        7,
-        9
-      ],
-      "alternates": []
-    },
-    {
-      "id": "en-c2-5218",
+      "id": "en-c2-7191",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12903,7 +12880,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5437",
+      "id": "en-c2-7192",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12926,7 +12903,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5241",
+      "id": "en-c2-7193",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12949,7 +12926,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5425",
+      "id": "en-c2-7194",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12973,7 +12950,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5294",
+      "id": "en-c2-7195",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -12997,7 +12974,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5515",
+      "id": "en-c2-7196",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13019,7 +12996,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5381",
+      "id": "en-c2-7197",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13039,7 +13016,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5314",
+      "id": "en-c2-7198",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13061,7 +13038,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5287",
+      "id": "en-c2-7199",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13084,7 +13061,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5536",
+      "id": "en-c2-7200",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13107,7 +13084,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5204",
+      "id": "en-c2-7201",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13131,7 +13108,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5538",
+      "id": "en-c2-7202",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13153,7 +13130,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5476",
+      "id": "en-c2-7203",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13176,7 +13153,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5248",
+      "id": "en-c2-7204",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13199,7 +13176,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5498",
+      "id": "en-c2-7205",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",
@@ -13223,7 +13200,7 @@
       "alternates": []
     },
     {
-      "id": "en-c2-5280",
+      "id": "en-c2-7206",
       "lang": "en",
       "level": "C2",
       "pos": "adjective",

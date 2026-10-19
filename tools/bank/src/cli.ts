@@ -215,7 +215,7 @@ function reviewRows(args: string[]): void {
   const bank = Bank.parse(JSON.parse(readFileSync(resolve(REPO, "content/staging", `${t}.json`), "utf8")));
   const review = JSON.parse(readFileSync(resolve(REPO, "content/staging", `${t}.review.json`), "utf8")) as { itemId: string; why: string }[];
   const byId = new Map(bank.items.map((i) => [i.id, i]));
-  const rows = review.map(({ itemId, why }) => {
+  const rows = review.filter(({ itemId }) => byId.has(itemId)).map(({ itemId, why }) => {
     const item = byId.get(itemId)!;
     const p = item.prompt;
     const shown = p.kind === "sentence" ? `${p.before}${p.determiner ? `${p.determiner} ` : ""}**${p.span.join("/")}**${p.after}` : `*${p.definition}*`;
