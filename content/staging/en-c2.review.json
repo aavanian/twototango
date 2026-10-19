@@ -1,0 +1,562 @@
+[
+  {
+    "itemId": "en-c2-5328",
+    "why": "solve-missed: solver didn't find \"twosome\" (said: foursome)"
+  },
+  {
+    "itemId": "en-c2-5193",
+    "why": "solve-missed: solver didn't find \"discolouration\" (said: discoloration)"
+  },
+  {
+    "itemId": "en-c2-5222",
+    "why": "solve-missed: solver didn't find \"hankering\" (said: yearning)"
+  },
+  {
+    "itemId": "en-c2-5262",
+    "why": "solve-missed: solver didn't find \"niceness\" (said: kindliness)"
+  },
+  {
+    "itemId": "en-c2-5201",
+    "why": "solve-missed: solver didn't find \"draftsman\" (said: draughtsman)"
+  },
+  {
+    "itemId": "en-c2-5323",
+    "why": "solve-missed: solver didn't find \"timberland\" (said: heathland)"
+  },
+  {
+    "itemId": "en-c2-5256",
+    "why": "solve-missed: solver didn't find \"mutuality\" (said: reciprocity)"
+  },
+  {
+    "itemId": "en-c2-5225",
+    "why": "solve-missed: solver didn't find \"hodgepodge\" (said: conglomerate, convergence)"
+  },
+  {
+    "itemId": "en-c2-5292",
+    "why": "solve-missed: solver didn't find \"retread\" (said: replica, reprise)"
+  },
+  {
+    "itemId": "en-c2-5299",
+    "why": "solve-missed: solver didn't find \"selflessness\" (said: benevolence)"
+  },
+  {
+    "itemId": "en-c2-5285",
+    "why": "solve-missed: solver didn't find \"rawness\" (said: frankness, openness, candour, directness, sincerity, bluntness)"
+  },
+  {
+    "itemId": "en-c2-5252",
+    "why": "solve-missed: solver didn't find \"miscellany\" (said: melange, medley)"
+  },
+  {
+    "itemId": "en-c2-5271",
+    "why": "solve-missed: solver didn't find \"overabundance\" (said: abundance)"
+  },
+  {
+    "itemId": "en-c2-5342",
+    "why": "solve-missed: solver didn't find \"worldliness\" (said: sophistication)"
+  },
+  {
+    "itemId": "en-c2-5212",
+    "why": "solve-missed: solver didn't find \"fierceness\" (said: vehemence)"
+  },
+  {
+    "itemId": "en-c2-5199",
+    "why": "solve-missed: solver didn't find \"downswing\" (said: downturn, doldrums)"
+  },
+  {
+    "itemId": "en-c2-5166",
+    "why": "us-spelling: \"filed\" → British \"filled\""
+  },
+  {
+    "itemId": "en-c2-5330",
+    "why": "solve-missed: solver didn't find \"unbelief\" (said: incredulity)"
+  },
+  {
+    "itemId": "en-c2-5267",
+    "why": "us-spelling: \"carer\" → British \"carre\""
+  },
+  {
+    "itemId": "en-c2-5288",
+    "why": "solve-missed: solver didn't find \"rejoinder\" (said: repartee, retort, riposte, comeback, witticism, sally)"
+  },
+  {
+    "itemId": "en-c2-5277",
+    "why": "solve-missed: solver didn't find \"pith\" (said: purport, point)"
+  },
+  {
+    "itemId": "en-c2-5246",
+    "why": "solve-missed: solver didn't find \"malleability\" (said: plasticity)"
+  },
+  {
+    "itemId": "en-c2-5291",
+    "why": "solve-missed: solver didn't find \"reticence\" (said: defensiveness)"
+  },
+  {
+    "itemId": "en-c2-5317",
+    "why": "solve-missed: solver didn't find \"sympathiser\" (said: supporter)"
+  },
+  {
+    "itemId": "en-c2-5313",
+    "why": "solve-missed: solver didn't find \"superhighway\" (said: expressway)"
+  },
+  {
+    "itemId": "en-c2-5171",
+    "why": "solve-missed: solver didn't find \"butchery\" (said: slaughter)"
+  },
+  {
+    "itemId": "en-c2-5175",
+    "why": "solve-missed: solver didn't find \"changeover\" (said: conversion)"
+  },
+  {
+    "itemId": "en-c2-5217",
+    "why": "solve-missed: solver didn't find \"frivolity\" (said: tomfoolery, jollity)"
+  },
+  {
+    "itemId": "en-c2-5176",
+    "why": "solve-missed: solver didn't find \"chastisement\" (said: castigation, upbraiding, reprimand)"
+  },
+  {
+    "itemId": "en-c2-5333",
+    "why": "near-duplicate: 60% like en-c2-5228"
+  },
+  {
+    "itemId": "en-c2-5223",
+    "why": "solve-missed: solver didn't find \"harangue\" (said: castigation, admonition)"
+  },
+  {
+    "itemId": "en-c2-5165",
+    "why": "solve-missed: solver didn't find \"backwash\" (said: wake, wash)"
+  },
+  {
+    "itemId": "en-c2-5226",
+    "why": "solve-missed: solver didn't find \"holdup\" (said: hold-up, holdback)"
+  },
+  {
+    "itemId": "en-c2-5268",
+    "why": "solve-missed: solver didn't find \"objector\" (said: dissenter)"
+  },
+  {
+    "itemId": "en-c2-5335",
+    "why": "solve-missed: solver didn't find \"wallop\" (said: power, vigour)"
+  },
+  {
+    "itemId": "en-c2-5255",
+    "why": "solve-missed: solver didn't find \"mortification\" (said: humiliation)"
+  },
+  {
+    "itemId": "en-c2-5399",
+    "why": "solve-missed: solver didn't find \"defiled\" (said: desecrated)"
+  },
+  {
+    "itemId": "en-c2-5517",
+    "why": "solve-missed: solver didn't find \"riles\" (said: irks)"
+  },
+  {
+    "itemId": "en-c2-5437",
+    "why": "solve-missed: solver didn't find \"extrapolated\" (said: extrapolate)"
+  },
+  {
+    "itemId": "en-c2-5378",
+    "why": "solve-missed: solver didn't find \"coalesced\" (said: coalesce)"
+  },
+  {
+    "itemId": "en-c2-5438",
+    "why": "solve-missed: solver didn't find \"fascinate\" (said: engross)"
+  },
+  {
+    "itemId": "en-c2-5408",
+    "why": "solve-missed: solver didn't find \"disbelieved\" (said: dismissed)"
+  },
+  {
+    "itemId": "en-c2-5541",
+    "why": "solve-missed: solver didn't find \"terrorised\" (said: browbeat)"
+  },
+  {
+    "itemId": "en-c2-5366",
+    "why": "solve-missed: solver didn't find \"blustering\" (said: complaining)"
+  },
+  {
+    "itemId": "en-c2-5495",
+    "why": "solve-missed: solver didn't find \"preening\" (said: sleeking)"
+  },
+  {
+    "itemId": "en-c2-5469",
+    "why": "solve-missed: solver didn't find \"itemize\" (said: itemise)"
+  },
+  {
+    "itemId": "en-c2-5518",
+    "why": "solve-missed: solver didn't find \"riveted\" (said: gripped)"
+  },
+  {
+    "itemId": "en-c2-5406",
+    "why": "solve-missed: solver didn't find \"devastated\" (said: decimate)"
+  },
+  {
+    "itemId": "en-c2-5457",
+    "why": "solve-missed: solver didn't find \"immortalize\" (said: immortalise)"
+  },
+  {
+    "itemId": "en-c2-5381",
+    "why": "solve-missed: solver didn't find \"commiserate\" (said: sympathise)"
+  },
+  {
+    "itemId": "en-c2-5405",
+    "why": "solve-missed: solver didn't find \"desecrated\" (said: deface)"
+  },
+  {
+    "itemId": "en-c2-5476",
+    "why": "solve-missed: solver didn't find \"kowtow\" (said: toady)"
+  },
+  {
+    "itemId": "en-c2-5411",
+    "why": "solve-missed: solver didn't find \"dissociate\" (said: disassociate)"
+  },
+  {
+    "itemId": "en-c2-5418",
+    "why": "solve-missed: solver didn't find \"encase\" (said: enclose)"
+  },
+  {
+    "itemId": "en-c2-5523",
+    "why": "solve-missed: solver didn't find \"scrunched\" (said: scrunch)"
+  },
+  {
+    "itemId": "en-c2-5434",
+    "why": "solve-missed: solver didn't find \"exonerated\" (said: exculpated)"
+  },
+  {
+    "itemId": "en-c2-5525",
+    "why": "solve-missed: solver didn't find \"sequester\" (said: seclude)"
+  },
+  {
+    "itemId": "en-c2-5492",
+    "why": "solve-missed: solver didn't find \"postulated\" (said: postulate)"
+  },
+  {
+    "itemId": "en-c2-5535",
+    "why": "solve-missed: solver didn't find \"sputtered\" (said: spluttered)"
+  },
+  {
+    "itemId": "en-c2-5454",
+    "why": "solve-missed: solver didn't find \"hurtle\" (said: career, careen)"
+  },
+  {
+    "itemId": "en-c2-5537",
+    "why": "solve-missed: solver didn't find \"stigmatize\" (said: stigmatise)"
+  },
+  {
+    "itemId": "en-c2-5496",
+    "why": "solve-missed: solver didn't find \"promulgated\" (said: promulgate)"
+  },
+  {
+    "itemId": "en-c2-5419",
+    "why": "solve-missed: solver didn't find \"enchanted\" (said: entranced)"
+  },
+  {
+    "itemId": "en-c2-5455",
+    "why": "solve-missed: solver didn't find \"hypothesize\" (said: hypothesise)"
+  },
+  {
+    "itemId": "en-c2-5115",
+    "why": "solve-missed: solver didn't find \"syrupy\" (said: sugary)"
+  },
+  {
+    "itemId": "en-c2-5132",
+    "why": "solve-missed: solver didn't find \"unenlightened\" (said: uninhibited)"
+  },
+  {
+    "itemId": "en-c2-5103",
+    "why": "solve-missed: solver didn't find \"ruinous\" (said: costly)"
+  },
+  {
+    "itemId": "en-c2-5057",
+    "why": "solve-missed: solver didn't find \"gutless\" (said: callous)"
+  },
+  {
+    "itemId": "en-c2-5056",
+    "why": "solve-missed: solver didn't find \"gruelling\" (said: exhausting, enervating)"
+  },
+  {
+    "itemId": "en-c2-5151",
+    "why": "solve-missed: solver didn't find \"vitriolic\" (said: atrocious)"
+  },
+  {
+    "itemId": "en-c2-5027",
+    "why": "us-spelling: \"prized\" → British \"prised\""
+  },
+  {
+    "itemId": "en-c2-5029",
+    "why": "solve-missed: solver didn't find \"dumpy\" (said: dump)"
+  },
+  {
+    "itemId": "en-c2-5073",
+    "why": "solve-missed: solver didn't find \"lamentable\" (said: deplorable, inexcusable, reprehensible)"
+  },
+  {
+    "itemId": "en-c2-5041",
+    "why": "solve-missed: solver didn't find \"foolhardy\" (said: devil-may-care, harum-scarum, daredevil, reckless, heedless, rash)"
+  },
+  {
+    "itemId": "en-c2-5139",
+    "why": "solve-missed: solver didn't find \"unruffled\" (said: unflappable)"
+  },
+  {
+    "itemId": "en-c2-5021",
+    "why": "solve-missed: solver didn't find \"disconsolate\" (said: miserable)"
+  },
+  {
+    "itemId": "en-c2-5071",
+    "why": "solve-missed: solver didn't find \"knotty\" (said: tricky, thorny)"
+  },
+  {
+    "itemId": "en-c2-5001",
+    "why": "solve-missed: solver didn't find \"abstruse\" (said: obscure)"
+  },
+  {
+    "itemId": "en-c2-5015",
+    "why": "solve-missed: solver didn't find \"circumspect\" (said: meticulous)"
+  },
+  {
+    "itemId": "en-c2-5014",
+    "why": "solve-missed: solver didn't find \"chauvinistic\" (said: antiquated)"
+  },
+  {
+    "itemId": "en-c2-5153",
+    "why": "solve-missed: solver didn't find \"woeful\" (said: horrible, dreadful)"
+  },
+  {
+    "itemId": "en-c2-5111",
+    "why": "solve-missed: solver didn't find \"slushy\" (said: squishy)"
+  },
+  {
+    "itemId": "en-c2-5128",
+    "why": "solve-missed: solver didn't find \"undefended\" (said: unguarded, unsecured)"
+  },
+  {
+    "itemId": "en-c2-5106",
+    "why": "solve-missed: solver didn't find \"seaward\" (said: onshore)"
+  },
+  {
+    "itemId": "en-c2-5078",
+    "why": "solve-missed: solver didn't find \"marshy\" (said: squishy, mushy, soggy)"
+  },
+  {
+    "itemId": "en-c2-5028",
+    "why": "solve-missed: solver didn't find \"dulcet\" (said: mellow)"
+  },
+  {
+    "itemId": "en-c2-5145",
+    "why": "solve-missed: solver didn't find \"urbane\" (said: suave)"
+  },
+  {
+    "itemId": "en-c2-5061",
+    "why": "solve-missed: solver didn't find \"honeyed\" (said: sincere, honest)"
+  },
+  {
+    "itemId": "en-c2-5072",
+    "why": "solve-missed: solver didn't find \"laconic\" (said: concise, succinct)"
+  },
+  {
+    "itemId": "en-c2-5127",
+    "why": "solve-missed: solver didn't find \"uncounted\" (said: unnoted)"
+  },
+  {
+    "itemId": "en-c2-5068",
+    "why": "solve-missed: solver didn't find \"insipid\" (said: unvaried, unmoving)"
+  },
+  {
+    "itemId": "en-c2-5060",
+    "why": "solve-missed: solver didn't find \"haywire\" (said: defective)"
+  },
+  {
+    "itemId": "en-c2-5055",
+    "why": "solve-missed: solver didn't find \"grouchy\" (said: grumpy, crabby, cranky)"
+  },
+  {
+    "itemId": "en-c2-5030",
+    "why": "solve-missed: solver didn't find \"easygoing\" (said: unflappable)"
+  },
+  {
+    "itemId": "en-c2-5045",
+    "why": "solve-missed: solver didn't find \"fulsome\" (said: profuse, fervent, earnest, sincere, ardent, heartfelt)"
+  },
+  {
+    "itemId": "en-c2-5043",
+    "why": "solve-missed: solver didn't find \"freestanding\" (said: detached, separated, segregated, isolated, discrete, distinct)"
+  },
+  {
+    "itemId": "en-c2-5086",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5326",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5237",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5215",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5433",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5244",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5143",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5302",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5530",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5184",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5364",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5275",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5214",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5445",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5308",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5007",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5038",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5064",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5475",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5160",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5213",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5347",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5282",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5065",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5211",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5415",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5506",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5000",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5298",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5494",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5070",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5259",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5426",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5247",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5440",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5216",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5538",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5351",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5092",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5526",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5125",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5272",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5062",
+    "why": "random sample"
+  },
+  {
+    "itemId": "en-c2-5069",
+    "why": "random sample"
+  }
+]
