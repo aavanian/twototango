@@ -154,12 +154,13 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 - **Lessons applied**: solver prompt v3 checks that the answer can replace the span word for word (preposition, part of speech, verb pattern) and reports a `clueIssue`; it no longer counts the American spelling of the answer as a rival. Re-read over B2 and C1 with `fix --solve`, which repairs in place and keeps ids.
 - **Bank**: `content/en/b2.json`, 595 items after review, 589 after the v3 re-read.
 
-### English C2 (in review)
+### English C2 bank (frozen 19 Oct 2026)
 
 - **Runs**: first run 800 → 552 screened in → 527 kept, too many odd derivatives. Screen v3 (drops easy derivatives and compounds) and a top-up run filled it to 600.
 - **Bug found and fixed**: the top-up numbered its provisional ids from 5000 again, colliding with 146 kept items; the id-keyed repair then overwrote 10 of them. Rebuilt from the pre-top-up staging, top-up items renumbered from en-c2-7000, review list remapped. `runLevel` now numbers past the highest kept id, and `assertUnique` (no duplicate id or lemma) runs before staging is saved, around every repair, and at freeze.
-- **Staging**: `content/staging/en-c2.json`, 599 items after the v3 re-read (10 fixed, 1 dropped). Review: 60 flagged (mostly `solve-missed`, the solver not finding a rare answer) plus 55 random, in Grist table Review_EN_C2.
-- **Cross-bank check**: no lemma shared between C1 (590), B2 (589) and C2 (599).
+- **Staging**: `content/staging/en-c2.json`, 599 items after the v3 re-read (10 fixed, 1 dropped). Review: 60 flagged (mostly `solve-missed`, the solver not finding a rare answer) plus 55 random, in Grist table Review_EN_C2. All 115 good; one typo corrected by hand (humdrum: "yesterday of sightseeing" → "a day of sightseeing").
+- **Bank**: `content/en/c2.json`, 599 items, ids en-c2-0001 to en-c2-0599.
+- **Cross-bank check**: no answer shared between C1 (590), B2 (589) and C2 (599). English banks complete: 1,778 items. Total English spend about $0.6.
 
 ### Staging
 
