@@ -136,7 +136,8 @@ Run 19 Oct 2026 on the pilot's 50 words; total spend about $0.12.
 
 - **Blind rating result (19 Oct 2026)**: all 60 rated good, difficulty right for 59. Problem tags follow the word, not the model: every model's *tranquil* item was "span gives it away", every *stifle* and *curtail* item "span too hard". The rating does not separate the finalists. Saved as `content/pilot/en-c1.bakeoff-ratings.json`.
 - **Choice**: with quality indistinguishable to the GM, the plan's rule applies (the cheapest acceptable model). Drafting: GLM-5.3 Flash (the cheapest with the best automatic clean rate among the cheap models, 47 of 50). Blind solve: DeepSeek V4.1 Flash. Repair of flagged items: DeepSeek V4 Pro. Check the GLM-5.3 Flash licence on its model card before the bulk run.
-- **Open question**: the GM rated good some items the solver fails ("will [give] the award on the runner" for *bestow on*, a fixed "from" missing from the sentence). Either the solver is stricter than needed, or those slipped past in rating.
+- **Solver strictness**: the GM rated good some items the solver fails ("will [give] the award on the runner" for *bestow on*, a fixed "from" missing from the sentence). The GM confirmed these slipped past in rating: the solver stays strict.
+- **Span difficulty**: "span gives it away" (tranquil) and "span too hard" (stifle, curtail) mean relative to other items, all within the acceptable range. Clue difficulty is a property of the word more than of the model or prompt; no prompt change.
 
 ### Staging
 
