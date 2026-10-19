@@ -20,6 +20,7 @@ Settled on 16 Oct 2026.
 | Default item count | The multiple of p closest to 15. On a tie (p = 2: 14/16; p = 6: 12/18) take the lower one. |
 | Exactly p to start | The GM can change p from the lobby. |
 | Japanese UI | Interface strings in English, French and Japanese ship in v1. |
+| English spelling | British (colour, organise, centre, catalogue, defence, travelled), and British vocabulary where it differs (lift, flat). Settled 19 Oct 2026. The prompt asks for it, word selection drops American forms whose British spelling the lexicon knows, and the checks fail an American answer. |
 | GM interruptions | The GM phone keeps the screen awake during a game and saves the game state to disk after every action, so the game resumes after a call, a kill or a crash. |
 
 ## Architecture
@@ -112,11 +113,12 @@ Built 16 Oct 2026; nothing here has spent API credit.
 
 Started 19 Oct 2026, in a Claude Code session; no API spend.
 
-- **Words**: 50 from the C1 candidates, screened by hand in the session (20 nouns, 18 verbs, 12 adjectives; 10 definitions). Dropped from the pool: junk the screen must catch (cadmium, knickers), words with a UK/US spelling split (fervour, odour) until the convention is set, and words already in the dev bank.
+- **Words**: 50 from the C1 candidates, screened by hand in the session (20 nouns, 18 verbs, 12 adjectives; 10 definitions). Dropped from the pool: junk the screen must catch (cadmium, knickers), words with a UK/US spelling split (fervour, odour) while the convention was open, and words already in the dev bank.
 - **Prompt**: `tools/bank/prompts/en/draft.md` (en-draft v1). The same text goes to the bake-off models. The model writes the sentence or definition, the answer form, acceptable synonyms and near misses; it never chooses ids or given letters.
 - **Drafts to items**: `npm run bank -- finalize` assigns ids and places the given letters. Placement first tries to rule out every synonym, acceptable ones included (the bank rule); only when no placement can, the acceptable words that still fit become alternates. All 50 placed without alternates.
 - **Files**: `content/pilot/en-c1.drafts.json` (drafts), `en-c1.json` (items), `en-c1.report.json` (check results). The app only loads `content/<lang>/<level>.json`, so pilot files never ship by accident.
 - **Ratings**: Grist doc "Two to Tango – pilot ratings (EN C1)", table Pilot: verdict (good / fix / reject), difficulty (too easy / right / too hard), problem tags and a comment per item. The ratings become the fixed test set for the bake-off.
+- **Spelling**: British, decided during the pilot; the prompt is now en-draft v2. The pilot items already used British spelling.
 - **Found while writing**: one draft had a span that doesn't take the answer's preposition ("hinted to" for "alluded to"). The deterministic checks can't see this; the blind solve or a grammar pass has to.
 
 ### Staging

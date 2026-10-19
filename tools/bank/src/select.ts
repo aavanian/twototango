@@ -3,6 +3,7 @@
 import { layoutBoxes, LEVELS, letters, seededRng, shuffle, type Item, type Lang } from "@twototango/core";
 import { key, type FormEntry, type Lexicon, type Pos } from "./lexicon.ts";
 import { relatedWords } from "./roots.ts";
+import { britishVariant } from "./spelling.ts";
 
 /**
  * Stage 1, code part: candidate answers per level from frequency bands. The model
@@ -86,6 +87,8 @@ export function eligible(lex: Lexicon, options: SelectOptions = {}): Omit<Candid
     seen.add(id);
     const n = letterCount(e.lemma, lex.lang);
     if (n === null || n < MIN_LETTERS || n > MAX_LETTERS || bad.has(key(e.lemma))) continue;
+    // British spelling for English: the American form of a word never becomes a candidate.
+    if (lex.lang === "en" && britishVariant(e.lemma, lex) !== null) continue;
     const level = levelOf(e.lemmaZipf, bands);
     if (level === null) continue;
     const synonyms = lex.synonyms(e.lemma, e.pos).filter((s) => letterCount(s, lex.lang) !== null && !bad.has(key(s)));
@@ -96,6 +99,7 @@ export function eligible(lex: Lexicon, options: SelectOptions = {}): Omit<Candid
         return entry === undefined ? [] : [{ s, z: entry.lemmaZipf }];
       })
       .filter(({ s, z }) => z >= e.lemmaZipf + EASIER_BY && !relatedWords(lex, s, e.lemma))
+      .filter(({ s }) => lex.lang !== "en" || britishVariant(s, lex) === null)
       .sort((a, b) => b.z - a.z)
       .map(({ s }) => s);
     if (easier.length === 0) continue;

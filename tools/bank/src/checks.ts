@@ -4,6 +4,7 @@ import { checkItem, type Item } from "@twototango/core";
 import { key, type Lexicon } from "./lexicon.ts";
 import { fitsFor, rivalsFitting } from "./placement.ts";
 import { relatedWords } from "./roots.ts";
+import { britishVariant } from "./spelling.ts";
 import { substitute } from "./substitute.ts";
 
 /**
@@ -90,6 +91,14 @@ export function checkDraft(item: Item, lex: Lexicon, options: CheckOptions): Ite
   // Profanity anywhere in the item.
   const bad = [...new Set([...words(textOf(item)), ...words(item.answer), ...item.alternates.flatMap(words)])].filter((w) => options.profanity.has(key(w)));
   if (bad.length > 0) add("profanity", "fail", `contains: ${bad.join(", ")}`);
+
+  // British spelling in English items, answer and text alike.
+  if (item.lang === "en") {
+    const american = [...new Set([...words(textOf(item)), item.answer, ...item.alternates])]
+      .map((w) => [w, britishVariant(w, lex)] as const)
+      .filter(([, b]) => b !== null);
+    for (const [w, b] of american) add("us-spelling", w === item.answer ? "fail" : "flag", `"${w}" → British "${b}"`);
+  }
 
   const sub = substitute(item, lex);
   for (const note of sub?.notes ?? []) if (note.includes("unknown")) add("substitution", "flag", note);

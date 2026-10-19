@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
-<!-- prompt: en-draft v1 (16 Oct 2026). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
+<!-- prompt: en-draft v2 (19 Oct 2026; v2 adds British spelling). The pipeline sends everything below the line as the system message, then the word list as the user message. -->
 
 ---
 
@@ -34,6 +34,10 @@ You get a list of target words (the answers), each with its part of speech and t
 
 - `acceptable`: other single words that would be just as correct as the answer in this exact sentence or for this definition, in the same form as your answer. Usually zero to two. Only words you would accept from a player.
 - `nearMisses`: up to five words a good player might say that are close but not right here (wrong shade of meaning, wrong register, wrong grammar), in the same form as your answer.
+
+## Spelling
+
+- British spelling everywhere, answer included: colour, organise (-ise, not -ize), centre, catalogue, defence, travelled, programme, grey. British vocabulary where it differs: lift, flat, pavement, mobile phone, football.
 
 ## Content rules
 

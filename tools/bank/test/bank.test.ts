@@ -188,3 +188,27 @@ describe("checkDraft", () => {
     expect(nearDuplicates([adorned, twin]).map((i) => i.itemId)).toEqual(["en-c1-0002"]);
   });
 });
+
+describe("British spelling", () => {
+  const sp = lexicon("en", [
+    ["colour", "colour", "noun", 4.5],
+    ["color", "color", "noun", 4.6],
+    ["organise", "organise", "verb", 4.0],
+    ["organize", "organize", "verb", 4.2],
+    ["motor", "motor", "noun", 4.0],
+  ]);
+
+  it("maps American forms to British ones the lexicon knows", async () => {
+    const { britishVariant } = await import("../src/spelling.ts");
+    expect(britishVariant("color", sp)).toBe("colour");
+    expect(britishVariant("organize", sp)).toBe("organise");
+    expect(britishVariant("motor", sp)).toBeNull();
+    expect(britishVariant("colour", sp)).toBeNull();
+  });
+
+  it("fails an English item with an American answer", () => {
+    const item = Item.parse({ ...adorned, id: "en-c1-0003", pos: "verb", answer: "organize", lemma: "organize", given: [0, 4], alternates: [], fixedWords: [], prompt: { kind: "definition", definition: "to arrange things" } });
+    const issues = checkDraft(item, sp, opts).issues;
+    expect(issues.find((i) => i.code === "us-spelling")).toMatchObject({ severity: "fail" });
+  });
+});
