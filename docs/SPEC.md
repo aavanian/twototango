@@ -169,6 +169,7 @@ Code and content carry separate licenses, set up in the repo from the first comm
 - **Extra clue.** The GM reveals one more letter during an item; a solve after that scores less (1 point is a starting idea).
 - **Tap to gloss** on the GM's phone, using the gloss already stored with each item.
 - **Remote play** over a shared link, with typed answers.
+- **Close the lobby.** A lobby survives relaunching the app; a button on the GM screen to discard it and go back to setup may be needed.
 
 ### Confirmed decisions
 

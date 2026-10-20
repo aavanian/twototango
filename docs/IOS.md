@@ -26,8 +26,7 @@ In Xcode:
 1. Wait for the package resolution (Capacitor and the host plugin) to finish in the left sidebar.
 2. Select the **App** project, then the **App** target → **Signing & Capabilities**. Pick your team.
 3. The bundle id is `app.twototango.gm`. If Xcode says it is taken, choose your own (for example `com.<you>.twototango`) and put the same value in `apps/ios/capacitor.config.json` (`appId`) so the next sync keeps it.
-4. Plug in the iPhone, pick it as the run destination at the top, press Run (⌘R). The first time, trust the developer profile on the phone: Settings → General → VPN & Device Management.
-5. On first launch, iOS asks to find devices on the local network: **Allow**. Without it no phone can join. (If you tapped Don't Allow: Settings → Privacy & Security → Local Network → Two to Tango.)
+4. Plug in the iPhone, pick it as the run destination at the top, press Run (⌘R). With a free Apple ID (a "Personal Team"), the phone also asks you to trust the developer profile the first time: Settings → General → VPN & Device Management. A paid developer account skips this.
 
 ## Check on the phone
 

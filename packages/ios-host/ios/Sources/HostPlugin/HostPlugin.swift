@@ -65,7 +65,8 @@ public class HostPlugin: CAPPlugin, CAPBridgedPlugin {
         }
         do {
             // No data key when there is no file: the page reads it as null.
-            if let text = try files.read(name) { call.resolve(["data": text]) } else { call.resolve() }
+            // An empty object, not resolve(): that one hands the page undefined.
+            if let text = try files.read(name) { call.resolve(["data": text]) } else { call.resolve([:]) }
         } catch {
             call.reject("could not read \(name): \(error.localizedDescription)")
         }
